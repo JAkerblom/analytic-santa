@@ -2,7 +2,7 @@
 
 <span style="color:#464646;font-size:1.4em;">
 Webpage link :: [ffcg-analyticsanta.azurewebsites.net](http://ffcg-analyticsanta.azurewebsites.net/)
-GitHub repo :: [JAkerblom/analytic-santa.git](https://github.com/JAkerblom/analytic-santa)
+<br>GitHub repo :: [JAkerblom/analytic-santa.git](https://github.com/JAkerblom/analytic-santa)
 </span>
 
 ## Plan
