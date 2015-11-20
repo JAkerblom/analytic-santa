@@ -11,20 +11,21 @@ Webpage link :: [ffcg-analyticsanta.azurewebsites.net](http://ffcg-analyticsanta
 * Efterforskning/insamling av data 
 	* Klappdata + Extern data + Intern data
 * Efterforskning/implementering av ML-modell i Azure 
-	* Multiclass vs One-vs-all vs Neural net vs ==Matchbox recommender== 
-* Efterforskning/implementering av feedback loop
-	* Reinforcement learning vs Online learning vs ==Programmatic retraining== 
+	* ==Multiclass== vs ~~One-vs-all vs Neural net~~ vs ==Matchbox recommender== 
+* Efterforskning/implementering av feedback loop [-->](#feedbackloop)
+	* ~~Reinforcement learning vs Online learning~~ vs ==Programmatic retraining== 
 * Hemsida 
 	* Front-end 
 		1. Formulär för inmatning av persondata
 		* Vy för klappförslag med feedback-inmatning
 		* Dynamisk och reaktiv inmatning samt resultatvisning <br>`CSS3 och AngularJS`
 	* Back-end
-		1. Lagring av inmatning och resultat i SQL vs NoSQL vs Blob storage <br>`jQuery->Ajax->PHP?? Bättre tips? Osäker på Node.JS`
+		1. Lagring av inmatning och resultat i SQL vs ~~NoSQL vs Blob storage~~ <br>`jQuery->Ajax->PHP?? Bättre tips? Osäker på Node.JS och MongoDB`
 		* API-kommunikation mot deployed Azure ML web service <br>`jQuery->Ajax->PHP , har jag använt i amd-hemsidan.`
 		* Programatic retraining (se feedback loop) <br>`C# script??`
+		* **Bootstrapped och helhet enligt MVC** <br> `Azure->ASP.NET MVC4 kommer kräva upplärning.`
 * Social netw. marketing 
-	* Länk med bra bild att lägga upp på facebook och yammer.
+	* Länk med bra bild att lägga upp på facebook och yammer.<br> `Kan någon kan förse mig med en kul bild som är forefront:ig och julig?`
 
 ### Aktivitetsplan
 
