@@ -175,11 +175,23 @@ Hittills har mestadels av alla google-länkar lett mig till reinforcement learni
 ### Programmatic retraining
 Retraining har Azure [ett exempel](https://azure.microsoft.com/sv-se/documentation/articles/machine-learning-retrain-models-programmatically/) på hur man kan implementera för att *Retrain ML models programatically*. 
 
+När man publishat sin modell (tränat) så kan man gå tillbaka till Training Experiment och lägga till en output module efter Train Model. Dock verkar det som att Microsofts dokumentation av Azure är för gammal för de har ändrat beteckningar på saker och ting. Kör Retraining web service, det borde ge samma resultat.
+![Azure_retraining](Images/Azure_retraining.png)
+
+### Azure layout
+Approachen kring retraining har jag satt till följande koncept.
+![Azure_layout](Images/Azure_layout.png)
+
+
 ### Notes
-* Problemet är att du på Azure till synes inte kan återträna modellen direkt. Och det verkar heller inte vara ett reinforcement learning problem, utan mer att varje ny person som svarar ger en till datarad. 
+* ~~Problemet är att du på Azure till synes inte kan återträna modellen direkt. Och det verkar heller inte vara ett reinforcement learning problem, utan mer att varje ny person som svarar ger en till datarad.~~ Man kan återträna modellen direkt eller nästan direkt. 
+	* Eventuellt hade man kunnat lägga upp två modeller där ena är igång när den andra tränas.
+	* Det kan vara så att det går jättebra att träna modellen direkt efter ett svar kommit in och att det fungerar medan folk använder hemsidan. Man kan göra en avvägning när man ska byta ut endpointen -> Är den nya modellen bättre? Ja -> Är det någon som använder modellen nu? Ja -> Kolla igen om x minuter. 
 * Feedback loopen hänger lite på vad man vill prediktera. T.ex. vill man prediktera om det är antingen en bra eller dålig julklapp att ge så är det binär feedback man vill få, alltså vad man själv tror om klappens hållbarhet framför granen. Vill man prediktera något i stil med likelyhood eller hur bra en present är så är det mer en skala man förhåller sig till och därav kanske frågar om vad man tror hållbarheten är på en skala mellan 1-10. 
-* Ska man kanske ska få en del alternativ och ge feedback på alla dessa? Det snabbar ju upp processen. Om det är genomförbart kanske man kan ge feedback på alla utifrån den persona som är aktuell. 
-* Ev. efterforskning på annan lösning. Där har t.ex. deployment av hemsida med R genom [OpenCPU](https://www.opencpu.org/apps.html) varit ett alternativ. Dock kan det ta ifrån den enkelheten som det innebär att arbeta med Azure i grunden. Men eftersom man kan arbeta med R mer direkt på hemsidan så kan man eventuellt implementera feedback-loopen lättare (aka mer som man vill).
+* ~~Ska man kanske ska få en del alternativ och ge feedback på alla dessa? Det snabbar ju upp processen. Om det är genomförbart kanske man kan ge feedback på alla utifrån den persona som är aktuell. Dock kan det bli för tidsödande.~~ Alla som hjälper till med datainsamling måste ta ställning till alla presenter. När man kör lösningen kanske man bara får en del eller en present.
+* ~~Ev. efterforskning på annan lösning. Där har t.ex. deployment av hemsida med R genom [OpenCPU](https://www.opencpu.org/apps.html) varit ett alternativ. Dock kan det ta ifrån den enkelheten som det innebär att arbeta med Azure i grunden. Men eftersom man kan arbeta med R mer direkt på hemsidan så kan man eventuellt implementera feedback-loopen lättare (aka mer som man vill).~~ Satsar på OpenCPU i senare projekt.
+* Är publish web service samma sak som set up web service eller är det samma sak som publish to gallery? Det är det ingen som vet. Det är även så att när man trycker på 'set up web service' idag så kan du välja mellan att köra 'predictive experiment' eller 'retraining web service'. Det sistnämnda gör det som Microsofts dokumentation ber en om fast automatiskt. Väldigt väldigt otydligt och rentav irriterande.
+
 
 ## <a name="hemsidan"></a>Hemsidan
 
@@ -197,6 +209,10 @@ Retraining har Azure [ett exempel](https://azure.microsoft.com/sv-se/documentati
 #### Color palette
 ![Color_palette](Images/color_palette.png)
 • F5624D • CC231E • 34A65F • 0F8A5F • 235E6F
+
+#### Start view
+Den här vyn baseras dels på att du vet vilket steg du befinner dig i, men även en horisontell accordion. Hade dock kunnat vara kul att göra om det här konceptet till din resultat-vy. Idén går ut på att klapparna gömmer sig bakom varje fält och när man trycker på en så åker fältet fram som accordion och klappen exponeras. Väl där får man rate:a klappen eller vad som nu bestäms. 
+![Front_page_draft](Images/front_page.png)
 
 #### User properties view
 Användaren kan börja med att mata in det som blir rena demografiska variabler. Nästa steg kan bli mer frågor som är roliga. 
