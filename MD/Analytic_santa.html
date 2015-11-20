@@ -723,20 +723,34 @@ Webpage link :: <a href="http://ffcg-analyticsanta.azurewebsites.net/">ffcg-anal
 
 <p>Retraining har Azure <a href="https://azure.microsoft.com/sv-se/documentation/articles/machine-learning-retrain-models-programmatically/">ett exempel</a> på hur man kan implementera för att <em>Retrain ML models programatically</em>. </p>
 
-<h3 id="toc_24">Notes</h3>
+<p>När man publishat sin modell (tränat) så kan man gå tillbaka till Training Experiment och lägga till en output module efter Train Model. Dock verkar det som att Microsofts dokumentation av Azure är för gammal för de har ändrat beteckningar på saker och ting. Kör Retraining web service, det borde ge samma resultat.
+<img src="Images/Azure_retraining.png" alt="Azure_retraining"></p>
+
+<h3 id="toc_24">Azure layout</h3>
+
+<p>Approachen kring retraining har jag satt till följande koncept.
+<img src="Images/Azure_layout.png" alt="Azure_layout"></p>
+
+<h3 id="toc_25">Notes</h3>
 
 <ul>
-<li>Problemet är att du på Azure till synes inte kan återträna modellen direkt. Och det verkar heller inte vara ett reinforcement learning problem, utan mer att varje ny person som svarar ger en till datarad. </li>
+<li><del>Problemet är att du på Azure till synes inte kan återträna modellen direkt. Och det verkar heller inte vara ett reinforcement learning problem, utan mer att varje ny person som svarar ger en till datarad.</del> Man kan återträna modellen direkt eller nästan direkt. 
+
+<ul>
+<li>Eventuellt hade man kunnat lägga upp två modeller där ena är igång när den andra tränas.</li>
+<li>Det kan vara så att det går jättebra att träna modellen direkt efter ett svar kommit in och att det fungerar medan folk använder hemsidan. Man kan göra en avvägning när man ska byta ut endpointen -&gt; Är den nya modellen bättre? Ja -&gt; Är det någon som använder modellen nu? Ja -&gt; Kolla igen om x minuter. </li>
+</ul></li>
 <li>Feedback loopen hänger lite på vad man vill prediktera. T.ex. vill man prediktera om det är antingen en bra eller dålig julklapp att ge så är det binär feedback man vill få, alltså vad man själv tror om klappens hållbarhet framför granen. Vill man prediktera något i stil med likelyhood eller hur bra en present är så är det mer en skala man förhåller sig till och därav kanske frågar om vad man tror hållbarheten är på en skala mellan 1-10. </li>
-<li>Ska man kanske ska få en del alternativ och ge feedback på alla dessa? Det snabbar ju upp processen. Om det är genomförbart kanske man kan ge feedback på alla utifrån den persona som är aktuell. </li>
-<li>Ev. efterforskning på annan lösning. Där har t.ex. deployment av hemsida med R genom <a href="https://www.opencpu.org/apps.html">OpenCPU</a> varit ett alternativ. Dock kan det ta ifrån den enkelheten som det innebär att arbeta med Azure i grunden. Men eftersom man kan arbeta med R mer direkt på hemsidan så kan man eventuellt implementera feedback-loopen lättare (aka mer som man vill).</li>
+<li><del>Ska man kanske ska få en del alternativ och ge feedback på alla dessa? Det snabbar ju upp processen. Om det är genomförbart kanske man kan ge feedback på alla utifrån den persona som är aktuell. Dock kan det bli för tidsödande.</del> Alla som hjälper till med datainsamling måste ta ställning till alla presenter. När man kör lösningen kanske man bara får en del eller en present.</li>
+<li><del>Ev. efterforskning på annan lösning. Där har t.ex. deployment av hemsida med R genom <a href="https://www.opencpu.org/apps.html">OpenCPU</a> varit ett alternativ. Dock kan det ta ifrån den enkelheten som det innebär att arbeta med Azure i grunden. Men eftersom man kan arbeta med R mer direkt på hemsidan så kan man eventuellt implementera feedback-loopen lättare (aka mer som man vill).</del> Satsar på OpenCPU i senare projekt.</li>
+<li>Är publish web service samma sak som set up web service eller är det samma sak som publish to gallery? Det är det ingen som vet. Det är även så att när man trycker på &#39;set up web service&#39; idag så kan du välja mellan att köra &#39;predictive experiment&#39; eller &#39;retraining web service&#39;. Det sistnämnda gör det som Microsofts dokumentation ber en om fast automatiskt. Väldigt väldigt otydligt och rentav irriterande.</li>
 </ul>
 
-<h2 id="toc_25"><a name="hemsidan"></a>Hemsidan</h2>
+<h2 id="toc_26"><a name="hemsidan"></a>Hemsidan</h2>
 
-<h3 id="toc_26">Front-end</h3>
+<h3 id="toc_27">Front-end</h3>
 
-<h4 id="toc_27">Aktiviteter</h4>
+<h4 id="toc_28">Aktiviteter</h4>
 
 <ul>
 <li><input type="checkbox"> Välj tema</li>
@@ -747,27 +761,32 @@ Webpage link :: <a href="http://ffcg-analyticsanta.azurewebsites.net/">ffcg-anal
 <li><input type="checkbox"> Implementera HTML/CSS</li>
 </ul>
 
-<h4 id="toc_28">Color palette</h4>
+<h4 id="toc_29">Color palette</h4>
 
 <p><img src="Images/color_palette.png" alt="Color_palette">
 • F5624D • CC231E • 34A65F • 0F8A5F • 235E6F</p>
 
-<h4 id="toc_29">User properties view</h4>
+<h4 id="toc_30">Start view</h4>
+
+<p>Den här vyn baseras dels på att du vet vilket steg du befinner dig i, men även en horisontell accordion. Hade dock kunnat vara kul att göra om det här konceptet till din resultat-vy. Idén går ut på att klapparna gömmer sig bakom varje fält och när man trycker på en så åker fältet fram som accordion och klappen exponeras. Väl där får man rate:a klappen eller vad som nu bestäms. 
+<img src="Images/front_page.png" alt="Front_page_draft"></p>
+
+<h4 id="toc_31">User properties view</h4>
 
 <p>Användaren kan börja med att mata in det som blir rena demografiska variabler. Nästa steg kan bli mer frågor som är roliga. </p>
 
-<h4 id="toc_30">Question view</h4>
+<h4 id="toc_32">Question view</h4>
 
 <p>Konceptuellt handlar det om att ha någon progress bar och lite fält med användarvänliga formulär-element. I det här fallet är det bara boxar för ja/nej. Lämpligt är att rita upp formulärstrukturen för sig själv. 
 <img src="Images/Form_w_progress.png" alt="Form_w_progress"></p>
 
-<h4 id="toc_31">Results view</h4>
+<h4 id="toc_33">Results view</h4>
 
 <p>Den här vyn hänger mycket på hur man vill konstruera svarsvariabeln. Detta då det här steget behöver vara dels genomförbart och kul att göra, samt ge data som faktiskt hjälper en att prediktera presenter. </p>
 
-<h3 id="toc_32">Back-end</h3>
+<h3 id="toc_34">Back-end</h3>
 
-<h4 id="toc_33">Aktiviteter</h4>
+<h4 id="toc_35">Aktiviteter</h4>
 
 <ul>
 <li><input type="checkbox"> Bestäm lagringsmetod för input-data (går mot retraining-biten)</li>
@@ -777,7 +796,7 @@ Webpage link :: <a href="http://ffcg-analyticsanta.azurewebsites.net/">ffcg-anal
 <li><input type="checkbox"> Implementera kodlösningen för automatisk programmatisk retraining genom hemsidan.</li>
 </ul>
 
-<h2 id="toc_34">Länkar osv.</h2>
+<h2 id="toc_36">Länkar osv.</h2>
 
 <ul>
 <li><a href="http://www.slideshare.net/WorapotJakkhupan/308471-ch5-machine-learning-using-microsoft-azure/20">Slideshare:: Azure</a></li>

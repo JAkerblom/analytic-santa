@@ -182,7 +182,6 @@ När man publishat sin modell (tränat) så kan man gå tillbaka till Training E
 Approachen kring retraining har jag satt till följande koncept.
 ![Azure_layout](Images/Azure_layout.png)
 
-
 ### Notes
 * ~~Problemet är att du på Azure till synes inte kan återträna modellen direkt. Och det verkar heller inte vara ett reinforcement learning problem, utan mer att varje ny person som svarar ger en till datarad.~~ Man kan återträna modellen direkt eller nästan direkt. 
 	* Eventuellt hade man kunnat lägga upp två modeller där ena är igång när den andra tränas.
