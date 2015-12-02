@@ -196,6 +196,19 @@ Tror på tomten | `{Y, N, ?}[NOMINAL::BINARY]`| `santaBelief`
 Hund eller katt? | `{0, 1, ?}[NOMINAL::BINARY]` | `prefersDog`
 Intressen | Kan vara svår. Tänk om personen inte tycker om något av det jag föreslår. | `interests`
 
+## SQL relaterad info
+
+Jag har precis fått tillgång till lösenord för en av våra azure-servrar (f5bv9w5661). Användarnamn och lösen fås av mig om eller Johnny. Den databas jag använder heter ffcgamd-db (se [här](https://manage.windowsazure.com/ffcg.se#Workspaces/SqlAzureExtension/SqlServer/f5bv9w5661/Database/5.f5bv9w5661/QuickStart)). Hittills har jag lagt upp en table för användaruppgifter (userInput). Jag kommer nog fortsätta med tre tabeller, alltså en för dessa användaruppgifter, en för klappinfo och en för användar-klapp-ratings. Eventuellt kommer även en databas finnas för externa data så att man från hemsidan kan hämta vissa externa uppgifter utifrån det användaren matat in (ex. postnummer -> inkomst). 
+
+De connection strings som jag kommer använda kommer främst vara ODBC och PHP. ODBC för att hämta data till azuremodellen och PHP för att lagra från hemsidan. 
+
+```
+// ODBC
+Driver={SQL Server Native Client 10.0};Server=tcp:f5bv9w5661.database.windows.net,1433;Database=ffcgamd-db;Uid=ffcgdb_web@f5bv9w5661;Pwd={your_password_here};Encrypt=yes;Connection Timeout=30;
+
+// PHP
+Server: f5bv9w5661.database.windows.net,1433 \r\nSQL Database: ffcgamd-db\r\nUser Name: ffcgdb_web\r\n\r\nPHP Data Objects(PDO) Sample Code:\r\n\r\ntry {\r\n   $conn = new PDO ( \"sqlsrv:server = tcp:f5bv9w5661.database.windows.net,1433; Database = ffcgamd-db\", \"ffcgdb_web\", \"{your_password_here}\");\r\n    $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );\r\n}\r\ncatch ( PDOException $e ) {\r\n   print( \"Error connecting to SQL Server.\" );\r\n   die(print_r($e));\r\n}\r\n\rSQL Server Extension Sample Code:\r\n\r\n$connectionInfo = array(\"UID\" => \"ffcgdb_web@f5bv9w5661\", \"pwd\" => \"{your_password_here}\", \"Database\" => \"ffcgamd-db\", \"LoginTimeout\" => 30, \"Encrypt\" => 1);\r\n$serverName = \"tcp:f5bv9w5661.database.windows.net,1433\";\r\n$conn = sqlsrv_connect($serverName, $connectionInfo);
+```
 
 ### Notes
 * ~~Alla presenter som ska föreslås, det är ju också ett arbete att ta fram! Kolla årets julklappar någonstans? Göra en lista på vanliga butiker som folk köper klappar på eller kika på enstaka artiklar som varit populära på sistone. Har amazon sån data?~~ Lista påbörjad med diverse länkar. Mestadels kommer dock från Coolstuff i dagsläget pga enkelheten och att de täcker det mesta som alla andra bara täcker in delvis. 
@@ -336,7 +349,7 @@ Approachen kring retraining har jag satt till följande koncept.
 
 Hittills har jag lagt upp ett testexempel som använder sig av två C# console applications. Förfarandet gick till så här: 
 
-1. Träna modell på testdata (3 sparade dataset, kommer i framtiden vara SQL-databasen som inmatade data blir sparade i).
+1. Träna modell på testdata (3 sparade dataset, kommer i framtiden vara SQL-databasen som inmatade data blir sparade i). ![sql-reader](Images/Sql-reader.png)
 2. Gör ett predictive experiment med denna träningsmodell och deploya pred.experimentet som web service.
 	* Jag lade till en endpoint till denna predictive web service som ska användas för att updatera den tränade modellen som den använder för prediktion.
 	* Som sagt kommer inmatningskällor ändras till SQL-databas samt få web service input justerat så att användarna bara behöver mata in deras uppgifter och ge item ratings.
