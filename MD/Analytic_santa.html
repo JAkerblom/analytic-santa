@@ -478,12 +478,12 @@ Webpage link :: <a href="http://ffcg-analyticsanta.azurewebsites.net/">ffcg-anal
 
 <ul>
 <li>Regression models: <mark>Neural net</mark> vs Decision forest/tree vs Bayesian</li>
-<li>~~Classifiers: Multiclass vs One-vs-all vs Neural net vs Matchbox recommender~~</li>
+<li><del>Classifiers: Multiclass vs One-vs-all vs Neural net vs Matchbox recommender</del></li>
 </ul></li>
 <li>Efterforskning/implementering av feedback loop <a href="#feedbackloop">--&gt;</a>
 
 <ul>
-<li>~~Reinforcement learning vs Online learning~~ vs <mark>Programmatic retraining</mark> </li>
+<li><del>Reinforcement learning vs Online learning</del> vs <mark>Programmatic retraining</mark> </li>
 </ul></li>
 <li>Hemsida 
 
@@ -498,7 +498,7 @@ Webpage link :: <a href="http://ffcg-analyticsanta.azurewebsites.net/">ffcg-anal
 <li>Back-end
 
 <ol>
-<li>Lagring av inmatning och resultat i SQL vs ~~NoSQL vs Blob storage~~ <br><code>jQuery-&gt;Ajax-&gt;PHP?? Bättre tips? Osäker på Node.JS och MongoDB</code></li>
+<li>Lagring av inmatning och resultat i SQL vs <del>NoSQL vs Blob storage</del> <br><code>jQuery-&gt;Ajax-&gt;PHP?? Bättre tips? Osäker på Node.JS och MongoDB</code></li>
 <li>API-kommunikation mot deployed Azure ML web service <br><code>jQuery-&gt;Ajax-&gt;PHP , har jag använt i amd-hemsidan.</code></li>
 <li>Programatic retraining (se feedback loop) <br><code>C# script??</code></li>
 <li><strong>Bootstrapped och helhet enligt MVC</strong> <br> <code>Azure-&gt;ASP.NET MVC4 kommer kräva upplärning.</code></li>
@@ -600,7 +600,7 @@ Webpage link :: <a href="http://ffcg-analyticsanta.azurewebsites.net/">ffcg-anal
 </tr>
 <tr>
 <td></td>
-<td><input type="checkbox"> Implementera lösning</td>
+<td><input type="checkbox" checked> Implementera lösning</td>
 <td>2d (förhoppningsvis kortare)</td>
 </tr>
 <tr>
@@ -684,11 +684,7 @@ Webpage link :: <a href="http://ffcg-analyticsanta.azurewebsites.net/">ffcg-anal
 * <input type="checkbox"> Insamling av beskrivning/titel/pris/grupp (lite datadrivet eftersom det kan ge förklarande variabler)
 -->
 
-<h4 id="toc_6">Bästa julklapparna i år</h4>
-
-<p>Den 24 november avslöjas årets julklapp så det kan man hålla ögonen öppna på. För resterande hög av julklappar som ska samlas in så borde en blandning mellan efterforskning på amazon/prisjakt samt kartläggning av största butikerna i Sverige ge en bra täckning av klappar. </p>
-
-<h4 id="toc_7">Kategorier</h4>
+<h4 id="toc_6">Kategorier</h4>
 
 <p>Om man går efter olika segment inom detaljhandeln så kan man kategorisera samtidigt som man får tillgång till andra data. Detta utgörs då av:</p>
 
@@ -734,7 +730,7 @@ hej  | hej  | hej | hej | Mini-actionkamera | hej | hej | hej | hej | hej
 <li>Upplevelsepresenter</li>
 </ul>
 
-<h4 id="toc_8">Item meta</h4>
+<h4 id="toc_7">Item meta</h4>
 
 <table>
 <thead>
@@ -799,7 +795,7 @@ hej  | hej  | hej | hej | Mini-actionkamera | hej | hej | hej | hej | hej
 </tbody>
 </table>
 
-<h4 id="toc_9">Notes på olika klappar</h4>
+<h4 id="toc_8">Notes på olika klappar</h4>
 
 <ul>
 <li>De flesta klapparna som är populära i jul finns på coolstuff.se. Gjorde en rätt långdragen kartläggning av klappar som ledde mig till diverse hemsidor och retailers. Men 95% av alla dessa fanns ändå på coolstuff så antagligen kommer jag försöka hämta så mycket som möjligt från det här stället. Det öppnar också för att göra en scraper för att hämta all klappinfo. </li>
@@ -816,7 +812,7 @@ hej  | hej  | hej | hej | Mini-actionkamera | hej | hej | hej | hej | hej
 <li><p>¡Fråga! Om man vill använda kategorier så kan man antingen göra det till en kolumn med nominella data (en lista med alla valbara kategorier och endast en kan väljas åt gången), eller så gör man lika många kolumner som kategorier och tvingar dessa till att vara binära och hur hur många som helst kan sättas till TRUE för en klapp. Då det är jag som sätter varje datarad tvivlar jag på att jag kommer sätta en TRUE på mer än tre kategorier per klapp. Hursomhelst, med detta kan man tillåta tvetydiga presenter att ha mer än en etikett på sig. </p></li>
 </ul>
 
-<h3 id="toc_10">2. Extern data</h3>
+<h3 id="toc_9">2. Extern data</h3>
 
 <p>Det här rör demografiska data som kan ge ytterligare förklarande variabler. Exempelvis från postnummer. Kan det ge persona också så är det ju superbra. Vet att hitta.se har en livsstils app där de genom gatan kan få reda på medelinkomst, skuldsättning och vad folk på denna gata gillar i livet (vin, kultur, aktiehandel). </p>
 
@@ -829,7 +825,7 @@ hej  | hej  | hej | hej | Mini-actionkamera | hej | hej | hej | hej | hej
 * <input type="checkbox"> Deploya dataset som blob storage 
 -->
 
-<h3 id="toc_11">3. Intern data</h3>
+<h3 id="toc_10">3. Intern data</h3>
 
 <p>Detta gäller främst insamling från anställda på forefront med målet att få med de grundläggande <strong>förklarande variablerna</strong> och <strong>svarsvariabeln</strong>. </p>
 
@@ -846,7 +842,7 @@ hej  | hej  | hej | hej | Mini-actionkamera | hej | hej | hej | hej | hej
 * <input type="checkbox"> Bestäm formulärelement
 -->
 
-<h4 id="toc_12">3.ii Förslag på grundläggande data (formuläret)</h4>
+<h4 id="toc_11">3.ii Förslag på grundläggande data (formuläret)</h4>
 
 <table>
 <thead>
@@ -926,15 +922,15 @@ hej  | hej  | hej | hej | Mini-actionkamera | hej | hej | hej | hej | hej
 </tbody>
 </table>
 
-<h3 id="toc_13">Notes</h3>
+<h3 id="toc_12">Notes</h3>
 
 <ul>
-<li>~~Alla presenter som ska föreslås, det är ju också ett arbete att ta fram! Kolla årets julklappar någonstans? Göra en lista på vanliga butiker som folk köper klappar på eller kika på enstaka artiklar som varit populära på sistone. Har amazon sån data?~~ Lista påbörjad med diverse länkar. Mestadels kommer dock från Coolstuff i dagsläget pga enkelheten och att de täcker det mesta som alla andra bara täcker in delvis. </li>
+<li><del>Alla presenter som ska föreslås, det är ju också ett arbete att ta fram! Kolla årets julklappar någonstans? Göra en lista på vanliga butiker som folk köper klappar på eller kika på enstaka artiklar som varit populära på sistone. Har amazon sån data?</del> Lista påbörjad med diverse länkar. Mestadels kommer dock från Coolstuff i dagsläget pga enkelheten och att de täcker det mesta som alla andra bara täcker in delvis. </li>
 <li>Jag kan samla in all interna data från Forefront. Klurigt hur det kan gå till med feedback-loopen. Man kan tänka sig att alla matar in information om flera klappar, om inte alla! Det kunde vara t.ex. en sorts godkännande/bortkastande eller rangordning av klappar. Visar man många tänker jag att det förstnämnda är lättare. Visar man det sistnämnda så är det nog bättre med färre. Det förstnämnda innebär dock problem i hur du konstruerar responsvariabeln och val av ML approach. <mark>Se diskussioner nedan kring konstruktion av detta med insikt kring hur olika Azure-modeller fungerar.</mark></li>
-<li>~~Om man skulle ge en del alternativ för folk som samlar in data, vad påverkar det att man inte ger alla alternativen? Vi kanske har 50 klappar på lager men vi vill bara att en person ska på sin höjd få tre förslag som den ska ta ställning till om den tycker det är vettiga förslag eller ej. Då kan man ju inte köra one-vs-all för personen har inte tagit ställning till alla andra alternativ när den bestämmer sig för just en.~~</li>
+<li><del>Om man skulle ge en del alternativ för folk som samlar in data, vad påverkar det att man inte ger alla alternativen? Vi kanske har 50 klappar på lager men vi vill bara att en person ska på sin höjd få tre förslag som den ska ta ställning till om den tycker det är vettiga förslag eller ej. Då kan man ju inte köra one-vs-all för personen har inte tagit ställning till alla andra alternativ när den bestämmer sig för just en.</del></li>
 </ul>
 
-<h2 id="toc_14"><a name="azure"></a>Azure</h2>
+<h2 id="toc_13"><a name="azure"></a>Azure</h2>
 
 <!--
 ### Aktiviteter
@@ -946,7 +942,7 @@ hej  | hej  | hej | hej | Mini-actionkamera | hej | hej | hej | hej | hej
 * <input type="checkbox"> Deploy web service och hooka på i hemsidan.
 -->
 
-<h3 id="toc_15">Alternativ</h3>
+<h3 id="toc_14">Alternativ</h3>
 
 <p>Jag har lämnat approachen med att använda mig av ett matchbox recommender system. Se nedan för mer info kring det. Har även lämnat classification-området och använder mig nu av regression models. </p>
 
@@ -984,7 +980,7 @@ hej  | hej  | hej | hej | Mini-actionkamera | hej | hej | hej | hej | hej
 </tbody>
 </table>
 
-<h3 id="toc_16">a) Regression models</h3>
+<h3 id="toc_15">a) Regression models</h3>
 
 <p>Predikterar man rating så är det en regressionsmodell jag är ute efter. Jag byggde ett dataset på sättet ovan där varje användare utgör flera rader om de rateat flera items. Här är då rating det jag vill prediktera och använder både user features och item features på detta sättet. Det är det närmaste en matchbox recommender jag kan komma. </p>
 
@@ -1013,7 +1009,7 @@ Den här visar en del av modellen där själva träningsmodellerna är uppradade
 
 <p><img src="Images/Webservice-result.png" alt="webservice result"></p>
 
-<h4 id="toc_17">Web service credentials</h4>
+<h4 id="toc_16">Web service credentials</h4>
 
 <p>För att komma åt informationen kopplat till den hittills deployade modellen går man till <a href="https://goo.gl/JUQhAZ">följande länk.</a></p>
 
@@ -1022,11 +1018,11 @@ Den här visar en del av modellen där själva träningsmodellerna är uppradade
 <li>Men även API-nyckeln</li>
 </ul>
 
-<h3 id="toc_18">b) Classifiers</h3>
+<h3 id="toc_17">b) Classifiers</h3>
 
 <!--<span style="display:block;background:pink;width:13em;padding:4pt" onclick="hide('classifiers')">Klicka för att se mer \/</span>-->
 
-<h4 id="toc_19">1. Multiclass classifier</h4>
+<h4 id="toc_18">1. Multiclass classifier</h4>
 
 <p><em>Inte aktuellt längre.</em></p>
 
@@ -1037,7 +1033,7 @@ Den här visar en del av modellen där själva träningsmodellerna är uppradade
     * Multiclass decision jungle, också nytt för mig här.
 -->
 
-<h4 id="toc_20">2. One-vs-all w. two-class classifier</h4>
+<h4 id="toc_19">2. One-vs-all w. two-class classifier</h4>
 
 <p><em>Inte aktuellt längre.</em></p>
 
@@ -1050,7 +1046,7 @@ Den här visar en del av modellen där själva träningsmodellerna är uppradade
 * Eventuellt också Two-class decision jungle, inte prövat tidigare. 
 -->
 
-<h4 id="toc_21">3. Neural net classifier</h4>
+<h4 id="toc_20">3. Neural net classifier</h4>
 
 <p><em>Inte aktuellt längre</em></p>
 
@@ -1060,7 +1056,7 @@ Osäker på hur det hade gått till med hela retraining-biten. Jag är van vid a
 MEN! Ska man bara retraina en gång om dagen så kan ett neuralt nät fungera hur bra som helst. Dock osäker på upplägget av kombinationen mellan användarfeatures -> klappfeatures -> och svarsvariabel av användaren om varje klapp.
 -->
 
-<h4 id="toc_22">4. Hybrid matchbox recommender</h4>
+<h4 id="toc_21">4. Hybrid matchbox recommender</h4>
 
 <p><em>Inte aktuellt längre</em></p>
 
@@ -1077,7 +1073,7 @@ Använder man Azure Matchbox recommender så ska man veta vilka två typer det f
 * En recommender kräver ett smart upplägg på inparametrarna. Se [den här](https://msdn.microsoft.com/library/azure/55544522-9a10-44bd-884f-9a91a9cec2cd?f=255&MSPPError=-2147217396#ItemRecommendationOptions) beskrivningen för mer info. 
 -->
 
-<h2 id="toc_23"><a name="feedbackloop"></a>Feedback loop</h2>
+<h2 id="toc_22"><a name="feedbackloop"></a>Feedback loop</h2>
 
 <p>Hittills har mestadels av alla google-länkar lett mig till reinforcement learning (RL). Eftersom det känns som ett annat sorts problem (mer robotar och likheter mot reglerteknik), så har jag satt stopp för just den här grenen. Det jag i annat fall är ute efter är en modell som återtränas, t.ex. vissa klockslag under dagen eller efter ett visst antal svarsinlägg, detta relaterar till programmatic retraining av ens modell. </p>
 
@@ -1090,7 +1086,7 @@ Använder man Azure Matchbox recommender så ska man veta vilka två typer det f
 * <input type="checkbox"> Implementera lösning (ev. lite kodning jag inte är van vid)
 -->
 
-<h3 id="toc_24">Relevanta begrepp</h3>
+<h3 id="toc_23">Relevanta begrepp</h3>
 
 <ul>
 <li>RL (reinforcement learning).</li>
@@ -1098,36 +1094,61 @@ Använder man Azure Matchbox recommender så ska man veta vilka två typer det f
 <li>Programmatic retraining</li>
 </ul>
 
-<h3 id="toc_25">Programmatic retraining</h3>
+<h3 id="toc_24">Programmatic retraining</h3>
 
 <p>Retraining har Azure <a href="https://azure.microsoft.com/sv-se/documentation/articles/machine-learning-retrain-models-programmatically/">ett exempel</a> på hur man kan implementera för att <em>Retrain ML models programatically</em>. </p>
 
 <p>När man publishat sin modell (tränat) så kan man gå tillbaka till Training Experiment och lägga till en output module efter Train Model. Dock verkar det som att Microsofts dokumentation av Azure är för gammal för de har ändrat beteckningar på saker och ting. Kör Retraining web service, det borde ge samma resultat.
 <img src="Images/Azure_retraining.png" alt="Azure_retraining"></p>
 
-<h3 id="toc_26">Azure layout</h3>
+<h3 id="toc_25">Azure layout</h3>
 
 <p>Approachen kring retraining har jag satt till följande koncept.
 <img src="Images/Azure_layout.png" alt="Azure_layout"></p>
 
-<h3 id="toc_27">Notes</h3>
+<p>Hittills har jag lagt upp ett testexempel som använder sig av två C# console applications. Förfarandet gick till så här: </p>
+
+<ol>
+<li>Träna modell på testdata (3 sparade dataset, kommer i framtiden vara SQL-databasen som inmatade data blir sparade i).</li>
+<li>Gör ett predictive experiment med denna träningsmodell och deploya pred.experimentet som web service.
 
 <ul>
-<li>~~Problemet är att du på Azure till synes inte kan återträna modellen direkt. Och det verkar heller inte vara ett reinforcement learning problem, utan mer att varje ny person som svarar ger en till datarad.~~ Man kan återträna modellen direkt eller nästan direkt. 
+<li>Jag lade till en endpoint till denna predictive web service som ska användas för att updatera den tränade modellen som den använder för prediktion.</li>
+<li>Som sagt kommer inmatningskällor ändras till SQL-databas samt få web service input justerat så att användarna bara behöver mata in deras uppgifter och ge item ratings.</li>
+</ul></li>
+<li>Tillbaka till träningsmodellen lade jag till två web service outputs. Inte tre (alltså en input därtill) som i retrainingsexemplen som finns där ute. Jag vill träna på en och samma datakälla varje gång och det ska vara SQL-databasen. Denna modell kördes och sen deployades som web service.</li>
+<li>Nu har jag två web services. En [train][predictive exp.] och en <a href="nomenklatur%20p%C3%A5%20detta%20vis%20f%C3%B6r%20att%20visa%20att%20prediktionsexemplet%20%C3%A4r%20%22l%C3%A4nkat%22%20till%20den%20modell%20som%20%C3%A4r%20%5Btrain%5D">train</a>. 
+
+<ul>
+<li>Den första är riktad till användarna och den sista är den som ska spotta ut tränade modeller (format: .iLearner)</li>
+</ul></li>
+<li>Med ena konsolapplikationen kör jag en BES (batch execution service) på [train]-webservicen (se <a href="https://europewest.studio.azureml.net/Home/ViewWorkspace/0c8371e1485946f48a61b4bdd4f07c2c?#Workspaces/WebServiceGroups/WebServiceGroup/257abfa4919e4282a4953cfff2d1a6d3/dashboard">här</a>). Detta spottar ut en .iLearner och en .csv som visar evalueringsresultaten. Det lagras i en blob storage på Azure (konto: analyticsanta, mapp: test/).</li>
+<li>Med den andra konsolapplikationen gör jag en Update Resource med en PATCH på URI:n som hittas på den endpoint som heter <strong><em>Retrain</em></strong> för [train][predictive exp.]-webservicen (se <a href="https://manage.windowsazure.com/ffcg.se#Workspaces/MachineLearningExtension/Workspace/analytic-santa/WebService/9f25b7cfe2cb46f19fa50ff60b85df73/Endpoint/retrain/Dashboard">här</a>). Detta ersätter den tränade modell som prediktionsmodellen använder. 
+
+<ul>
+<li>I framtiden kan man försöka kolla ifall evalueringsresultaten är bättre än den nuvarande modellens resultat. .csv-filen ligger kvar i blob-storageutrymmet så man hade kunnat hämta och parsea den för jämförelse och beslut om ersättning av modell. </li>
+</ul></li>
+<li>Tanken är att användaren matar in sina uppgifter och sen får ta ställning till en klapp i taget. Testanvändarna får ta ställning till alla klappar. De riktiga användarna får predikterat några klappar på sina uppgifter varpå deras rating av dessa klappar blir sparade i huvuddatabasen tillsammans med deras uppgifter.</li>
+<li>När man vill återträna modellen är det i dagsläget bara att köra de två scripten. I framtiden vill jag ha det integrerat i hemsidan så att återträningen kan köras precis hur ofta man vill. I praktiken kan man be om en återträning efter varje persons submit eftersom bytet av modell sker utan att man vet om det som användare. Helst skulle det då endast bytas om modellen är bättre en den nuvarande, vilket hade sparat kraft. </li>
+</ol>
+
+<h3 id="toc_26">Notes</h3>
+
+<ul>
+<li><del>Problemet är att du på Azure till synes inte kan återträna modellen direkt. Och det verkar heller inte vara ett reinforcement learning problem, utan mer att varje ny person som svarar ger en till datarad.</del> Man kan återträna modellen direkt eller nästan direkt. 
 
 <ul>
 <li>Eventuellt hade man kunnat lägga upp två modeller där ena är igång när den andra tränas.</li>
 <li>Det kan vara så att det går jättebra att träna modellen direkt efter ett svar kommit in och att det fungerar medan folk använder hemsidan. Man kan göra en avvägning när man ska byta ut endpointen -&gt; Är den nya modellen bättre? Ja -&gt; Är det någon som använder modellen nu? Ja -&gt; Kolla igen om x minuter. </li>
 </ul></li>
 <li>Feedback loopen hänger lite på vad man vill prediktera. T.ex. vill man prediktera om det är antingen en bra eller dålig julklapp att ge så är det binär feedback man vill få, alltså vad man själv tror om klappens hållbarhet framför granen. Vill man prediktera något i stil med likelyhood eller hur bra en present är så är det mer en skala man förhåller sig till och därav kanske frågar om vad man tror hållbarheten är på en skala mellan 1-10. </li>
-<li>~~Ska man kanske ska få en del alternativ och ge feedback på alla dessa? Det snabbar ju upp processen. Om det är genomförbart kanske man kan ge feedback på alla utifrån den persona som är aktuell. Dock kan det bli för tidsödande.~~ Alla som hjälper till med datainsamling måste ta ställning till alla presenter. När man kör lösningen kanske man bara får en del eller en present.</li>
-<li>~~Ev. efterforskning på annan lösning. Där har t.ex. deployment av hemsida med R genom <a href="https://www.opencpu.org/apps.html">OpenCPU</a> varit ett alternativ. Dock kan det ta ifrån den enkelheten som det innebär att arbeta med Azure i grunden. Men eftersom man kan arbeta med R mer direkt på hemsidan så kan man eventuellt implementera feedback-loopen lättare (aka mer som man vill).~~ Satsar på OpenCPU i senare projekt.</li>
-<li>Är publish web service samma sak som set up web service eller är det samma sak som publish to gallery? Det är det ingen som vet. Det är även så att när man trycker på &#39;set up web service&#39; idag så kan du välja mellan att köra &#39;predictive experiment&#39; eller &#39;retraining web service&#39;. Det sistnämnda gör det som Microsofts dokumentation ber en om fast automatiskt. Väldigt väldigt otydligt och rentav irriterande.</li>
+<li><del>Ska man kanske ska få en del alternativ och ge feedback på alla dessa? Det snabbar ju upp processen. Om det är genomförbart kanske man kan ge feedback på alla utifrån den persona som är aktuell. Dock kan det bli för tidsödande.</del> Alla som hjälper till med datainsamling måste ta ställning till alla presenter. När man kör lösningen kanske man bara får en del eller en present.</li>
+<li><del>Ev. efterforskning på annan lösning. Där har t.ex. deployment av hemsida med R genom <a href="https://www.opencpu.org/apps.html">OpenCPU</a> varit ett alternativ. Dock kan det ta ifrån den enkelheten som det innebär att arbeta med Azure i grunden. Men eftersom man kan arbeta med R mer direkt på hemsidan så kan man eventuellt implementera feedback-loopen lättare (aka mer som man vill).</del> Satsar på OpenCPU i senare projekt.</li>
 </ul>
 
-<h2 id="toc_28"><a name="hemsidan"></a>Hemsidan</h2>
+<h2 id="toc_27"><a name="hemsidan"></a>Hemsidan</h2>
 
-<h3 id="toc_29">Front-end</h3>
+<h3 id="toc_28">Front-end</h3>
 
 <!--
 #### Aktiviteter
@@ -1140,30 +1161,30 @@ Använder man Azure Matchbox recommender så ska man veta vilka två typer det f
 * <input type="checkbox"> Implementera HTML/CSS
 -->
 
-<h4 id="toc_30">Color palette</h4>
+<h4 id="toc_29">Color palette</h4>
 
 <p><img src="Images/color_palette.png" alt="Color_palette">
 • F5624D • CC231E • 34A65F • 0F8A5F • 235E6F</p>
 
-<h4 id="toc_31">Start view</h4>
+<h4 id="toc_30">Start view</h4>
 
 <p>Den här vyn baseras dels på att du vet vilket steg du befinner dig i, men även en horisontell accordion. Hade dock kunnat vara kul att göra om det här konceptet till din resultat-vy. Idén går ut på att klapparna gömmer sig bakom varje fält och när man trycker på en så åker fältet fram som accordion och klappen exponeras. Väl där får man rate:a klappen eller vad som nu bestäms. 
 <img src="Images/front_page.png" alt="Front_page_draft"></p>
 
-<h4 id="toc_32">User properties view</h4>
+<h4 id="toc_31">User properties view</h4>
 
 <p>Användaren kan börja med att mata in det som blir rena demografiska variabler. Nästa steg kan bli mer frågor som är roliga. </p>
 
-<h4 id="toc_33">Question view</h4>
+<h4 id="toc_32">Question view</h4>
 
 <p>Konceptuellt handlar det om att ha någon progress bar och lite fält med användarvänliga formulär-element. I det här fallet är det bara boxar för ja/nej. Lämpligt är att rita upp formulärstrukturen för sig själv. 
 <img src="Images/Form_w_progress.png" alt="Form_w_progress"></p>
 
-<h4 id="toc_34">Results view</h4>
+<h4 id="toc_33">Results view</h4>
 
 <p>Den här vyn hänger mycket på hur man vill konstruera svarsvariabeln. Detta då det här steget behöver vara dels genomförbart och kul att göra, samt ge data som faktiskt hjälper en att prediktera presenter. </p>
 
-<h3 id="toc_35">Back-end</h3>
+<h3 id="toc_34">Back-end</h3>
 
 <!--
 #### Aktiviteter
@@ -1175,7 +1196,7 @@ Använder man Azure Matchbox recommender så ska man veta vilka två typer det f
 * <input type="checkbox"> Implementera kodlösningen för automatisk programmatisk retraining genom hemsidan.
 -->
 
-<h2 id="toc_36">Länkar osv.</h2>
+<h2 id="toc_35">Länkar osv.</h2>
 
 <ul>
 <li><a href="http://www.slideshare.net/WorapotJakkhupan/308471-ch5-machine-learning-using-microsoft-azure/20">Slideshare:: Azure</a></li>
