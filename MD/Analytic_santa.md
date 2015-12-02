@@ -137,6 +137,8 @@ Genus influence | `{Male, Female, Both}[NOMINAL]` | `genusType`
 Is nerdy?	| `{0, 1}[BINARY]` | `isNerdy`
 Is more for adolescents? | `{0, 1}[BINARY]` | `isChildItem`
 
+Man hade eventuellt också behövt lagra en bild, vilket kan göras i BLOB-formatet. Efterforskning på hur man displayar en sådan bild kan eventuellt behöva göras. 
+
 #### Notes på olika klappar
 
 * De flesta klapparna som är populära i jul finns på coolstuff.se. Gjorde en rätt långdragen kartläggning av klappar som ledde mig till diverse hemsidor och retailers. Men 95% av alla dessa fanns ändå på coolstuff så antagligen kommer jag försöka hämta så mycket som möjligt från det här stället. Det öppnar också för att göra en scraper för att hämta all klappinfo. 
