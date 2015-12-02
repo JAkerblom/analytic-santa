@@ -182,6 +182,10 @@ table {
 img {
   max-width: 100%; }
 
+span.resize img {max-width:50%;}
+
+span.resize {}
+
 span.frame {
   display: block;
   overflow: hidden; }
@@ -302,8 +306,157 @@ sup {
 	}
 }
 </style>
+<style type="text/css">
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #a67f59;
+	background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+.token.function {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+</style>
 </head>
 <body>
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script>
+    function hide() {
+        //$(this).parent().css('display','none')
+        $('#classifiers').css('display','none');
+        console.log("hi there");
+        console.log($('classifiers'));
+    }
+</script>-->
+
 <h1 id="toc_0">Analytic santa - anteckningar</h1>
 
 <p><span style="color:#464646;font-size:1.4em;">
@@ -324,12 +477,13 @@ Webpage link :: <a href="http://ffcg-analyticsanta.azurewebsites.net/">ffcg-anal
 <li>Efterforskning/implementering av ML-modell i Azure 
 
 <ul>
-<li><mark>Multiclass</mark> vs <del>One-vs-all vs Neural net</del> vs <mark>Matchbox recommender</mark> </li>
+<li>Regression models: <mark>Neural net</mark> vs Decision forest/tree vs Bayesian</li>
+<li>~~Classifiers: Multiclass vs One-vs-all vs Neural net vs Matchbox recommender~~</li>
 </ul></li>
 <li>Efterforskning/implementering av feedback loop <a href="#feedbackloop">--&gt;</a>
 
 <ul>
-<li><del>Reinforcement learning vs Online learning</del> vs <mark>Programmatic retraining</mark> </li>
+<li>~~Reinforcement learning vs Online learning~~ vs <mark>Programmatic retraining</mark> </li>
 </ul></li>
 <li>Hemsida 
 
@@ -344,7 +498,7 @@ Webpage link :: <a href="http://ffcg-analyticsanta.azurewebsites.net/">ffcg-anal
 <li>Back-end
 
 <ol>
-<li>Lagring av inmatning och resultat i SQL vs <del>NoSQL vs Blob storage</del> <br><code>jQuery-&gt;Ajax-&gt;PHP?? Bättre tips? Osäker på Node.JS och MongoDB</code></li>
+<li>Lagring av inmatning och resultat i SQL vs ~~NoSQL vs Blob storage~~ <br><code>jQuery-&gt;Ajax-&gt;PHP?? Bättre tips? Osäker på Node.JS och MongoDB</code></li>
 <li>API-kommunikation mot deployed Azure ML web service <br><code>jQuery-&gt;Ajax-&gt;PHP , har jag använt i amd-hemsidan.</code></li>
 <li>Programatic retraining (se feedback loop) <br><code>C# script??</code></li>
 <li><strong>Bootstrapped och helhet enligt MVC</strong> <br> <code>Azure-&gt;ASP.NET MVC4 kommer kräva upplärning.</code></li>
@@ -371,13 +525,13 @@ Webpage link :: <a href="http://ffcg-analyticsanta.azurewebsites.net/">ffcg-anal
 <tbody>
 <tr>
 <td>Data: Klappar</td>
-<td><input type="checkbox"> Kartläggning av klappar</td>
+<td><input type="checkbox" checked> Kartläggning av klappar</td>
 <td>5h</td>
 </tr>
 <tr>
 <td></td>
-<td><input type="checkbox"> Insamling av bilder från klappar</td>
-<td>2h</td>
+<td><input type="checkbox"> Insamling av bilder från klappar (kopplat till nästa och ev. relaterat till scraping)</td>
+<td>2h (3h)</td>
 </tr>
 <tr>
 <td></td>
@@ -401,12 +555,12 @@ Webpage link :: <a href="http://ffcg-analyticsanta.azurewebsites.net/">ffcg-anal
 </tr>
 <tr>
 <td>Data: Intern</td>
-<td><input type="checkbox"> Kom på vettiga/roliga frågor</td>
+<td><input type="checkbox" checked> Kom på vettiga/roliga frågor (kan behöva några till)</td>
 <td>4h</td>
 </tr>
 <tr>
 <td></td>
-<td><input type="checkbox"> Bestäm frågornas datatyper</td>
+<td><input type="checkbox" checked> Bestäm frågornas datatyper</td>
 <td>1h</td>
 </tr>
 <tr>
@@ -416,18 +570,18 @@ Webpage link :: <a href="http://ffcg-analyticsanta.azurewebsites.net/">ffcg-anal
 </tr>
 <tr>
 <td>Azure</td>
-<td><input type="checkbox"> Bestämma approach</td>
-<td>- (1d research)</td>
+<td><input type="checkbox" checked> Bestämma approach</td>
+<td>- (1d research) -&gt; Tog 3d med återvändsgränden</td>
 </tr>
 <tr>
 <td></td>
-<td><input type="checkbox"> Bygga testdataset för test av genomförbarhet. Speciellt fokus på svarsvariabeln.</td>
+<td><input type="checkbox" checked> Bygga testdataset för test av genomförbarhet. Speciellt fokus på svarsvariabeln.</td>
 <td>4h</td>
 </tr>
 <tr>
 <td></td>
-<td><input type="checkbox"> Bygg modell</td>
-<td>5h</td>
+<td><input type="checkbox" checked> Bygg modell</td>
+<td>5h (totaltid är dagar)</td>
 </tr>
 <tr>
 <td></td>
@@ -441,16 +595,21 @@ Webpage link :: <a href="http://ffcg-analyticsanta.azurewebsites.net/">ffcg-anal
 </tr>
 <tr>
 <td>Feedback loop</td>
-<td><input type="checkbox"> Välj approach till feedback loop</td>
+<td><input type="checkbox" checked> Välj approach till feedback loop</td>
 <td>- (1d research)</td>
 </tr>
 <tr>
 <td></td>
 <td><input type="checkbox"> Implementera lösning</td>
-<td>2d</td>
+<td>2d (förhoppningsvis kortare)</td>
 </tr>
 <tr>
 <td>Webb: Front-end</td>
+<td><input type="checkbox"> Research kring hur man bygger en hemsida i .NET (krisar det struntar jag i .NET och fulkodar det som hemsidan till arbetsmarknadsdagarna)</td>
+<td>2d (värmt upp med två dagars research)</td>
+</tr>
+<tr>
+<td></td>
 <td><input type="checkbox"> Välj tema</td>
 <td>5h</td>
 </tr>
@@ -481,7 +640,7 @@ Webpage link :: <a href="http://ffcg-analyticsanta.azurewebsites.net/">ffcg-anal
 </tr>
 <tr>
 <td>Webb: Back-end</td>
-<td><input type="checkbox"> Bestäm lagringsmetod för input-data (går mot retraining-biten)</td>
+<td><input type="checkbox" checked> Bestäm lagringsmetod för input-data (går mot retraining-biten)</td>
 <td>4h</td>
 </tr>
 <tr>
@@ -516,46 +675,178 @@ Webpage link :: <a href="http://ffcg-analyticsanta.azurewebsites.net/">ffcg-anal
 
 <h3 id="toc_5">1. Klappdata (artiklar)</h3>
 
-<p>Man hade exempelvis kunnat gå efter någon stor aktör som Amazon som <a href="http://www.madeformums.com/news-and-gossip/must-have-toys-for-christmas-from-the-biggest-sellers/30958.html">predikterar</a> bra presenter. Eller så tar man något mer som är mer eller mindre tillgängligt i Sverige och är mer sannolikt en populär klapp pga interna trender. </p>
+<p>Man hade exempelvis kunnat gå efter någon stor aktör som Amazon som <a href="http://www.madeformums.com/news-and-gossip/must-have-toys-for-christmas-from-the-biggest-sellers/30958.html">predikterar</a> bra presenter. Eller så tar man något mer som är mer eller mindre tillgängligt i Sverige och är mer sannolikt en populär klapp pga interna trender. Håller man sig till fem presenter inom varje borde det bli 50 presenter. Dock kanske det blir snedvriden data sen om man tar för många presenter inom en kategori som ändå väldigt få kan tänka sig att välja. </p>
 
-<h4 id="toc_6">1.i Aktiviteter</h4>
+<!--
+#### 1.i Aktiviteter
+* <input type="checkbox"> Kartläggning av klappar
+* <input type="checkbox"> Insamling av bilder från klappar
+* <input type="checkbox"> Insamling av beskrivning/titel/pris/grupp (lite datadrivet eftersom det kan ge förklarande variabler)
+-->
+
+<h4 id="toc_6">Bästa julklapparna i år</h4>
+
+<p>Den 24 november avslöjas årets julklapp så det kan man hålla ögonen öppna på. För resterande hög av julklappar som ska samlas in så borde en blandning mellan efterforskning på amazon/prisjakt samt kartläggning av största butikerna i Sverige ge en bra täckning av klappar. </p>
+
+<h4 id="toc_7">Kategorier</h4>
+
+<p>Om man går efter olika segment inom detaljhandeln så kan man kategorisera samtidigt som man får tillgång till andra data. Detta utgörs då av:</p>
 
 <ul>
-<li><input type="checkbox"> Kartläggning av klappar</li>
-<li><input type="checkbox"> Insamling av bilder från klappar</li>
-<li><input type="checkbox"> Insamling av beskrivning/titel/pris/grupp (lite datadrivet eftersom det kan ge förklarande variabler)</li>
+<li>kläder </li>
+<li>skor</li>
+<li>möbler</li>
+<li>heminredning</li>
+<li>elektronik</li>
+<li>järn/bygg </li>
+<li>böcker</li>
+<li>smycken </li>
+<li>sport och fritid</li>
+<li>leksaker</li>
 </ul>
 
-<h3 id="toc_7">2. Extern data</h3>
+<p><img src="Images/Detaljhandel.jpg" alt="Detaljhandeln"></p>
+
+<!--
+Kläder  | Skor  | Möbler | Heminredning | Elektronik | Järn/bygg | Böcker | Smycken | Sport | Leksaker
+---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ----
+hej  | hej  | hej | hej | Drönare | hej | hej | hej | hej | hej
+hej  | hej  | hej | hej | 3D-skrivare | hej | hej | hej | hej | hej
+hej  | hej  | hej | hej | Smart watch | hej | hej | hej | hej | hej
+hej  | hej  | hej | hej | Mini-actionkamera | hej | hej | hej | hej | hej
+-->
+
+<p>På hittajulklappar.nu så har de lite andra kategorier (nedan). Det kan vara värt att försöka gruppera alla julklappar jag tar fram enligt båda dessa kategorisamlingar. Antingen tillsammans eller var för sig. Det kan exempelvis vara svårt att kategorisera &#39;Donation till gott ändamål&#39;. Eller en elektronisk pryl som quadcopter vilken kan vara både en billig och dyr julklapp.</p>
+
+<ul>
+<li>Billiga julklappar</li>
+<li>Exklusiva julklappar</li>
+<li>Böcker &amp; tidningar</li>
+<li>Köksprylar</li>
+<li>Personliga julklappar</li>
+<li>Retroprylar</li>
+<li>Roliga julklappar</li>
+<li>Smarta prylar</li>
+<li>Spel &amp; pussel</li>
+<li>Teknikprylar</li>
+<li>Till hemmet</li>
+<li>Träning &amp; hälsa</li>
+<li>Upplevelsepresenter</li>
+</ul>
+
+<h4 id="toc_8">Item meta</h4>
+
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Värden</th>
+<th>Beteckning</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Namn</td>
+<td><code>{string}[NOMINAL]</code></td>
+<td><code>iName</code></td>
+</tr>
+<tr>
+<td>Pris</td>
+<td><code>{number}[REAL]</code></td>
+<td><code>iPrice</code></td>
+</tr>
+<tr>
+<td>PrisGrupp</td>
+<td><code>{1,2,3,4,5n}[ORDINAL]</code></td>
+<td><code>iPriceGroup</code></td>
+</tr>
+<tr>
+<td>Category</td>
+<td><code>{stringlist}[NOMINAL]</code></td>
+<td><code>iCategory</code></td>
+</tr>
+<tr>
+<td>Is Sports?</td>
+<td><code>{0, 1}[BINARY]</code></td>
+<td><code>isCatSports</code></td>
+</tr>
+<tr>
+<td>Is Electronics?</td>
+<td><code>{0, 1}[BINARY]</code></td>
+<td><code>isCatElectronics</code></td>
+</tr>
+<tr>
+<td>...</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Genus influence</td>
+<td><code>{Male, Female, Both}[NOMINAL]</code></td>
+<td><code>genusType</code></td>
+</tr>
+<tr>
+<td>Is nerdy?</td>
+<td><code>{0, 1}[BINARY]</code></td>
+<td><code>isNerdy</code></td>
+</tr>
+<tr>
+<td>Is more for adolescents?</td>
+<td><code>{0, 1}[BINARY]</code></td>
+<td><code>isChildItem</code></td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="toc_9">Notes på olika klappar</h4>
+
+<ul>
+<li>De flesta klapparna som är populära i jul finns på coolstuff.se. Gjorde en rätt långdragen kartläggning av klappar som ledde mig till diverse hemsidor och retailers. Men 95% av alla dessa fanns ändå på coolstuff så antagligen kommer jag försöka hämta så mycket som möjligt från det här stället. Det öppnar också för att göra en scraper för att hämta all klappinfo. </li>
+<li>Man kan fråga om de har djur och plocka någon kul djurpresent ( ex. <a href="https://hittajulklappar.nu/p/automatisk-apportkanon/">apport</a>)</li>
+<li>Media / Fotografering kan ju vara ett intresse. Mini-actionkameran är en, men digital polaroidkamera kanske är något (ex. <a href="https://hittajulklappar.nu/p/kompakt-digital-polaroidkamera/">här</a>?</li>
+<li>Pysslig? 4D-pussel kan vara en hit (ex. <a href="https://hittajulklappar.nu/p/4d-pussel-paris/">här</a>), eller 3D-varianten (ex. <a href="https://hittajulklappar.nu/p/eiffeltornet-3d-pussel/">här</a>).</li>
+<li>Morgontrött? Väckarklocka som gör det lite svårare för en (ex. <a href="https://hittajulklappar.nu/p/flygande-vackarklocka/">här</a>).</li>
+<li>Städfreak? Moppa med fötterna (ex. <a href="https://hittajulklappar.nu/p/mopptofflor/">här</a>).</li>
+<li>Klantig i köket? Skärsäkra handskar (ex. <a href="">här</a>https://hittajulklappar.nu/p/kokshandske-skarsaker/).</li>
+<li>Skäggmössa för barn. Solklar. (ex. <a href="https://hittajulklappar.nu/p/skaggmossa-for-barn/">här</a>).</li>
+<li>Sällskapsspel? Schack för tre (ex. <a href="https://hittajulklappar.nu/p/schack-tre/">här</a>).</li>
+<li>Ung och åt teknikhållet? Bygg-det-själv bergochdalbana (ex. <a href="https://hittajulklappar.nu/p/spacerail-berg-och-dalbana-kula/">här</a>).</li>
+<li><p>Quadcopters! <a href="http://www.hobbex.se/sv/artiklar/radiostyrt/multirotor/index.html?utm_source=adtraction&amp;utm_medium=affiliate&amp;utm_campaign=adtraction">här</a>.</p></li>
+<li><p>¡Fråga! Om man vill använda kategorier så kan man antingen göra det till en kolumn med nominella data (en lista med alla valbara kategorier och endast en kan väljas åt gången), eller så gör man lika många kolumner som kategorier och tvingar dessa till att vara binära och hur hur många som helst kan sättas till TRUE för en klapp. Då det är jag som sätter varje datarad tvivlar jag på att jag kommer sätta en TRUE på mer än tre kategorier per klapp. Hursomhelst, med detta kan man tillåta tvetydiga presenter att ha mer än en etikett på sig. </p></li>
+</ul>
+
+<h3 id="toc_10">2. Extern data</h3>
 
 <p>Det här rör demografiska data som kan ge ytterligare förklarande variabler. Exempelvis från postnummer. Kan det ge persona också så är det ju superbra. Vet att hitta.se har en livsstils app där de genom gatan kan få reda på medelinkomst, skuldsättning och vad folk på denna gata gillar i livet (vin, kultur, aktiehandel). </p>
 
-<h4 id="toc_8">2.i Aktiviteter</h4>
+<p>Jag har ännu inte dykt ner i det här, men jag tänker hålla mig till att göra det enkelt. Den informationen jag får ut av SCB ska jag så klart försöka hämta så många potentiella variabler ifrån, men tänker inte lägga för mycket tid på det. Lyckas jag få ut snittinkomst och partitillhörighet så är jag rätt nöjd och hoppas det lyfter resultatet något. </p>
 
-<ul>
-<li><input type="checkbox"> Ta fram dataset från lämplig datakälla (SCB?)</li>
-<li><input type="checkbox"> Strukturera dataset och gör om eventuella features till lämplig datatyp. Inkomst -&gt; Inkomstgrupp, till exempel.</li>
-<li><input type="checkbox"> Deploya dataset som blob storage </li>
-</ul>
+<!--
+#### 2.i Aktiviteter
+* <input type="checkbox"> Ta fram dataset från lämplig datakälla (SCB?)
+* <input type="checkbox"> Strukturera dataset och gör om eventuella features till lämplig datatyp. Inkomst -> Inkomstgrupp, till exempel.
+* <input type="checkbox"> Deploya dataset som blob storage 
+-->
 
-<h3 id="toc_9">3. Intern data</h3>
+<h3 id="toc_11">3. Intern data</h3>
 
 <p>Detta gäller främst insamling från anställda på forefront med målet att få med de grundläggande <strong>förklarande variablerna</strong> och <strong>svarsvariabeln</strong>. </p>
 
 <ul>
-<li><strong>Svarsvariabelns</strong> utformning beror på om man har reinforcement learning som utgångspunkt eller ren retraining av modellen. Det förstnämnda innebär en plus/minus-poäng till predikteringen. Det sistnämnda innebär att feedback-svaret är det som predikteras. I det fallet kan man t.ex. prediktera binärt (&quot;var det en bra gissning tycker du?&quot;) eller ordinalt (&quot;hur bra var den här gissningen på en skala från 1-5?&quot;). Då handlar det om att gissa en skala och välja det alternativ som ger maximal siffra på skalan. </li>
-<li>Hade varit kul också att göra lite roliga frågor oavsett om de är vettiga variabler i slutändan. Vissa kan ju visa sig ge entropi, tänk bayes. </li>
+<li><strong>Svarsvariabelns</strong> utformning beror på om man har reinforcement learning som utgångspunkt eller ren retraining av modellen. Det förstnämnda innebär en plus/minus-poäng till predikteringen. Det sistnämnda innebär att feedback-svaret är det som predikteras. I det fallet kan man t.ex. prediktera binärt (&quot;var det en bra gissning tycker du?&quot;) eller ordinalt (&quot;hur bra var den här gissningen på en skala från 1-5?&quot;). Då handlar det om att gissa en skala och välja det alternativ som ger maximal siffra på skalan. Dock är jag osäker på hur den här aspekten kan implementeras i Azure då den till synes inte kan göra om features till ordinala. Det är antingen categorical eller inte, och så kan man ställa in vilken datatyp (integer, float, string, etc). </li>
+<li>För de <strong>förklarande variablerna</strong> hade det varit kul att göra lite roliga frågor oavsett om de är vettiga variabler i slutändan. Vissa kan ju visa sig ge entropi, tänk bayes. Nedan är några förslag. Kommer lägga mer tid på denna när jag väl bygger formuläret i hemsidan. Det kanske uppenbarar sig mer då. Men ska försöka mixa så mycket bland datatyperna som möjligt så att det blir lite roligare för användaren än bara exempelvis binära formulärfält. </li>
 </ul>
 
-<h4 id="toc_10">3.i Aktiviteter</h4>
+<!--
+#### 3.i Aktiviteter
 
-<ul>
-<li><input type="checkbox"> Kom på vettiga och roliga frågor</li>
-<li><input type="checkbox"> Bestäm frågornas datatyper</li>
-<li><input type="checkbox"> Bestäm formulärelement</li>
-</ul>
+* <input type="checkbox"> Kom på vettiga och roliga frågor
+* <input type="checkbox"> Bestäm frågornas datatyper
+* <input type="checkbox"> Bestäm formulärelement
+-->
 
-<h4 id="toc_11">3.ii Förslag på grundläggande data (formuläret)</h4>
+<h4 id="toc_12">3.ii Förslag på grundläggande data (formuläret)</h4>
 
 <table>
 <thead>
@@ -613,105 +904,193 @@ Webpage link :: <a href="http://ffcg-analyticsanta.azurewebsites.net/">ffcg-anal
 <td><code>chocolatePref</code></td>
 </tr>
 <tr>
+<td>Alt. Vit/Mörk/Mjölkchocklad?</td>
+<td><code>{Vit, Mörk, Mjölk, Inget}[NOMINAL]</code></td>
+<td><code>chocolatePref</code></td>
+</tr>
+<tr>
 <td>Tror på tomten</td>
 <td><code>{Y, N, ?}[NOMINAL::BINARY]</code></td>
 <td><code>santaBelief</code></td>
 </tr>
+<tr>
+<td>Hund eller katt?</td>
+<td><code>{0, 1, ?}[NOMINAL::BINARY]</code></td>
+<td><code>prefersDog</code></td>
+</tr>
+<tr>
+<td>Intressen</td>
+<td>Kan vara svår. Tänk om personen inte tycker om något av det jag föreslår.</td>
+<td><code>interests</code></td>
+</tr>
 </tbody>
 </table>
 
-<h3 id="toc_12">Notes</h3>
+<h3 id="toc_13">Notes</h3>
 
 <ul>
-<li>Alla presenter som ska föreslås, det är ju också ett arbete att ta fram! Kolla årets julklappar någonstans? Göra en lista på vanliga butiker som folk köper klappar på eller kika på enstaka artiklar som varit populära på sistone. Har amazon sån data?</li>
-<li>Jag kan samla in all interna data från Forefront. Klurigt hur det kan gå till med feedback-loopen. Man kan tänka sig att alla matar in information om flera klappar, om inte alla! Det kunde vara t.ex. en sorts godkännande/bortkastande eller rangordning av klappar. Visar man många tänker jag att det förstnämnda är lättare. Visar man det sistnämnda så är det nog bättre med färre. Det förstnämnda innebär dock problem i hur du konstruerar responsvariabeln och val av ML approach.</li>
-<li>Om man skulle ge en del alternativ för folk som samlar in data, vad påverkar det att man inte ger alla alternativen? Vi kanske har 50 klappar på lager men vi vill bara att en person ska på sin höjd få tre förslag som den ska ta ställning till om den tycker det är vettiga förslag eller ej. Då kan man ju inte köra one-vs-all för personen har inte tagit ställning till alla andra alternativ när den bestämmer sig för just en. </li>
+<li>~~Alla presenter som ska föreslås, det är ju också ett arbete att ta fram! Kolla årets julklappar någonstans? Göra en lista på vanliga butiker som folk köper klappar på eller kika på enstaka artiklar som varit populära på sistone. Har amazon sån data?~~ Lista påbörjad med diverse länkar. Mestadels kommer dock från Coolstuff i dagsläget pga enkelheten och att de täcker det mesta som alla andra bara täcker in delvis. </li>
+<li>Jag kan samla in all interna data från Forefront. Klurigt hur det kan gå till med feedback-loopen. Man kan tänka sig att alla matar in information om flera klappar, om inte alla! Det kunde vara t.ex. en sorts godkännande/bortkastande eller rangordning av klappar. Visar man många tänker jag att det förstnämnda är lättare. Visar man det sistnämnda så är det nog bättre med färre. Det förstnämnda innebär dock problem i hur du konstruerar responsvariabeln och val av ML approach. <mark>Se diskussioner nedan kring konstruktion av detta med insikt kring hur olika Azure-modeller fungerar.</mark></li>
+<li>~~Om man skulle ge en del alternativ för folk som samlar in data, vad påverkar det att man inte ger alla alternativen? Vi kanske har 50 klappar på lager men vi vill bara att en person ska på sin höjd få tre förslag som den ska ta ställning till om den tycker det är vettiga förslag eller ej. Då kan man ju inte köra one-vs-all för personen har inte tagit ställning till alla andra alternativ när den bestämmer sig för just en.~~</li>
 </ul>
 
-<h2 id="toc_13"><a name="azure"></a>Azure</h2>
+<h2 id="toc_14"><a name="azure"></a>Azure</h2>
 
-<h3 id="toc_14">Aktiviteter</h3>
+<!--
+### Aktiviteter
 
-<ul>
-<li><input type="checkbox"> Bestämma approach</li>
-<li><input type="checkbox"> Bygga testdataset för test av genomförbarhet. Speciellt fokus på svarsvariabeln.</li>
-<li><input type="checkbox"> Bygg modell</li>
-<li><input type="checkbox"> Bygg struktur för input och koppla i Azure (beror på backend approach).</li>
-<li><input type="checkbox"> Deploy web service och hooka på i hemsidan.</li>
-</ul>
+* <input type="checkbox" checked> Bestämma approach
+* <input type="checkbox" checked> Bygga testdataset för test av genomförbarhet. Speciellt fokus på svarsvariabeln.
+* <input type="checkbox" checked> Bygg modell
+* <input type="checkbox"> Bygg struktur för input och koppla i Azure (beror på backend approach).
+* <input type="checkbox"> Deploy web service och hooka på i hemsidan.
+-->
 
 <h3 id="toc_15">Alternativ</h3>
 
-<p>Främst i Azure så har jag kikat på att använda mig av antingen:</p>
+<p>Jag har lämnat approachen med att använda mig av ett matchbox recommender system. Se nedan för mer info kring det. Har även lämnat classification-området och använder mig nu av regression models. </p>
+
+<p>Jag är osäker på hur upplägget av kombinationen mellan data från användaren och klapparna ska se ut. Man kan t.ex. välja att rate&#39;a alla klappar från 1-10 eller {0,1} (binärt). Hur ska då en inlärningsmodell ta fram en klapp när alla träningsdata består av en massa rader med användarfeatures från en användare, features från en klapp och den ratingen just den klappen fick? Jag vill ju prediktera något som inte är i datasetet i det fallet. </p>
+
+<table>
+<thead>
+<tr>
+<th>User age</th>
+<th>User wealth</th>
+<th>User hobby</th>
+<th>Item price</th>
+<th>Item category</th>
+<th>User-item-rating</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>20år</td>
+<td>400000kr</td>
+<td>Fotboll</td>
+<td>100kr</td>
+<td>Elektronik</td>
+<td><code>rating: 6</code> <br> eller <code>isApproved: TRUE</code></td>
+</tr>
+<tr>
+<td>20år</td>
+<td>400000kr</td>
+<td>Fotboll</td>
+<td>200kr</td>
+<td>Sport</td>
+<td><code>rating: 4</code> <br> eller <code>isApproved: FALSE</code></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="toc_16">a) Regression models</h3>
+
+<p>Predikterar man rating så är det en regressionsmodell jag är ute efter. Jag byggde ett dataset på sättet ovan där varje användare utgör flera rader om de rateat flera items. Här är då rating det jag vill prediktera och använder både user features och item features på detta sättet. Det är det närmaste en matchbox recommender jag kan komma. </p>
+
+<hr>
+
+<p>Jag provbyggde en Azure-modell som provar alla stora regressionsmodeller mot varandra. Den här modellen kan jag använda sen när jag ska tweaka mot den riktiga datan så den kommer ligga som den gör tills det är dags. </p>
+
+<p><img src="Images/Train-big.png" alt="train-big">
+Den här visar modellen i sin helhet. Den finns på <a href="https://goo.gl/rvDfyp">denna länk.</a></p>
+
+<p><img src="Images/Train-small(1).png" alt="small(1)">
+Den här visar första delen av modellen som joinar test-datan (userfeatures, itemfeatures och user-item-ratings) samt tvättar den. </p>
+
+<p><img src="Images/Train-small(2).png" alt="small(2)">
+Den här visar en del av modellen där själva träningsmodellerna är uppradade. I dagsläget har jag inget bra sätt att koppla ihop deras resultat för att visualisera vilken som presterar bäst. Fungerade bra med classifiers men något annat krävs för regressionsmodeller då de spottar ibland ut olika form på deras data. </p>
+
+<hr>
+
+<p>Jag deployade training-modellen med endast en neural-net regression model och försökte få den att prediktera alla items för en enda användare. För att göra det så fick jag kringå det vanliga upplägget och försöka force-joina användar-datasetet med item-datasetet. Input-modulen följer endast formatet på det element som den delar input-point med. I det här fallet är det användar-datasetet. Med lite rensning av denna kunde jag se till att den deployade modellen endast kräver användarfeatures som input. </p>
+
+<p>I figuren nedan är en överblick på modellen med beskrivningar. Modellen kan nås genom den <a href="https://goo.gl/FyA7xd">här länken.</a></p>
+
+<p><img src="Images/Predictive.png" alt="predictive"></p>
+
+<p>Formatet på output-datan är med det här upplägget rätt så praktiskt. Man får tillbaka en JSON-sträng där den predikterade ratingen för varje item finns uppradad. Man kan själv sedan sortera det här i en vektor och välja den högsta eller kanske de tre högsta att presentera för användaren. </p>
+
+<p><img src="Images/Webservice-result.png" alt="webservice result"></p>
+
+<h4 id="toc_17">Web service credentials</h4>
+
+<p>För att komma åt informationen kopplat till den hittills deployade modellen går man till <a href="https://goo.gl/JUQhAZ">följande länk.</a></p>
 
 <ul>
-<li>Multiclass classifier</li>
-<li>One-vs-all med two-class classifier</li>
-<li>Neural net</li>
-<li>Hybrid matchbox recommender</li>
+<li>Där finns allra viktigast <a href="https://goo.gl/85hoYw">requestAPIn</a></li>
+<li>Men även API-nyckeln</li>
 </ul>
 
-<h4 id="toc_16">1. Multiclass classifier</h4>
+<h3 id="toc_18">b) Classifiers</h3>
 
-<ul>
-<li>Multiclass classification med
+<!--<span style="display:block;background:pink;width:13em;padding:4pt" onclick="hide('classifiers')">Klicka för att se mer \/</span>-->
 
-<ul>
-<li>Multiclass decision forest</li>
-<li>Multiclass logistic regression</li>
-<li>Multiclass decision jungle, också nytt för mig här.</li>
-</ul></li>
-</ul>
+<h4 id="toc_19">1. Multiclass classifier</h4>
 
-<h4 id="toc_17">2. One-vs-all w. two-class classifier</h4>
+<p><em>Inte aktuellt längre.</em></p>
 
-<ul>
-<li>Two-class decision forest</li>
-<li>Two-class boosted decision tree</li>
-<li>Two-class Bayes point machine</li>
-<li>Two-class logistic regression </li>
-<li>Two-class averaged perceptron</li>
-<li>Eventuellt också Two-class decision jungle, inte prövat tidigare.</li>
-</ul>
+<!--
+* Multiclass classification med
+    * Multiclass decision forest
+    * Multiclass logistic regression
+    * Multiclass decision jungle, också nytt för mig här.
+-->
 
-<h4 id="toc_18">3. Neural net</h4>
+<h4 id="toc_20">2. One-vs-all w. two-class classifier</h4>
 
-<p>Osäker på hur det hade gått till med hela retraining-biten. Jag är van vid att neurala nätverk tar lång tid att träna, så där måste man nog fokusera på reinforcement learning vilket är lite utanför min kunskapsdomän.</p>
+<p><em>Inte aktuellt längre.</em></p>
 
-<h4 id="toc_19">4. Hybrid matchbox recommender</h4>
+<!--
+* Two-class decision forest
+* Two-class boosted decision tree
+* Two-class Bayes point machine
+* Two-class logistic regression 
+* Two-class averaged perceptron
+* Eventuellt också Two-class decision jungle, inte prövat tidigare. 
+-->
 
-<p>Att lära modell utifrån rating
-<img src="Images/Azure_Matchbox.png" alt="Train-Matchbox-Recommender"></p>
+<h4 id="toc_21">3. Neural net classifier</h4>
 
-<p>Använder man Azure Matchbox recommender så ska man veta vilka två typer det finns att utgå ifrån när det kommer till recommenders:</p>
+<p><em>Inte aktuellt längre</em></p>
 
-<ul>
-<li>Content-based approach
+<!--
+Osäker på hur det hade gått till med hela retraining-biten. Jag är van vid att neurala nätverk tar lång tid att träna, så där måste man nog fokusera på reinforcement learning vilket är lite utanför min kunskapsdomän.
 
-<ul>
-<li><span style="font-size:0.8em">makes use of features for both users and items. Users may be described by properties such as age and gender, and items may be described by properties such as author and manufacturer. Typical examples of content-based recommendation systems can be found on social matchmaking sites.</li>
-</ul></li>
-<li>Collaborative filtering<br>
+MEN! Ska man bara retraina en gång om dagen så kan ett neuralt nät fungera hur bra som helst. Dock osäker på upplägget av kombinationen mellan användarfeatures -> klappfeatures -> och svarsvariabel av användaren om varje klapp.
+-->
 
-<ul>
-<li><span style="font-size:0.8em">uses only identifiers of the users and the items and obtains implicit information about these entities from a (sparse) matrix of ratings given by the users to the items. We can learn about a user from the items they have rated and from other users who have rated the same items.</li>
-</ul></li>
-<li>The Matchbox recommender combines collaborative filtering with a content-based approach. It is therefore considered a hybrid recommender. When a user is relatively new to the system, predictions are improved by making use of the feature information about the user, thus addressing the well-known &quot;cold-start&quot; problem. However, once there are a sufficient number of ratings from a particular user, it is possible to make fully personalized predictions for them based on their specific ratings rather than on their features alone. Hence, there is a smooth transition from content-based recommendations to recommendations based on collaborative filtering. Even if user or item features are not available, Matchbox will still work in its collaborative filtering mode.</li>
-<li>En recommender kräver ett smart upplägg på inparametrarna. Se <a href="https://msdn.microsoft.com/library/azure/55544522-9a10-44bd-884f-9a91a9cec2cd?f=255&amp;MSPPError=-2147217396#ItemRecommendationOptions">den här</a> beskrivningen för mer info. </li>
-</ul>
+<h4 id="toc_22">4. Hybrid matchbox recommender</h4>
 
-<h2 id="toc_20"><a name="feedbackloop"></a>Feedback loop</h2>
+<p><em>Inte aktuellt längre</em></p>
+
+<p><img src="Images/Azure_Matchbox.png" alt="Train-Matchbox-Recommender"></p>
+
+<!--
+Använder man Azure Matchbox recommender så ska man veta vilka två typer det finns att utgå ifrån när det kommer till recommenders:
+
+* Content-based approach
+    * <span style="font-size:0.8em">makes use of features for both users and items. Users may be described by properties such as age and gender, and items may be described by properties such as author and manufacturer. Typical examples of content-based recommendation systems can be found on social matchmaking sites.
+* Collaborative filtering   
+    * <span style="font-size:0.8em">uses only identifiers of the users and the items and obtains implicit information about these entities from a (sparse) matrix of ratings given by the users to the items. We can learn about a user from the items they have rated and from other users who have rated the same items.
+* *The Matchbox recommender combines collaborative filtering with a content-based approach. It is therefore considered a hybrid recommender. When a user is relatively new to the system, predictions are improved by making use of the feature information about the user, thus addressing the well-known "cold-start" problem. However, once there are a sufficient number of ratings from a particular user, it is possible to make fully personalized predictions for them based on their specific ratings rather than on their features alone. Hence, there is a smooth transition from content-based recommendations to recommendations based on collaborative filtering. Even if user or item features are not available, Matchbox will still work in its collaborative filtering mode.*
+* En recommender kräver ett smart upplägg på inparametrarna. Se [den här](https://msdn.microsoft.com/library/azure/55544522-9a10-44bd-884f-9a91a9cec2cd?f=255&MSPPError=-2147217396#ItemRecommendationOptions) beskrivningen för mer info. 
+-->
+
+<h2 id="toc_23"><a name="feedbackloop"></a>Feedback loop</h2>
 
 <p>Hittills har mestadels av alla google-länkar lett mig till reinforcement learning (RL). Eftersom det känns som ett annat sorts problem (mer robotar och likheter mot reglerteknik), så har jag satt stopp för just den här grenen. Det jag i annat fall är ute efter är en modell som återtränas, t.ex. vissa klockslag under dagen eller efter ett visst antal svarsinlägg, detta relaterar till programmatic retraining av ens modell. </p>
 
-<h3 id="toc_21">Aktiviteter</h3>
+<p>Mitt nästa steg är att få till retraining manuellt genom att man lägger till endpoints till ens modell i ML Studio. Sedan får jag dyka ner i retrainingen igen när jag kommit en bit in i byggandet av hemsidan. Detta då det helst ska ske med ett C#-script och om jag ska lära mig det allteftersom hemsidan byggs så kan jag slänga på den dimensionen sist. </p>
 
-<ul>
-<li><input type="checkbox"> Välj approach till feedback loop</li>
-<li><input type="checkbox"> Implementera lösning (ev. lite kodning jag inte är van vid)</li>
-</ul>
+<!--
+### Aktiviteter
 
-<h3 id="toc_22">Relevanta begrepp</h3>
+* <input type="checkbox"> Välj approach till feedback loop
+* <input type="checkbox"> Implementera lösning (ev. lite kodning jag inte är van vid)
+-->
+
+<h3 id="toc_24">Relevanta begrepp</h3>
 
 <ul>
 <li>RL (reinforcement learning).</li>
@@ -719,82 +1098,82 @@ Webpage link :: <a href="http://ffcg-analyticsanta.azurewebsites.net/">ffcg-anal
 <li>Programmatic retraining</li>
 </ul>
 
-<h3 id="toc_23">Programmatic retraining</h3>
+<h3 id="toc_25">Programmatic retraining</h3>
 
 <p>Retraining har Azure <a href="https://azure.microsoft.com/sv-se/documentation/articles/machine-learning-retrain-models-programmatically/">ett exempel</a> på hur man kan implementera för att <em>Retrain ML models programatically</em>. </p>
 
 <p>När man publishat sin modell (tränat) så kan man gå tillbaka till Training Experiment och lägga till en output module efter Train Model. Dock verkar det som att Microsofts dokumentation av Azure är för gammal för de har ändrat beteckningar på saker och ting. Kör Retraining web service, det borde ge samma resultat.
 <img src="Images/Azure_retraining.png" alt="Azure_retraining"></p>
 
-<h3 id="toc_24">Azure layout</h3>
+<h3 id="toc_26">Azure layout</h3>
 
 <p>Approachen kring retraining har jag satt till följande koncept.
 <img src="Images/Azure_layout.png" alt="Azure_layout"></p>
 
-<h3 id="toc_25">Notes</h3>
+<h3 id="toc_27">Notes</h3>
 
 <ul>
-<li><del>Problemet är att du på Azure till synes inte kan återträna modellen direkt. Och det verkar heller inte vara ett reinforcement learning problem, utan mer att varje ny person som svarar ger en till datarad.</del> Man kan återträna modellen direkt eller nästan direkt. 
+<li>~~Problemet är att du på Azure till synes inte kan återträna modellen direkt. Och det verkar heller inte vara ett reinforcement learning problem, utan mer att varje ny person som svarar ger en till datarad.~~ Man kan återträna modellen direkt eller nästan direkt. 
 
 <ul>
 <li>Eventuellt hade man kunnat lägga upp två modeller där ena är igång när den andra tränas.</li>
 <li>Det kan vara så att det går jättebra att träna modellen direkt efter ett svar kommit in och att det fungerar medan folk använder hemsidan. Man kan göra en avvägning när man ska byta ut endpointen -&gt; Är den nya modellen bättre? Ja -&gt; Är det någon som använder modellen nu? Ja -&gt; Kolla igen om x minuter. </li>
 </ul></li>
 <li>Feedback loopen hänger lite på vad man vill prediktera. T.ex. vill man prediktera om det är antingen en bra eller dålig julklapp att ge så är det binär feedback man vill få, alltså vad man själv tror om klappens hållbarhet framför granen. Vill man prediktera något i stil med likelyhood eller hur bra en present är så är det mer en skala man förhåller sig till och därav kanske frågar om vad man tror hållbarheten är på en skala mellan 1-10. </li>
-<li><del>Ska man kanske ska få en del alternativ och ge feedback på alla dessa? Det snabbar ju upp processen. Om det är genomförbart kanske man kan ge feedback på alla utifrån den persona som är aktuell. Dock kan det bli för tidsödande.</del> Alla som hjälper till med datainsamling måste ta ställning till alla presenter. När man kör lösningen kanske man bara får en del eller en present.</li>
-<li><del>Ev. efterforskning på annan lösning. Där har t.ex. deployment av hemsida med R genom <a href="https://www.opencpu.org/apps.html">OpenCPU</a> varit ett alternativ. Dock kan det ta ifrån den enkelheten som det innebär att arbeta med Azure i grunden. Men eftersom man kan arbeta med R mer direkt på hemsidan så kan man eventuellt implementera feedback-loopen lättare (aka mer som man vill).</del> Satsar på OpenCPU i senare projekt.</li>
+<li>~~Ska man kanske ska få en del alternativ och ge feedback på alla dessa? Det snabbar ju upp processen. Om det är genomförbart kanske man kan ge feedback på alla utifrån den persona som är aktuell. Dock kan det bli för tidsödande.~~ Alla som hjälper till med datainsamling måste ta ställning till alla presenter. När man kör lösningen kanske man bara får en del eller en present.</li>
+<li>~~Ev. efterforskning på annan lösning. Där har t.ex. deployment av hemsida med R genom <a href="https://www.opencpu.org/apps.html">OpenCPU</a> varit ett alternativ. Dock kan det ta ifrån den enkelheten som det innebär att arbeta med Azure i grunden. Men eftersom man kan arbeta med R mer direkt på hemsidan så kan man eventuellt implementera feedback-loopen lättare (aka mer som man vill).~~ Satsar på OpenCPU i senare projekt.</li>
 <li>Är publish web service samma sak som set up web service eller är det samma sak som publish to gallery? Det är det ingen som vet. Det är även så att när man trycker på &#39;set up web service&#39; idag så kan du välja mellan att köra &#39;predictive experiment&#39; eller &#39;retraining web service&#39;. Det sistnämnda gör det som Microsofts dokumentation ber en om fast automatiskt. Väldigt väldigt otydligt och rentav irriterande.</li>
 </ul>
 
-<h2 id="toc_26"><a name="hemsidan"></a>Hemsidan</h2>
+<h2 id="toc_28"><a name="hemsidan"></a>Hemsidan</h2>
 
-<h3 id="toc_27">Front-end</h3>
+<h3 id="toc_29">Front-end</h3>
 
-<h4 id="toc_28">Aktiviteter</h4>
+<!--
+#### Aktiviteter
 
-<ul>
-<li><input type="checkbox"> Välj tema</li>
-<li><input type="checkbox"> Bestäm vy-upplägg med syfte på varje vy</li>
-<li><input type="checkbox"> Ta fram koncept på formulärelement</li>
-<li><input type="checkbox"> Ta fram koncept på vyerna</li>
-<li><input type="checkbox"> Implementera reaktiva element (AngularJS / jQuery)</li>
-<li><input type="checkbox"> Implementera HTML/CSS</li>
-</ul>
+* <input type="checkbox"> Välj tema
+* <input type="checkbox"> Bestäm vy-upplägg med syfte på varje vy
+* <input type="checkbox"> Ta fram koncept på formulärelement
+* <input type="checkbox"> Ta fram koncept på vyerna
+* <input type="checkbox"> Implementera reaktiva element (AngularJS / jQuery)
+* <input type="checkbox"> Implementera HTML/CSS
+-->
 
-<h4 id="toc_29">Color palette</h4>
+<h4 id="toc_30">Color palette</h4>
 
 <p><img src="Images/color_palette.png" alt="Color_palette">
 • F5624D • CC231E • 34A65F • 0F8A5F • 235E6F</p>
 
-<h4 id="toc_30">Start view</h4>
+<h4 id="toc_31">Start view</h4>
 
 <p>Den här vyn baseras dels på att du vet vilket steg du befinner dig i, men även en horisontell accordion. Hade dock kunnat vara kul att göra om det här konceptet till din resultat-vy. Idén går ut på att klapparna gömmer sig bakom varje fält och när man trycker på en så åker fältet fram som accordion och klappen exponeras. Väl där får man rate:a klappen eller vad som nu bestäms. 
 <img src="Images/front_page.png" alt="Front_page_draft"></p>
 
-<h4 id="toc_31">User properties view</h4>
+<h4 id="toc_32">User properties view</h4>
 
 <p>Användaren kan börja med att mata in det som blir rena demografiska variabler. Nästa steg kan bli mer frågor som är roliga. </p>
 
-<h4 id="toc_32">Question view</h4>
+<h4 id="toc_33">Question view</h4>
 
 <p>Konceptuellt handlar det om att ha någon progress bar och lite fält med användarvänliga formulär-element. I det här fallet är det bara boxar för ja/nej. Lämpligt är att rita upp formulärstrukturen för sig själv. 
 <img src="Images/Form_w_progress.png" alt="Form_w_progress"></p>
 
-<h4 id="toc_33">Results view</h4>
+<h4 id="toc_34">Results view</h4>
 
 <p>Den här vyn hänger mycket på hur man vill konstruera svarsvariabeln. Detta då det här steget behöver vara dels genomförbart och kul att göra, samt ge data som faktiskt hjälper en att prediktera presenter. </p>
 
-<h3 id="toc_34">Back-end</h3>
+<h3 id="toc_35">Back-end</h3>
 
-<h4 id="toc_35">Aktiviteter</h4>
+<!--
+#### Aktiviteter
 
-<ul>
-<li><input type="checkbox"> Bestäm lagringsmetod för input-data (går mot retraining-biten)</li>
-<li><input type="checkbox"> Välj metod (php/Node.js) och implementera script för lagring av input-data.</li>
-<li><input type="checkbox"> Sätt ihop kommunikation mellan vyer.</li>
-<li><input type="checkbox"> Sätt upp kommunikation mot Azure</li>
-<li><input type="checkbox"> Implementera kodlösningen för automatisk programmatisk retraining genom hemsidan.</li>
-</ul>
+* <input type="checkbox"> Bestäm lagringsmetod för input-data (går mot retraining-biten)
+* <input type="checkbox"> Välj metod (php/Node.js) och implementera script för lagring av input-data.
+* <input type="checkbox"> Sätt ihop kommunikation mellan vyer.
+* <input type="checkbox"> Sätt upp kommunikation mot Azure
+* <input type="checkbox"> Implementera kodlösningen för automatisk programmatisk retraining genom hemsidan.
+-->
 
 <h2 id="toc_36">Länkar osv.</h2>
 
@@ -807,9 +1186,22 @@ Webpage link :: <a href="http://ffcg-analyticsanta.azurewebsites.net/">ffcg-anal
 <li><a href="https://en.wikivet.net/Data_types">Data types</a></li>
 <li><a href="https://msdn.microsoft.com/library/azure/55544522-9a10-44bd-884f-9a91a9cec2cd?f=255&amp;MSPPError=-2147217396#ItemRecommendationOptions">Score matchbox recommender</a></li>
 <li><a href="https://www.thegreatgiftcompany.co.uk/occasions/special_occasions/christmas">Gåvor för p/f/m/k</a></li>
+<li><a href="https://azure.microsoft.com/sv-se/blog/retraining-and-updating-azure-machine-learning-models-with-azure-data-factory/">Exempel på retraining - lite äldre</a></li>
+<li><a href="http://www.julklappstipsen.nu/">Julklappstipsen.nu!!</a></li>
+<li><a href="https://msdn.microsoft.com/library/azure/70530644-c97a-4ab6-85f7-88bf30a8be5f#algorithm">Hur recommender data splittas</a></li>
+<li><a href="https://msdn.microsoft.com/library/azure/55544522-9a10-44bd-884f-9a91a9cec2cd#ItemRecommendationOptions">Hur recommender scorer används</a></li>
+<li><a href="https://msdn.microsoft.com/library/azure/fa4aa69d-2f1c-4ba4-ad5f-90ea3a515b4c">Hur train recommender används</a></li>
+<li><a href="http://gallery.cortanaanalytics.com/browse?s=recommender">Tips på recommenders i Cortana gallery</a></li>
+<li><a href="http://gallery.cortanaanalytics.com/Experiment/Recommender-Movie-recommendation-3">Movie recommender | Med beskrivning</a></li>
+<li><a href="http://gallery.cortanaanalytics.com/Experiment/Recommender-Restaurant-ratings-2">Restaurant recommender | Med beskrivning</a></li>
+<li><a href="https://social.msdn.microsoft.com/Forums/azure/en-US/90a8c645-ac75-490b-b1d7-ec9b40f226f9/matchbox-recommendation-with-no-userid-and-with-single-result?forum=MachineLearning">Eventuell, men i övrigt dålig hjälp på problem med recommender</a></li>
+<li><a href="http://research.microsoft.com/en-us/um/cambridge/projects/infernet/docs/Learners%20-%20Matchbox%20-%20API%20-%20Mappings%20-%20Splitting.aspx">Recommender split data tips</a></li>
+<li><a href="https://azure.microsoft.com/sv-se/documentation/articles/machine-learning-interpret-model-results/">Lite info kring recommenders och vad det kan ge (scrolla ner)</a></li>
 </ul>
 
-
+<script type="text/javascript">
+var _self="undefined"!=typeof window?window:"undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?self:{},Prism=function(){var e=/\blang(?:uage)?-(?!\*)(\w+)\b/i,t=_self.Prism={util:{encode:function(e){return e instanceof n?new n(e.type,t.util.encode(e.content),e.alias):"Array"===t.util.type(e)?e.map(t.util.encode):e.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/\u00a0/g," ")},type:function(e){return Object.prototype.toString.call(e).match(/\[object (\w+)\]/)[1]},clone:function(e){var n=t.util.type(e);switch(n){case"Object":var a={};for(var r in e)e.hasOwnProperty(r)&&(a[r]=t.util.clone(e[r]));return a;case"Array":return e.map&&e.map(function(e){return t.util.clone(e)})}return e}},languages:{extend:function(e,n){var a=t.util.clone(t.languages[e]);for(var r in n)a[r]=n[r];return a},insertBefore:function(e,n,a,r){r=r||t.languages;var l=r[e];if(2==arguments.length){a=arguments[1];for(var i in a)a.hasOwnProperty(i)&&(l[i]=a[i]);return l}var o={};for(var s in l)if(l.hasOwnProperty(s)){if(s==n)for(var i in a)a.hasOwnProperty(i)&&(o[i]=a[i]);o[s]=l[s]}return t.languages.DFS(t.languages,function(t,n){n===r[e]&&t!=e&&(this[t]=o)}),r[e]=o},DFS:function(e,n,a){for(var r in e)e.hasOwnProperty(r)&&(n.call(e,r,e[r],a||r),"Object"===t.util.type(e[r])?t.languages.DFS(e[r],n):"Array"===t.util.type(e[r])&&t.languages.DFS(e[r],n,r))}},plugins:{},highlightAll:function(e,n){for(var a,r=document.querySelectorAll('code[class*="language-"], [class*="language-"] code, code[class*="lang-"], [class*="lang-"] code'),l=0;a=r[l++];)t.highlightElement(a,e===!0,n)},highlightElement:function(n,a,r){for(var l,i,o=n;o&&!e.test(o.className);)o=o.parentNode;o&&(l=(o.className.match(e)||[,""])[1],i=t.languages[l]),n.className=n.className.replace(e,"").replace(/\s+/g," ")+" language-"+l,o=n.parentNode,/pre/i.test(o.nodeName)&&(o.className=o.className.replace(e,"").replace(/\s+/g," ")+" language-"+l);var s=n.textContent,u={element:n,language:l,grammar:i,code:s};if(!s||!i)return t.hooks.run("complete",u),void 0;if(t.hooks.run("before-highlight",u),a&&_self.Worker){var g=new Worker(t.filename);g.onmessage=function(e){u.highlightedCode=e.data,t.hooks.run("before-insert",u),u.element.innerHTML=u.highlightedCode,r&&r.call(u.element),t.hooks.run("after-highlight",u),t.hooks.run("complete",u)},g.postMessage(JSON.stringify({language:u.language,code:u.code,immediateClose:!0}))}else u.highlightedCode=t.highlight(u.code,u.grammar,u.language),t.hooks.run("before-insert",u),u.element.innerHTML=u.highlightedCode,r&&r.call(n),t.hooks.run("after-highlight",u),t.hooks.run("complete",u)},highlight:function(e,a,r){var l=t.tokenize(e,a);return n.stringify(t.util.encode(l),r)},tokenize:function(e,n){var a=t.Token,r=[e],l=n.rest;if(l){for(var i in l)n[i]=l[i];delete n.rest}e:for(var i in n)if(n.hasOwnProperty(i)&&n[i]){var o=n[i];o="Array"===t.util.type(o)?o:[o];for(var s=0;s<o.length;++s){var u=o[s],g=u.inside,c=!!u.lookbehind,f=0,h=u.alias;u=u.pattern||u;for(var p=0;p<r.length;p++){var d=r[p];if(r.length>e.length)break e;if(!(d instanceof a)){u.lastIndex=0;var m=u.exec(d);if(m){c&&(f=m[1].length);var y=m.index-1+f,m=m[0].slice(f),v=m.length,k=y+v,b=d.slice(0,y+1),w=d.slice(k+1),P=[p,1];b&&P.push(b);var A=new a(i,g?t.tokenize(m,g):m,h);P.push(A),w&&P.push(w),Array.prototype.splice.apply(r,P)}}}}}return r},hooks:{all:{},add:function(e,n){var a=t.hooks.all;a[e]=a[e]||[],a[e].push(n)},run:function(e,n){var a=t.hooks.all[e];if(a&&a.length)for(var r,l=0;r=a[l++];)r(n)}}},n=t.Token=function(e,t,n){this.type=e,this.content=t,this.alias=n};if(n.stringify=function(e,a,r){if("string"==typeof e)return e;if("Array"===t.util.type(e))return e.map(function(t){return n.stringify(t,a,e)}).join("");var l={type:e.type,content:n.stringify(e.content,a,r),tag:"span",classes:["token",e.type],attributes:{},language:a,parent:r};if("comment"==l.type&&(l.attributes.spellcheck="true"),e.alias){var i="Array"===t.util.type(e.alias)?e.alias:[e.alias];Array.prototype.push.apply(l.classes,i)}t.hooks.run("wrap",l);var o="";for(var s in l.attributes)o+=(o?" ":"")+s+'="'+(l.attributes[s]||"")+'"';return"<"+l.tag+' class="'+l.classes.join(" ")+'" '+o+">"+l.content+"</"+l.tag+">"},!_self.document)return _self.addEventListener?(_self.addEventListener("message",function(e){var n=JSON.parse(e.data),a=n.language,r=n.code,l=n.immediateClose;_self.postMessage(t.highlight(r,t.languages[a],a)),l&&_self.close()},!1),_self.Prism):_self.Prism;var a=document.getElementsByTagName("script");return a=a[a.length-1],a&&(t.filename=a.src,document.addEventListener&&!a.hasAttribute("data-manual")&&document.addEventListener("DOMContentLoaded",t.highlightAll)),_self.Prism}();"undefined"!=typeof module&&module.exports&&(module.exports=Prism),"undefined"!=typeof global&&(global.Prism=Prism);
+</script>
 </body>
 
 </html>
