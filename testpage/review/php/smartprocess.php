@@ -8,7 +8,7 @@
 	
 	// Enter email address below for receiving the form
 	// All order messages will be sent there
-	$receiver_email = "example@domain.com";
+	$receiver_email = "jonathan.akerblom@ffcg.se";
 	
 	// Enter email subject below
 	// This will be your message subject
@@ -17,16 +17,18 @@
 	$firstname = strip_tags(trim($_POST["firstname"]));	
 	$lastname = strip_tags(trim($_POST["lastname"]));
 	$email = strip_tags(trim($_POST["email"]));
-	$company = strip_tags(trim($_POST["company"]));
-	$mobile = strip_tags(trim($_POST["mobile"]));
-	$department = strip_tags(trim($_POST["department"]));
-	$products = strip_tags(trim($_POST["products"]));
-	$support = strip_tags(trim($_POST["support"]));
-	$response = strip_tags(trim($_POST["response"]));
-	$comment = strip_tags(trim($_POST["comment"]));
-	$improve = $_POST["improve"];
-	if ($improve[0]!=""){
-		$improve_list = implode( '<br/>', $improve);
+	$zip = strip_tags(trim($_POST["zip"]));
+	$sexType = strip_tags(trim($_POST["sexType"]));
+	$age = strip_tags(trim($_POST["age"]));
+	$prefersSoftPresents = strip_tags(trim($_POST["prefersSoftPresents"]));
+	$prefersSuntrip = strip_tags(trim($_POST["prefersSuntrip"]));
+	$prefersDog = strip_tags(trim($_POST["prefersDog"]));
+	$santaBelief = strip_tags(trim($_POST["santaBelief"]));
+    $chocolatePref = strip_tags(trim($_POST["chocolatePref"]));
+    $candyPref = strip_tags(trim($_POST["candyPref"]));
+	$christmasFood = $_POST["christmasFood"];
+	if ($christmasFood[0]!=""){
+		$christmasFood_list = implode( '<br/>', $christmasFood);
 	}
 	
 	/* CSV FILE SETTINGS
@@ -39,12 +41,16 @@
 		$_POST['firstname'],
 		$_POST['lastname'],
 		$_POST['email'],
-		$_POST['company'],
-		$_POST['mobile'],
-		$_POST['department'],
-		$_POST['products'],
-		$_POST['support'],
-		$_POST['response']		
+		$_POST['zip'],
+		$_POST['age'],
+		$_POST['sexType'],
+		$_POST['prefersSoftPresents'],
+		$_POST['prefersSuntrip'],
+		$_POST['prefersDog'],
+        $_POST['santaBelief'],
+        $_POST['chocolatePref'],
+        $_POST['candyPref'],
+        $_POST['christmasFood']
 	);
 	
 	/*
@@ -61,6 +67,14 @@
 				$errors[] = "Firstname must be at least 2 characters.";
 			}
 	}
+      //validate firstname
+	if(isset($_POST["lastname"])){
+			if (!$lastname) {
+				$errors[] = "You must enter your lastname.";
+			} elseif(strlen($lastname) < 2)  {
+				$errors[] = "Firstname must be at least 2 characters.";
+			}
+	}
 	//validate email address
 	if(isset($_POST["email"])){
 		if (!$email) {
@@ -69,43 +83,37 @@
 			$errors[] = "Your must enter a valid email.";
 		}
 	}
-	
-	//validate mobile phone number
-	if(isset($_POST["mobile"])){
-			if (!$mobile) {
-				$errors[] = "You must enter your mobile phone number.";
-			} elseif(!preg_match('/^[0-9]+$/', $mobile))  {
-				$errors[] = "Phone number must include numbers only";
-			} elseif(strlen($mobile) < 10)  {
-				$errors[] = "Phone number must not be less than 10 numbers";
-			} elseif(strlen($mobile) > 12)  {
-				$errors[] = "Phone number must not exceed 12 numbers";
+	//validate zip number
+	if(isset($_POST["zip"])){
+			if (!$zip) {
+				$errors[] = "You must enter your zip code.";
+			} elseif(!preg_match('/^[0-9]+$/', $zip))  {
+				$errors[] = "Zip code must include numbers only";
+			} elseif(strlen($zip) < 5)  {
+				$errors[] = "Zip code must not be less than 5 numbers";
+			} elseif(strlen($zip) > 5)  {
+				$errors[] = "Zip code must not exceed 5 numbers";
 			}
 	}	
 		
-	//validate department
-	if(isset($_POST["department"])){
-			if (!$department) {
-				$errors[] = "Please select a department.";
+	//validate chocolatePref
+	if(isset($_POST["chocolatePref"])){
+			if (!$chocolatePref) {
+				$errors[] = "Please select a chocolatePref.";
+			}
+	}
+    //validate candyPref
+	if(isset($_POST["candyPref"])){
+			if (!$candyPref) {
+				$errors[] = "Please select a candyPref.";
 			}
 	}
 	
-	//validate check boxes
-	if($improve[0]==''){	
+	//validate christmasFood
+	if($christmasFood[0]==''){	
 		$errors[] = "Please check at least one option.";
 	}	
-	
-	//validate message / comment
-	if(isset($_POST["comment"])){
-		if (strlen($comment) < 10) {
-			if (!$comment) {
-				$errors[] = "Oops you forgot to comment.";
-			} else {
-				$errors[] = "Comment must be at least 10 characters.";
-			}
-		}
-	}
-	
+		
 	if ($errors) {
 		//Output errors in a list
 		$errortext = "";
@@ -123,6 +131,7 @@
 			$mail->isSendmail();
 			$mail->IsHTML(true);
 			$mail->From = $email;
+            //$mail->From = 'jonathan.akerblom@ffcg.se';
 			$mail->CharSet = "UTF-8";
 			$mail->FromName = $firstname;
 			$mail->Encoding = "base64";
@@ -140,8 +149,7 @@
 			$recipients = false;
 			if($recipients == true){
 				$recipients = array(
-					"address@example.com" => "Recipient Name",
-					"address@example.com" => "Recipient Name",
+					"jonathan.akerblom@ffcg.se" => "Jonte"
 				);
 				
 				foreach($recipients as $email => $name){
@@ -165,15 +173,19 @@
 				} else {
 					$csvFileData = fopen($csvFile, 'a'); 
 					$headerRowFields = array(
-						"First Name",
-						"Last Name",
-						"Email",
-						"Company",
-						"Telephone",
-						"Department",
-						"Product Rating",
-						"Support Rating",
-						"Response Rating"
+						"firstname",
+						"lastname",
+						"email",
+						"zip",
+						"age",
+						"sexType",
+						"prefersSoftPresents",
+						"prefersSuntrip",
+						"prefersDog",
+                        "santaBelief",
+                        "chocolatePref",
+                        "candyPref",
+                        "christmasFood"
 					);
 					fputcsv($csvFileData,$headerRowFields);
 					fputcsv($csvFileData, $csvData );

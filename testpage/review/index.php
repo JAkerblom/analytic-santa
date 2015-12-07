@@ -102,15 +102,15 @@
                     <div class="frm-row">
                         <div class="section colm colm8" style="margin-top: 5px;">
                             <label class="option option-red">
-                                <input type="radio" name="payment" checked=""><span class="radio"></span> Kvinna                 
+                                <input type="radio" name="sexType" value="female" checked=""><span class="radio"></span> Kvinna                 
                             </label>
 
                             <label class="option option-red">
-                                <input type="radio" name="payment"><span class="radio"></span> Man                  
+                                <input type="radio" name="sexType" value="male"><span class="radio"></span> Man                  
                             </label>
 
                             <label class="option option-red" style="margin-left:10px;">
-                                <input type="radio" name="payment"><span class="radio"></span> ------                  
+                                <input type="radio" name="sexType" value="otherGender"><span class="radio"></span> ------                  
                             </label>
                         </div><!-- end section -->                 
                         <div class="section colm colm1" style="padding-left:0px;">
@@ -118,7 +118,7 @@
                         </div>
                         <div class="section colm colm3">
                             <label class="field">
-                            	<input type="text" name="stepper1" id="stepper1" value="30" class="gui-input">
+                            	<input type="text" name="age" id="stepper1" value="30" class="gui-input">
                             </label>
                         </div><!-- end section -->
                     </div>
@@ -136,12 +136,12 @@
                 </div>
                 <div class="section colm colm3">
                   <label class="option option-red">
-                    <input type="radio" name="prefersSoftPresents" checked=""><span class="radio"></span> Hårda                 
+                    <input type="radio" name="prefersSoftPresents" value="0" checked=""><span class="radio"></span> Hårda                 
                   </label>
                 </div>
                 <div class="section colm colm3">
                   <label class="option option-red">
-                    <input type="radio" name="prefersSoftPresents"><span class="radio"></span> Mjuka                  
+                    <input type="radio" name="prefersSoftPresents" value="1"><span class="radio"></span> Mjuka                  
                   </label>
                 </div>
               </div>
@@ -152,12 +152,12 @@
                 </div>
                 <div class="section colm colm3">
                   <label class="option option-red">
-                    <input type="radio" name="prefersSuntrip" checked=""><span class="radio"></span> Sol                 
+                    <input type="radio" name="prefersSuntrip" value="1" checked=""><span class="radio"></span> Sol  
                   </label>
                 </div>
                 <div class="section colm colm3">
                   <label class="option option-red">
-                    <input type="radio" name="prefersSuntrip"><span class="radio"></span> Snö                  
+                    <input type="radio" name="prefersSuntrip" value="0"><span class="radio"></span> Snö                  
                   </label>
                 </div>
               </div>
@@ -168,12 +168,12 @@
                 </div>
                 <div class="section colm colm3">
                   <label class="option option-red">
-                    <input type="radio" name="prefersDog" checked=""><span class="radio"></span> Hund                 
+                    <input type="radio" name="prefersDog" value="1" checked=""><span class="radio"></span> Hund                 
                   </label>
                 </div>
                 <div class="section colm colm3">
                   <label class="option option-red">
-                    <input type="radio" name="prefersDog"><span class="radio"></span> Katt                  
+                    <input type="radio" name="prefersDog" value="0"><span class="radio"></span> Katt                  
                   </label>
                 </div>
               </div>
@@ -185,7 +185,7 @@
                 </div>
                 <div class="section colm colm2">
                   <label class="switch block">
-                    <input type="checkbox" name="switch1" id="switch1" value="prefersSoftPresents">
+                    <input type="checkbox" name="santaBelief" id="switch1" value="santaBelief">
                     <label for="switch1" data-on="JA" data-off="NEJ"></label>
                   </label>
                 </div>
@@ -197,7 +197,7 @@
                 </div>
                 <div class="section colm colm2">
                   <label class="switch block">
-                    <input type="checkbox" name="switch2" id="switch2" value="prefersSoftPresents">
+                    <input type="checkbox" name="switch2" id="switch2" value="someQuestion">
                     <label for="switch2" data-on="JA" data-off="NEJ"></label>
                   </label>
                 </div>
@@ -208,7 +208,7 @@
               </div>-->
               <div class="section">
                   <label class="field select">
-                      <select id="department" name="department">
+                      <select id="chocolatePref" name="chocolatePref">
                           <option value="">Välj din favorit av chokladtyper...</option>
                           <option value="milk">Mjölkchoklad</option>
                           <option value="dark">Mörk choklad</option>
@@ -221,7 +221,7 @@
               
               <div class="section">
                   <label class="field select">
-                      <select id="department" name="department">
+                      <select id="candyPref" name="candyPref">
                         <option value="">Välj din favorit av julegodis...</option>
                         <option value="kola">Knäckkola</option>
                         <option value="marsipan">Marsipan</option>
@@ -309,17 +309,17 @@
                             <div class="section colm colm6">
 
                               <label class="option option-red block spacer-b10">
-                                  <input type="checkbox" name="improve[]" value="kottbullar">
+                                  <input type="checkbox" name="christmasFood[]" value="kottbullar">
                                   <span class="checkbox"></span> Köttbullar                  
                               </label>
 
                               <label class="option option-red block spacer-b10">
-                                  <input type="checkbox" name="improve[]" value="prinskorv">
+                                  <input type="checkbox" name="christmasFood[]" value="prinskorv">
                                   <span class="checkbox"></span> Prinskorv               
                               </label>
 
                               <label class="option option-red block">
-                                  <input type="checkbox" name="improve[]" value="skinka">
+                                  <input type="checkbox" name="christmasFood[]" value="skinka">
                                   <span class="checkbox"></span> Skinka                 
                               </label>                                                        
                                                         
@@ -327,17 +327,17 @@
                             <div class="section colm colm6">
 
                               <label class="option option-red block spacer-b10">
-                                  <input type="checkbox" name="improve[]" value="sill">
+                                  <input type="checkbox" name="christmasFood[]" value="sill">
                                   <span class="checkbox"></span> Sill                  
                               </label>
 
                               <label class="option option-red block spacer-b10">
-                                  <input type="checkbox" name="improve[]" value="brysselkal">
+                                  <input type="checkbox" name="christmasFood[]" value="brysselkal">
                                   <span class="checkbox"></span> Brysselkål             
                               </label>
 
                               <label class="option option-red block">
-                                  <input type="checkbox" name="improve[]" value="rodkal">
+                                  <input type="checkbox" name="christmasFood[]" value="rodkal">
                                   <span class="checkbox"></span> Röd/brunkål                
                               </label>
                             </div><!-- end section -->
@@ -349,29 +349,29 @@
                 <div class="option-group field">
                   <div class="section colm colm6">
                     <label class="option option-red block spacer-b10">
-                      <input type="checkbox" name="improve[]" value="rodkal">
+                      <input type="checkbox" name="christmasFood[]" value="rodkal">
                       <span class="checkbox"></span> Lutfisk                
                     </label>
                     <label class="option option-red block spacer-b10">
-                    <input type="checkbox" name="improve[]" value="rodkal">
+                    <input type="checkbox" name="christmasFood[]" value="rodkal">
                       <span class="checkbox"></span> Ägg                
                     </label>
                     <label class="option option-red block">
-                      <input type="checkbox" name="improve[]" value="lax">
+                      <input type="checkbox" name="christmasFood[]" value="lax">
                       <span class="checkbox"></span> Lax                  
                     </label>
                   </div><!-- end section -->
                   <div class="section colm colm6">
                     <label class="option option-red block spacer-b10">
-                      <input type="checkbox" name="improve[]" value="janssons">
+                      <input type="checkbox" name="christmasFood[]" value="janssons">
                       <span class="checkbox"></span> Janssons
                     </label>
                     <label class="option option-red block spacer-b10">
-                      <input type="checkbox" name="improve[]" value="sylta">
+                      <input type="checkbox" name="christmasFood[]" value="sylta">
                       <span class="checkbox"></span> Sylta             
                     </label>
                     <label class="option option-red block">
-                      <input type="checkbox" name="improve[]" value="potatis">
+                      <input type="checkbox" name="christmasFood[]" value="potatis">
                       <span class="checkbox"></span> Potatis
                     </label>
                   </div><!-- end section -->

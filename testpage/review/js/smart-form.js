@@ -16,25 +16,50 @@
 								firstname: {
 										required: true,
 										minlength: 2
-								},		
+								},
+                                lastname: {
+										required: true,
+										minlength: 2
+								},
 								email: {
 										required: true,
 										email: true
 								},
-								mobile: {
-										required: true,
-										number: true,
-										minlength: 10,
-										maxlength: 12
-								},								
-								department: {
+                                zip: {
+                                        required: true,
+                                        minlength: 5,
+                                        maxlength: 5,
+                                        number: true
+                                },
+                                sexType: {
+                                        required: true
+                                },
+                                age: {
+                                        required: true
+                                },
+                                prefersSoftPresents: {
+                                        required: true 
+                                },
+                                prefersSuntrip: {
+                                        required: true
+                                },
+                                prefersDog: {
+                                        required: true
+                                },
+                                santaBelief: {
+                                        required: true
+                                },
+								chocolatePref: {
+										required: true
+								},
+                                candyPref: {
 										required: true
 								},								
 								comment: {
 										required: false,
 										minlength: 10
 								},
-								'improve[]':{
+								'christmasFood[]':{
 										required:true
 								}								
 						},
@@ -46,25 +71,32 @@
 								firstname: {
 										required: 'Var god ange ditt förnamn',
 										minlength: 'Förnamnet måste vara minst 2 bokstäver'
-								},				
+								},
+                                firstname: {
+										required: 'Var god ange ditt efternamn',
+										minlength: 'Efternamnet måste vara minst 2 bokstäver'
+								},
 								email: {
 										required: 'Var god ange din email-adress',
 										email: 'Var god ange en giltig email-adress'
 								},
-								mobile: {
-										required: 'Enter your mobile phone number',
-										number: 'Phone number must include numbers only',
-										minlength: 'Phone number must not be less than 10 numbers',
-										maxlength: 'Phone number must not exceed 12 numbers'										
+								zip: {
+										required: 'Var god ange ditt postnummer',
+										number: 'Ditt postnummer ska endast innehålla siffror',
+										minlength: 'Ditt postnummer är givetvis 5 siffror',
+										maxlength: 'Ditt postnummer är givetvis 5 siffror'			
 								},								
-								department: {
+								chocolatePref: {
 										required: 'Var god välj din favorit-chokladsort'
-								},																
+								},
+                                chocolatePref: {
+										required: 'Var god välj ditt favorit-julegodis'
+								},
 								/*comment: {
 										required: 'Oops you forgot to comment',
 										minlength: 'Comment must be at least 10 characters'
 								},*/
-								'improve[]':{
+								'christmasFood[]':{
 										required: 'Var god markera minst ett förslag.'
 								}								
 						},

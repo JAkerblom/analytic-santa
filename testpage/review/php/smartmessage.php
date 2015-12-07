@@ -47,16 +47,16 @@ $message = '
                                                         <p><span style="font-weight:bold;font-size:16px">First Name:</span> '.$firstname.'</p>
                                                         <p><span style="font-weight:bold;font-size:16px">Last Name:</span> '.$lastname.'</p>
                                                         <p><span style="font-weight:bold;font-size:16px">Email:</span> '.$email.'</p>
-														<p><span style="font-weight:bold;font-size:16px">Company:</span> '.$company.'</p>
-														<p><span style="font-weight:bold;font-size:16px">Mobile:</span> '.$mobile.'</p>
-														<p><span style="font-weight:bold;font-size:16px">Department:</span> '.$department.'</p>
-														<p><span style="font-weight:bold;font-size:16px">Products Rating:</span> '.$products.'</p>
-														<p><span style="font-weight:bold;font-size:16px">Support Rating:</span> '.$support.'</p>
-														<p><span style="font-weight:bold;font-size:16px">Response Rating:</span> '.$response.'</p>
-														<p><span style="font-weight:bold;font-size:16px">Areas To Improve :</span> <br/>'.$improve_list.'</p>
-                                                        <p><span style="font-weight:bold;font-size:16px;">Comment below:</span> </p>
-                                                        <p style="margin-bottom:0;"> '.nl2br($comment).' </p>
-                                                        
+														<p><span style="font-weight:bold;font-size:16px">Zip:</span> '.$zip.'</p>
+														<p><span style="font-weight:bold;font-size:16px">Gender:</span> '.$sexType.'</p>
+														<p><span style="font-weight:bold;font-size:16px">Age:</span> '.$age.'</p>
+														<p><span style="font-weight:bold;font-size:16px">Prefers soft presents:</span> '.$prefersSoftPresents.'</p>
+														<p><span style="font-weight:bold;font-size:16px">Prefers suntrip:</span> '.$prefersSuntrip.'</p>
+														<p><span style="font-weight:bold;font-size:16px">Prefers dog:</span> '.$prefersDog.'</p>
+														<p><span style="font-weight:bold;font-size:16px">Santa belief :</span> <br/>'.$santaBelief.'</p>
+                                                        <p><span style="font-weight:bold;font-size:16px">Chocolate preference :</span> <br/>'.$chocolatePref.'</p>
+                                                        <p><span style="font-weight:bold;font-size:16px">Candy preference :</span> <br/>'.$candyPref.'</p>
+                                                        <p><span style="font-weight:bold;font-size:16px">Christmas food :</span> <br/>'.$christmasFood.'</p>
                                                       </div>
                                                             
                                                         </td>
