@@ -349,11 +349,11 @@
                 <div class="option-group field">
                   <div class="section colm colm6">
                     <label class="option option-red block spacer-b10">
-                      <input type="checkbox" name="christmasFood[]" value="rodkal">
+                      <input type="checkbox" name="christmasFood[]" value="lutfisk">
                       <span class="checkbox"></span> Lutfisk                
                     </label>
                     <label class="option option-red block spacer-b10">
-                    <input type="checkbox" name="christmasFood[]" value="rodkal">
+                    <input type="checkbox" name="christmasFood[]" value="agg">
                       <span class="checkbox"></span> Ägg                
                     </label>
                     <label class="option option-red block">

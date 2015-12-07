@@ -56,7 +56,7 @@ $message = '
 														<p><span style="font-weight:bold;font-size:16px">Santa belief :</span> <br/>'.$santaBelief.'</p>
                                                         <p><span style="font-weight:bold;font-size:16px">Chocolate preference :</span> <br/>'.$chocolatePref.'</p>
                                                         <p><span style="font-weight:bold;font-size:16px">Candy preference :</span> <br/>'.$candyPref.'</p>
-                                                        <p><span style="font-weight:bold;font-size:16px">Christmas food :</span> <br/>'.$christmasFood.'</p>
+                                                        <p><span style="font-weight:bold;font-size:16px">Christmas food :</span> <br/>'.$christmasFood_list.'</p>
                                                       </div>
                                                             
                                                         </td>
