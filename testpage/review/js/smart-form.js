@@ -47,7 +47,7 @@
                                         required: true
                                 },
                                 santaBelief: {
-                                        required: true
+                                        required: false
                                 },
 								chocolatePref: {
 										required: true
@@ -86,10 +86,13 @@
 										minlength: 'Ditt postnummer är givetvis 5 siffror',
 										maxlength: 'Ditt postnummer är givetvis 5 siffror'			
 								},								
-								chocolatePref: {
-										required: 'Var god välj din favorit-chokladsort'
+								santaBelief: {
+										required: 'Var god säg om du tror på tomten eller inte'
 								},
                                 chocolatePref: {
+										required: 'Var god välj ditt favorit-choklad'
+								},
+                                candyPref: {
 										required: 'Var god välj ditt favorit-julegodis'
 								},
 								/*comment: {
@@ -97,7 +100,7 @@
 										minlength: 'Comment must be at least 10 characters'
 								},*/
 								'christmasFood[]':{
-										required: 'Var god markera minst ett förslag.'
+										required: 'Var god markera minst ett förslag av mat som ni gillar.'
 								}								
 						},
 
@@ -111,7 +114,7 @@
 								$(element).closest('.field').removeClass(errorClass).addClass(validClass);
 						},
 						errorPlacement: function(error, element) {
-						   if (element.is(":radio") || element.is(":checkbox")) {
+                          if (element.is(":radio") || element.is(":checkbox")) {
 									element.closest('.option-group').after(error);
 						   } else {
 									error.insertAfter(element.parent());
@@ -121,15 +124,19 @@
 						/* @ajax form submition 
 						---------------------------------------------------- */						
 						submitHandler:function(form) {
-							$(form).ajaxSubmit({
+						  console.log("In submithandler");	
+                          $(form).ajaxSubmit({
 								    target:'.result',			   
 									beforeSubmit:function(){ 
-											$('.form-footer').addClass('progress');
+									  console.log("Before");		
+                                      $('.form-footer').addClass('progress');
 									},
 									error:function(){
-											$('.form-footer').removeClass('progress');
+									   console.log("Here!");		
+                                      $('.form-footer').removeClass('progress');
 									},
 									 success:function(){
+                                       console.log("Success!");		
 											$('.form-footer').removeClass('progress');
 											$('.alert-success').show().delay(10000).fadeOut();
 											$('.field').removeClass("state-error, state-success");

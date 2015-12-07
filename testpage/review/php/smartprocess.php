@@ -24,6 +24,8 @@
 	$prefersSuntrip = strip_tags(trim($_POST["prefersSuntrip"]));
 	$prefersDog = strip_tags(trim($_POST["prefersDog"]));
 	$santaBelief = strip_tags(trim($_POST["santaBelief"]));
+    
+    //$santaBelief = strip_tags(trim($_POST["switch1"]));
     $chocolatePref = strip_tags(trim($_POST["chocolatePref"]));
     $candyPref = strip_tags(trim($_POST["candyPref"]));
 	$christmasFood = $_POST["christmasFood"];
@@ -108,7 +110,12 @@
 				$errors[] = "Please select a candyPref.";
 			}
 	}
-	
+    //validate santaBelief
+	//if(isset($_POST["santaBelief"])){
+		//	if (!santaBelief) {
+		//		$errors[] = "Please select a santaBelief.";
+		//	}
+	//}
 	//validate christmasFood
 	if($christmasFood[0]==''){	
 		$errors[] = "Please check at least one option.";

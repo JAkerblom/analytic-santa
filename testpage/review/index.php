@@ -185,7 +185,14 @@
                 </div>
                 <div class="section colm colm2">
                   <label class="switch block">
-                    <input type="checkbox" name="santaBelief" id="switch1" value="santaBelief">
+                    <!--<input type="checkbox" name="santaBelief" id="switch1" $checked == "" ? value="1" : value="0">-->
+                    
+                    <!--<input type="checkbox" name="santaBelief" id="switch1" $checked == "" ? value="1" : value="0">
+                    <label for="switch1" data-on="JA" data-off="NEJ"></label>-->
+                    
+                    <!--<input type="checkbox" name="santaBelief" id="switch1" $checked ? value="1" : value="0">-->
+                    <input type="checkbox" name="santaBelief" id="switch1" value="1">
+                    <input type="hidden" name="santaBelief" value="0">
                     <label for="switch1" data-on="JA" data-off="NEJ"></label>
                   </label>
                 </div>
@@ -318,10 +325,23 @@
                                   <span class="checkbox"></span> Prinskorv               
                               </label>
 
-                              <label class="option option-red block">
+                              <label class="option option-red block spacer-b10">
                                   <input type="checkbox" name="christmasFood[]" value="skinka">
                                   <span class="checkbox"></span> Skinka                 
-                              </label>                                                        
+                              </label>
+                              
+                              <label class="option option-red block spacer-b10">
+                                <input type="checkbox" name="christmasFood[]" value="lutfisk">
+                                <span class="checkbox"></span> Lutfisk                
+                              </label>
+                              <label class="option option-red block spacer-b10">
+                              <input type="checkbox" name="christmasFood[]" value="agg">
+                                <span class="checkbox"></span> Ägg                
+                              </label>
+                              <label class="option option-red block">
+                                <input type="checkbox" name="christmasFood[]" value="lax">
+                                <span class="checkbox"></span> Lax                  
+                              </label>
                                                         
                             </div><!-- end section -->
                             <div class="section colm colm6">
@@ -336,47 +356,26 @@
                                   <span class="checkbox"></span> Brysselkål             
                               </label>
 
-                              <label class="option option-red block">
+                              <label class="option option-red block spacer-b10">
                                   <input type="checkbox" name="christmasFood[]" value="rodkal">
                                   <span class="checkbox"></span> Röd/brunkål                
+                              </label>
+                              
+                              <label class="option option-red block spacer-b10">
+                                <input type="checkbox" name="christmasFood[]" value="janssons">
+                                <span class="checkbox"></span> Janssons
+                              </label>
+                              <label class="option option-red block spacer-b10">
+                                <input type="checkbox" name="christmasFood[]" value="sylta">
+                                <span class="checkbox"></span> Sylta             
+                              </label>
+                              <label class="option option-red block">
+                                <input type="checkbox" name="christmasFood[]" value="potatis">
+                                <span class="checkbox"></span> Potatis
                               </label>
                             </div><!-- end section -->
                         </div><!-- end option-group section -->
                     </div><!-- end .frm-row section -->
-
-              
-              <div class="frm-row">
-                <div class="option-group field">
-                  <div class="section colm colm6">
-                    <label class="option option-red block spacer-b10">
-                      <input type="checkbox" name="christmasFood[]" value="lutfisk">
-                      <span class="checkbox"></span> Lutfisk                
-                    </label>
-                    <label class="option option-red block spacer-b10">
-                    <input type="checkbox" name="christmasFood[]" value="agg">
-                      <span class="checkbox"></span> Ägg                
-                    </label>
-                    <label class="option option-red block">
-                      <input type="checkbox" name="christmasFood[]" value="lax">
-                      <span class="checkbox"></span> Lax                  
-                    </label>
-                  </div><!-- end section -->
-                  <div class="section colm colm6">
-                    <label class="option option-red block spacer-b10">
-                      <input type="checkbox" name="christmasFood[]" value="janssons">
-                      <span class="checkbox"></span> Janssons
-                    </label>
-                    <label class="option option-red block spacer-b10">
-                      <input type="checkbox" name="christmasFood[]" value="sylta">
-                      <span class="checkbox"></span> Sylta             
-                    </label>
-                    <label class="option option-red block">
-                      <input type="checkbox" name="christmasFood[]" value="potatis">
-                      <span class="checkbox"></span> Potatis
-                    </label>
-                  </div><!-- end section -->
-                </div><!-- end option-group section -->
-              </div><!-- end .frm-row section --
                 
                     <!-- Google map. Remove comments to have this. I will include coordinates from the zip code which could be used here.
                     <//?php include('php/googlemap.php'); ?>
