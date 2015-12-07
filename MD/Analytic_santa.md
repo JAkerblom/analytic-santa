@@ -158,7 +158,14 @@ Man hade eventuellt också behövt lagra en bild, vilket kan göras i BLOB-forma
 ### 2. Extern data
 Det här rör demografiska data som kan ge ytterligare förklarande variabler. Exempelvis från postnummer. Kan det ge persona också så är det ju superbra. Vet att hitta.se har en livsstils app där de genom gatan kan få reda på medelinkomst, skuldsättning och vad folk på denna gata gillar i livet (vin, kultur, aktiehandel). 
 
-Jag har ännu inte dykt ner i det här, men jag tänker hålla mig till att göra det enkelt. Den informationen jag får ut av SCB ska jag så klart försöka hämta så många potentiella variabler ifrån, men tänker inte lägga för mycket tid på det. Lyckas jag få ut snittinkomst och partitillhörighet så är jag rätt nöjd och hoppas det lyfter resultatet något. 
+~~Jag har ännu inte dykt ner i det här, men jag tänker hålla mig till att göra det enkelt. Den informationen jag får ut av SCB ska jag så klart försöka hämta så många potentiella variabler ifrån, men tänker inte lägga för mycket tid på det. Lyckas jag få ut snittinkomst och partitillhörighet så är jag rätt nöjd och hoppas det lyfter resultatet något.~~
+
+Det jag har fått fram hittills är postnummer kopplat till kommunkod och kommunkod kopplat till diverse data -> Partival, Reala tillgångar, Kommundata. Se följande bilder för upplägg på CSV-filer. Jag kommer lägga till ett set med namnet på kommunerna och länen utifall att man vill använda det istället i modellen. Visserligen kommer jag troligen sätta upp en NN-modell vilket ändå inte kan tolkas, så namn på orter kan vara onödigt.
+
+![Zip](Images/ExtData-Postnr.png)
+![Election](Images/ExtData-Election.png)
+![Wealth](Images/ExtData-Wealth.png)
+![Municipality](Images/ExtData-Municipality.png) 
 
 <!--
 #### 2.i Aktiviteter
@@ -197,6 +204,27 @@ Alt. Vit/Mörk/Mjölkchocklad? | `{Vit, Mörk, Mjölk, Inget}[NOMINAL]` | `choco
 Tror på tomten | `{Y, N, ?}[NOMINAL::BINARY]`| `santaBelief`
 Hund eller katt? | `{0, 1, ?}[NOMINAL::BINARY]` | `prefersDog`
 Intressen | Kan vara svår. Tänk om personen inte tycker om något av det jag föreslår. | `interests`
+Brukar ha rim på julklappar? | `{}[BINARY]` | ``
+Paradis eller Aladin? | `{}[NOMINAL:BINARY]` | ``
+Köttbullar
+Prinskorvar
+Skinka
+Sill
+Brysselkål,
+Röd/Brunkål
+Lutfisk
+Ägg
+Lax
+Janssons
+Sylta
+
+Knäck
+MArsipan
+Nougat
+Pepparkaka
+Lussebulle
+Ischoklad
+Polkagris
 
 ## SQL relaterad info
 
