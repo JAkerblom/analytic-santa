@@ -31,6 +31,7 @@
               arrow_step: 1             
          });   
       });
+      
     </script>
       
     <!--[if lte IE 9]>   
@@ -57,13 +58,12 @@
       <div class="smart-wrap">
         <div class="smart-forms smart-container wrap-3">
         
-          <div class="form-header header-red header-primary">
+          <div class="form-header header-red header-primary" id="header">
             <h4 style="text-align:center !important;"><i class="fa fa-gift"></i>Vad önskar du <br>dig i julklapp?</h4>
           </div><!-- end .form-header section -->
             
           <form method="post" action="php/smartprocess.php" id="smart-form">
-            <div class="form-body theme-red">
-
+            <div class="form-body theme-red" id="section-1">
                   <div class="spacer-b30">
                     <div class="tagline"><span> Dina uppgifter </span></div><!-- .tagline -->
                   </div>
@@ -337,86 +337,86 @@
                             </div><!-- end section -->
                         </div><!-- end option-group section -->
                     </div><!-- end .frm-row section -->
-                    
-                    <div class="spacer-b30">
-                      <div class="tagline"><span> Vad du tycker om olika klappar </span></div><!-- .tagline -->
-                    </div>
-              
-                    <!--<div class="section">
-                      <label for="comment" class="field prepend-icon">
-                        <textarea class="gui-textarea" id="comment" name="comment" placeholder="Ge feedback på den här appen"></textarea>
-                        <label class="field-icon"><i class="fa fa-comments"></i></label>
-                        <span class="input-hint"> <strong>Hint:</strong> Please enter between 80 - 300 characters.</span>
-                      </label>
-                    </div><!-- end section -->
-                    
-                    <!--<div class="spacer spacer-b20"></div> -->
-                    
-                    <div class="section spacer-b20">
-                        <p class="">Betygsätt dessa klappar utifrån hur väl de hade passat inslagna och med ditt namn på etiketten.</p>
-                        <p class="small-text fine-grey">1 stjärna = Inget jag kan tänka mig.</p>
-                        <p class="small-text fine-grey">3 stjärnor = Osäker, men hade inte tackat nej.</p>
-                        <p class="small-text fine-grey">5 stjärnor = Spot on! Ge mig den, tack!</p>
-                    </div>
-                
-                    <div class="section">
-                        <span class="rating block" id="27">
-                            <span class="lbl-text">En fattig gräsklippare</span>
-                            <input class="rating-input" id="5-id27" type="radio"  name="items[0]" value='{"itemID":27, "rating":5}'>
-                            <label class="rating-star" for="5-id27"><i class="fa fa-star"></i></label>
-                            <input class="rating-input" id="4-id27" type="radio"  name="items[0]" value='{"itemID":27, "rating":4}'>
-                            <label class="rating-star" for="4-id27"><i class="fa fa-star"></i></label>          
-                            <input class="rating-input" id="3-id27" type="radio"  name="items[0]" value='{"itemID":27, "rating":3}'>
-                            <label class="rating-star" for="3-id27"><i class="fa fa-star"></i></label>          
-                            <input class="rating-input" id="2-id27" type="radio"  name="items[0]" value='{"itemID":27, "rating":2}'>
-                            <label class="rating-star" for="2-id27"><i class="fa fa-star"></i></label>          
-                            <input class="rating-input" id="1-id27" type="radio"  name="items[0]" value='{"itemID":27, "rating":1}'>
-                            <label class="rating-star" for="1-id27"><i class="fa fa-star"></i></label>      
-                        </span>  
-                        <span class="rating block">
-                            <span class="lbl-text">En ascool Actionman</span>
-                            <input class="rating-input" id="5-id16" type="radio"  name="items[1]" value='{"itemID":16, "rating":5}'>
-                            <label class="rating-star" for="5-id16"><i class="fa fa-star"></i></label>
-                            <input class="rating-input" id="4-id16" type="radio"  name="items[1]" value='{"itemID":16, "rating":4}'>
-                            <label class="rating-star" for="4-id16"><i class="fa fa-star"></i></label>          
-                            <input class="rating-input" id="3-id16" type="radio"  name="items[1]" value='{"itemID":16, "rating":3}'>
-                            <label class="rating-star" for="3-id16"><i class="fa fa-star"></i></label>          
-                            <input class="rating-input" id="2-id16" type="radio"  name="items[1]" value='{"itemID":16, "rating":2}'>
-                            <label class="rating-star" for="2-id16"><i class="fa fa-star"></i></label>          
-                            <input class="rating-input" id="1-id16" type="radio"  name="items[1]" value='{"itemID":16, "rating":1}'>
-                            <label class="rating-star" for="1-id16"><i class="fa fa-star"></i></label>      
-                        </span>
-                        <span class="rating block">
-                            <span class="lbl-text">En trött rakhyvel</span>
-                            <input class="rating-input" id="5-id23" type="radio"  name="items[2]" value='{"itemID":23, "rating":5}'>
-                            <label class="rating-star" for="5-id23"><i class="fa fa-star"></i></label>
-                            <input class="rating-input" id="4-id23" type="radio"  name="items[2]" value='{"itemID":23, "rating":4}'>
-                            <label class="rating-star" for="4-id23"><i class="fa fa-star"></i></label>          
-                            <input class="rating-input" id="3-id23" type="radio"  name="items[2]" value='{"itemID":23, "rating":3}'>
-                            <label class="rating-star" for="3-id23"><i class="fa fa-star"></i></label>          
-                            <input class="rating-input" id="2-id23" type="radio"  name="items[2]" value='{"itemID":23, "rating":2}'>
-                            <label class="rating-star" for="2-id23"><i class="fa fa-star"></i></label>          
-                            <input class="rating-input" id="1-id23" type="radio"  name="items[2]" value='{"itemID":23, "rating":1}'>
-                            <label class="rating-star" for="1-id23"><i class="fa fa-star"></i></label> 
-                        </span>                         
-                                                       
-                    </div><!-- end  section -->
-                    
-              
-                    <!-- Google map. Remove comments to have this. I will include coordinates from the zip code which could be used here.
-                    <//?php include('php/googlemap.php'); ?>
-                    -->
-                    <div class="result"></div><!-- end .result  section -->
                 </div><!-- end .form-body section -->
+            
+            <div class="form-body theme-red" id="section-2" style="display:none;">
+              <div class="spacer-b30">
+                <div class="tagline"><span> Dina uppgifter </span></div><!-- .tagline -->
+              </div>
+              <div class="section spacer-b20">
+                  <p class="">Betygsätt dessa klappar utifrån hur väl de hade passat inslagna och med ditt namn på etiketten.</p>
+                  <p class="small-text fine-grey">1 stjärna = Inget jag kan tänka mig.</p>
+                  <p class="small-text fine-grey">3 stjärnor = Osäker, men hade inte tackat nej.</p>
+                  <p class="small-text fine-grey">5 stjärnor = Spot on! Ge mig den, tack!</p>
+              </div>
+
+              <div class="section">
+                  <span class="rating block" id="27">
+                      <span class="lbl-text">En fattig gräsklippare</span>
+                      <input type="hidden" id="0-id27" type="radio" name="items[0]" value='{"itemID":23, "rating":1}'>
+                      <input class="rating-input" id="6-id27" type="radio"  name="items[0]" value='{"itemID":27, "rating":6}'>
+                      <label class="rating-star" for="6-id27"><i class="fa fa-star"></i></label>
+                      <input class="rating-input" id="5-id27" type="radio"  name="items[0]" value='{"itemID":27, "rating":5}'>
+                      <label class="rating-star" for="5-id27"><i class="fa fa-star"></i></label>
+                      <input class="rating-input" id="4-id27" type="radio"  name="items[0]" value='{"itemID":27, "rating":4}'>
+                      <label class="rating-star" for="4-id27"><i class="fa fa-star"></i></label>          
+                      <input class="rating-input" id="3-id27" type="radio"  name="items[0]" value='{"itemID":27, "rating":3}'>
+                      <label class="rating-star" for="3-id27"><i class="fa fa-star"></i></label>          
+                      <input class="rating-input" id="2-id27" type="radio"  name="items[0]" value='{"itemID":27, "rating":2}'>
+                      <label class="rating-star" for="2-id27"><i class="fa fa-star"></i></label>          
+                      <input class="rating-input" id="1-id27" type="radio"  name="items[0]" value='{"itemID":27, "rating":1}'>
+                      <label class="rating-star" for="1-id27"><i class="fa fa-star"></i></label>      
+                  </span>  
+                  <span class="rating block">
+                      <span class="lbl-text">En ascool Actionman</span>
+                      <input type="hidden" id="0-id16" type="radio" name="items[1]" value='{"itemID":16, "rating":1}'>
+                      <input class="rating-input" id="6-id16" type="radio"  name="items[0]" value='{"itemID":16, "rating":6}'>
+                      <label class="rating-star" for="6-id16"><i class="fa fa-star"></i></label>
+                      <input class="rating-input" id="5-id16" type="radio"  name="items[1]" value='{"itemID":16, "rating":5}'>
+                      <label class="rating-star" for="5-id16"><i class="fa fa-star"></i></label>
+                      <input class="rating-input" id="4-id16" type="radio"  name="items[1]" value='{"itemID":16, "rating":4}'>
+                      <label class="rating-star" for="4-id16"><i class="fa fa-star"></i></label>          
+                      <input class="rating-input" id="3-id16" type="radio"  name="items[1]" value='{"itemID":16, "rating":3}'>
+                      <label class="rating-star" for="3-id16"><i class="fa fa-star"></i></label>          
+                      <input class="rating-input" id="2-id16" type="radio"  name="items[1]" value='{"itemID":16, "rating":2}'>
+                      <label class="rating-star" for="2-id16"><i class="fa fa-star"></i></label>          
+                      <input class="rating-input" id="1-id16" type="radio"  name="items[1]" value='{"itemID":16, "rating":1}'>
+                      <label class="rating-star" for="1-id16"><i class="fa fa-star"></i></label>      
+                  </span>
+                  <span class="rating block">
+                      <span class="lbl-text">En trött rakhyvel</span>
+                      <input type="hidden" id="0-id23" type="radio" name="items[2]" value='{"itemID":23, "rating":1}'>
+                      <input class="rating-input" id="6-id23" type="radio"  name="items[0]" value='{"itemID":23, "rating":6}'>
+                      <label class="rating-star" for="6-id23"><i class="fa fa-star"></i></label>
+                      <input class="rating-input" id="5-id23" type="radio"  name="items[2]" value='{"itemID":23, "rating":5}'>
+                      <label class="rating-star" for="5-id23"><i class="fa fa-star"></i></label>
+                      <input class="rating-input" id="4-id23" type="radio"  name="items[2]" value='{"itemID":23, "rating":4}'>
+                      <label class="rating-star" for="4-id23"><i class="fa fa-star"></i></label>          
+                      <input class="rating-input" id="3-id23" type="radio"  name="items[2]" value='{"itemID":23, "rating":3}'>
+                      <label class="rating-star" for="3-id23"><i class="fa fa-star"></i></label>          
+                      <input class="rating-input" id="2-id23" type="radio"  name="items[2]" value='{"itemID":23, "rating":2}'>
+                      <label class="rating-star" for="2-id23"><i class="fa fa-star"></i></label>          
+                      <input class="rating-input" id="1-id23" type="radio"  name="items[2]" value='{"itemID":23, "rating":1}'>
+                      <label class="rating-star" for="1-id23"><i class="fa fa-star"></i></label>
+                  </span>                                                             
+                </div><!-- end  section -->
+            </div>
+            <div class="result"></div><!-- end .result  section -->
                 <div class="form-footer">
                 	<!--<button type="submit" class="button btn-red pushed btn-primary">Submit Feedback</button>-->
-                    <div class="actions clearfix"><ul role="menu" aria-label="Pagination">
-                      <li class="disabled" aria-disabled="true"><a href="#previous" role="menuitem">Go Back</a></li>
+                    <button type="submit" id="back" class="button btn-red pushed btn-primary">Tillbaka</button> <!--onclick="back()"-->
+                    <button type="button" id="continue" class="button btn-red pushed btn-primary">Gå vidare</button>
+                    <button type="submit" id="submit" class="button btn-red pushed btn-primary">Skicka svar</button>
+                    <!--<div class="actions clearfix"><ul role="menu" aria-label="Pagination" id="buttonList">
+                      <!--<li class="disabled" aria-disabled="true"><a href="#previous" role="menuitem">Go Back</a></li>
                       <li aria-hidden="false" aria-disabled="false"><a href="#next" role="menuitem">Continue</a></li>
-                      <li aria-hidden="true" style="display: none;"><a href="#finish" role="menuitem">Submit Form</a></li></ul></div>
+                      <li aria-hidden="true" style="display: none;"><a href="#finish" role="menuitem">Submit Form</a></li></ul>-->
+                      <!--<li id="back"><a onclick="" role="menuitem">Gå tillbaka</a></li>
+                      <li id="continue"><a onclick="" role="menuitem">Gå tillbaka</a></li>
+                      <li id="submit"><a onclick="" role="menuitem">Gå tillbaka</a></li></div>-->
+                    
                 </div><!-- end .form-footer section -->
             </form>
-            
         </div><!-- end .smart-forms section -->
     </div><!-- end .smart-wrap section -->
     

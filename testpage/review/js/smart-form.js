@@ -1,4 +1,4 @@
-$(document).ready(function() {
+/*$(document).ready(function() {
   var form  = $('#smart-form');
   form.children("div").steps({
     headerTag: "h3",
@@ -8,7 +8,64 @@ $(document).ready(function() {
     {
         form.validate().settings.ignore = ":disabled,:hidden";
         return form.valid();
-    },
+    }
+  });
+});*/
+
+$(document).ready(function(e) {
+  /*$buttonList = $('#buttonList').children();
+  //$buttonList = $('#buttonList');
+  console.log($.type($buttonList[]));
+  console.log($buttonList);
+  console.log($buttonList[0]);
+  $buttonList[0].attr("style","display:none;");
+  /*$buttonList[1].css('display','none');
+  $buttonList[2].css('display','block');*/
+  
+  $backButton = $('#back');
+  $contButton = $('#continue');
+  $submButton = $('#submit');
+  
+  $firstPage = $("#section-1");
+  $secondPage = $("#section-2");
+  
+  $backButton.hide();
+  $submButton.hide();
+  
+  $('#back').click(function(e) {
+    console.log("Clicked backward");
+    
+    /* Hiding showing pages */
+    $secondPage.hide("slow");
+    $firstPage.show("slow");
+    
+    /* Hiding showing buttons */
+    $backButton.hide("slow");
+    $contButton.show("slow");
+    $submButton.hide("slow");
+    
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+  });
+  
+  $('#continue').click(function(e) {
+    console.log("Clicked forward");
+    
+    if ($('#smart-form').valid()) {
+      /* Hiding showing pages */
+      $firstPage.hide("slow");
+      $secondPage.show("slow");
+
+      /* Hiding showing buttons */
+      $backButton.show("slow");
+      $contButton.hide("slow");
+      $submButton.show("slow");
+
+      $("html, body").animate({ scrollTop: 0 }, "slow");
+    } 
+  });
+  
+  $('#submit').click(function(e) {});
+  
 });
 
   $(document).ready(function() {
@@ -159,6 +216,7 @@ $(document).ready(function() {
 									 }
 							  });
 						}
+                        
 						
 				});		
 		
