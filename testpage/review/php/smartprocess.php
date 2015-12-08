@@ -147,7 +147,7 @@
 		echo '<div class="alert notification alert-error">The following errors occured:<br><ul>'. $errortext .'</ul></div>';
 	
 	} else {	
-			require "PHPMailerAutoload.php";
+			/*require "PHPMailerAutoload.php";*/
 			require "smartmessage.php";
 				
 			/*$mail = new PHPMailer();
@@ -186,6 +186,8 @@
 			else {
 			  	echo '<div class="alert notification alert-success">Congs! Message sent successfully </div>';*/
 				
+                echo '<div class="alert notification alert-success">Congs! Message sent successfully </div>';
+                echo $message;
 				/* GENERATE / CREATE THE CSV FILE
 				------------------------------------------------------
 				 * Give the csv top row headings names in an array 
