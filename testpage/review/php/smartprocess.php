@@ -150,7 +150,7 @@
 			require "PHPMailerAutoload.php";
 			require "smartmessage.php";
 				
-			$mail = new PHPMailer();
+			/*$mail = new PHPMailer();
 			$mail->isSendmail();
 			$mail->IsHTML(true);
 			$mail->From = $email;
@@ -184,7 +184,7 @@
 			  	echo '<div class="alert notification alert-error">Oops! An error occurred!</div>'; 
 			} 
 			else {
-			  	echo '<div class="alert notification alert-success">Congs! Message sent successfully </div>';
+			  	echo '<div class="alert notification alert-success">Congs! Message sent successfully </div>';*/
 				
 				/* GENERATE / CREATE THE CSV FILE
 				------------------------------------------------------
