@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css"  href="css/smart-addons.css">
     <link rel="stylesheet" type="text/css"  href="css/font-awesome.min.css">
   
+    <script type="text/javascript" src="data/items/klapplist.json"></script>
 	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>  
     <!--<script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script>-->
     <script type="text/javascript" src="js/jquery.form.min.js"></script>
