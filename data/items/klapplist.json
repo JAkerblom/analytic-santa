@@ -1,0 +1,149 @@
+var klappar_list = 
+{ "klappar" :
+    [
+   {  
+      "itemURL":"http://www.coolstuff.se/Super-Retro-Trio-Multikonsol",
+      "itemPicture":"b4fb5fd0e1ae4110c8b0dfde101a5112.jpg",
+      "itemID":1,
+      "itemName":"Super Retro Trio Multikonsol",
+      "description":"Saknar du tiden när tv-spelen var enklare, svårare och roligare? Nu kan du spela alla spel till Nintendo 8-bitar, Super Nintendo och Sega Mega Drive - på en och samma konsol.",
+      "price":995
+   },
+   {  
+      "itemURL":"http://www.coolstuff.se/KitchPro-Hamburgerpress",
+      "itemPicture":"53bd228ba66b63c012d05a68042a76d7.jpg",
+      "itemID":2,
+      "itemName":"KitchPro Hamburgerpress",
+      "description":"Gör som jänkarna och kötta till det med stuffed burgers. Denna hamburgerpress hjälper dig att enkelt skapa supergoda hamburgare med olika fyllningar!",
+      "price":99
+   },
+   {  
+      "itemURL":"http://www.coolstuff.se/KitchPro-Sous-Vide-Slow-Cooker",
+      "itemPicture":"03c033ae2dacefde3667feef77562082.jpg",
+      "itemID":3,
+      "itemName":"KitchPro Sous Vide Slow Cooker",
+      "description":"Sous vide har länge varit proffskockarnas väg till perfekt mat, men nu behöver du inte ha ett restaurangkök för att få ett lika bra resultat hemma!",
+      "price":999
+   },
+   {  
+      "itemURL":"http://www.coolstuff.se/Towel-Twister",
+      "itemPicture":"08897f1b38a79de7b99176ef6529db46.jpg",
+      "itemID":4,
+      "itemName":"Towel Twister",
+      "description":"Samla ditt blöta hår i en superabsorberande mikrofiberhandduk och lägg det nonchalant på huvudet! Helt plötsligt kommer vanliga handdukar kännas gammaldags och obekväma.",
+      "price":129
+   },
+   {  
+      "itemURL":"http://www.coolstuff.se/Mini-Donut-Maker",
+      "itemPicture":"c4b826df2f8cf613ecda63a92273e9c8.jpg",
+      "itemID":5,
+      "itemName":"KitchPro Mini Donut Maker",
+      "description":"Som ett våffeljärn fast för mini donuts! Värm upp maskinen, häll i smet, vänta några minuter och plocka sen ut perfekta minimunkar!",
+      "price":249
+   },
+   {  
+      "itemURL":"http://www.coolstuff.se/Razorpit-Rakbladsrengorare",
+      "itemPicture":"c96b6a3d745dc1fb0dd6f52b898d886b.jpg",
+      "itemID":6,
+      "itemName":"Razorpit Rakbladsrengörare",
+      "description":"Dina rakblad är inte slöa – de är smutsiga! Med hjälp av Razorpit får du bort smutset så att rakbladen blir vassare och håller mycket längre. Vad sägs om att raka dig upp till 150 gånger med samma blad? ",
+      "price":199
+   },
+   {  
+      "itemURL":"http://www.coolstuff.se/Hugogate_Elektronisk_Slipshangare",
+      "itemPicture":"75918f9cb75405dc956fa8fb627d34a8.jpg",
+      "itemID":7,
+      "itemName":"Hugogate Elektronisk Slipshängare ",
+      "description":"Supersmooth elektronisk slipshängare som rymmer 30 slipsar. Med en enkel knapptryckning roterar du dina slipsar och inbyggd belysning gör att du alltid hittar rätt slips!",
+      "price":299
+   },
+   {  
+      "itemURL":"http://www.coolstuff.se/Helautomatisk-Vinpump",
+      "itemPicture":"ff32349daf21d192c21996ff5ae07c1a.jpg",
+      "itemID":8,
+      "itemName":"KitchPro Helautomatisk Vinpump ",
+      "description":"Sätt på vinpumpen på flaskan och den suger automatiskt ut rätt mängd luft. Pumpen aktiveras igen om det kommer in ny luft.",
+      "price":295
+   },
+   {  
+      "itemURL":"http://www.coolstuff.se/Skarsaker-Kokshandske",
+      "itemPicture":"5e26fa99fe67ed5b17d0ef1ec0b735bb.jpg",
+      "itemID":9,
+      "itemName":"Skärsäker Kökshandske ",
+      "description":"Med den skärsäkra handsken slipper du att putsa till fingrarna när du arbetar i köket eller scrapbookar.",
+      "price":139
+   },
+   {  
+      "itemURL":"http://www.coolstuff.se/Riskokare-for-micron",
+      "itemPicture":"08acb7233ea6e0032cd8f519a987e961.jpg",
+      "itemID":10,
+      "itemName":"Riskokare för micron ",
+      "description":"Häll i ris och vatten, in i micron—ta några minuter och klura på hur många riskorn det egentligen finns i världen, ta sen ut riset och ta åt dig äran för perfekt kokt ris- varje gång.",
+      "price":299
+   },
+   {  
+      "itemURL":"http://www.coolstuff.se/Kottklor",
+      "itemPicture":"ef20874a6dd333c95869883b7b8aa71d.jpg",
+      "itemID":11,
+      "itemName":"Köttklor ",
+      "description":"Förse händerna med klor som kan hålla fast och lyfta steken, separera pulled pork och mixa en macho sallad!",
+      "price":119
+   },
+   {  
+      "itemURL":"http://www.coolstuff.se/Portabel-Hangmatta",
+      "itemPicture":"4fa35e3a0db2af8c2113a254dc7a117b.jpg",
+      "itemID":12,
+      "itemName":"Portabel Hängmatta ",
+      "description":"Hängmatta med stativ för lata dagar! Tar mindre än 1 minut att fälla upp eller ner. Packa ner det i medföljande bärväska och ta med dig vart du vill!",
+      "price":695
+   },
+   {  
+      "itemURL":"http://www.coolstuff.se/Herb-Savor-Ortforvaring",
+      "itemPicture":"2bcbc30dadd10e7ae78bd28478034222.jpg",
+      "itemID":13,
+      "itemName":"Herb Savor ",
+      "description":"Örtförvaring Klipp dina örter ur krukan, ställ dem i Herb Savor, vattna lite, placera i kylskåp och du kryddar din mat med de fräschaste av örter i flera veckor.",
+      "price":295
+   },
+   {  
+      "itemURL":"http://www.coolstuff.se/Triscale-Digital-Koksvag",
+      "itemPicture":"0e4734bff258e4c46a26b689b2ee3bd0.jpg",
+      "itemID":14,
+      "itemName":"Triscale Digital Köksvåg - Joseph Joseph ",
+      "description":"Pytteliten hopfällbar hushållsvåg! Triscale Digital Köksvåg får plats i besticklådan men kan i utfällt läge väga ingredienser upp till 5 kg, och nollställas mellan varje tillsatt ingrediens!",
+      "price":395
+   },
+   {  
+      "itemURL":"http://www.coolstuff.se/Popcornmaskin-Cinema-Style",
+      "itemPicture":"5d1cc1bec6dacd27535fdce4b59f9627.jpg",
+      "itemID":15,
+      "itemName":"Popcornmaskin Cinema Style ",
+      "description":"Med vår biografstylade popcornmaskin finns alltid en näve färska popcorn hemma, liksom en snygg köksapparat som får - nej, ska! - stå mitt i bild.",
+      "price":599
+   },
+   {  
+      "itemURL":"http://www.coolstuff.se/Kitchen-Safe",
+      "itemPicture":"c101f47a67552b9f39f055497ad59321.jpg",
+      "itemID":16,
+      "itemName":"Kitchen Safe ",
+      "description":"Som ett kassaskåp med timerfunktion, perfekt för kakor, fjärrkontroller och annat som lätt distraherar dig. Lås in och koppla av, för ingen annan kommer åt grejerna medan de ligger i Kitchen Safe.",
+      "price":499
+   },
+   {  
+      "itemURL":"http://www.coolstuff.se/Automatisk_Matskal",
+      "itemPicture":"f6967443acac6707948997cab0d011fc.jpg",
+      "itemID":17,
+      "itemName":"Automatisk Matskål ",
+      "description":"En automatisk matare som ger din hund eller katt exakt så mycket mat som den behöver, på precis de tider då den behöver mat.",
+      "price":499
+   },
+   {  
+      "itemURL":"http://www.coolstuff.se/Autoloader-Skruvmejsel",
+      "itemPicture":"0493d93f62cf38473108c07e2e9fb9c0.jpg",
+      "itemID":18,
+      "itemName":"Autoloader Skruvmejsel ",
+      "description":"Slipp din ilska över fel mejsel med världens smartaste skruvmejsel. Den har sex olika bits inuti sig som du med ett enkelt grepp byter mellan på under 2 sekunder!",
+      "price":249
+   }
+]
+}
