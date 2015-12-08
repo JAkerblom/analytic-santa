@@ -251,14 +251,17 @@
                   <label class="field select">
                       <select id="kallePref" name="kallePref">
                         <option value="">Välj din favoritdel av Kalle Ankas Jul...</option>
-                        <option value="kola">Knäckkola</option>
-                        <option value="marsipan">Marsipan</option>
-                        <option value="nougat">Nougat</option>
-                        <option value="pepparkaka">Pepparkaka</option>
-                        <option value="lussekatt">Lussekatt</option>
-                        <option value="ischoklad">Ischoklad</option>
-                        <option value="ischoklad">Skumtomtar</option>
-                        <option value="polkagris">Polkagris</option>
+                        <option value="verkstad">I jultomtens verkstad</option>
+                        <option value="kalle-anka">Kalle Anka i djungeln</option>
+                        <option value="askungen">Askungen</option>
+                        <option value="mussepigg">Musse Pigg på capming</option>
+                        <option value="lady-lufsen">Lady och Lufsen</option>
+                        <option value="djungelboken">Djungelboken</option>
+                        <option value="snovit">Snövit och de sju dvärgarna</option>
+                        <option value="ferdinand">Tjuren Ferdinand</option>
+                        <option value="robin-hood">Robin Hood</option>
+                        <option value="pluto">Plutos julgran</option>
+                        
                       </select>
                       <i class="arrow double"></i>           
                   </label>  
