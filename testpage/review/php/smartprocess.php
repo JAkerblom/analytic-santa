@@ -194,6 +194,7 @@
 				------------------------------------------------------*/		
 				if (file_exists($csvFile)) {
 					$csvFileData = fopen($csvFile, 'a');
+                    echo "hej hopp";
 					//fputcsv($csvFileData, $csvData );
 				} else {
 					$csvFileData = fopen($csvFile, 'a'); 
