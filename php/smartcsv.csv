@@ -1,0 +1,6 @@
+firstname,lastname,email,zip,age,sexType,prefersSoftPresents,prefersSuntrip,prefersDog,santaBelief,chocolatePref,candyPref,likesFood1,likesFood2,likesFood3,likesFood4,likesFood5,likesFood6,likesFood7,likesFood8,likesFood9,likesFood10,likesFood11,likesFood12,itemID,rating
+Jonathan,Åkerblom,jonathan.akerblom@live.se,21225,30,female,0,1,1,1,milk,marsipan,1,1,0,0,0,0,0,0,0,0,0,0,27,5
+Jonathan,Åkerblom,jonathan.akerblom@live.se,21225,30,female,0,1,1,1,milk,marsipan,1,1,0,0,0,0,0,0,0,0,0,0,16,3
+Jonathan,Åkerblom,jonathan.akerblom@live.se,21225,30,female,0,1,1,1,milk,marsipan,1,1,0,0,0,0,0,0,0,0,0,0,23,1
+Jonathan,Åkerblom,jonathan.akerblom@live.se,21225,30,female,0,0,1,1,milk,kola,0,0,0,0,0,0,0,1,1,1,0,0
+Jonathan,Åkerblom,jonathan.akerblom@live.se,21225,30,female,0,0,1,1,none,marsipan,0,0,0,0,1,1,0,0,0,0,0,0
