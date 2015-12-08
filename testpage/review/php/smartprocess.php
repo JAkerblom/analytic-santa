@@ -194,7 +194,7 @@
 				------------------------------------------------------*/		
 				if (file_exists($csvFile)) {
 					$csvFileData = fopen($csvFile, 'a');
-					fputcsv($csvFileData, $csvData );
+					//fputcsv($csvFileData, $csvData );
 				} else {
 					$csvFileData = fopen($csvFile, 'a'); 
 					$headerRowFields = array(
@@ -227,10 +227,13 @@
 					);
 					fputcsv($csvFileData,$headerRowFields);
 					//fputcsv($csvFileData, $csvData );
-                    for ($i = 0; $i < count($userInput); $i++) {
+                    /*for ($i = 0; $i < count($userInput); $i++) {
                       fputcsv($csvFileData, $userInput[$i]);
-                    }
+                    }*/
 				}
+                for ($i = 0; $i < count($userInput); $i++) {
+                  fputcsv($csvFileData, $userInput[$i]);
+                }
 				fclose($csvFileData);
 	}
 	
