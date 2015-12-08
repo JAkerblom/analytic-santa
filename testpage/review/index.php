@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  	<title> Smart Forms - Feedback Form </title>
+  	<title> Analytic Santa - Forefron Consulting Group </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -380,7 +380,7 @@
               <div class="section">
                   <span class="rating block" id="27">
                       <span class="lbl-text">En fattig gräsklippare</span>
-                      <input type="hidden" id="0-id27" type="radio" name="items[0]" value='{"itemID":23, "rating":1}'>
+                      <input type="hidden" id="0-id27" type="radio" name="items[0]" value='{"itemID":27, "rating":1}'>
                       <input class="rating-input" id="6-id27" type="radio"  name="items[0]" value='{"itemID":27, "rating":6}'>
                       <label class="rating-star" for="6-id27"><i class="fa fa-star"></i></label>
                       <input class="rating-input" id="5-id27" type="radio"  name="items[0]" value='{"itemID":27, "rating":5}'>
@@ -397,7 +397,7 @@
                   <span class="rating block">
                       <span class="lbl-text">En ascool Actionman</span>
                       <input type="hidden" id="0-id16" type="radio" name="items[1]" value='{"itemID":16, "rating":1}'>
-                      <input class="rating-input" id="6-id16" type="radio"  name="items[0]" value='{"itemID":16, "rating":6}'>
+                      <input class="rating-input" id="6-id16" type="radio"  name="items[1]" value='{"itemID":16, "rating":6}'>
                       <label class="rating-star" for="6-id16"><i class="fa fa-star"></i></label>
                       <input class="rating-input" id="5-id16" type="radio"  name="items[1]" value='{"itemID":16, "rating":5}'>
                       <label class="rating-star" for="5-id16"><i class="fa fa-star"></i></label>
@@ -413,7 +413,7 @@
                   <span class="rating block">
                       <span class="lbl-text">En trött rakhyvel</span>
                       <input type="hidden" id="0-id23" type="radio" name="items[2]" value='{"itemID":23, "rating":1}'>
-                      <input class="rating-input" id="6-id23" type="radio"  name="items[0]" value='{"itemID":23, "rating":6}'>
+                      <input class="rating-input" id="6-id23" type="radio"  name="items[2]" value='{"itemID":23, "rating":6}'>
                       <label class="rating-star" for="6-id23"><i class="fa fa-star"></i></label>
                       <input class="rating-input" id="5-id23" type="radio"  name="items[2]" value='{"itemID":23, "rating":5}'>
                       <label class="rating-star" for="5-id23"><i class="fa fa-star"></i></label>
@@ -429,25 +429,25 @@
                 </div><!-- end  section -->
             </div>
             <div class="result"></div><!-- end .result  section -->
-                <div class="form-footer">
-                	<!--<button type="submit" class="button btn-red pushed btn-primary">Submit Feedback</button>-->
-                    <button type="submit" id="back" class="button btn-red pushed btn-primary">Tillbaka</button> <!--onclick="back()"-->
-                    <button type="button" id="continue" class="button btn-red pushed btn-primary">Gå vidare</button>
-                    <button type="submit" id="submit" class="button btn-red pushed btn-primary">Skicka svar</button>
-                    <!--<div class="actions clearfix"><ul role="menu" aria-label="Pagination" id="buttonList">
-                      <!--<li class="disabled" aria-disabled="true"><a href="#previous" role="menuitem">Go Back</a></li>
-                      <li aria-hidden="false" aria-disabled="false"><a href="#next" role="menuitem">Continue</a></li>
-                      <li aria-hidden="true" style="display: none;"><a href="#finish" role="menuitem">Submit Form</a></li></ul>-->
-                      <!--<li id="back"><a onclick="" role="menuitem">Gå tillbaka</a></li>
-                      <li id="continue"><a onclick="" role="menuitem">Gå tillbaka</a></li>
-                      <li id="submit"><a onclick="" role="menuitem">Gå tillbaka</a></li></div>-->
-                    
-                </div><!-- end .form-footer section -->
-            </form>
+            <div class="form-footer">
+                <!--<button type="submit" class="button btn-red pushed btn-primary">Submit Feedback</button>-->
+                <!--<button type="button" id="back" class="button btn-red pushed btn-primary">Tillbaka</button> --><!--onclick="back()"-->
+                <button type="button" id="continue" class="button btn-red pushed btn-primary">Gå vidare</button>
+                <button type="submit" id="submit" class="button btn-red pushed btn-primary">Skicka svar</button>
+                <!--<div class="actions clearfix"><ul role="menu" aria-label="Pagination" id="buttonList">
+                  <!--<li class="disabled" aria-disabled="true"><a href="#previous" role="menuitem">Go Back</a></li>
+                  <li aria-hidden="false" aria-disabled="false"><a href="#next" role="menuitem">Continue</a></li>
+                  <li aria-hidden="true" style="display: none;"><a href="#finish" role="menuitem">Submit Form</a></li></ul>-->
+                  <!--<li id="back"><a onclick="" role="menuitem">Gå tillbaka</a></li>
+                  <li id="continue"><a onclick="" role="menuitem">Gå tillbaka</a></li>
+                  <li id="submit"><a onclick="" role="menuitem">Gå tillbaka</a></li></div>-->
+
+            </div><!-- end .form-footer section -->
+          </form>
         </div><!-- end .smart-forms section -->
-    </div><!-- end .smart-wrap section -->
+      </div><!-- end .smart-wrap section -->
     
-    <div></div><!-- end section -->
+      <div></div><!-- end section -->
       <script type="text/javascript" src="js/snow.js"></script>
   </section>
 </body>

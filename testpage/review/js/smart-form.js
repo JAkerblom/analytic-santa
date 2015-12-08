@@ -1,48 +1,38 @@
-/*$(document).ready(function() {
-  var form  = $('#smart-form');
-  form.children("div").steps({
-    headerTag: "h3",
-    bodyTag: "section",
-    transitionEffect: "slideLeft",
-    onStepChanging: function (event, currentIndex, newIndex)
-    {
-        form.validate().settings.ignore = ":disabled,:hidden";
-        return form.valid();
-    }
-  });
-});*/
-
 $(document).ready(function(e) {
-  /*$buttonList = $('#buttonList').children();
-  //$buttonList = $('#buttonList');
-  console.log($.type($buttonList[]));
-  console.log($buttonList);
-  console.log($buttonList[0]);
-  $buttonList[0].attr("style","display:none;");
-  /*$buttonList[1].css('display','none');
-  $buttonList[2].css('display','block');*/
-  
-  $backButton = $('#back');
+  //$backButton = $('#back');
   $contButton = $('#continue');
   $submButton = $('#submit');
   
   $firstPage = $("#section-1");
   $secondPage = $("#section-2");
   
-  $backButton.hide();
+  //$backButton.hide();
   $submButton.hide();
   
   $('#back').click(function(e) {
     console.log("Clicked backward");
     
     /* Hiding showing pages */
-    $secondPage.hide("slow");
-    $firstPage.show("slow");
+    /*$secondPage.hide("slow");
+    $firstPage.show("slow");*/
     
     /* Hiding showing buttons */
-    $backButton.hide("slow");
+    /*$backButton.hide("slow");
     $contButton.show("slow");
-    $submButton.hide("slow");
+    $submButton.hide("slow");*/
+    
+    /* Hiding showing pages */
+    $('.form-footer').hide("slow", function() {
+      /* Hiding showing buttons */
+      //$backButton.hide("slow");
+      $contButton.show("slow");
+      $submButton.hide("slow");
+
+      $secondPage.hide("slow");
+      $firstPage.show("slow", function() {
+        $('.form-footer').show("slow");
+      });
+    });
     
     $("html, body").animate({ scrollTop: 0 }, "slow");
   });
@@ -52,14 +42,18 @@ $(document).ready(function(e) {
     
     if ($('#smart-form').valid()) {
       /* Hiding showing pages */
-      $firstPage.hide("slow");
-      $secondPage.show("slow");
-
-      /* Hiding showing buttons */
-      $backButton.show("slow");
-      $contButton.hide("slow");
-      $submButton.show("slow");
-
+      $('.form-footer').hide("slow", function() {
+        /* Hiding showing buttons */
+        //$backButton.show("slow");
+        $contButton.hide("slow");
+        $submButton.show("slow");
+        
+        $firstPage.hide("slow");
+        $secondPage.show("slow", function() {
+          $('.form-footer').show("slow");
+        });
+      });
+      
       $("html, body").animate({ scrollTop: 0 }, "slow");
     } 
   });
@@ -124,7 +118,10 @@ $(document).ready(function(e) {
 								},
                                 candyPref: {
 										required: true
-								},								
+								},
+                                kallePref: {
+                                        required: true
+                                },
 								comment: {
 										required: false,
 										minlength: 10
@@ -165,12 +162,15 @@ $(document).ready(function(e) {
                                 candyPref: {
 										required: 'Var god välj ditt favorit-julegodis'
 								},
+                                kallePref: {
+                                        required: 'Var god välj den del du gillar mest'
+                                },
 								/*comment: {
 										required: 'Oops you forgot to comment',
 										minlength: 'Comment must be at least 10 characters'
 								},*/
 								'christmasFood[]':{
-										required: 'Var god markera minst ett förslag av mat som ni gillar.'
+										required: 'Var god markera minst ett förslag av mat som du gillar.'
 								}								
 						},
 
