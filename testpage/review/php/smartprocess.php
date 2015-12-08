@@ -232,8 +232,6 @@
                     }
 				}
 				fclose($csvFileData);
-									  
-			}
 	}
 	
 	// ultimate email validation function
