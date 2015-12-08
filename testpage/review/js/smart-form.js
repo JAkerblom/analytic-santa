@@ -1,4 +1,17 @@
-	$(document).ready(function() {
+$(document).ready(function() {
+  var form  = $('#smart-form');
+  form.children("div").steps({
+    headerTag: "h3",
+    bodyTag: "section",
+    transitionEffect: "slideLeft",
+    onStepChanging: function (event, currentIndex, newIndex)
+    {
+        form.validate().settings.ignore = ":disabled,:hidden";
+        return form.valid();
+    },
+});
+
+  $(document).ready(function() {
 			   
 				$( "#smart-form" ).validate({
 				

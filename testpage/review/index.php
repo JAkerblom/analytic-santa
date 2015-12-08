@@ -191,8 +191,8 @@
                     <label for="switch1" data-on="JA" data-off="NEJ"></label>-->
                     
                     <!--<input type="checkbox" name="santaBelief" id="switch1" $checked ? value="1" : value="0">-->
-                    <input type="checkbox" name="santaBelief" id="switch1" value="1">
                     <input type="hidden" name="santaBelief" value="0">
+                    <input type="checkbox" name="santaBelief" id="switch1" value="1">
                     <label for="switch1" data-on="JA" data-off="NEJ"></label>
                   </label>
                 </div>
@@ -241,70 +241,7 @@
                       <i class="arrow double"></i>           
                   </label>  
               </div><!-- end section -->
-                    
-             
-              
-              <!--<div class="section">
-                  <label for="comment" class="field prepend-icon">
-                      <textarea class="gui-textarea" id="comment" name="comment" placeholder="Ge feedback på den här appen"></textarea>
-                      <label class="field-icon"><i class="fa fa-comments"></i></label>
-                            
-<span class="input-hint"> <strong>Hint:</strong> Please enter between 80 - 300 characters.</span>
-                        </label>
-              </div><!-- end section -->
-                    
-                    <!--<div class="spacer spacer-b20"></div> 
-                    
-                    <div class="section spacer-b20">
-                        <p class="">Betygsätt dessa klappar utifrån hur väl de hade passat inslagna och med ditt namn på etiketten.</p>
-                        <p class="small-text fine-grey">1 stjärna = Inget jag kan tänka mig.</p>
-                        <p class="small-text fine-grey">3 stjärnor = Osäker, men hade inte tackat nej.</p>
-                        <p class="small-text fine-grey">5 stjärnor = Spot on! Ge mig den, tack!</p>
-                    </div>
-                
-                    <div class="section">
-                        <span class="rating block">
-                            <span class="lbl-text">En fattig gräsklippare</span>
-                            <input class="rating-input" id="five-stars" type="radio"  name="products" value="5">
-                            <label class="rating-star" for="five-stars"><i class="fa fa-star"></i></label>
-                            <input class="rating-input" id="four-stars" type="radio"  name="products" value="4">
-                            <label class="rating-star" for="four-stars"><i class="fa fa-star"></i></label>          
-                            <input class="rating-input" id="three-stars" type="radio"  name="products" value="3">
-                            <label class="rating-star" for="three-stars"><i class="fa fa-star"></i></label>          
-                            <input class="rating-input" id="two-stars" type="radio"  name="products" value="2">
-                            <label class="rating-star" for="two-stars"><i class="fa fa-star"></i></label>          
-                            <input class="rating-input" id="one-star" type="radio"  name="products" value="1">
-                            <label class="rating-star" for="one-star"><i class="fa fa-star"></i></label>      
-                        </span>  
-                        <span class="rating block">
-                            <span class="lbl-text">En ascool Actionman</span>
-                            <input class="rating-input" id="5stars" type="radio"  name="support" value="5">
-                            <label class="rating-star" for="5stars"><i class="fa fa-star"></i></label>
-                            <input class="rating-input" id="4stars" type="radio"  name="support" value="4">
-                            <label class="rating-star" for="4stars"><i class="fa fa-star"></i></label>          
-                            <input class="rating-input" id="3stars" type="radio"  name="support" value="3">
-                            <label class="rating-star" for="3stars"><i class="fa fa-star"></i></label>          
-                            <input class="rating-input" id="2stars" type="radio"  name="support" value="2">
-                            <label class="rating-star" for="2stars"><i class="fa fa-star"></i></label>          
-                            <input class="rating-input" id="1star" type="radio"  name="support" value="1">
-                            <label class="rating-star" for="1star"><i class="fa fa-star"></i></label>      
-                        </span>
-                        <span class="rating block">
-                            <span class="lbl-text">En trött rakhyvel</span>
-                            <input class="rating-input" id="5s" type="radio"  name="response" value="5">
-                            <label class="rating-star" for="5s"><i class="fa fa-star"></i></label>
-                            <input class="rating-input" id="4s" type="radio"  name="response" value="4">
-                            <label class="rating-star" for="4s"><i class="fa fa-star"></i></label>                
-                            <input class="rating-input" id="3s" type="radio"  name="response" value="3">
-                            <label class="rating-star" for="3s"><i class="fa fa-star"></i></label>                
-                            <input class="rating-input" id="2s" type="radio"  name="response" value="2">
-                            <label class="rating-star" for="2s"><i class="fa fa-star"></i></label>                
-                            <input class="rating-input" id="1s" type="radio"  name="response" value="1">
-                            <label class="rating-star" for="1s"><i class="fa fa-star"></i></label>            
-                        </span>                         
-                                                       
-                    </div><!-- end  section -->
-                    
+            
                     <!--<div class="spacer spacer-b25"></div> -->
                     
                     <div class="spacer-b20">
@@ -316,74 +253,167 @@
                             <div class="section colm colm6">
 
                               <label class="option option-red block spacer-b10">
-                                  <input type="checkbox" name="christmasFood[]" value="kottbullar">
+                                  <!--<input type="checkbox" name="christmasFood[]" value="kottbullar">-->
+                                  <input type="hidden" name="christmasFood[0]" value="0">
+                                  <input type="checkbox" name="christmasFood[0]" value="1">
                                   <span class="checkbox"></span> Köttbullar                  
                               </label>
 
                               <label class="option option-red block spacer-b10">
-                                  <input type="checkbox" name="christmasFood[]" value="prinskorv">
+                                  <!--<input type="checkbox" name="christmasFood[]" value="prinskorv">-->
+                                  <input type="hidden" name="christmasFood[1]" value="0">
+                                  <input type="checkbox" name="christmasFood[1]" value="1">
                                   <span class="checkbox"></span> Prinskorv               
                               </label>
 
                               <label class="option option-red block spacer-b10">
-                                  <input type="checkbox" name="christmasFood[]" value="skinka">
+                                  <!--<input type="checkbox" name="christmasFood[2]" value="skinka">-->
+                                  <input type="hidden" name="christmasFood[2]" value="0">
+                                  <input type="checkbox" name="christmasFood[2]" value="1">
                                   <span class="checkbox"></span> Skinka                 
                               </label>
                               
                               <label class="option option-red block spacer-b10">
-                                <input type="checkbox" name="christmasFood[]" value="lutfisk">
-                                <span class="checkbox"></span> Lutfisk                
+                                <!--<input type="checkbox" name="christmasFood[]" value="lutfisk">-->
+                                  <input type="hidden" name="christmasFood[3]" value="0">
+                                  <input type="checkbox" name="christmasFood[3]" value="1">
+                                  <span class="checkbox"></span> Lutfisk                
                               </label>
                               <label class="option option-red block spacer-b10">
-                              <input type="checkbox" name="christmasFood[]" value="agg">
-                                <span class="checkbox"></span> Ägg                
+                                  <!--<input type="checkbox" name="christmasFood[]" value="agg">-->
+                                  <input type="hidden" name="christmasFood[4]" value="0">
+                                  <input type="checkbox" name="christmasFood[4]" value="1">
+                                  <span class="checkbox"></span> Ägg                
                               </label>
                               <label class="option option-red block">
-                                <input type="checkbox" name="christmasFood[]" value="lax">
-                                <span class="checkbox"></span> Lax                  
+                                  <!--<input type="checkbox" name="christmasFood[]" value="lax">-->
+                                  <input type="hidden" name="christmasFood[5]" value="0">
+                                  <input type="checkbox" name="christmasFood[5]" value="1">
+                                  <span class="checkbox"></span> Lax                  
                               </label>
                                                         
                             </div><!-- end section -->
                             <div class="section colm colm6">
 
                               <label class="option option-red block spacer-b10">
-                                  <input type="checkbox" name="christmasFood[]" value="sill">
+                                  <!--<input type="checkbox" name="christmasFood[]" value="sill">-->
+                                  <input type="hidden" name="christmasFood[6]" value="0">
+                                  <input type="checkbox" name="christmasFood[6]" value="1">
                                   <span class="checkbox"></span> Sill                  
                               </label>
 
                               <label class="option option-red block spacer-b10">
-                                  <input type="checkbox" name="christmasFood[]" value="brysselkal">
+                                  <!--<input type="checkbox" name="christmasFood[]" value="brysselkal">-->
+                                  <input type="hidden" name="christmasFood[7]" value="0">
+                                  <input type="checkbox" name="christmasFood[7]" value="1">
                                   <span class="checkbox"></span> Brysselkål             
                               </label>
 
                               <label class="option option-red block spacer-b10">
-                                  <input type="checkbox" name="christmasFood[]" value="rodkal">
+                                  <!--<input type="checkbox" name="christmasFood[]" value="rodkal">-->
+                                  <input type="hidden" name="christmasFood[8]" value="0">
+                                  <input type="checkbox" name="christmasFood[8]" value="1">
                                   <span class="checkbox"></span> Röd/brunkål                
                               </label>
                               
                               <label class="option option-red block spacer-b10">
-                                <input type="checkbox" name="christmasFood[]" value="janssons">
-                                <span class="checkbox"></span> Janssons
+                                <!--<input type="checkbox" name="christmasFood[]" value="janssons">-->
+                                  <input type="hidden" name="christmasFood[9]" value="0">
+                                  <input type="checkbox" name="christmasFood[9]" value="1">
+                                  <span class="checkbox"></span> Janssons
                               </label>
                               <label class="option option-red block spacer-b10">
-                                <input type="checkbox" name="christmasFood[]" value="sylta">
-                                <span class="checkbox"></span> Sylta             
+                                  <!--<input type="checkbox" name="christmasFood[]" value="sylta">-->
+                                  <input type="hidden" name="christmasFood[10]" value="0">
+                                  <input type="checkbox" name="christmasFood[10]" value="1">
+                                  <span class="checkbox"></span> Sylta             
                               </label>
                               <label class="option option-red block">
-                                <input type="checkbox" name="christmasFood[]" value="potatis">
-                                <span class="checkbox"></span> Potatis
+                                  <!--<input type="checkbox" name="christmasFood[]" value="potatis">-->
+                                  <input type="hidden" name="christmasFood[11]" value="0">
+                                  <input type="checkbox" name="christmasFood[11]" value="1">
+                                  <span class="checkbox"></span> Potatis
                               </label>
                             </div><!-- end section -->
                         </div><!-- end option-group section -->
                     </div><!-- end .frm-row section -->
+                    
+                    <div class="spacer-b30">
+                      <div class="tagline"><span> Vad du tycker om olika klappar </span></div><!-- .tagline -->
+                    </div>
+              
+                    <!--<div class="section">
+                      <label for="comment" class="field prepend-icon">
+                        <textarea class="gui-textarea" id="comment" name="comment" placeholder="Ge feedback på den här appen"></textarea>
+                        <label class="field-icon"><i class="fa fa-comments"></i></label>
+                        <span class="input-hint"> <strong>Hint:</strong> Please enter between 80 - 300 characters.</span>
+                      </label>
+                    </div><!-- end section -->
+                    
+                    <!--<div class="spacer spacer-b20"></div> -->
+                    
+                    <div class="section spacer-b20">
+                        <p class="">Betygsätt dessa klappar utifrån hur väl de hade passat inslagna och med ditt namn på etiketten.</p>
+                        <p class="small-text fine-grey">1 stjärna = Inget jag kan tänka mig.</p>
+                        <p class="small-text fine-grey">3 stjärnor = Osäker, men hade inte tackat nej.</p>
+                        <p class="small-text fine-grey">5 stjärnor = Spot on! Ge mig den, tack!</p>
+                    </div>
                 
+                    <div class="section">
+                        <span class="rating block" id="27">
+                            <span class="lbl-text">En fattig gräsklippare</span>
+                            <input class="rating-input" id="5-id27" type="radio"  name="items[0]" value='{"itemID":27, "rating":5}'>
+                            <label class="rating-star" for="5-id27"><i class="fa fa-star"></i></label>
+                            <input class="rating-input" id="4-id27" type="radio"  name="items[0]" value='{"itemID":27, "rating":4}'>
+                            <label class="rating-star" for="4-id27"><i class="fa fa-star"></i></label>          
+                            <input class="rating-input" id="3-id27" type="radio"  name="items[0]" value='{"itemID":27, "rating":3}'>
+                            <label class="rating-star" for="3-id27"><i class="fa fa-star"></i></label>          
+                            <input class="rating-input" id="2-id27" type="radio"  name="items[0]" value='{"itemID":27, "rating":2}'>
+                            <label class="rating-star" for="2-id27"><i class="fa fa-star"></i></label>          
+                            <input class="rating-input" id="1-id27" type="radio"  name="items[0]" value='{"itemID":27, "rating":1}'>
+                            <label class="rating-star" for="1-id27"><i class="fa fa-star"></i></label>      
+                        </span>  
+                        <span class="rating block">
+                            <span class="lbl-text">En ascool Actionman</span>
+                            <input class="rating-input" id="5-id16" type="radio"  name="items[1]" value='{"itemID":16, "rating":5}'>
+                            <label class="rating-star" for="5-id16"><i class="fa fa-star"></i></label>
+                            <input class="rating-input" id="4-id16" type="radio"  name="items[1]" value='{"itemID":16, "rating":4}'>
+                            <label class="rating-star" for="4-id16"><i class="fa fa-star"></i></label>          
+                            <input class="rating-input" id="3-id16" type="radio"  name="items[1]" value='{"itemID":16, "rating":3}'>
+                            <label class="rating-star" for="3-id16"><i class="fa fa-star"></i></label>          
+                            <input class="rating-input" id="2-id16" type="radio"  name="items[1]" value='{"itemID":16, "rating":2}'>
+                            <label class="rating-star" for="2-id16"><i class="fa fa-star"></i></label>          
+                            <input class="rating-input" id="1-id16" type="radio"  name="items[1]" value='{"itemID":16, "rating":1}'>
+                            <label class="rating-star" for="1-id16"><i class="fa fa-star"></i></label>      
+                        </span>
+                        <span class="rating block">
+                            <span class="lbl-text">En trött rakhyvel</span>
+                            <input class="rating-input" id="5-id23" type="radio"  name="items[2]" value='{"itemID":23, "rating":5}'>
+                            <label class="rating-star" for="5-id23"><i class="fa fa-star"></i></label>
+                            <input class="rating-input" id="4-id23" type="radio"  name="items[2]" value='{"itemID":23, "rating":4}'>
+                            <label class="rating-star" for="4-id23"><i class="fa fa-star"></i></label>          
+                            <input class="rating-input" id="3-id23" type="radio"  name="items[2]" value='{"itemID":23, "rating":3}'>
+                            <label class="rating-star" for="3-id23"><i class="fa fa-star"></i></label>          
+                            <input class="rating-input" id="2-id23" type="radio"  name="items[2]" value='{"itemID":23, "rating":2}'>
+                            <label class="rating-star" for="2-id23"><i class="fa fa-star"></i></label>          
+                            <input class="rating-input" id="1-id23" type="radio"  name="items[2]" value='{"itemID":23, "rating":1}'>
+                            <label class="rating-star" for="1-id23"><i class="fa fa-star"></i></label> 
+                        </span>                         
+                                                       
+                    </div><!-- end  section -->
+                    
+              
                     <!-- Google map. Remove comments to have this. I will include coordinates from the zip code which could be used here.
                     <//?php include('php/googlemap.php'); ?>
                     -->
                     <div class="result"></div><!-- end .result  section -->
                 </div><!-- end .form-body section -->
                 <div class="form-footer">
-                	<button type="submit" class="button btn-red btn-primary">Submit Feedback</button>
+                	<!--<button type="submit" class="button btn-red pushed btn-primary">Submit Feedback</button>-->
+                    <div class="actions clearfix"><ul role="menu" aria-label="Pagination">
+                      <li class="disabled" aria-disabled="true"><a href="#previous" role="menuitem">Go Back</a></li>
+                      <li aria-hidden="false" aria-disabled="false"><a href="#next" role="menuitem">Continue</a></li>
+                      <li aria-hidden="true" style="display: none;"><a href="#finish" role="menuitem">Submit Form</a></li></ul></div>
                 </div><!-- end .form-footer section -->
             </form>
             

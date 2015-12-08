@@ -32,14 +32,15 @@
 	if ($christmasFood[0]!=""){
 		$christmasFood_list = implode( '<br/>', $christmasFood);
 	}
-	
+
 	/* CSV FILE SETTINGS
 	---------------------------------------------------
 	 * Create a csv file named smartcsv.csv
 	 * Put the fields you want in the csv in an array
 	-------------------------------------------------- */
-	$csvFile = "smartcsv.csv";	
-	$csvData = array(
+	//$csvFile = "user_input.csv";	
+    $csvFile = "smartcsv.csv";	
+    $csvData = array(
 		$_POST['firstname'],
 		$_POST['lastname'],
 		$_POST['email'],
@@ -51,9 +52,24 @@
 		$_POST['prefersDog'],
         $_POST['santaBelief'],
         $_POST['chocolatePref'],
-        $_POST['candyPref'],
-        $_POST['christmasFood']
+        $_POST['candyPref']//,
+        //$_POST['christmasFood']
 	);
+    for ($i = 0; $i < 12; $i++) {
+      array_push($csvData, $christmasFood[$i]);
+    }
+    $items = $_POST['items'];
+    $userInput = array();
+    for ($i = 0; $i < count($items); $i++) {
+      $itemRatObj = json_decode($items[$i]);
+      $itemRatings = array($itemRatObj->itemID, $itemRatObj->rating);
+      $userInput[$i] = array_merge($csvData, $itemRatings); 
+    }
+    
+    $item1o = json_decode($items[0]);
+    $item2o = json_decode($items[1]);
+    $item3o = json_decode($items[2]);
+    //array_push($csvData, $item1);
 	
 	/*
 	========================================
@@ -130,7 +146,7 @@
 	
 		echo '<div class="alert notification alert-error">The following errors occured:<br><ul>'. $errortext .'</ul></div>';
 	
-	} else{	
+	} else {	
 			require "PHPMailerAutoload.php";
 			require "smartmessage.php";
 				
@@ -192,10 +208,26 @@
                         "santaBelief",
                         "chocolatePref",
                         "candyPref",
-                        "christmasFood"
+                        "likesFood1",
+                        "likesFood2",
+                        "likesFood3",
+                        "likesFood4",
+                        "likesFood5",
+                        "likesFood6",
+                        "likesFood7",
+                        "likesFood8",
+                        "likesFood9",
+                        "likesFood10",
+                        "likesFood11",
+                        "likesFood12",
+                        "itemID",
+                        "rating"
 					);
 					fputcsv($csvFileData,$headerRowFields);
-					fputcsv($csvFileData, $csvData );
+					//fputcsv($csvFileData, $csvData );
+                    for ($i = 0; $i < count($userInput); $i++) {
+                      fputcsv($csvFileData, $userInput[$i]);
+                    }
 				}
 				fclose($csvFileData);
 									  

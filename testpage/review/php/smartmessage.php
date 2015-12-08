@@ -57,23 +57,23 @@ $message = '
                                                         <p><span style="font-weight:bold;font-size:16px">Chocolate preference :</span> <br/>'.$chocolatePref.'</p>
                                                         <p><span style="font-weight:bold;font-size:16px">Candy preference :</span> <br/>'.$candyPref.'</p>
                                                         <p><span style="font-weight:bold;font-size:16px">Christmas food :</span> <br/>'.$christmasFood_list.'</p>
+                                                        <p><span style="font-weight:bold;font-size:16px">Item 1 ID :</span> <br/>'.$item1o->itemID.'</p>
+                                                        <p><span style="font-weight:bold;font-size:16px">Item 1 rating :</span> <br/>'.$item1o->rating.'</p>
+                                                        <p><span style="font-weight:bold;font-size:16px">Item 2 ID :</span> <br/>'.$item2o->itemID.'</p>
+                                                        <p><span style="font-weight:bold;font-size:16px">Item 2 rating :</span> <br/>'.$item2o->rating.'</p>
+                                                        <p><span style="font-weight:bold;font-size:16px">Item 3 ID :</span> <br/>'.$item3o->itemID.'</p>
+                                                        <p><span style="font-weight:bold;font-size:16px">Item 3 rating :</span> <br/>'.$item3o->rating.'</p>
                                                       </div>
-                                                            
                                                         </td>
                                                     </tr>
-                                                    
                                                 </tbody>
                                             </table>
-                                            
                                         </td>
                                     </tr>
-                                    
                                     <tr>
-                                        <td style="background:#f9f9f9;border:1px solid #D8D8D8;border-top:none;padding:24px 10px" align="center">
-                                            
+                                        <td style="background:#f9f9f9;border:1px solid #D8D8D8;border-top:none;padding:24px 10px" align="center">   
                                             <table style="width:100%;max-width:650px" align="center">
                                                 <tbody>
-                                                
                                                     <tr>
                                                         <td style="font-size:20px;line-height:27px;text-align:center;max-width:650px">
         
