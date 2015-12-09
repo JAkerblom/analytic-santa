@@ -366,9 +366,9 @@ var klappar_list = {
                 placeholder="Emailadress" type="email"> <label class="field-icon"><i class=
                 "fa fa-envelope"></i></label></label>
               </div><!-- end section -->
-              <div class="section colm colm4 mini">
+              <div class="section colm colm4 breakline">
                 <label class="field prepend-icon" for="zip"><input class="gui-input" id="zip" name="zip" placeholder=
-                "Postnr" type="text"> <b class="tooltip tip-right-bottom"><em>Ditt postnummer används för att få fram
+                "Postnr" type="text" pattern="[0-9]*" inputmode="numeric"> <b class="tooltip tip-right-bottom"><em>Ditt postnummer används för att få fram
                 olika demografiska data.</em></b> <label class="field-icon" for="zip"><i class=
                 "fa fa-building-o"></i></label></label>
               </div><!-- end section -->
@@ -395,7 +395,7 @@ var klappar_list = {
               </div><!-- .tagline -->
             </div><!-- PrefersSoftPresents -->
             <div class="frm-row">
-              <div class="section colm colm6 breakline">
+              <div class="section colm colm6">
                 <p style="margin:0;margin-top:6px;">Mina klappar föredrar jag:</p>
               </div>
               <div class="section colm colm3">
@@ -408,7 +408,7 @@ var klappar_list = {
               </div>
             </div><!-- PrefersSuntrip -->
             <div class="frm-row">
-              <div class="section colm colm6 breakline">
+              <div class="section colm colm6">
                 <p style="margin:0;margin-top:6px;">På semester åker du helst till:</p>
               </div>
               <div class="section colm colm3">
