@@ -651,7 +651,7 @@ var klappar_list = {
             </div>
             <div class="spacer-b30">
               <div class="tagline">
-                <img src="analytic-santa.png" alt="Mountain View" style="width:304px;height:228px;">
+                <img src="predictiveSanta.jpeg" alt="Mountain View" style="width:304px;height:228px;">
                 <div class="result"></div><!-- end .result  section -->
               </div><!-- .tagline -->
             </div>
