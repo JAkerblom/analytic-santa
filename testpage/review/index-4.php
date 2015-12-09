@@ -642,7 +642,15 @@ var klappar_list = {
             
             <div id="itemSection"></div><!-- end itemSection -->
           </div>
-          <div class="result"></div><!-- end .result  section -->
+          <div class="form-body theme-red" id="section-3" style="display:none;">
+            <div class="spacer-b30">
+              <div class="tagline">
+                <img src="santa-analytics.png" alt="Mountain View" style="width:304px;height:228px;">
+                <div class="result"></div><!-- end .result  section -->
+              </div><!-- .tagline -->
+            </div>
+          </div>
+            
           <div class="form-footer">
             <button class="button btn-red pushed btn-primary" id="continue" type="button">Gå vidare</button>
             <button class="button btn-red pushed btn-primary" id="submit" style="display:none;" type="submit">Skicka
