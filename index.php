@@ -421,7 +421,7 @@ var klappar_list = {
               </div>
             </div><!-- PrefersDog -->
             <div class="frm-row">
-              <div class="section colm colm6 breakline">
+              <div class="section colm colm6">
                 <p style="margin:0;margin-top:6px;">Som husdjur föredrar jag:</p>
               </div>
               <div class="section colm colm3">
@@ -550,7 +550,7 @@ var klappar_list = {
             </div>
             <div class="frm-row">
               <div class="option-group field">
-                <div class="section colm colm6">
+                <div class="section colm colm5">
                   <label class="option option-red block spacer-b10">
                     <input type="hidden" name="christmasFood[0]" value="0">
                     <input type="checkbox" name="christmasFood[0]" value="1">
