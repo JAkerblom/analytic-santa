@@ -644,7 +644,7 @@ var klappar_list = {
             <div id="itemSection"></div><!-- end itemSection -->
           </div>
           <div class="form-body theme-red" id="section-3" style="display:none;">
-            <div class="spacer-b30">
+            <div class="spacer-b40">
               <div class="tagline">
                 <span style="font-size: 16pt">Analytic Santa önskar dig en riktigt God Jul!</span>
               </div><!-- .tagline -->
