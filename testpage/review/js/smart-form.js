@@ -8,6 +8,7 @@ $(document).ready(function() {
   $contButton = $('#continue');
   $submButton = $('#submit');
   
+  $header = $("#header");
   $firstPage = $("#section-1");
   $secondPage = $("#section-2");
   $thirdPage = $("#section-3");
@@ -59,6 +60,7 @@ $(document).ready(function() {
         $contButton.hide("slow");
         $submButton.show("slow");
         
+        $header.hide("slow");
         $secondPage.hide("slow");
         $thirdPage.show("slow");
       });
