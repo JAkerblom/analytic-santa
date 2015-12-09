@@ -52,9 +52,9 @@
 ----------------------------------------------------- */
 .smart-forms .theme-red .rating:hover .rating-star:hover,
 .smart-forms .theme-red .rating:hover .rating-star:hover ~ .rating-star,
-.smart-forms .theme-red .rating-input:checked ~ .rating-star { color: #ee4f3d;	}
+.smart-forms .theme-red .rating-input:checked ~ .rating-star { color: #ee4f3d /*!important*/;	}
 .smart-forms .theme-red .rating-star, 
-.smart-forms .theme-red .rating:hover .rating-star {	color: #A2A6A8;	 }
+.smart-forms .theme-red .rating .rating-star {	color: #A2A6A8;	 }
 
 /* @check + radio 
 ------------------------------------------------------ */

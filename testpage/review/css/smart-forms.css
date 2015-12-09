@@ -915,11 +915,16 @@ html, body{
 .smart-forms .rating label span{ font:22px/22px Times, Serif; }
 .smart-forms .rating-star{ margin-left:4px; }
 .smart-forms .rating-input { position: absolute; left:-9999px; top: auto; }
-.smart-forms .rating:hover .rating-star:hover,
-.smart-forms .rating:hover .rating-star:hover ~ .rating-star,
+
+/*.smart-forms .rating:hover .rating-star:hover,
+.smart-forms .rating:hover .rating-star:hover ~ .rating-star,*/
+.smart-forms .rating .rating-star:hover,
+.smart-forms .rating .rating-star:hover ~ .rating-star,
 .smart-forms .rating-input:checked ~ .rating-star { color: #4ebd4a;	}
-.smart-forms .rating-star, 
-.smart-forms .rating:hover .rating-star {	
+
+/*.smart-forms .rating-star, */
+.smart-forms .rating .rating-star {
+/*.smart-forms .rating:hover .rating-star {	*/
 	width: 18px;
 	float: right;
 	display: block;
