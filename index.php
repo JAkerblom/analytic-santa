@@ -347,13 +347,13 @@ var klappar_list = {
               </div><!-- .tagline -->
             </div>
             <div class="frm-row">
-              <div class="section colm colm6">
+              <div class="section colm colm6 breakline">
                 <!--  -->
                  <label class="field prepend-icon" for="firstname"><input class="gui-input" id="firstname" name=
                 "firstname" placeholder="Förnamn..." type="text"> <label class="field-icon"><i class=
                 "fa fa-user"></i></label></label>
               </div><!-- end section -->
-              <div class="section colm colm6">
+              <div class="section colm colm6 breakline">
                 <!--  -->
                  <label class="field prepend-icon" for="lastname"><input class="gui-input" id="lastname" name=
                 "lastname" placeholder="Efternamn..." type="text"> <label class="field-icon"><i class=
@@ -361,12 +361,12 @@ var klappar_list = {
               </div><!-- end section -->
             </div><!-- end frm-row section -->
             <div class="frm-row">
-              <div class="section colm colm8">
+              <div class="section colm colm8 breakline">
                 <label class="field prepend-icon" for="email"><input class="gui-input" id="email" name="email"
                 placeholder="Emailadress" type="email"> <label class="field-icon"><i class=
                 "fa fa-envelope"></i></label></label>
               </div><!-- end section -->
-              <div class="section colm colm4">
+              <div class="section colm colm4 mini">
                 <label class="field prepend-icon" for="zip"><input class="gui-input" id="zip" name="zip" placeholder=
                 "Postnr" type="text"> <b class="tooltip tip-right-bottom"><em>Ditt postnummer används för att få fram
                 olika demografiska data.</em></b> <label class="field-icon" for="zip"><i class=
@@ -374,7 +374,7 @@ var klappar_list = {
               </div><!-- end section -->
             </div>
             <div class="frm-row">
-              <div class="section colm colm8" style="margin-top: 5px;">
+              <div class="section colm colm8 breakline" style="margin-top: 5px;">
                 <label class="option option-red"><input checked name="sexType" type="radio" value="female"><span class=
                 "radio"></span> Kvinna</label> <label class="option option-red"><input name="sexType" type="radio"
                 value="male"><span class="radio"></span> Man</label> <label class="option option-red" style=
@@ -384,9 +384,9 @@ var klappar_list = {
               <div class="section colm colm1" style="padding-left:0px;">
                 <p>Ålder:</p>
               </div>
-              <div class="section colm colm1-5">
+              <div class="section colm colm1-5 mini">
                 <label class="field"><!--<input type="text" name="age" id="stepper1" value="30" class="gui-input">-->
-                 <input class="gui-input" max="100" min="0" name="age" step="1" type="number" value="30"></label>
+                 <input class="gui-input" max="100" min="0" name="age" step="1" type="number" value="30" pattern="[0-9]*" inputmode="numeric"></label>
               </div><!-- end section -->
             </div>
             <div class="spacer-b30">
@@ -395,7 +395,7 @@ var klappar_list = {
               </div><!-- .tagline -->
             </div><!-- PrefersSoftPresents -->
             <div class="frm-row">
-              <div class="section colm colm6">
+              <div class="section colm colm6 breakline">
                 <p style="margin:0;margin-top:6px;">Mina klappar föredrar jag:</p>
               </div>
               <div class="section colm colm3">
@@ -408,7 +408,7 @@ var klappar_list = {
               </div>
             </div><!-- PrefersSuntrip -->
             <div class="frm-row">
-              <div class="section colm colm6">
+              <div class="section colm colm6 breakline">
                 <p style="margin:0;margin-top:6px;">På semester åker du helst till:</p>
               </div>
               <div class="section colm colm3">
@@ -421,7 +421,7 @@ var klappar_list = {
               </div>
             </div><!-- PrefersDog -->
             <div class="frm-row">
-              <div class="section colm colm6">
+              <div class="section colm colm6 breakline">
                 <p style="margin:0;margin-top:6px;">Som husdjur föredrar jag:</p>
               </div>
               <div class="section colm colm3">

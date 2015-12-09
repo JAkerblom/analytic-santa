@@ -1954,7 +1954,8 @@ html, body{
 -------------------------------------------------- */
 @media (max-width: 600px) {
 	.smart-forms .frm-row{ margin:0;  }
-	.smart-forms .frm-row .colm{  width: 100%; float:none; padding:0; }
+	/*.smart-forms .frm-row .colm{  width: 100%; float:none; padding:0; }*/
+    .smart-forms .frm-row .breakline{  width: 100%; float:none; padding:0; }
 	.smart-forms .bdl { border-left:0;  }
 	.smart-forms .bdr { border-right:0; }
 	.smart-forms .align-right{ text-align: left; }
