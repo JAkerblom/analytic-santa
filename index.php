@@ -384,7 +384,7 @@ var klappar_list = {
               <div class="section colm colm1" style="padding-left:0px;">
                 <p>Ålder:</p>
               </div>
-              <div class="section colm colm1-5 mini">
+              <div class="section colm colm1-5" id="agediv">
                 <label class="field"><!--<input type="text" name="age" id="stepper1" value="30" class="gui-input">-->
                  <input class="gui-input" max="100" min="0" name="age" step="1" type="number" value="30" pattern="[0-9]*" inputmode="numeric"></label>
               </div><!-- end section -->

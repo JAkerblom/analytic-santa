@@ -1959,5 +1959,5 @@ html, body{
 	.smart-forms .bdl { border-left:0;  }
 	.smart-forms .bdr { border-right:0; }
 	.smart-forms .align-right{ text-align: left; }
-    #zip { width: 130%; margin-left: 50%; }
+    #agediv { width: 30%; margin-left: 10%; }
 }
