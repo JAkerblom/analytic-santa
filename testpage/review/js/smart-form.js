@@ -10,6 +10,7 @@ $(document).ready(function() {
   
   $firstPage = $("#section-1");
   $secondPage = $("#section-2");
+  $thirdPage = $("#section-3");
   
   //$backButton.hide();
   $submButton.hide();
@@ -51,7 +52,19 @@ $(document).ready(function() {
     } 
   });
   
-  $('#submit').click(function(e) {});
+  $('#submit').click(function(e) {
+      $('.form-footer').hide("slow", function() {
+        /* Hiding showing buttons */
+        //$backButton.show("slow");
+        $contButton.hide("slow");
+        $submButton.show("slow");
+        
+        $secondPage.hide("slow");
+        $thirdPage.show("slow");
+      });
+      
+      $("html, body").animate({ scrollTop: 0 }, "slow");
+  });
   
   /* --------------------------------------- */
   
@@ -261,7 +274,7 @@ $(document).ready(function() {
 										$('.alert-success').show("slow").delay(10000).hide("slow", function() {
                                           $('.field').removeClass("state-error, state-success");
 										  if ($('.alert-error').length == 0) {
-										    $('#smart-form').resetForm();
+										    // $('#smart-form').resetForm();
                                             $('.smart-wrap').click(back());
 											/*$('.field').removeClass("state-error, state-success");
 											if( $('.alert-error').length == 0){
