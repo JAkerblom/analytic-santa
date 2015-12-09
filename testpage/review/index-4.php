@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Analytic Santa - Forefron Consulting Group</title>
+  <title>Analytic Santa - Forefront Consulting Group</title>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <link href="css/skystyle.css" rel="stylesheet" type="text/css">
   <link href="css/smart-forms.css" rel="stylesheet" type="text/css">
   <link href="css/smart-themes/red.css" rel="stylesheet" type="text/css">
   <link href="css/smart-addons.css" rel="stylesheet" type="text/css">
-  <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"><!-- TODO handle images for klappar -->
-
+  <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  
   <script src="data/items/klapplist.json"></script>
   <script src="js/load-image.all.min.js"></script>
   <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>

@@ -32,7 +32,6 @@ $(document).ready(function() {
     $("html, body").animate({ scrollTop: 0 }, "slow");
   }
   
-  
   $('#continue').click(function(e) {
     if ($('#smart-form').valid()) {
       /* Hiding showing pages */
