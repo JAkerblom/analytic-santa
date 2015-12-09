@@ -10,7 +10,7 @@
   <link href="css/smart-addons.css" rel="stylesheet" type="text/css">
   <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"><!-- TODO handle images for klappar -->
 
-  <script src="data/items/klapplist.json" type="text/javascript"></script>
+  <script src="data/items/klapplist.json"></script>
   <script src="js/load-image.all.min.js"></script>
   <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
   <!--<script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script>-->
