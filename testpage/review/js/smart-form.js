@@ -1,4 +1,9 @@
-$(document).ready(function(e) {
+var back;
+
+$(document).ready(function() {
+  
+  /* Pagination and footer button settings
+  -------------------------- */
   //$backButton = $('#back');
   $contButton = $('#continue');
   $submButton = $('#submit');
@@ -9,37 +14,26 @@ $(document).ready(function(e) {
   //$backButton.hide();
   $submButton.hide();
   
-  $('#back').click(function(e) {
-    console.log("Clicked backward");
-    
-    /* Hiding showing pages */
-    /*$secondPage.hide("slow");
-    $firstPage.show("slow");*/
-    
-    /* Hiding showing buttons */
-    /*$backButton.hide("slow");
-    $contButton.show("slow");
-    $submButton.hide("slow");*/
-    
+  //$('#back').click(function(e) {
+  //window.back = function() {
+  back = function() {
     /* Hiding showing pages */
     $('.form-footer').hide("slow", function() {
       /* Hiding showing buttons */
       //$backButton.hide("slow");
-      $contButton.show("slow");
-      $submButton.hide("slow");
+      $submButton.hide();
+      $contButton.show();
 
       $secondPage.hide("slow");
       $firstPage.show("slow", function() {
         $('.form-footer').show("slow");
       });
     });
-    
     $("html, body").animate({ scrollTop: 0 }, "slow");
-  });
+  }
+  
   
   $('#continue').click(function(e) {
-    console.log("Clicked forward");
-    
     if ($('#smart-form').valid()) {
       /* Hiding showing pages */
       $('.form-footer').hide("slow", function() {
@@ -60,6 +54,63 @@ $(document).ready(function(e) {
   
   $('#submit').click(function(e) {});
   
+  /* --------------------------------------- */
+  
+  /* Pagination and footer button settings
+  -------------------------- */
+  
+  $klist = klappar_list["klappar"];
+  $section = $("#itemSection");
+  //$items = $(".anItem");
+  console.log($klist);
+  
+  /*$items[0]['id'] = 1;
+  $items[1]['id'] = 2;
+  $items[2]['id'] = 3;
+  console.log($items[2]['id']);*/
+  
+  /*$('#descr').text($klist[0]['description']);*/
+ 
+  //$.each($items, function(index) {
+  $.each($klist, function(index) {
+    //console.log($(this));
+    /*$id = $(this)[0]['id'];*/
+    $id = index+1;
+    
+    $htmlString = '';
+    
+    $title = $klist[$id-1]['itemName'];
+    $descr = $klist[$id-1]['description'];
+    $picPath = "data/items/Images/"+$klist[$id-1]['itemPicture'];
+    
+    $htmlString += '<div class="spacer-b30"><div class="tagline"></div></div>\n';
+    $htmlString += '<div class="rating block anItem">\n';
+    $htmlString += '<div class="frm-row">\n';
+    $htmlString += '<div class="section colm colm6">\n';
+    $htmlString += '<span class="lbl-text">'+$title+'</span>\n';
+    $htmlString += '</div>\n';
+    $htmlString += '<div class="section colm colm6">\n';
+
+    $htmlString += '<input type="hidden" id="0-id'+$id+'" type="radio" name="items['+($id-1)+']" value='+"'"+'{"itemID":'+$id+', "rating":1}'+"'>\n";
+    for ($i = 6; $i > 0; $i--) {
+      $htmlString += '<input class="rating-input" id="'+$i+'-id'+$id+'" type="radio"  name="items['+($id-1)+']" value='+"'"+'{"itemID":'+$id+', "rating":'+$i+'}'+"'>\n";
+      $htmlString += '<label class="rating-star" for="'+$i+'-id'+$id+'"><i class="fa fa-star"></i></label>\n';
+    }
+  
+    $htmlString += '</div><!-- end section column -->\n';
+    $htmlString += '</div><!-- end frm-row -->\n';
+    $htmlString += '<div class="frm-row">\n';
+    $htmlString += '<div class="section colm colm6"><span class="descr">'+$descr+'</span></div>\n';
+    $htmlString += '<div class="section colm colm6"><img src="'+$picPath+'"></div>\n';
+    $htmlString += '</div><!-- end frm-row -->\n';
+    $htmlString += '</div><!-- end section anItem -->\n';
+
+    $section.append($htmlString);
+    
+    /*$(this).find(".lbl-text").text($title);
+    $(this).find(".descr").text($descr);
+    $(this).find("img").prop("src",$picPath);  */
+  });
 });
 
   $(document).ready(function() {
@@ -207,13 +258,21 @@ $(document).ready(function(e) {
 									},
 									 success:function(){
                                        console.log("Success!");		
-											$('.form-footer').removeClass('progress');
-											$('.alert-success').show().delay(10000).fadeOut();
-											$('.field').removeClass("state-error, state-success");
+										$('.form-footer').removeClass('progress');
+										$('.alert-success').show("slow").delay(10000).hide("slow", function() {
+                                          $('.field').removeClass("state-error, state-success");
+										  if ($('.alert-error').length == 0) {
+										    $('#smart-form').resetForm();
+                                            $('.smart-wrap').click(back());
+											/*$('.field').removeClass("state-error, state-success");
 											if( $('.alert-error').length == 0){
 												$('#smart-form').resetForm();
-											}
-									 }
+                                                $('.smart-wrap').click(back());
+                                                //back();
+											}*/
+									       }
+                                        });
+                                     }
 							  });
 						}
                         

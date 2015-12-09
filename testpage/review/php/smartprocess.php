@@ -52,7 +52,8 @@
 		$_POST['prefersDog'],
         $_POST['santaBelief'],
         $_POST['chocolatePref'],
-        $_POST['candyPref']//,
+        $_POST['candyPref'],
+        $_POST['kallePref']
         //$_POST['christmasFood']
 	);
     for ($i = 0; $i < 12; $i++) {
@@ -186,15 +187,14 @@
 			else {
 			  	echo '<div class="alert notification alert-success">Congs! Message sent successfully </div>';*/
 				
-                echo '<div class="alert notification alert-success">Congs! Message sent successfully </div>';
-                echo $message;
+                echo '<div class="alert notification alert-success">Tack för din medverkan!</div>';
+                //echo $message;
 				/* GENERATE / CREATE THE CSV FILE
 				------------------------------------------------------
 				 * Give the csv top row headings names in an array 
 				------------------------------------------------------*/		
 				if (file_exists($csvFile)) {
 					$csvFileData = fopen($csvFile, 'a');
-                    echo "hej hopp";
 					//fputcsv($csvFileData, $csvData );
 				} else {
 					$csvFileData = fopen($csvFile, 'a'); 
@@ -211,6 +211,7 @@
                         "santaBelief",
                         "chocolatePref",
                         "candyPref",
+                        "kallePref",
                         "likesFood1",
                         "likesFood2",
                         "likesFood3",
@@ -218,7 +219,7 @@
                         "likesFood5",
                         "likesFood6",
                         "likesFood7",
-                        "likesFood8",
+                        "likesFood8", 
                         "likesFood9",
                         "likesFood10",
                         "likesFood11",

@@ -50,15 +50,6 @@
   <body class="christmasbg">
 
     <section class="sky">
-<!--
-    <div class="color"><p>#F5624D</p></div>
-<div class="color"><p>#CC231E</p></div>
-<div class="color"><p>#34A65F</p></div>
-<div class="color"><p>#0F8A5F</p></div>
-<div class="color"><p>#235E6F</p></div>
-</section>
--->
-    
       <div class="smart-wrap">
         <div class="smart-forms smart-container wrap-3">
         
@@ -120,15 +111,14 @@
                         <div class="section colm colm1" style="padding-left:0px;">
                             <p>Ålder:</p>
                         </div>
-                        <div class="section colm colm3">
+                        <div class="section colm colm1-5">
                             <label class="field">
-                            	<input type="text" name="age" id="stepper1" value="30" class="gui-input">
+                            	<!--<input type="text" name="age" id="stepper1" value="30" class="gui-input">-->
+                              <input type="number" name="age" min="0" max="100" step="1" value="30" class="gui-input">
                             </label>
                         </div><!-- end section -->
                     </div>
-                  
-                    <!--<//?php include('php/state.php'); ?>-->
-                    
+              
                     <div class="spacer-b30">
                         <div class="tagline"><span> Lite om dig själv </span></div><!-- .tagline -->
                     </div>
@@ -217,10 +207,7 @@
                   </label>
                 </div>
               </div>
-              
-              <!--<div class="section spacer-b20">
-                <p class="">Betygsätt dessa klappar utifrån hur väl de hade passat inslagna och med ditt namn på etiketten.</p>
-              </div>-->
+         
               <div class="section">
                   <label class="field select">
                       <select id="chocolatePref" name="chocolatePref">
@@ -270,8 +257,6 @@
                       <i class="arrow double"></i>           
                   </label>  
               </div><!-- end section -->
-            
-                    <!--<div class="spacer spacer-b25"></div> -->
                     
                     <div class="spacer-b20">
                     	<label class="field-label"> Vilka av följande ingredienser tycker du är gott att äta på julbordet?</label>
@@ -282,40 +267,34 @@
                             <div class="section colm colm6">
 
                               <label class="option option-red block spacer-b10">
-                                  <!--<input type="checkbox" name="christmasFood[]" value="kottbullar">-->
                                   <input type="hidden" name="christmasFood[0]" value="0">
                                   <input type="checkbox" name="christmasFood[0]" value="1">
                                   <span class="checkbox"></span> Köttbullar                  
                               </label>
 
                               <label class="option option-red block spacer-b10">
-                                  <!--<input type="checkbox" name="christmasFood[]" value="prinskorv">-->
                                   <input type="hidden" name="christmasFood[1]" value="0">
                                   <input type="checkbox" name="christmasFood[1]" value="1">
                                   <span class="checkbox"></span> Prinskorv               
                               </label>
 
                               <label class="option option-red block spacer-b10">
-                                  <!--<input type="checkbox" name="christmasFood[2]" value="skinka">-->
                                   <input type="hidden" name="christmasFood[2]" value="0">
                                   <input type="checkbox" name="christmasFood[2]" value="1">
                                   <span class="checkbox"></span> Skinka                 
                               </label>
                               
                               <label class="option option-red block spacer-b10">
-                                <!--<input type="checkbox" name="christmasFood[]" value="lutfisk">-->
                                   <input type="hidden" name="christmasFood[3]" value="0">
                                   <input type="checkbox" name="christmasFood[3]" value="1">
                                   <span class="checkbox"></span> Lutfisk                
                               </label>
                               <label class="option option-red block spacer-b10">
-                                  <!--<input type="checkbox" name="christmasFood[]" value="agg">-->
                                   <input type="hidden" name="christmasFood[4]" value="0">
                                   <input type="checkbox" name="christmasFood[4]" value="1">
                                   <span class="checkbox"></span> Ägg                
                               </label>
                               <label class="option option-red block">
-                                  <!--<input type="checkbox" name="christmasFood[]" value="lax">-->
                                   <input type="hidden" name="christmasFood[5]" value="0">
                                   <input type="checkbox" name="christmasFood[5]" value="1">
                                   <span class="checkbox"></span> Lax                  
@@ -325,40 +304,34 @@
                             <div class="section colm colm6">
 
                               <label class="option option-red block spacer-b10">
-                                  <!--<input type="checkbox" name="christmasFood[]" value="sill">-->
                                   <input type="hidden" name="christmasFood[6]" value="0">
                                   <input type="checkbox" name="christmasFood[6]" value="1">
                                   <span class="checkbox"></span> Sill                  
                               </label>
 
                               <label class="option option-red block spacer-b10">
-                                  <!--<input type="checkbox" name="christmasFood[]" value="brysselkal">-->
                                   <input type="hidden" name="christmasFood[7]" value="0">
                                   <input type="checkbox" name="christmasFood[7]" value="1">
                                   <span class="checkbox"></span> Brysselkål             
                               </label>
 
                               <label class="option option-red block spacer-b10">
-                                  <!--<input type="checkbox" name="christmasFood[]" value="rodkal">-->
                                   <input type="hidden" name="christmasFood[8]" value="0">
                                   <input type="checkbox" name="christmasFood[8]" value="1">
                                   <span class="checkbox"></span> Röd/brunkål                
                               </label>
                               
                               <label class="option option-red block spacer-b10">
-                                <!--<input type="checkbox" name="christmasFood[]" value="janssons">-->
                                   <input type="hidden" name="christmasFood[9]" value="0">
                                   <input type="checkbox" name="christmasFood[9]" value="1">
                                   <span class="checkbox"></span> Janssons
                               </label>
                               <label class="option option-red block spacer-b10">
-                                  <!--<input type="checkbox" name="christmasFood[]" value="sylta">-->
                                   <input type="hidden" name="christmasFood[10]" value="0">
                                   <input type="checkbox" name="christmasFood[10]" value="1">
                                   <span class="checkbox"></span> Sylta             
                               </label>
                               <label class="option option-red block">
-                                  <!--<input type="checkbox" name="christmasFood[]" value="potatis">-->
                                   <input type="hidden" name="christmasFood[11]" value="0">
                                   <input type="checkbox" name="christmasFood[11]" value="1">
                                   <span class="checkbox"></span> Potatis
@@ -380,9 +353,16 @@
                   <p class="small-text fine-grey">6 stjärnor = Spot on! Ge mig den, tack!</p>
               </div>
 
-              <div class="section">
-                  <span class="rating block" id="27">
+              <div class="frm-row section" id="itemSection">
+                  <span class="rating block anItem" id="27">
+                      <div class="section colm colm6">
                       <span class="lbl-text">En fattig gräsklippare</span>
+                      </div>
+                      <div class="section colm colm6" id="descr"></div>
+                      <div class="section colm colm6" id="pic">
+                        <img src="">
+                      </div>
+                      <div class="section colm colm6">
                       <input type="hidden" id="0-id27" type="radio" name="items[0]" value='{"itemID":27, "rating":1}'>
                       <input class="rating-input" id="6-id27" type="radio"  name="items[0]" value='{"itemID":27, "rating":6}'>
                       <label class="rating-star" for="6-id27"><i class="fa fa-star"></i></label>
@@ -396,9 +376,14 @@
                       <label class="rating-star" for="2-id27"><i class="fa fa-star"></i></label>          
                       <input class="rating-input" id="1-id27" type="radio"  name="items[0]" value='{"itemID":27, "rating":1}'>
                       <label class="rating-star" for="1-id27"><i class="fa fa-star"></i></label>      
-                  </span>  
-                  <span class="rating block">
+                      </div>
+                      
+                  </span>
+                <div class="tagline"></div>
+                  <div class="section colm colm6">
+                  <span class="rating block anItem">
                       <span class="lbl-text">En ascool Actionman</span>
+                      <img src="data/items/Images/03c033ae2dacefde3667feef77562082.jpg" height="40px" width="40px">
                       <input type="hidden" id="0-id16" type="radio" name="items[1]" value='{"itemID":16, "rating":1}'>
                       <input class="rating-input" id="6-id16" type="radio"  name="items[1]" value='{"itemID":16, "rating":6}'>
                       <label class="rating-star" for="6-id16"><i class="fa fa-star"></i></label>
@@ -412,9 +397,10 @@
                       <label class="rating-star" for="2-id16"><i class="fa fa-star"></i></label>          
                       <input class="rating-input" id="1-id16" type="radio"  name="items[1]" value='{"itemID":16, "rating":1}'>
                       <label class="rating-star" for="1-id16"><i class="fa fa-star"></i></label>      
-                  </span>
-                  <span class="rating block">
+                  </span></div>
+                  <span class="rating block anItem">
                       <span class="lbl-text">En trött rakhyvel</span>
+                      <img src="">
                       <input type="hidden" id="0-id23" type="radio" name="items[2]" value='{"itemID":23, "rating":1}'>
                       <input class="rating-input" id="6-id23" type="radio"  name="items[2]" value='{"itemID":23, "rating":6}'>
                       <label class="rating-star" for="6-id23"><i class="fa fa-star"></i></label>
@@ -436,7 +422,7 @@
                 <!--<button type="submit" class="button btn-red pushed btn-primary">Submit Feedback</button>-->
                 <!--<button type="button" id="back" class="button btn-red pushed btn-primary">Tillbaka</button> --><!--onclick="back()"-->
                 <button type="button" id="continue" class="button btn-red pushed btn-primary">Gå vidare</button>
-                <button type="submit" id="submit" class="button btn-red pushed btn-primary">Skicka svar</button>
+                <button type="submit" id="submit" class="button btn-red pushed btn-primary" style="display:none;">Skicka svar</button>
                 <!--<div class="actions clearfix"><ul role="menu" aria-label="Pagination" id="buttonList">
                   <!--<li class="disabled" aria-disabled="true"><a href="#previous" role="menuitem">Go Back</a></li>
                   <li aria-hidden="false" aria-disabled="false"><a href="#next" role="menuitem">Continue</a></li>
