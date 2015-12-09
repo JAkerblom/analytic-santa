@@ -522,7 +522,7 @@ var klappar_list = {
                   Askungen
                 </option>
                 <option value="mussepigg">
-                  Musse Pigg på camping 
+                  Musse Pigg på capming
                 </option>
                 <option value="lady-lufsen">
                   Lady och Lufsen
@@ -630,7 +630,7 @@ var klappar_list = {
           <div class="form-body theme-red" id="section-2" style="display:none;">
             <div class="spacer-b30">
               <div class="tagline">
-                <span style="font-size: 16pt">Klapputdelning!</span>
+                <span style="font-size: 18pt">Klapputdelning!</span>
               </div><!-- .tagline -->
             </div>
             <div class="section spacer-b20">
