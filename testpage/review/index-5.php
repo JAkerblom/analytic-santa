@@ -330,49 +330,14 @@ var klappar_list = {
   <![endif]--><!--[if lte IE 8]>
     <link type="text/css" rel="stylesheet" href="css/smart-forms-ie8.css">
   <![endif]-->
-  
-  <style>
-    .modalDialog {
-      position: fixed;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background: rgba(0,0,0,0.8);
-      z-index: 99999;
-      opacity:0;
-      -webkit-transition: opacity 400ms ease-in;
-      -moz-transition: opacity 400ms ease-in;
-      transition: opacity 400ms ease-in;
-      pointer-events: none;
-    }
-    
-    .modalDialog:target {
-      opacity:1;
-      pointer-events: auto;
-    }
-
-    .modalDialog > div {
-      width: 400px;
-      position: relative;
-      margin: 10% auto;
-      padding: 5px 20px 13px 20px;
-      border-radius: 10px;
-      background: #fff;
-      background: -moz-linear-gradient(#fff, #999);
-      background: -webkit-linear-gradient(#fff, #999);
-      background: -o-linear-gradient(#fff, #999);
-    }
-  </style>
 </head>
 <body class="christmasbg">
   <section class="sky">
     <div class="smart-wrap">
       <div class="smart-forms smart-container wrap-3">
         <div class="form-header header-red header-primary" id="header">
-          <!--<h4 style="text-align:center !important;"><i class="fa fa-gift"></i>Vad önskar du<br>
-          dig i julklapp?</h4>-->
-          <img src="images/santa_youth.gif" alt="" style="max-width:100%;">
+          <h4 style="text-align:center !important;"><i class="fa fa-gift"></i>Vad önskar du<br>
+          dig i julklapp?</h4>
         </div><!-- end .form-header section -->
         <form action="php/smartprocess.php" id="smart-form" method="post" name="smart-form">
           <div class="form-body theme-red" id="section-1">
@@ -426,7 +391,7 @@ var klappar_list = {
             </div>
             <div class="spacer-b30">
               <div class="tagline">
-                <span>Lite om dig själv</span>
+                <span style="font-size : 16pt">Lite om dig själv</span>
               </div><!-- .tagline -->
             </div><!-- PrefersSoftPresents -->
             <div class="frm-row">
@@ -678,21 +643,27 @@ var klappar_list = {
             
             <div id="itemSection"></div><!-- end itemSection -->
           </div>
-          <div class="result"></div><!-- end .result  section -->
-          <div id="openModal" class="modelDialog">
-            <div><img src="images/santa_youth.gif" style="max-width:100%;"></div>
-          </div><!-- end modal section -->
-          <div class="form-footer">
+          <div class="form-body theme-red" id="section-3" style="display:none;">
+            <div class="spacer-b40">
+              <div class="tagline">
+                <span style="font-size: 16pt">Analytic Santa önskar dig en riktigt God Jul!</span>
+              </div><!-- .tagline -->
+            </div>
+            <div class="spacer-b30"></div>
+              <!--<div class="tagline">-->
             <div class="frm-row">
-              <div class="section colm colm2" style="margin-bottom:0px;">
+              <!--<div class="section colm col2"></div>-->
+              <div class="section"><img src="images/predictiveSanta.jpeg" alt="Mountain View" style="max-width: 110%;margin-left: auto;margin-right: auto;display: block;margin-top: 10px;margin-left: -5%;padding-left: 1px;"><!--width:304px;height:228px;--></div>
+              <!--<div class="section colm col2"></div>-->
+            </div>
+            <div class="result"></div><!-- end .result  section -->
+              <!--</div> .tagline -->
+          </div>
+            
+          <div class="form-footer">
             <button class="button btn-red pushed btn-primary" id="continue" type="button">Gå vidare</button>
             <button class="button btn-red pushed btn-primary" id="submit" style="display:none;" type="submit">Skicka
             svar</button>
-                </div>
-            <div class="section colm colm1-5" style="margin-bottom:0px;"><img src="images/santa_youth.gif" style="max-width:100%;"></div></div>   
-            <div class="section colm colm2" style="margin-bottom:0px;">
-              <a href="#openModal">Open Modal</a>
-            </div>
           </div><!-- end .form-footer section -->
         </form>
       </div><!-- end .smart-forms section -->
