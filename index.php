@@ -375,7 +375,7 @@ var klappar_list = {
             </div>
             <div class="frm-row">
               <div class="section colm colm8 breakline" style="margin-top: 5px;">
-                <label class="option option-red"><input checked name="sexType" type="radio" value="female"><span class=
+                <label class="option option-red"><input checked name="sexType" type="radio" value="female" tabindex="5"><span class=
                 "radio"></span> Kvinna</label> <label class="option option-red"><input name="sexType" type="radio"
                 value="male"><span class="radio"></span> Man</label> <label class="option option-red" style=
                 "margin-left:10px;"><input name="sexType" type="radio" value="otherGender"><span class="radio"></span>
@@ -400,7 +400,7 @@ var klappar_list = {
               </div>
               <div class="section colm colm3">
                 <label class="option option-red"><input checked name="prefersSoftPresents" type="radio" value=
-                "0"><span class="radio"></span> Hårda</label>
+                "0" tabindex="7"><span class="radio"></span> Hårda</label>
               </div>
               <div class="section colm colm3">
                 <label class="option option-red"><input name="prefersSoftPresents" type="radio" value="1"><span class=
@@ -413,7 +413,7 @@ var klappar_list = {
               </div>
               <div class="section colm colm3">
                 <label class="option option-red"><input checked name="prefersSuntrip" type="radio" value=
-                "1"><span class="radio"></span> Sol</label>
+                "1" tabindex="8"><span class="radio"></span> Sol</label>
               </div>
               <div class="section colm colm3">
                 <label class="option option-red"><input name="prefersSuntrip" type="radio" value="0"><span class=
@@ -425,7 +425,7 @@ var klappar_list = {
                 <p style="margin:0;margin-top:6px;">Som husdjur föredrar jag:</p>
               </div>
               <div class="section colm colm3">
-                <label class="option option-red"><input checked name="prefersDog" type="radio" value="1"><span class=
+                <label class="option option-red"><input checked name="prefersDog" type="radio" value="1" tabindex="9"><span class=
                 "radio"></span> Hund</label>
               </div>
               <div class="section colm colm3">
@@ -440,21 +440,21 @@ var klappar_list = {
               <div class="section colm colm2">
                 <label class="switch block"><input name="santaBelief" type="hidden" value="0"> <input id="switch1"
                 name="santaBelief" type="checkbox" value="1"> <label data-off="NEJ" data-on="JA" for=
-                "switch1"></label></label>
+                "switch1" tabindex="10"></label></label>
               </div>
               <div class="section colm colm9">
                 <p style="margin:0;margin-top:5px;">Äger du en bil?</p>
               </div>
               <div class="section colm colm2">
                 <label class="switch block"><input name="ownsCar" type="hidden" value="0"> <input id="switch2" name=
-                "ownsCar" type="checkbox" value="1"> <label data-off="NEJ" data-on="JA" for="switch2"></label></label>
+                "ownsCar" type="checkbox" value="1" tabindex="11"> <label data-off="NEJ" data-on="JA" for="switch2"></label></label>
               </div>
               <div class="section colm colm9">
                 <p style="margin:0;margin-top:5px;">Brukar du skriva rim på julklappar?</p>
               </div>
               <div class="section colm colm2">
                 <label class="switch block"><input name="doesRhyme" type="hidden" value="0"> <input id="switch3" name=
-                "doesRhyme" type="checkbox" value="1"> <label data-off="NEJ" data-on="JA" for=
+                "doesRhyme" type="checkbox" value="1" tabindex="12"> <label data-off="NEJ" data-on="JA" for=
                 "switch3"></label></label>
               </div>
             </div>
@@ -553,7 +553,7 @@ var klappar_list = {
                 <div class="section colm colm6">
                   <label class="option option-red block spacer-b10">
                     <input type="hidden" name="christmasFood[0]" value="0">
-                    <input type="checkbox" name="christmasFood[0]" value="1">
+                    <input type="checkbox" name="christmasFood[0]" value="1" tabindex="16">
                     <span class="checkbox"></span> Köttbullar                  
                   </label>
 
