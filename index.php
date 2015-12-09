@@ -550,7 +550,7 @@ var klappar_list = {
             </div>
             <div class="frm-row">
               <div class="option-group field">
-                <div class="section colm colm5">
+                <div class="section colm colm6">
                   <label class="option option-red block spacer-b10">
                     <input type="hidden" name="christmasFood[0]" value="0">
                     <input type="checkbox" name="christmasFood[0]" value="1">
@@ -587,7 +587,7 @@ var klappar_list = {
                     <span class="checkbox"></span> Lax                  
                   </label>
                 </div><!-- end section -->
-                <div class="section colm colm6">
+                <div class="section colm colm6" id="rightCheckboxes">
                   <label class="option option-red block spacer-b10">
                     <input type="hidden" name="christmasFood[6]" value="0">
                     <input type="checkbox" name="christmasFood[6]" value="1">
