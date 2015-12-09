@@ -275,7 +275,7 @@ $(document).ready(function() {
                                           $('.field').removeClass("state-error, state-success");
 										  if ($('.alert-error').length == 0) {
 										    // $('#smart-form').resetForm();
-                                            $('.smart-wrap').click(back());
+                                            $('.smart-wrap').click();
 											/*$('.field').removeClass("state-error, state-success");
 											if( $('.alert-error').length == 0){
 												$('#smart-form').resetForm();

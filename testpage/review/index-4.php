@@ -391,7 +391,7 @@ var klappar_list = {
             </div>
             <div class="spacer-b30">
               <div class="tagline">
-                <span>Lite om dig själv</span>
+                <span style="font-size : 16pt">Lite om dig själv</span>
               </div><!-- .tagline -->
             </div><!-- PrefersSoftPresents -->
             <div class="frm-row">
@@ -646,7 +646,12 @@ var klappar_list = {
           <div class="form-body theme-red" id="section-3" style="display:none;">
             <div class="spacer-b30">
               <div class="tagline">
-                <img src="santa-analytics.png" alt="Mountain View" style="width:304px;height:228px;">
+                <span style="font-size: 16pt">Analytic Santa önskar dig en riktigt God Jul!</span>
+              </div><!-- .tagline -->
+            </div>
+            <div class="spacer-b30">
+              <div class="tagline">
+                <img src="analytic-santa.png" alt="Mountain View" style="width:304px;height:228px;">
                 <div class="result"></div><!-- end .result  section -->
               </div><!-- .tagline -->
             </div>
