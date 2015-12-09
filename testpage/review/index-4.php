@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
   <title>Analytic Santa - Forefront Consulting Group</title>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -298,7 +299,7 @@ var klappar_list = {
       "itemPicture":"fweofjeowijfoewfkfopekf.png",
       "itemID":48,
       "itemName":"Sensoria Smarta Fitness-strumpor",
-      "description":"Det finns en uppsjö av olika plagg och armband som mäter hälsostatus. Nu kommer Sensoria Fitness Socks ett par smarta strumpor, utrustade med sensorer, som kommunicerar med ett armband.",
+      "description":"Det finns en uppsjö av olika plagg och armband som mäter hälsostatus. Nu kommer Sensoria Fitness Socks ett par smarta strumpor, utrustade med sensorer, som kommunicerar med ett armband för att till exempel analysera ditt avtramp.",
       "price":1800
    }
 ]
