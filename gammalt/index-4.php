@@ -649,15 +649,12 @@ var klappar_list = {
                 <span style="font-size: 16pt">Analytic Santa önskar dig en riktigt God Jul!</span>
               </div><!-- .tagline -->
             </div>
-            <div class="spacer-b30"></div>
-              <!--<div class="tagline">-->
-            <div class="frm-row">
-              <!--<div class="section colm col2"></div>-->
-              <div class="section"><img src="images/predictiveSanta.jpeg" alt="Mountain View" style="max-width: 110%;margin-left: auto;margin-right: auto;display: block;margin-top: 10px;margin-left: -5%;padding-left: 1px;margin-top:30px;"><!--width:304px;height:228px;--></div>
-              <!--<div class="section colm col2"></div>-->
+            <div class="spacer-b30">
+              <div class="tagline">
+                <img src="predictiveSanta.jpeg" alt="Mountain View" style="width:304px;height:228px;">
+                <div class="result"></div><!-- end .result  section -->
+              </div><!-- .tagline -->
             </div>
-            <div class="result"></div><!-- end .result  section -->
-              <!--</div> .tagline -->
           </div>
             
           <div class="form-footer">
