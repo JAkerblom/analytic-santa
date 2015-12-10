@@ -321,6 +321,11 @@ var klappar_list = {
 <body class="christmasbg">
   <section class="sky">
     <div class="smart-wrap">
+<div class="logo">
+<picture align="left" alt="logo">
+   <img src="images/forefront-logo.png" alt="This picture loads on non-supporting browsers." width="500" height="140">
+</picture>
+</div>
       <div class="smart-forms smart-container wrap-3">
         <div class="form-header header-red header-primary" id="header">
           <h4 style="text-align:center !important;"><i class="fa fa-gift"></i>Vad önskar du<br>

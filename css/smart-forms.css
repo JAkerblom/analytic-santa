@@ -16,6 +16,15 @@
   max-width: 100%; 
 }
 
+.logo picture {
+    padding-top : 1%;
+    padding-left : 2%;
+    float : left;
+    margin : 5px;
+    width: auto;
+    height: auto;
+}
+
 .lbl-text {
   font: bold;
   font-size: 110%;
