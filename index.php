@@ -317,6 +317,11 @@ var klappar_list = {
   <![endif]--><!--[if lte IE 8]>
     <link type="text/css" rel="stylesheet" href="css/smart-forms-ie8.css">
   <![endif]-->
+  <!--[if IE]>
+    <style type="text/css">
+      div.section img {padding-left:0px;}
+    </style>
+<![endif]-->
 </head>
 <body class="christmasbg">
   <section class="sky">
@@ -538,76 +543,76 @@ var klappar_list = {
             <div class="frm-row">
               <div class="option-group field">
                 <div class="section colm colm6">
-                  <label class="option option-red block spacer-b10">
+                  <label class="option option-red block spacer-b10" for="food1">
                     <input type="hidden" name="christmasFood[0]" value="0">
-                    <input type="checkbox" name="christmasFood[0]" value="1" tabindex="16">
+                    <input type="checkbox" name="christmasFood[0]" value="1" tabindex="16" id="food1">
                     <span class="checkbox"></span> Köttbullar                  
                   </label>
 
-                  <label class="option option-red block spacer-b10">
+                  <label class="option option-red block spacer-b10" for="food2">
                     <input type="hidden" name="christmasFood[1]" value="0">
-                    <input type="checkbox" name="christmasFood[1]" value="1">
+                    <input type="checkbox" name="christmasFood[1]" value="1" id="food2">
                     <span class="checkbox"></span> Prinskorv               
                   </label>
 
-                  <label class="option option-red block spacer-b10">
+                  <label class="option option-red block spacer-b10" for="food3">
                     <input type="hidden" name="christmasFood[2]" value="0">
-                    <input type="checkbox" name="christmasFood[2]" value="1">
+                    <input type="checkbox" name="christmasFood[2]" value="1" id="food3">
                     <span class="checkbox"></span> Skinka                 
                   </label>
 
-                  <label class="option option-red block spacer-b10">
+                  <label class="option option-red block spacer-b10" for="food4">
                     <input type="hidden" name="christmasFood[3]" value="0">
-                    <input type="checkbox" name="christmasFood[3]" value="1">
+                    <input type="checkbox" name="christmasFood[3]" value="1" id="food4">
                     <span class="checkbox"></span> Lutfisk                
                   </label>
                   
-                  <label class="option option-red block spacer-b10">
+                  <label class="option option-red block spacer-b10" for="food5">
                     <input type="hidden" name="christmasFood[4]" value="0">
-                    <input type="checkbox" name="christmasFood[4]" value="1">
+                    <input type="checkbox" name="christmasFood[4]" value="1" id="food5">
                     <span class="checkbox"></span> Ägg                
                   </label>
                   
-                  <label class="option option-red block">
+                  <label class="option option-red block" for="food6">
                     <input type="hidden" name="christmasFood[5]" value="0">
-                    <input type="checkbox" name="christmasFood[5]" value="1">
+                    <input type="checkbox" name="christmasFood[5]" value="1" id="food6">
                     <span class="checkbox"></span> Lax                  
                   </label>
                 </div><!-- end section -->
                 <div class="section colm colm6" id="rightCheckboxes">
-                  <label class="option option-red block spacer-b10">
+                  <label class="option option-red block spacer-b10" for="food7">
                     <input type="hidden" name="christmasFood[6]" value="0">
-                    <input type="checkbox" name="christmasFood[6]" value="1">
+                    <input type="checkbox" name="christmasFood[6]" value="1" id="food7">
                     <span class="checkbox"></span> Sill                  
                   </label>
 
-                  <label class="option option-red block spacer-b10">
+                  <label class="option option-red block spacer-b10" for="food8">
                     <input type="hidden" name="christmasFood[7]" value="0">
-                    <input type="checkbox" name="christmasFood[7]" value="1">
+                    <input type="checkbox" name="christmasFood[7]" value="1" id="food8">
                     <span class="checkbox"></span> Brysselkål             
                   </label>
 
-                  <label class="option option-red block spacer-b10">
+                  <label class="option option-red block spacer-b10" for="food9">
                     <input type="hidden" name="christmasFood[8]" value="0">
-                    <input type="checkbox" name="christmasFood[8]" value="1">
+                    <input type="checkbox" name="christmasFood[8]" value="1" id="food9">
                     <span class="checkbox"></span> Röd/brunkål                
                   </label>
 
-                  <label class="option option-red block spacer-b10">
+                  <label class="option option-red block spacer-b10" for="food10">
                     <input type="hidden" name="christmasFood[9]" value="0">
-                    <input type="checkbox" name="christmasFood[9]" value="1">
+                    <input type="checkbox" name="christmasFood[9]" value="1" id="food10">
                     <span class="checkbox"></span> Janssons
                   </label>
                   
-                  <label class="option option-red block spacer-b10">
+                  <label class="option option-red block spacer-b10" for="food11">
                     <input type="hidden" name="christmasFood[10]" value="0">
-                    <input type="checkbox" name="christmasFood[10]" value="1">
+                    <input type="checkbox" name="christmasFood[10]" value="1" id="food11">
                     <span class="checkbox"></span> Sylta             
                   </label>
                   
-                  <label class="option option-red block">
+                  <label class="option option-red block" for="food12">
                     <input type="hidden" name="christmasFood[11]" value="0">
-                    <input type="checkbox" name="christmasFood[11]" value="1">
+                    <input type="checkbox" name="christmasFood[11]" value="1" id="food12">
                     <span class="checkbox"></span> Potatis
                   </label>
                 </div><!-- end section -->
