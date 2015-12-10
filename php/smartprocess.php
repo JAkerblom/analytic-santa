@@ -305,12 +305,12 @@ for ($i = 0; $i < count($userInput); $i++) {
     
     // Insert data
     $sql_insert = "INSERT INTO " . $table . ' ' . $colstr . " VALUES " . $valuestr;
-    echo $sql_insert;
+    //echo $sql_insert;
     $result = $conn->exec($sql_insert);
     $insertID = $conn->lastInsertId();
-    echo $result;
+    //echo $result;
   } catch ( PDOException $e ) {   
-    print( "Error connecting to SQL Server." );
+    print( "Error connecting to SQL Server. Försök igen alltså." );
     die(print_r($e));
   }
 
