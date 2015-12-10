@@ -317,6 +317,11 @@ var klappar_list = {
   <![endif]--><!--[if lte IE 8]>
     <link type="text/css" rel="stylesheet" href="css/smart-forms-ie8.css">
   <![endif]-->
+  <!--[if IE]>
+    <style type="text/css">
+      div.section img {padding-left:0px;}
+    </style>
+<![endif]-->
 </head>
 <body class="christmasbg">
   <section class="sky">
