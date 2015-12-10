@@ -238,6 +238,91 @@
                 }
 				fclose($csvFileData);
 	}
+
+/*    // DB connection info
+    $host = "eu-cdbr-azure-west-c.cloudapp.net";
+    $user = "ba2ce77d80289a";
+    $pwd = "3a9e383e";
+    $db = "ffcgamd-db";
+    // Connect to database.
+    try {
+        // Using PHP Data Objects (PDO) for DB access
+        $conn = new PDO( "mysql:host=$host;dbname=$db", $user, $pwd);
+        $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+    }
+    catch(Exception $e){
+        die(var_dump($e));
+    }*/
+$headerRowFields = array(
+  "firstname",
+  "lastname",
+  "email",
+  "zip",
+  "age",
+  "sexType",
+  "prefersSoftPresents",
+  "prefersSuntrip",
+  "prefersDog",
+  "santaBelief",
+  "chocolatePref",
+  "candyPref",
+  "kallePref",
+  "likesFood1",
+  "likesFood2",
+  "likesFood3",
+  "likesFood4",
+  "likesFood5",
+  "likesFood6",
+  "likesFood7",
+  "likesFood8", 
+  "likesFood9",
+  "likesFood10",
+  "likesFood11",
+  "likesFood12",
+  "itemID",
+  "rating"
+);
+$server = "f5bv9w5661.database.windows.net,1433";
+$db = "ffcgamd-db";
+$user = "ffcgdb_web";
+$pwd = "OMG!3v1lb4n4as!";
+$table = "user_input";
+$colstr = implode(",", $headerRowFields);
+$colstr = "(". $colstr .")";
+$valuestr = "";
+for ($i = 0; $i < count($userInput); $i++) {
+  if ($i == count($userInput)-1) {
+    $valuestr .= "('".implode("','", $userInput[$i])."');";
+  } else {
+    $valuestr .= "('".implode("','", $userInput[$i])."'), ";
+  }
+}
+
+//PHP Data Objects(PDO) Sample Code:
+  try {
+    $conn = new PDO ( "sqlsrv:server = tcp:f5bv9w5661.database.windows.net,1433; Database = ffcgamd-db", "ffcgdb_web", "OMG!3v1lb4n4as!");
+    $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+    
+    // Insert data
+    $sql_insert = "INSERT INTO " . $table . ' ' . $colstr . " VALUES " . $valuestr;
+    echo $sql_insert;
+    $result = $conn->exec($sql_insert);
+    $insertID = $conn->lastInsertId();
+    echo $result;
+  } catch ( PDOException $e ) {   
+    print( "Error connecting to SQL Server." );
+    die(print_r($e));
+  }
+
+
+
+
+//SQL Server Extension Sample Code:
+/*
+$connectionInfo = array( "UID" => "ffcgdb_web@f5bv9w5661", "pwd" => "your_password_here", "Database" => "ffcgamd-db", "LoginTimeout" => 30, "Encrypt" => 1);
+$serverName = "tcp:f5bv9w5661.database.windows.net,1433";
+$conn = sqlsrv_connect($serverName, $connectionInfo);
+*/
 	
 	// ultimate email validation function
 	function validEmail($email) {
