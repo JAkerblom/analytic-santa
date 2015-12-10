@@ -45,13 +45,6 @@ var klappar_list = {
       "price":195
    },
    {  
-      "itemPicture":"3e2356fdded719574e367bebc324e936.jpg",
-      "itemID":47,
-      "itemName":"6-in-1 Solar Robot ",
-      "description":"Bygg en soldriven båt, hund, bil, plan eller någon annan konstruktion med denna smarta och roliga byggsats av delar du klämmer fast i varandra!",
-      "price":199
-   },
-   {  
       "itemPicture":"9789187441851_200_tid-livet-ar-inte-kronologiskt.jpeg",
       "itemID":41,
       "itemName":"Tid : livet är inte kronologiskt",
@@ -134,13 +127,6 @@ var klappar_list = {
       "itemName":"4D Stadspussel ",
       "description":"Pussel av de coolaste storstäderna i tre lager: landskap, gator och alla byggnader! Byggnaderna placeras ut i kronologisk ordning vilket gör att du får dig en rejäl dos arkitekturhistoria på köpet!",
       "price":395
-   },
-   {  
-      "itemPicture":"3341551.jpg",
-      "itemID":37,
-      "itemName":"Google Chromecast (2nd Generation)",
-      "description":"Chromecast 2, eller Chromecast 2015 – vad man än väljer att kalla den – har omdesignats från att vara en traditionell HDMI-sticka till att bli en liten puckformad enhet med en HDMI-kontakt och en decimeterlång fastmonterad plattkabel.",
-      "price":389
    },
    {  
       "itemPicture":"7d5f9ae74e8435c4ff78cf48b2f74d40.jpg",
@@ -262,13 +248,6 @@ var klappar_list = {
       "price":79
    },
    {  
-      "itemPicture":"c728082412e0d55225ed263525b37abe.jpg",
-      "itemID":26,
-      "itemName":"Leonardo da Vinci Trämodeller ",
-      "description":"Snygga trämodeller du själv pusslar ihop! Baserade på 1400-talsgeniet Leonardo da Vincis ritningar. Välj mellan helikopter, ornithopter eller katapult!",
-      "price":239
-   },
-   {  
       "itemPicture":"53bd228ba66b63c012d05a68042a76d7.jpg",
       "itemID":2,
       "itemName":"KitchPro Hamburgerpress",
@@ -279,7 +258,7 @@ var klappar_list = {
       "itemPicture":"ff32349daf21d192c21996ff5ae07c1a.jpg",
       "itemID":8,
       "itemName":"KitchPro Helautomatisk Vinpump ",
-      "description":"Sätt på vinpumpen på flaskan och den suger automatiskt ut rätt mängd luft. Pumpen aktiveras igen om det kommer in ny luft.",
+      "description":"Drick det du behöver, på med vinpump på flaskan, vakuum uppstår, vin håller sig gott och fräscht till nästa gång suget kommer över dig. Skulle luft tränga in i flaskan känner en sensor av detta och aktiverar pumpen. På den lilla LED-skärmen kan du se vilken temperatur vinet håller samt hur många dagar den varit i vakuumpumpens trygga famn.",
       "price":295
    },
    {  
