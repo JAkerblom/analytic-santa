@@ -30,6 +30,14 @@ var klappar_list = {
       "price":499
    },
    {  
+      "itemURL":"https://www.liveit.se/upplevelser/upplevelsepresenter-massage",
+      "itemPicture":"fjeiaoabeu.jpg",
+      "itemID":52,
+      "itemName":"Massage",
+      "description":"Unna dig själv eller en vän en klassisk massage. En massagebehandling kan vara enbart en stund för avslappning och återhämtning eller innehålla behandlande moment som tryck och stretching. Man väljer själv inriktning i samråd med massören.",
+      "price":445
+   },
+   {  
       "itemPicture":"fewngndvghdksfjewmkldwg.png",
       "itemID":15,
       "itemName":"Sko-lampa",
