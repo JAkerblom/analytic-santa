@@ -328,7 +328,8 @@ var klappar_list = {
     <div class="smart-wrap">
 <div class="logo">
 <picture align="left" alt="logo">
-   <img src="images/forefront-logo.png" alt="This picture loads on non-supporting browsers." width="500" height="140">
+<!--   <img src="images/forefront-logo.png" alt="This picture loads on non-supporting browsers." width="40%" height="auto">-->
+   <img src="images/forefront-logo.png" alt="This picture loads on non-supporting browsers." width="500px" height="auto">
 </picture>
 </div>
       <div class="smart-forms smart-container wrap-3">
