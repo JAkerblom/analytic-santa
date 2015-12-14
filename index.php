@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- You can use Open Graph tags to customize link previews.
+  Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+  <meta property="og:url"           content="http://ffcg-analyticsanta.azurewebsites.net/" />
+  <meta property="og:type"          content="Vill du hitta den perfekta presenten till någon?" />
+  <meta property="og:title"         content="Analytic Santa - Forefront Consulting Group" />
+  <meta property="og:description"   content="En maskininlärningsmodel som lär sig att hitta rätt julklapp för din vän." />
+  <meta property="og:image"         content="http://ffcg-analyticsanta.azurewebsites.net/images/predictiveSanta.jpeg" />
+
   <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
   <title>Analytic Santa - Forefront Consulting Group</title>
   <meta charset="utf-8">
@@ -324,14 +332,34 @@ var klappar_list = {
 <![endif]-->
 </head>
 <body class="christmasbg">
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '395907563951690',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
   <section class="sky">
     <div class="smart-wrap">
-<!--<div class="logo">
+<!--
+<div class="logo">
 <picture align="left" alt="logo">
    <img src="images/forefront-logo.png" alt="This picture loads on non-supporting browsers." width="40%" height="auto">
    <img src="images/forefront-logo.png" alt="This picture loads on non-supporting browsers." width="500px" height="auto">
 </picture>
-</div>-->
+</div>
+-->
+
       <div class="smart-forms smart-container wrap-3">
         <div class="form-header header-red header-primary" id="header">
           <h4 style="text-align:center !important;"><i class="fa fa-gift"></i>Vad önskar du<br>
@@ -662,6 +690,15 @@ var klappar_list = {
             <button class="button btn-red pushed btn-primary" id="continue" type="button">Gå vidare</button>
             <button class="button btn-red pushed btn-primary" id="submit" style="display:none;" type="submit">Skicka
             svar</button>
+        <!-- Your like button code -->
+        <div class="fb-like" 
+            data-href="http://ffcg-analyticsanta.azurewebsites.net/" 
+            data-layout="standard" 
+            data-action="like" 
+            data-share="true"
+            data-show-faces="false">
+        </div>
+
           </div><!-- end .form-footer section -->
         </form>
       </div><!-- end .smart-forms section -->
