@@ -8,7 +8,6 @@
   <meta property="og:title"         content="Analytic Santa - Forefront Consulting Group" />
   <meta property="og:description"   content="En maskininlärningsmodel som lär sig att hitta rätt julklapp för din vän." />
   <meta property="og:image"         content="http://ffcg-analyticsanta.azurewebsites.net/images/predictiveSanta.jpeg" />
-
   <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
   <title>Analytic Santa - Forefront Consulting Group</title>
   <meta charset="utf-8">
@@ -309,6 +308,7 @@ var klappar_list = {
   <script src="js/additional-methods.min.js" type="text/javascript"></script>
   <script src="js/smart-form.js" type="text/javascript"></script>
   <script src="js/jquery.stepper.min.js" type="text/javascript"></script>
+  <script src="js/mlexec.js" type="text/javascript"></script>
   <script type="text/javascript">
     $(function() {
       $('#stepper1').stepper({ 
@@ -351,18 +351,17 @@ var klappar_list = {
 </script>
   <section class="sky">
     <div class="smart-wrap">
-<!--
 <div class="logo">
-<picture align="left" alt="logo">
-   <img src="images/forefront-logo.png" alt="This picture loads on non-supporting browsers." width="40%" height="auto">
-   <img src="images/forefront-logo.png" alt="This picture loads on non-supporting browsers." width="500px" height="auto">
-</picture>
-</div>
--->
 
+</div>
       <div class="smart-forms smart-container wrap-3">
+        <div class="frm-row">
+          <div class="section colm colm12"> <!-- colm6 ger 50% -->
+            <img src="images/forefront-logo.png" alt="Forefront Consulting Group" style="max-width:50%; display:block; margin-left:auto; margin-right:auto;margin-top:15px;">
+          </div>
+        </div>
         <div class="form-header header-red header-primary" id="header">
-          <h4 style="text-align:center !important;"><i class="fa fa-gift"></i>Vad önskar du<br>
+          <h4 style="text-align:center !important;"><i class="fa fa-gift"></i><a href="#" onclick="doMLexec()">Vad</a> önskar du<br>
           dig i julklapp?</h4>
         </div><!-- end .form-header section -->
         <form action="php/smartprocess.php" id="smart-form" method="post" name="smart-form">
@@ -698,7 +697,6 @@ var klappar_list = {
             data-share="true"
             data-show-faces="false">
         </div>
-
           </div><!-- end .form-footer section -->
         </form>
       </div><!-- end .smart-forms section -->
