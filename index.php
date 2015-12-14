@@ -361,8 +361,7 @@ var klappar_list = {
           </div>
         </div>
         <div class="form-header header-red header-primary" id="header">
-          <h4 style="text-align:center !important;"><i class="fa fa-gift"></i><a href="#" onclick="doMLexec()">Vad</a> önskar du<br>
-          dig i julklapp?</h4>
+          <h4 style="text-align:center !important;" id="h4_header"><i class="fa fa-gift"></i><a id="href_header" href="#" onclick="doMLexec()">Vad</a> önskar du<br> dig i julklapp?</h4>
         </div><!-- end .form-header section -->
         <form action="php/smartprocess.php" id="smart-form" method="post" name="smart-form">
           <div class="form-body theme-red" id="section-1">
@@ -655,9 +654,6 @@ var klappar_list = {
           
           <div class="form-body theme-red" id="section-2" style="display:none;">
             <div class="spacer-b30">
-              <div class="tagline">
-                <span style="font-size: 16pt">Klapputdelning!</span>
-              </div><!-- .tagline -->
             </div>
             <div class="section spacer-b20">
               <p class="">Betygsätt dessa klappar utifrån hur väl de hade passat inslagna och med ditt namn på
