@@ -696,7 +696,7 @@ var klappar_list = {
             data-layout="standard" 
             data-action="like" 
             data-share="true"
-            data-show-faces="true">
+            data-show-faces="false">
         </div>
 
           </div><!-- end .form-footer section -->
