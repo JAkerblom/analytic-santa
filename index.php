@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- You can use Open Graph tags to customize link previews.
+  Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+  <meta property="og:url"           content="http://ffcg-analyticsanta.azurewebsites.net/index.php" />
+  <meta property="og:type"          content="Vill du hitta den perfekta presenten till någon?" />
+  <meta property="og:title"         content="Analytic Santa - Forefront Consulting Group" />
+  <meta property="og:description"   content="En maskininlärningsmodel som lär sig allt eftersom." />
+  <meta property="og:image"         content="http://ffcg-analyticsanta.azurewebsites.net/images/predictiveSanta.jpeg" />
+
   <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
   <title>Analytic Santa - Forefront Consulting Group</title>
   <meta charset="utf-8">
@@ -326,12 +334,29 @@ var klappar_list = {
 <body class="christmasbg">
   <section class="sky">
     <div class="smart-wrap">
-<!--<div class="logo">
+<!--
+<div class="logo">
 <picture align="left" alt="logo">
-   <img src="images/forefront-logo.png" alt="This picture loads on non-supporting browsers." width="40%" height="auto">-->
+   <img src="images/forefront-logo.png" alt="This picture loads on non-supporting browsers." width="40%" height="auto">
    <img src="images/forefront-logo.png" alt="This picture loads on non-supporting browsers." width="500px" height="auto">
 </picture>
-</div>-->
+</div>
+-->
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your share button code -->
+    <div class="fb-share-button" 
+        data-href="http://ffcg-analyticsanta.azurewebsites.net/" 
+        data-layout="button_count">
+    </div>
       <div class="smart-forms smart-container wrap-3">
         <div class="form-header header-red header-primary" id="header">
           <h4 style="text-align:center !important;"><i class="fa fa-gift"></i>Vad önskar du<br>
