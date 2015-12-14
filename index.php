@@ -19,6 +19,19 @@
   <link href="css/smart-addons.css" rel="stylesheet" type="text/css">
   <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
   
+<script>
+$(document).ready(function() {
+  $.ajaxSetup({ cache: true });
+  $.getScript('//connect.facebook.net/en_US/sdk.js', function(){
+    FB.init({
+      appId: '{your-app-id}',
+      version: 'v2.5' // or v2.0, v2.1, v2.2, v2.3
+    });     
+    $('#loginbutton,#feedbutton').removeAttr('disabled');
+    FB.getLoginStatus(updateStatusCallback);
+  });
+});
+</script>
   <script >
 var klappar_list = {
 "klappar":
@@ -332,6 +345,23 @@ var klappar_list = {
 <![endif]-->
 </head>
 <body class="christmasbg">
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '395907563951690',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
   <section class="sky">
     <div class="smart-wrap">
 <!--
@@ -342,15 +372,6 @@ var klappar_list = {
 </picture>
 </div>
 -->
-    <!-- Load Facebook SDK for JavaScript -->
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
 
     <!-- Your share button code -->
     <div class="fb-share-button" 
