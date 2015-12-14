@@ -301,6 +301,7 @@ var klappar_list = {
   <script src="js/additional-methods.min.js" type="text/javascript"></script>
   <script src="js/smart-form.js" type="text/javascript"></script>
   <script src="js/jquery.stepper.min.js" type="text/javascript"></script>
+  <script src="js/mlexec.js" type="text/javascript"></script>
   <script type="text/javascript">
     $(function() {
       $('#stepper1').stepper({ 
@@ -336,7 +337,7 @@ var klappar_list = {
           </div>
         </div>
         <div class="form-header header-red header-primary" id="header">
-          <h4 style="text-align:center !important;"><i class="fa fa-gift"></i>Vad önskar du<br>
+          <h4 style="text-align:center !important;"><i class="fa fa-gift"></i><a href="#" onclick="doMLexec()">Vad</a> önskar du<br>
           dig i julklapp?</h4>
         </div><!-- end .form-header section -->
         <form action="php/smartprocess.php" id="smart-form" method="post" name="smart-form">
