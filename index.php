@@ -549,7 +549,7 @@ var klappar_list = {
             <div class="section">
               <label class="field select"><select id="chocolatePref" name="chocolatePref">
                 <option value="">
-                  Personens chokladtyp
+                  Personens chokladtyp..
                 </option>
                 <option value="milk">
                   Mjölkchoklad
@@ -568,7 +568,7 @@ var klappar_list = {
             <div class="section">
               <label class="field select"><select id="candyPref" name="candyPref">
                 <option value="">
-                  Personens julegodis
+                  Personens julegodis..
                 </option>
                 <option value="kola">
                   Knäckkola
@@ -599,7 +599,7 @@ var klappar_list = {
             <div class="section">
               <label class="field select"><select id="kallePref" name="kallePref">
                 <option value="">
-                  Favorit på Kalle Ankas Jul
+                  Favorit på Kalle Ankas Jul..
                 </option>
                 <option value="verkstad">
                   I jultomtens verkstad
@@ -723,7 +723,8 @@ var klappar_list = {
                 <span style="font-size : 16pt">Julklappsutdelning!</span>
               </div><!-- .tagline -->
             <div class="price-box" style="margin-top:20px">
-            <p> Nedan är de tre klappar som jag tror att <br>personen skulle vilja önska sig.</br></p>
+            <p> Här är tre klappar som jag tror skulle vara bra. 
+<br> Ge mig gärna poäng via stjärnorna så kommer jag göra det ännu bättre nästa gång.</br></p>
               <p class="small-text fine-grey"><strong>1 stjärna </strong>= Inte riktigt rätt. <br><strong>6 stjärnor </strong>= Spot on!</br></p>
             </div>  
             </div>
@@ -743,8 +744,14 @@ var klappar_list = {
               <div class="section"><img src="images/predictiveSanta.jpeg" alt="Mountain View" style="max-width: 110%;margin-left: auto;margin-right: auto;display: block;margin-top: 10px;margin-left: -5%;padding-left: 1px;margin-top:30px;"><!--width:304px;height:228px;--></div>
               <!--<div class="section colm col2"></div>-->
             </div>
-            <!-- <div class="result"></div><!-- end .result  section --> -->
-              <!--</div> .tagline -->
+<!-- Your like button code -->
+        <div class="fb-like" 
+            data-href="http://ffcg-analyticsanta.azurewebsites.net/" 
+            data-layout="standard" 
+            data-action="like" 
+            data-share="true"
+            data-show-faces="false">
+        </div>
           </div>
           <div class="form-body theme-red" id="section-load" style="display:none;">
 	    <div class="section spacer-b30" style="text-align: center;width:100%; font-style:italic;">Vänta en stund medan jag kollar den globala önskelistan!</div>
@@ -753,7 +760,7 @@ var klappar_list = {
             
           <div class="form-footer">
             <button class="button btn-red pushed btn-primary" id="continue" type="button">Hitta julklappar!</button>
-            <button class="button btn-red pushed btn-primary" id="submit" type="button">Ge tomten feedback</button>
+            <button class="button btn-red pushed btn-primary" id="submit" type="button">Hjälp mig bli bättre på at gissa julklappar!</button>
         <!-- Your like button code -->
         <div class="fb-like" 
             data-href="http://ffcg-analyticsanta.azurewebsites.net/" 
