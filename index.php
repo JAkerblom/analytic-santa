@@ -361,7 +361,8 @@ var klappar_list = {
           </div>
         </div>
         <div class="form-header header-red header-primary" id="header">
-          <h4 style="text-align:center !important;" id="h4_header"><i class="fa fa-gift"></i><a id="href_header" href="#" onclick="doMLexec()">Vad</a> önskar du<br> dig i julklapp?</h4>
+<img src="images/predictiveSantaRed.jpg" alt="logo" style="max-width:50%; display:block; margin-left:auto; margin-right:auto;margin-top:10px;margin-bottom:15px;"/>
+          <h4 style="text-align:center !important;" id="h4_header"><i class="fa fa-gift"></i>Jag hjälper dig hitta julklapp!</h4>
         </div><!-- end .form-header section -->
         <form action="php/smartprocess.php" id="smart-form" method="post" name="smart-form">
           <div class="form-body theme-red" id="section-1">
