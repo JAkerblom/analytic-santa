@@ -388,7 +388,8 @@ var klappar_list = {
             <div class="frm-row">
               <div class="section colm colm8 breakline">
                 <label class="field prepend-icon" for="email"><input class="gui-input" id="email" name="email"
-                placeholder="Emailadress" type="email"> <label class="field-icon"><i class=
+                placeholder="Emailadress" type="email"> <b class="tooltip tip-left-bottom"><em>Din email kommer <strong>endast</strong> användas för att få fram bättre 
+                julklappar.</em></b><label class="field-icon"><i class=
                 "fa fa-envelope"></i></label></label>
               </div><!-- end section -->
               <div class="section colm colm4 breakline">
@@ -416,12 +417,15 @@ var klappar_list = {
             </div>
             <div class="spacer-b30">
               <div class="tagline">
-                <span style="font-size : 16pt">Lite om dig själv</span>
+                <span style="font-size : 16pt">Vem är personen?</span>
               </div><!-- .tagline -->
+            <div class="price-box" style="margin-top:20px">
+            <p> Beskriv personen eller dig själv för mig med dessa attribut så kommer jag ge dig tre förslag som jag tror ska passa in. </p>
+            </div>  
             </div><!-- PrefersSoftPresents -->
             <div class="frm-row">
               <div class="section colm colm6">
-                <p style="margin:0;margin-top:6px;">Mina klappar föredrar jag:</p>
+                <p style="margin:0;margin-top:6px;">Julklappar föredrar personen:</p>
               </div>
               <div class="section colm colm3">
                 <label class="option option-red"><input checked name="prefersSoftPresents" type="radio" value=
@@ -434,7 +438,7 @@ var klappar_list = {
             </div><!-- PrefersSuntrip -->
             <div class="frm-row">
               <div class="section colm colm6">
-                <p style="margin:0;margin-top:6px;">På semester åker du helst till:</p>
+                <p style="margin:0;margin-top:6px;">På semester åker personen:</p>
               </div>
               <div class="section colm colm3">
                 <label class="option option-red"><input checked name="prefersSuntrip" type="radio" value=
@@ -447,7 +451,7 @@ var klappar_list = {
             </div><!-- PrefersDog -->
             <div class="frm-row">
               <div class="section colm colm6">
-                <p style="margin:0;margin-top:6px;">Som husdjur föredrar jag:</p>
+                <p style="margin:0;margin-top:6px;">Husdjur föredrar personen:</p>
               </div>
               <div class="section colm colm3">
                 <label class="option option-red"><input checked name="prefersDog" type="radio" value="1" tabindex="9"><span class=
@@ -460,7 +464,7 @@ var klappar_list = {
             </div><!-- SantaBelief -->
             <div class="frm-row">
               <div class="section colm colm9">
-                <p style="margin:0;margin-top:5px;">Tror du på tomten?</p>
+                <p style="margin:0;margin-top:5px;">Tror personen på tomten?</p>
               </div>
               <div class="section colm colm2">
                 <label class="switch block"><input name="santaBelief" type="hidden" value="0"> <input id="switch1"
@@ -468,14 +472,14 @@ var klappar_list = {
                 "switch1" tabindex="10"></label></label>
               </div>
               <div class="section colm colm9">
-                <p style="margin:0;margin-top:5px;">Äger du en bil?</p>
+                <p style="margin:0;margin-top:5px;">Äger personen en bil?</p>
               </div>
               <div class="section colm colm2">
                 <label class="switch block"><input name="ownsCar" type="hidden" value="0"> <input id="switch2" name=
                 "ownsCar" type="checkbox" value="1" tabindex="11"> <label data-off="NEJ" data-on="JA" for="switch2"></label></label>
               </div>
               <div class="section colm colm9">
-                <p style="margin:0;margin-top:5px;">Brukar du skriva rim på julklappar?</p>
+                <p style="margin:0;margin-top:5px;">Brukar personen skriva rim på julklappar?</p>
               </div>
               <div class="section colm colm2">
                 <label class="switch block"><input name="doesRhyme" type="hidden" value="0"> <input id="switch3" name=
@@ -486,7 +490,7 @@ var klappar_list = {
             <div class="section">
               <label class="field select"><select id="chocolatePref" name="chocolatePref">
                 <option value="">
-                  Välj din favorit av chokladtyper...
+                  Välj personens favorit av chokladtyper...
                 </option>
                 <option value="milk">
                   Mjölkchoklad
@@ -505,7 +509,7 @@ var klappar_list = {
             <div class="section">
               <label class="field select"><select id="candyPref" name="candyPref">
                 <option value="">
-                  Välj din favorit av julegodis...
+                  Välj personens favorit av julegodis...
                 </option>
                 <option value="kola">
                   Knäckkola
@@ -536,7 +540,7 @@ var klappar_list = {
             <div class="section">
               <label class="field select"><select id="kallePref" name="kallePref">
                 <option value="">
-                  Välj din favoritdel av Kalle Ankas Jul...
+                  Välj personens favoritdel av Kalle Ankas Jul...
                 </option>
                 <option value="verkstad">
                   I jultomtens verkstad
@@ -571,7 +575,7 @@ var klappar_list = {
               </select> <i class="arrow double"></i></label>
             </div><!-- end section -->
             <div class="spacer-b20">
-              <label class="field-label">Vilka av följande ingredienser tycker du är gott att äta på julbordet?</label>
+              <label class="field-label">Vilka av följande ingredienser tycker personen är gott att äta på julbordet?</label>
             </div>
             <div class="frm-row">
               <div class="option-group field">
@@ -657,10 +661,9 @@ var klappar_list = {
             <div class="spacer-b30">
             </div>
             <div class="section spacer-b20">
-              <p class="">Betygsätt dessa klappar utifrån hur väl de hade passat inslagna och med ditt namn på
-              etiketten.</p>
-              <p class="small-text fine-grey">1 stjärna = Inget jag kan tänka mig.</p>
-              <p class="small-text fine-grey">6 stjärnor = Spot on! Ge mig den, tack!</p>
+              <p class="">Betygsätt dessa klappar utifrån hur väl de hade passat inslagna till den person som du beskrev.</p>
+              <p class="small-text fine-grey">1 stjärna = Inte riktigt rätt.</p>
+              <p class="small-text fine-grey">6 stjärnor = Spot on!</p>
             </div>
             
             <div id="itemSection"></div><!-- end itemSection -->
