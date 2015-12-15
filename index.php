@@ -28,6 +28,9 @@
     #u_0_8 {
       display:none;	
     }
+    #u_0_0 {
+      width: 0px !important;	
+    }
   </style>
   
    <!-- Load spinner styling -->
@@ -35,7 +38,7 @@
    #loadBox {
      height: 100px;
    }
-  </style>"
+  </style>
 
   <script type="text/javascript" src="data/items/klappar.json"></script>
   <script src="js/load-image.all.min.js"></script>
@@ -437,13 +440,24 @@
             <button class="button btn-red pushed btn-primary" id="continue" type="button">Beräkna klapp</button>
             <button class="button btn-red pushed btn-primary" id="submit" type="submit">Skicka svar</button>
         <!-- Your like button code -->
-        <div class="fb-like" 
-            data-href="http://ffcg-analyticsanta.azurewebsites.net/" 
-            data-layout="standard" 
-            data-action="like" 
-            data-share="true"
-            data-show-faces="false">
-        </div>
+            <div class="frm-row">
+              <div class="section colm colm5">
+                <div class="fb-like" 
+                  data-href="http://ffcg-analyticsanta.azurewebsites.net/" 
+                  data-layout="standard" 
+                  data-action="like" 
+                  data-share="true"
+                  data-show-faces="false">
+                </div>  
+              </div>
+            </div>
+            <!--<div class="fb-like" 
+              data-href="http://ffcg-analyticsanta.azurewebsites.net/" 
+              data-layout="standard" 
+              data-action="like" 
+              data-share="true"
+              data-show-faces="false">
+            </div>-->
           </div><!-- end .form-footer section -->
         </form>
       </div><!-- end .smart-forms section -->
