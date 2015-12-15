@@ -425,7 +425,7 @@ var klappar_list = {
               </div><!-- end section -->
             </div> 
             </div><!-- PrefersSoftPresents -->
-<div class="spacer-b30"> <div class="tagline"></div><!-- .tagline -->
+<div class="spacer-b40"> <div class="tagline"></div><!-- .tagline -->
                     </div>
             <div class="frm-row">
               <div class="section colm colm6">
