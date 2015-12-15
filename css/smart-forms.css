@@ -23,6 +23,11 @@
     margin : 5px;
 }
 
+.header img {
+  float: left;
+  max-width: 100%;
+}
+
 .lbl-text {
   font: bold;
   font-size: 110%;

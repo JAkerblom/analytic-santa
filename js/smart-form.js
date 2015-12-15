@@ -12,7 +12,7 @@ $(document).ready(function() {
   $firstPage = $("#section-1");
   $secondPage = $("#section-2");
   $thirdPage = $("#section-3");
-  $loadPage = $("section-load");
+  $loadPage = $("#section-load");
   
   //$backButton.hide();
   $submButton.hide();
