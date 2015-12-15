@@ -1976,14 +1976,14 @@ html, body{
     .smart-forms .form-body {
       padding: 40px 15px 20px 15px
     }
-  .smart-container {
+  /*.smart-container {
     max-width: 60vh;
-  }
+  }*/
   .anItem .frm-row div:nth-childe(1),
   .anItem .frm-row div:nth-childe(2) {
     
   }
-  .smart-forms .rating-star{ margin-left:0px; }
+  .smart-forms .rating-star{ margin-left:3px; }
   .smart-forms .rating .rating-star {
 	width: 1em;
   }
