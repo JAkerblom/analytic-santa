@@ -1,20 +1,23 @@
 var prediction = {
  "items": [
   {  
+    "itemURL":'',
     "itemPicture":'5d1cc1bec6dacd27535fdce4b59f9627.jpg',
     "itemID":16,
     "itemName":'Popcornmaskin Cinema Style',
     "description":'Med vår biografstylade popcornmaskin finns alltid en näve färska popcorn hemma, liksom en snygg köksapparat som får - nej, ska! - stå mitt i bild.',
     "rating":6.532423
   },
-  {  
+  { 
+    "itemURL":'', 
     "itemPicture":'',
     "itemID":'',
     "itemName":'',
     "description":'',
     "rating":''
   },
-  {  
+  { 
+    "itemURL":'', 
     "itemPicture":'',
     "itemID":'',
     "itemName":'',
@@ -44,8 +47,8 @@ function doMLexec() {
   json = JSON.parse(json);
   console.log(json);
   $.ajax({
-    //url: "/analytic-santa/php/mlexec.php",
-    url: "/php/mlexec.php",
+    url: "/analytic-santa/php/mlexec.php",
+    //url: "/php/mlexec.php",
     type: "post",
     data: json,
     success: function(data) { // data arrives as a string
@@ -90,6 +93,7 @@ function doMLexec() {
         $title = value['itemName'];
         $descr = value['description'];
         $picPath = "data/items/Images/"+value['itemPicture'];
+	$itemURL = value['itemURL'];
 
         $htmlString += '<div class="spacer-b30"><div class="tagline"></div></div>\n';
         $htmlString += '<div class="rating block anItem">\n';
@@ -109,7 +113,7 @@ function doMLexec() {
         $htmlString += '</div><!-- end frm-row -->\n';
         $htmlString += '<div class="frm-row">\n';
         $htmlString += '<div class="section colm colm6"><span class="descr">'+$descr+'</span></div>\n';
-        $htmlString += '<div class="section colm colm6"><img src="'+$picPath+'"></div>\n';
+        $htmlString += '<div class="section colm colm6"><a href="'+$itemURL+'" target="_blank"><img src="'+$picPath+'"></a></div>\n';
         $htmlString += '</div><!-- end frm-row -->\n';
         $htmlString += '</div><!-- end section anItem -->\n';
 
