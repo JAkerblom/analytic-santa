@@ -47,8 +47,8 @@ function doMLexec() {
   json = JSON.parse(json);
   console.log(json);
   $.ajax({
-    url: "/analytic-santa/php/mlexec.php",
-    //url: "/php/mlexec.php",
+    //url: "/analytic-santa/php/mlexec.php",
+    url: "/php/mlexec.php",
     type: "post",
     data: json,
     beforeSend: function() {
@@ -274,10 +274,6 @@ var opts = {
 , className: 'spinner' // The CSS class to assign to the spinner
 , shadow: false // Whether to render a shadow
 , hwaccel: false // Whether to use hardware acceleration
-<<<<<<< HEAD
-, position: 'absolute' // Element positioning
-=======
 , position: 'relative' // Element positioning
 , margin: 'auto'
->>>>>>> dev
 }
