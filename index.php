@@ -425,8 +425,8 @@ var klappar_list = {
         <form action="php/smartprocess.php" id="smart-form" method="post" name="smart-form">
           <div class="form-body theme-red" id="section-1">
             <div class="spacer-b10">
-              <div class="tagline">
-                <span style="font-size : 16pt">Vem är julklappen till?</span>
+              <div class="tagline" style="margin-bottom: 10pt; padding-bottom:15pt">
+                <span style="font-size : 16pt; margin-bottom: 10pt; padding-bottom:15pt">Vem är julklappen till?</span>
               </div><!-- .tagline -->
 <!--
             <div class="spacer-b30">
