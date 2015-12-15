@@ -1979,15 +1979,14 @@ html, body{
   /*.smart-container {
     max-width: 60vh;
   }*/
-  /*
-  .anItem .frm-row div:nth-childe(1),
-  .anItem .frm-row div:nth-childe(2) {
+  /* .anItem .frm-row div:nth-childe(1), */
+  /* .anItem .frm-row div:nth-childe(2) { */
     
-  }
+  /* } */
   .smart-forms .rating-star{ margin-left:3px; }
   .smart-forms .rating .rating-star {
 	width: 1em;
-  }*/
+  }
   .anItem .frm-row:nth-child(2) div:nth-child(1) {
     font-size: 1em;
   }
