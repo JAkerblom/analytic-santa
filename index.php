@@ -7,7 +7,7 @@
   <meta property="og:type"          content="Vill du hitta den perfekta presenten till någon?" />
   <meta property="og:title"         content="Analytic Santa - Forefront Consulting Group" />
   <meta property="og:description"   content="En maskininlärningsmodel som lär sig att hitta rätt julklapp för din vän." />
-  <meta property="og:image"         content="http://ffcg-analyticsanta.azurewebsites.net/images/predictiveSanta.jpeg" />
+  <meta property="og:image"         content="http://ffcg-analyticsanta.azurewebsites.net/images/predictiveSantaWhite.jpg" />
   <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
   <title>Analytic Santa - Forefront Consulting Group</title>
   <meta charset="utf-8">
@@ -744,7 +744,7 @@ var klappar_list = {
               <!--<div class="tagline">-->
             <div class="frm-row">
               <!--<div class="section colm col2"></div>-->
-              <div class="section"><img src="images/predictiveSanta.jpeg" alt="Mountain View" style="max-width: 110%;margin-left: auto;margin-right: auto;display: block;margin-top: 10px;margin-left: -5%;padding-left: 1px;margin-top:30px;"><!--width:304px;height:228px;--></div>
+              <div class="section"><img src="images/predictiveSantaWhite.jpg" alt="Mountain View" style="max-width: 110%;margin-left: auto;margin-right: auto;display: block;margin-top: 10px;margin-left: -5%;padding-left: 1px;margin-top:30px;"><!--width:304px;height:228px;--></div>
               <!--<div class="section colm col2"></div>-->
             </div>
 <!-- Your like button code -->
