@@ -40,6 +40,7 @@
   <script src="js/additional-methods.min.js" type="text/javascript"></script>
   <script src="js/smart-form.js" type="text/javascript"></script>
   <script src="js/jquery.stepper.min.js" type="text/javascript"></script>
+  <script src="js/spin.min.js" type="text/javascript"></script>"
   <script src="js/mlexec.js" type="text/javascript"></script>
   <script type="text/javascript">
     $(function() {
@@ -415,6 +416,11 @@
             </div>
             <div class="result"></div><!-- end .result  section -->
               <!--</div> .tagline -->
+	    <div class="form-body theme-red" id="section-load" style="display:none;">
+	      <div id="loadBox">
+		
+	      </div>
+	    </div>
           </div>
             
           <div class="form-footer">
