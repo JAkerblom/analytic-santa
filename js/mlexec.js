@@ -63,6 +63,7 @@ function doMLexec() {
           if (value['itemID'] == $itemRatings[i][0]) {
             prediction['items'][i]['itemPicture'] = value['itemPicture'];
             prediction['items'][i]['itemID'] = value['itemID'];
+            prediction['items'][i]['itemURL'] = value['itemURL'];
             prediction['items'][i]['itemName'] = value['itemName'];
             prediction['items'][i]['description'] = value['description'];
             prediction['items'][i]['rating'] = $itemRatings[i][1];
