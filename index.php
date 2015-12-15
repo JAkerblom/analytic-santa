@@ -402,12 +402,15 @@
           </div><!-- end .form-body section -->
           
           <div class="form-body theme-red" id="section-2" style="display:none;">
-            <div class="spacer-b30">
-            </div>
-            <div class="section spacer-b20">
-              <p class="">Betygsätt dessa klappar utifrån hur väl de hade passat inslagna till den person som du beskrev.</p>
-              <p class="small-text fine-grey">1 stjärna = Inte riktigt rätt.</p>
-              <p class="small-text fine-grey">6 stjärnor = Spot on!</p>
+
+            <div class="spacer-b10">
+              <div class="tagline">
+                <span style="font-size : 16pt">Julklappsutdelning!</span>
+              </div><!-- .tagline -->
+            <div class="price-box" style="margin-top:20px">
+            <p> Nedan är de tre klappar som jag tror att <br>personen skulle vilja önska sig.</br></p>
+              <p class="small-text fine-grey"><strong>1 stjärna </strong>= Inte riktigt rätt. <br><strong>6 stjärnor </strong>= Spot on!</br></p>
+            </div>  
             </div>
             
             <div id="itemSection"></div><!-- end itemSection -->
@@ -434,8 +437,8 @@
           </div>
             
           <div class="form-footer">
-            <button class="button btn-red pushed btn-primary" id="continue" type="button">Beräkna klapp</button>
-            <button class="button btn-red pushed btn-primary" id="submit" type="submit">Skicka svar</button>
+            <button class="button btn-red pushed btn-primary" id="continue" type="button">Hitta julklappar!</button>
+            <button class="button btn-red pushed btn-primary" id="submit" type="submit">Ge tomten feedback!</button>
         <!-- Your like button code -->
         <div class="fb-like" 
             data-href="http://ffcg-analyticsanta.azurewebsites.net/" 
