@@ -765,7 +765,7 @@ var klappar_list = {
             <button class="button btn-red pushed btn-primary" id="continue" type="button">Hitta julklappar!</button>
             <button class="button btn-red pushed btn-primary" id="submit" type="button">Hjälp mig bli bättre på att gissa julklappar!</button>
         <!-- Your like button code -->
-            <div class="frm-row">
+           <!-- <div class="frm-row">
               <div class="section colm colm5">
                 <div class="fb-like" 
                   data-href="http://ffcg-analyticsanta.azurewebsites.net/" 
@@ -775,14 +775,14 @@ var klappar_list = {
                   data-show-faces="false">
                 </div>  
               </div>
-            </div>
-            <!--<div class="fb-like" 
+            </div> -->
+            <div class="fb-like" 
               data-href="http://ffcg-analyticsanta.azurewebsites.net/" 
               data-layout="standard" 
               data-action="like" 
               data-share="true"
               data-show-faces="false">
-            </div>-->
+            </div>
           </div><!-- end .form-footer section -->
         </form>
       </div><!-- end .smart-forms section -->
