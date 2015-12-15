@@ -357,12 +357,12 @@ var klappar_list = {
       <div class="smart-forms smart-container wrap-3">
         <div class="frm-row">
           <div class="section colm colm12"> <!-- colm6 ger 50% -->
-            <img src="images/forefront-logo.png" alt="Forefront Consulting Group" style="max-width:50%; display:block; margin-left:auto; margin-right:auto;margin-top:15px;">
+            <a href="http://ffcg.se" target="_blank"><img src="images/forefront-logo.png" alt="Forefront Consulting Group" style="max-width:50%; display:block; margin-left:auto; margin-right:auto;margin-top:15px;"></a>
           </div>
         </div>
         <div class="form-header header-red header-primary" id="header">
 <img src="images/predictiveSantaRed.jpg" alt="logo" style="max-width:50%; display:block; margin-left:auto; margin-right:auto;margin-top:10px;margin-bottom:15px;"/>
-          <h4 style="text-align:center !important;" id="h4_header"><i class="fa fa-gift"></i>Jag hjälper dig hitta julklapp!</h4>
+          <h4 style="text-align:center !important;" id="h4_header"><i class="fa fa-gift"></i>Jag hjälper dig <br>hitta julklapp!</br></h4>
         </div><!-- end .form-header section -->
         <form action="php/smartprocess.php" id="smart-form" method="post" name="smart-form">
           <div class="form-body theme-red" id="section-1">
@@ -681,7 +681,7 @@ var klappar_list = {
               <div class="section"><img src="images/predictiveSanta.jpeg" alt="Mountain View" style="max-width: 110%;margin-left: auto;margin-right: auto;display: block;margin-top: 10px;margin-left: -5%;padding-left: 1px;margin-top:30px;"><!--width:304px;height:228px;--></div>
               <!--<div class="section colm col2"></div>-->
             </div>
-            <div class="result"></div><!-- end .result  section -->
+            <!-- <div class="result"></div><!-- end .result  section --> -->
               <!--</div> .tagline -->
           </div>
             
