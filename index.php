@@ -549,7 +549,7 @@ var klappar_list = {
             <div class="section">
               <label class="field select"><select id="chocolatePref" name="chocolatePref">
                 <option value="">
-                  Välj personens favorit av chokladtyper...
+                  Personens chokladtyp
                 </option>
                 <option value="milk">
                   Mjölkchoklad
@@ -568,7 +568,7 @@ var klappar_list = {
             <div class="section">
               <label class="field select"><select id="candyPref" name="candyPref">
                 <option value="">
-                  Välj personens favorit av julegodis...
+                  Personens julegodis
                 </option>
                 <option value="kola">
                   Knäckkola
@@ -599,7 +599,7 @@ var klappar_list = {
             <div class="section">
               <label class="field select"><select id="kallePref" name="kallePref">
                 <option value="">
-                  Välj personens favoritdel av Kalle Ankas Jul...
+                  Favorit på Kalle Ankas Jul
                 </option>
                 <option value="verkstad">
                   I jultomtens verkstad
