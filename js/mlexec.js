@@ -44,8 +44,8 @@ function doMLexec() {
   json = JSON.parse(json);
   console.log(json);
   $.ajax({
-    url: "/analytic-santa/php/mlexec.php",
-    //url: "/php/mlexec_amd.php",
+    //url: "/analytic-santa/php/mlexec.php",
+    url: "/php/mlexec.php",
     type: "post",
     data: json,
     success: function(data) { // data arrives as a string
