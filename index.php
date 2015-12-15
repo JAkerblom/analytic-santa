@@ -426,11 +426,8 @@ var klappar_list = {
           <div class="form-body theme-red" id="section-1">
             <div class="spacer-b10">
               <div class="tagline">
-                <span style="font-size : 16pt">Vem är personen?</span>
+                <span style="font-size : 16pt">Vem är julklappen till?</span>
               </div><!-- .tagline -->
-            <div class="price-box" style="margin-top:20px">
-            <p> Beskriv personen eller dig själv för mig med dessa attribut så kommer jag ge dig tre förslag som jag tror ska passa in. </p>
-            </div>  
 <!--
             <div class="spacer-b30">
               <div class="tagline">
@@ -756,7 +753,7 @@ var klappar_list = {
             
           <div class="form-footer">
             <button class="button btn-red pushed btn-primary" id="continue" type="button">Hitta julklappar!</button>
-            <button class="button btn-red pushed btn-primary" id="submit" type="button">Ge tomten feedback!</button>
+            <button class="button btn-red pushed btn-primary" id="submit" type="button">Ge tomten feedback</button>
         <!-- Your like button code -->
         <div class="fb-like" 
             data-href="http://ffcg-analyticsanta.azurewebsites.net/" 
