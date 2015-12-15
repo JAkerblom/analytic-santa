@@ -7,7 +7,7 @@
   <meta property="og:type"          content="Vill du hitta den perfekta presenten till någon?" />
   <meta property="og:title"         content="Analytic Santa - Forefront Consulting Group" />
   <meta property="og:description"   content="En maskininlärningsmodel som lär sig att hitta rätt julklapp för din vän." />
-  <meta property="og:image"         content="http://ffcg-analyticsanta.azurewebsites.net/images/predictiveSantaWhite.jpg" />
+  <meta property="og:image"         content="http://ffcg-analyticsanta.azurewebsites.net/images/predictiveSantaTrans.png" />
   <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
   <title>Analytic Santa - Forefront Consulting Group</title>
   <meta charset="utf-8">
@@ -422,7 +422,7 @@ var klappar_list = {
           </div>
         </div>
         <div class="form-header header-red header-primary" id="header">
-	  <img src="images/predictiveSantaRed.jpg" alt="logo" style="max-width:50%; display:block; margin-left:auto; margin-right:auto;margin-top:10px;margin-bottom:15px;"/>
+	  <img src="images/predictiveSantaTrans.png" alt="logo" style="max-width:50%; display:block; margin-left:auto; margin-right:auto;margin-top:10px;margin-bottom:15px;"/>
           <h4 style="text-align:center !important;" id="h4_header"><i class="fa fa-gift"></i>Jag hjälper dig <br>hitta julklapp!</br></h4>
         </div><!-- end .form-header section -->
         <form action="php/smartprocess.php" id="smart-form" method="post" name="smart-form">
