@@ -18,6 +18,18 @@
   <link href="css/smart-addons.css" rel="stylesheet" type="text/css">
   <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
   
+  <!-- Facebook like special styling -->
+  <style type="text/css">
+    .form-footer .fb-like {
+      height: 1em;
+      margin-top: 0.4em;
+      margin-left: 5px;
+    }
+    #u_0_8 {
+      display:none;	
+    }
+  </style>
+  
   <script type="text/javascript" src="data/items/klappar.json"></script>
   <script src="js/load-image.all.min.js"></script>
   <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
