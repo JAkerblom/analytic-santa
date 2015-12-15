@@ -1,23 +1,20 @@
 var prediction = {
  "items": [
   {  
-    "itemURL":'',
     "itemPicture":'5d1cc1bec6dacd27535fdce4b59f9627.jpg',
     "itemID":16,
     "itemName":'Popcornmaskin Cinema Style',
     "description":'Med vår biografstylade popcornmaskin finns alltid en näve färska popcorn hemma, liksom en snygg köksapparat som får - nej, ska! - stå mitt i bild.',
     "rating":6.532423
   },
-  { 
-    "itemURL":'', 
+  {  
     "itemPicture":'',
     "itemID":'',
     "itemName":'',
     "description":'',
     "rating":''
   },
-  { 
-    "itemURL":'', 
+  {  
     "itemPicture":'',
     "itemID":'',
     "itemName":'',
@@ -28,17 +25,6 @@ var prediction = {
   
 };
 
-$(document).ready(function(e) {
-  $('#continue').on('click', function(ev) {
-    if ($('#smart-form').valid()) {
-    /*ev.preventDefault();
-    $('.items').css('display', 'none');
-    $('.loadcontainer').css('display', 'block');*/
-      doMLexec();
-    }
-  });
-});
-
 //$(document).ready(function(e) {
 function doMLexec() {
 // Communicate with azure ML services
@@ -48,7 +34,7 @@ function doMLexec() {
   console.log(json);
   $.ajax({
     url: "/analytic-santa/php/mlexec.php",
-    //url: "/php/mlexec.php",
+    //url: "/php/mlexec_amd.php",
     type: "post",
     data: json,
     success: function(data) { // data arrives as a string
@@ -56,85 +42,19 @@ function doMLexec() {
       var obj = JSON.parse(data); // Parse to JSON object
       console.log(obj);
       $itemRatings = obj.Results.output1.value.Values;
-      console.log($itemRatings);
-      var i = 0;
-      while (i < 3) {
+      var i = 1;
+      /*while (i <= 3) {
         $.each(klappar_list["klappar"], function(index, value) {
           if (value['itemID'] == $itemRatings[i][0]) {
-            prediction['items'][i]['itemPicture'] = value['itemPicture'];
-            prediction['items'][i]['itemID'] = value['itemID'];
-            prediction['items'][i]['itemURL'] = value['itemURL'];
-            prediction['items'][i]['itemName'] = value['itemName'];
-            prediction['items'][i]['description'] = value['description'];
-            prediction['items'][i]['rating'] = $itemRatings[i][1];
+            prediction[i]['itemPicture'] = value['itemPicture'];
+            prediction[i]['itemID'] = value['itemID'];
+            prediction[i]['itemName'] = value['itemName'];
+            prediction[i]['description'] = value['description'];
+            prediction[i]['rating'] = $itemRatings[i][1];
           }
         });
         i++;
-      }
-      console.log(prediction);
-      
-      $klist = prediction["items"];
-      $section = $("#itemSection");
-      //$items = $(".anItem");
-      //console.log($klist);
-
-      $.each($klist, function(index, value) {
-        //console.log($(this));
-        //$id = $(this)[0]['id'];
-        //$id = index+1;
-        //console.log(value);
-        $id = value['itemID'];
-        $htmlString = '';
-
-        // Corrections made here when using $id contra index.
-        //$title = $klist[index]['itemName'];
-        //$descr = $klist[index]['description'];
-        //$picPath = "data/items/Images/"+$klist[$id-1]['itemPicture'];
-        //$picPath = "data/items/Images/"+$klist[index]['itemPicture'];
-        $title = value['itemName'];
-        $descr = value['description'];
-        $picPath = "data/items/Images/"+value['itemPicture'];
-	$itemURL = value['itemURL'];
-
-        $htmlString += '<div class="spacer-b30"><div class="tagline"></div></div>\n';
-        $htmlString += '<div class="rating block anItem">\n';
-        $htmlString += '<div class="frm-row">\n';
-        $htmlString += '<div class="section colm colm6">\n';
-        $htmlString += '<span class="lbl-text">'+$title+'</span>\n';
-        $htmlString += '</div>\n';
-        $htmlString += '<div class="section colm colm6">\n';
-
-        $htmlString += '<input type="hidden" id="0-id'+$id+'" type="radio" name="items['+index+']" value='+"'"+'{"itemID":'+$id+', "rating":1}'+"'>\n";
-        for ($i = 6; $i > 0; $i--) {
-          $htmlString += '<input class="rating-input" id="'+$i+'-id'+$id+'" type="radio"  name="items['+index+']" value='+"'"+'{"itemID":'+$id+', "rating":'+$i+'}'+"'>\n";
-          $htmlString += '<label class="rating-star" for="'+$i+'-id'+$id+'"><i class="fa fa-star"></i></label>\n';
-        }
-
-        $htmlString += '</div><!-- end section column -->\n';
-        $htmlString += '</div><!-- end frm-row -->\n';
-        $htmlString += '<div class="frm-row">\n';
-        $htmlString += '<div class="section colm colm6"><span class="descr">'+$descr+'</span></div>\n';
-        $htmlString += '<div class="section colm colm6"><a href="'+$itemURL+'" target="_blank"><img src="'+$picPath+'"></a></div>\n';
-        $htmlString += '</div><!-- end frm-row -->\n';
-        $htmlString += '</div><!-- end section anItem -->\n';
-
-        $section.append($htmlString);
-
-      });
-      
-      $('.form-footer').hide("slow", function() {
-        // Hiding showing buttons
-        //$backButton.show("slow");
-        $contButton.hide("slow");
-        $submButton.show("slow");
-        
-        $firstPage.hide("slow");
-        $secondPage.show("slow", function() {
-          $('.form-footer').show("slow");
-        });
-      });
-      
-      $("html, body").animate({ scrollTop: 0 }, "slow");
+      }*/
       
       /*var res = {isBA:$isBA, isBD:$isBD, isBS:$isBS, isBT:$isBT, predicted:$isWhat};
       console.log(res);
@@ -154,9 +74,9 @@ function buildJSONtoAzure() {
     '"zip","age","sexType","prefersSoftPresents",'+
     '"prefersSuntrip","prefersDog","santaBelief","chocolatePref","candyPref","kallePref",'+
     '"likesFood1","likesFood2","likesFood3","likesFood4","likesFood5","likesFood6","likesFood7",'+
-    '"likesFood8","likesFood9","likesFood10","likesFood11","likesFood12"',
+    '"likesFood8","likesFood9","likesFood10","likesFood11","likesFood12","rating"',
     'middle':'],"Values":[[',
-    'end':']]}},"GlobalParameters":{}}}'
+    'end':'"null"]]}},"GlobalParameters":{}}}'
   };
   // In case if firstname and other variables are needed, this is the start string
 /*  'start':'{"body":{"Inputs":{"input1":{"ColumnNames":['+
@@ -214,11 +134,7 @@ function buildJSONtoAzure() {
   vals += '"' + $candyPref + '", ';
   vals += '"' + $kallePref + '", ';
   $.each($foodVals, function(index,value) {
-    if (index == $foodVals.length-1) {
-      vals += '"' + value + '"';
-    } else {
-      vals += '"' + value + '", ';  
-    }
+    vals += '"' + value + '", ';
   });
   
   // Predictor names from (data.json)

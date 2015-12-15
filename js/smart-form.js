@@ -34,11 +34,14 @@ $(document).ready(function() {
     $("html, body").animate({ scrollTop: 0 }, "slow");
   }
   
-  $('#continue').click(function(e) {
-    if ($('#smart-form').valid()) {
+  //$('#continue').click(function(e) {
+  //  if ($('#smart-form').valid()) {
       /* Hiding showing pages */
-      $('.form-footer').hide("slow", function() {
-        /* Hiding showing buttons */
+      
+  //    doMLexec();
+      
+      /*$('.form-footer').hide("slow", function() {
+        // Hiding showing buttons
         //$backButton.show("slow");
         $contButton.hide("slow");
         $submButton.show("slow");
@@ -50,9 +53,10 @@ $(document).ready(function() {
       });
       
       $("html, body").animate({ scrollTop: 0 }, "slow");
-    } 
-  });
-  
+      */
+//    } 
+//  });
+ 
   $('#submit').click(function(e) {
       $('.form-footer').hide("slow", function() {
         /* Hiding showing buttons */
@@ -73,29 +77,30 @@ $(document).ready(function() {
   /* Pagination and footer button settings
   -------------------------- */
   
-  $klist = klappar_list["klappar"];
-  $section = $("#itemSection");
-  //$items = $(".anItem");
-  console.log($klist);
+  // Instead of using klappar_list['klappar'] to generate elements
+  //  we use prediction['items']
+  //$klist = klappar_list["klappar"];
   
-  /*$items[0]['id'] = 1;
-  $items[1]['id'] = 2;
-  $items[2]['id'] = 3;
-  console.log($items[2]['id']);*/
   
-  /*$('#descr').text($klist[0]['description']);*/
- 
-  //$.each($items, function(index) {
-  $.each($klist, function(index) {
+  //$klist = prediction["items"];
+  //$section = $("#itemSection");
+  
+  /*$.each($klist, function(index, value) {
     //console.log($(this));
-    /*$id = $(this)[0]['id'];*/
-    $id = index+1;
-    
+    //$id = $(this)[0]['id'];
+    //$id = index+1;
+    //console.log(value);
+    $id = value['itemID'];
     $htmlString = '';
     
-    $title = $klist[$id-1]['itemName'];
-    $descr = $klist[$id-1]['description'];
-    $picPath = "data/items/Images/"+$klist[$id-1]['itemPicture'];
+    // Corrections made here when using $id contra index.
+    //$title = $klist[index]['itemName'];
+    //$descr = $klist[index]['description'];
+    //$picPath = "data/items/Images/"+$klist[$id-1]['itemPicture'];
+    $picPath = "data/items/Images/"+$klist[index]['itemPicture'];
+    $title = value['itemName'];
+    $descr = value['description'];
+    //$picPath = "data/items/Images/"+value['itemPicture'];
     
     $htmlString += '<div class="spacer-b30"><div class="tagline"></div></div>\n';
     $htmlString += '<div class="rating block anItem">\n';
@@ -105,9 +110,9 @@ $(document).ready(function() {
     $htmlString += '</div>\n';
     $htmlString += '<div class="section colm colm6">\n';
 
-    $htmlString += '<input type="hidden" id="0-id'+$id+'" type="radio" name="items['+($id-1)+']" value='+"'"+'{"itemID":'+$id+', "rating":1}'+"'>\n";
+    $htmlString += '<input type="hidden" id="0-id'+$id+'" type="radio" name="items['+index+']" value='+"'"+'{"itemID":'+$id+', "rating":1}'+"'>\n";
     for ($i = 6; $i > 0; $i--) {
-      $htmlString += '<input class="rating-input" id="'+$i+'-id'+$id+'" type="radio"  name="items['+($id-1)+']" value='+"'"+'{"itemID":'+$id+', "rating":'+$i+'}'+"'>\n";
+      $htmlString += '<input class="rating-input" id="'+$i+'-id'+$id+'" type="radio"  name="items['+index+']" value='+"'"+'{"itemID":'+$id+', "rating":'+$i+'}'+"'>\n";
       $htmlString += '<label class="rating-star" for="'+$i+'-id'+$id+'"><i class="fa fa-star"></i></label>\n';
     }
   
@@ -121,10 +126,7 @@ $(document).ready(function() {
 
     $section.append($htmlString);
     
-    /*$(this).find(".lbl-text").text($title);
-    $(this).find(".descr").text($descr);
-    $(this).find("img").prop("src",$picPath);  */
-  });
+  });*/
 });
 
   $(document).ready(function() {
@@ -267,11 +269,11 @@ $(document).ready(function() {
                                       $('.form-footer').addClass('progress');
 									},
 									error:function(){
-									   console.log("Here!");		
+									   console.log("Error in submithandler!");		
                                       $('.form-footer').removeClass('progress');
 									},
 									 success:function(){
-                                       console.log("Success!");		
+                                       console.log("Success of submitting form to db!");		
 										$('.form-footer').removeClass('progress');
 										$('.alert-success').show("slow").delay(10000).hide("slow", function() {
                                           $('.field').removeClass("state-error, state-success");
@@ -284,7 +286,7 @@ $(document).ready(function() {
                                                 $('.smart-wrap').click(back());
                                                 //back();
 											}*/
-									       }
+                                          }
                                         });
                                      }
 							  });
