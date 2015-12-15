@@ -30,6 +30,13 @@
     }
   </style>
   
+   <!-- Load spinner styling -->
+  <style type="text/css">
+   #loadBox {
+     height: 100px;
+   }
+  </style>"
+
   <script type="text/javascript" src="data/items/klappar.json"></script>
   <script src="js/load-image.all.min.js"></script>
   <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
@@ -94,7 +101,7 @@
           </div>
         </div>
         <div class="form-header header-red header-primary" id="header">
-<img src="images/predictiveSantaRed.jpg" alt="logo" style="max-width:50%; display:block; margin-left:auto; margin-right:auto;margin-top:10px;margin-bottom:15px;"/>
+	  <img src="images/predictiveSantaRed.jpg" alt="logo" style="max-width:50%; display:block; margin-left:auto; margin-right:auto;margin-top:10px;margin-bottom:15px;"/>
           <h4 style="text-align:center !important;" id="h4_header"><i class="fa fa-gift"></i>Jag hjälper dig <br>hitta julklapp!</br></h4>
         </div><!-- end .form-header section -->
         <form action="php/smartprocess.php" id="smart-form" method="post" name="smart-form">
@@ -422,9 +429,8 @@
               <!--</div> .tagline -->
           </div>
           <div class="form-body theme-red" id="section-load" style="display:none;">
-            <div id="loadBox">
-
-            </div>
+	    <div class="section spacer-b30" style="text-align: center;width:100%; font-style:italic;">Vänta en stund medan jag kollar den globala önskelistan!</div>
+            <div class="section spacer-b30" id="loadBox"></div>
           </div>
             
           <div class="form-footer">
