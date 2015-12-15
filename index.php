@@ -366,7 +366,7 @@ var klappar_list = {
         </div><!-- end .form-header section -->
         <form action="php/smartprocess.php" id="smart-form" method="post" name="smart-form">
           <div class="form-body theme-red" id="section-1">
-            <div class="spacer-b30">
+            <div class="spacer-b10">
               <div class="tagline">
                 <span style="font-size : 16pt">Vem är personen?</span>
               </div><!-- .tagline -->
@@ -423,8 +423,10 @@ var klappar_list = {
                 <label class="field"><!--<input type="text" name="age" id="stepper1" value="30" class="gui-input">-->
                  <input class="gui-input" max="100" min="0" name="age" step="1" type="number" value="30" pattern="[0-9]*" inputmode="numeric"></label>
               </div><!-- end section -->
+            </div> 
             </div><!-- PrefersSoftPresents -->
-<div class="spacer spacer-t5 spacer-b20"></div>
+<div class="spacer-b30"> <div class="tagline"></div><!-- .tagline -->
+                    </div>
             <div class="frm-row">
               <div class="section colm colm6">
                 <p style="margin:0;margin-top:6px;">Julklappar föredrar personen:</p>
