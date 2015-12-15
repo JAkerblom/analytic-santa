@@ -1973,4 +1973,7 @@ html, body{
 	.smart-forms .align-right{ text-align: left; }
     #agediv { width: 30%; margin-left: 10%; }
     #rightCheckboxes { width:58.33%; overflow: hidden;}
+    .smart-forms .form-body {
+      padding: 40px 15px 20px 15px
+    }
 }
