@@ -7,8 +7,10 @@
   // Insert API credentials from Azure here. 
   // The URL to POST to and the related API key for 
   //  your deployed web service is needed 
-  $url = 'https://europewest.services.azureml.net/workspaces/1ce72f845b6d4b40a0c44018ce41c9aa/services/9735b0f04f774429bbd751e5b980e2e1/execute?api-version=2.0&details=true';
-  $api_key = 'EWSaBjWuRaJvu4iCPzvbyqxDYuAJjHimDu31qNWidTvCs1v34eXan/Cmok1KCDTXn8y4/gi14DlgmCUcMbVGKQ==';
+  //$url = 'https://europewest.services.azureml.net/workspaces/1ce72f845b6d4b40a0c44018ce41c9aa/services/9735b0f04f774429bbd751e5b980e2e1/execute?api-version=2.0&details=true';
+  $url = 'https://europewest.services.azureml.net/workspaces/0c8371e1485946f48a61b4bdd4f07c2c/services/cff0e9af2b8e44b0b57af48ffa8c9e5f/execute?api-version=2.0&details=true';
+  $api_key = 'JUgZsn+BJImk6tSKqPuiaIH1WaVo+J9n+px6qNb4qnLP2K0C9d3Oubkaurhmg+k9SVxA3qXQ3Q4haBoFp6D6BA==';
+  //$api_key = 'EWSaBjWuRaJvu4iCPzvbyqxDYuAJjHimDu31qNWidTvCs1v34eXan/Cmok1KCDTXn8y4/gi14DlgmCUcMbVGKQ==';
   //$headers = array('Content-Type: application/json', 'Authorization:Bearer ' . $api_key, 'Content-Length: ' . strlen($body));
   $headers = array('Content-Type: application/json', 'Authorization:Bearer ' . $api_key, 'Content-Length: ' . strlen($body));
 
