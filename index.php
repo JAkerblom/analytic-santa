@@ -368,9 +368,18 @@ var klappar_list = {
           <div class="form-body theme-red" id="section-1">
             <div class="spacer-b30">
               <div class="tagline">
-                <span style="font-size : 16pt">Dina uppgifter</span>
+                <span style="font-size : 16pt">Vem är personen?</span>
               </div><!-- .tagline -->
-            </div>
+            <div class="price-box" style="margin-top:20px">
+            <p> Beskriv personen eller dig själv för mig med dessa attribut så kommer jag ge dig tre förslag som jag tror ska passa in. </p>
+            </div>  
+<!--
+            <div class="spacer-b30">
+              <div class="tagline">
+                <span style="font-size : 16pt">Dina uppgifter</span>
+              </div>
+            </div> -->
+            <div class="spacer-b30"></div>
             <div class="frm-row">
               <div class="section colm colm6 breakline">
                 <!--  -->
@@ -415,13 +424,6 @@ var klappar_list = {
                  <input class="gui-input" max="100" min="0" name="age" step="1" type="number" value="30" pattern="[0-9]*" inputmode="numeric"></label>
               </div><!-- end section -->
             </div>
-            <div class="spacer-b30">
-              <div class="tagline">
-                <span style="font-size : 16pt">Vem är personen?</span>
-              </div><!-- .tagline -->
-            <div class="price-box" style="margin-top:20px">
-            <p> Beskriv personen eller dig själv för mig med dessa attribut så kommer jag ge dig tre förslag som jag tror ska passa in. </p>
-            </div>  
             </div><!-- PrefersSoftPresents -->
             <div class="frm-row">
               <div class="section colm colm6">
