@@ -34,6 +34,7 @@ $(document).ready(function(e) {
     /*ev.preventDefault();
     $('.items').css('display', 'none');
     $('.loadcontainer').css('display', 'block');*/
+      $('#submit').attr('type','submit');
       doMLexec();
     }
   });
