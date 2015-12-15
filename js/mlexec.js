@@ -47,8 +47,8 @@ function doMLexec() {
   json = JSON.parse(json);
   console.log(json);
   $.ajax({
-    //url: "/analytic-santa/php/mlexec.php",
-    url: "/php/mlexec.php",
+    url: "/analytic-santa/php/mlexec.php",
+    //url: "/php/mlexec.php",
     type: "post",
     data: json,
     beforeSend: function() {
@@ -140,6 +140,7 @@ function doMLexec() {
       /*var res = {isBA:$isBA, isBD:$isBD, isBS:$isBS, isBT:$isBT, predicted:$isWhat};
       console.log(res);
       setCookie(JSON.stringify(res), 1);*/
+      
       $loadPage.hide();
       $secondPage.show("slow", function() {
           $('.form-footer').show("slow");

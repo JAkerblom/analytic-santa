@@ -41,6 +41,7 @@
   <script src="js/smart-form.js" type="text/javascript"></script>
   <script src="js/jquery.stepper.min.js" type="text/javascript"></script>
   <script src="js/mlexec.js" type="text/javascript"></script>
+  <script src="js/spin.min.js" type="text/javascript"></script>
   <script type="text/javascript">
     $(function() {
       $('#stepper1').stepper({ 
@@ -419,6 +420,11 @@
             </div>
             <!-- <div class="result"></div><!-- end .result  section --> -->
               <!--</div> .tagline -->
+          </div>
+          <div class="form-body theme-red" id="section-load" style="display:none;">
+            <div id="loadBox">
+
+            </div>
           </div>
             
           <div class="form-footer">
