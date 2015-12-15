@@ -49,8 +49,6 @@ $(document).ready(function() {
         });
       });
       
-      $("#href_header").text("");
-      $("#h4_header").text("Julklappsutdelning!");
       $("html, body").animate({ scrollTop: 0 }, "slow");
     } 
   });
