@@ -757,13 +757,13 @@ var klappar_list = {
         </div>
           </div>
           <div class="form-body theme-red" id="section-load" style="display:none;">
-	    <div class="section spacer-b30" style="text-align: center;width:100%; font-style:italic;">Vänta en stund medan jag kollar den globala önskelistan!</div>
+	    <div class="section spacer-b30" style="text-align: center;width:100%; font-style:italic;">Vänta en stund medan jag kollar den globala önskelistan! <br>Det brukar lite mer än 30 sekunder att kolla igenom listan.</br></div>
             <div class="section spacer-b30" id="loadBox"></div>
           </div>
             
           <div class="form-footer">
             <button class="button btn-red pushed btn-primary" id="continue" type="button">Hitta julklappar!</button>
-            <button class="button btn-red pushed btn-primary" id="submit" type="button">Hjälp mig bli bättre på at gissa julklappar!</button>
+            <button class="button btn-red pushed btn-primary" id="submit" type="button">Hjälp mig bli bättre på att gissa julklappar!</button>
         <!-- Your like button code -->
             <div class="frm-row">
               <div class="section colm colm5">
