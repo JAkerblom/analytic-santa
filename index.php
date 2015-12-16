@@ -26,13 +26,13 @@
       margin-left: 5px;
     }
     #u_0_8 {
-      display:none;	
+      display:none;
     }
     #u_0_0 {
-      width: 0px !important;	
+      width: 0px !important;
     }
   </style>
-  
+
    <!-- Load spinner styling -->
   <style type="text/css">
    #loadBox {
@@ -372,16 +372,16 @@ var klappar_list = {
   <script src="js/spin.min.js" type="text/javascript"></script>
   <script type="text/javascript">
     $(function() {
-      $('#stepper1').stepper({ 
+      $('#stepper1').stepper({
         UI: false,
         allowWheel: false,
         limit: [0, 100],
         wheel_step: 1,
-        arrow_step: 1             
-      });   
+        arrow_step: 1
+      });
     });
   </script>
-  <!--[if lte IE 9]>   
+  <!--[if lte IE 9]>
     <script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
   <![endif]--><!--[if lte IE 8]>
     <link type="text/css" rel="stylesheet" href="css/smart-forms-ie8.css">
@@ -431,37 +431,32 @@ var klappar_list = {
               <div class="tagline" style="margin-bottom: 10pt; padding-bottom:15pt">
                 <span style="font-size : 16pt; margin-bottom: 10pt; padding-bottom:15pt">Vem är julklappen till?</span>
               </div><!-- .tagline -->
-<!--
-            <div class="spacer-b30">
-              <div class="tagline">
-                <span style="font-size : 16pt">Dina uppgifter</span>
-              </div>
-            </div> -->
+
             <div class="spacer-b30"></div>
+            <!--
             <div class="frm-row">
               <div class="section colm colm6 breakline">
-                <!--  -->
                  <label class="field prepend-icon" for="firstname"><input class="gui-input" id="firstname" name=
                 "firstname" placeholder="Förnamn..." type="text"> <label class="field-icon"><i class=
                 "fa fa-user"></i></label></label>
-              </div><!-- end section -->
+              </div>
               <div class="section colm colm6 breakline">
-                <!--  -->
                  <label class="field prepend-icon" for="lastname"><input class="gui-input" id="lastname" name=
                 "lastname" placeholder="Efternamn..." type="text"> <label class="field-icon"><i class=
                 "fa fa-user"></i></label></label>
-              </div><!-- end section -->
-            </div><!-- end frm-row section -->
+              </div>
+            </div>
             <div class="frm-row">
               <div class="section colm colm8 breakline">
                 <label class="field prepend-icon" for="email"><input class="gui-input" id="email" name="email"
-                placeholder="Emailadress" type="email"> <b class="tooltip tip-left-bottom"><em>Emailen kommer <strong>endast</strong> användas för att få fram bättre 
+                placeholder="Emailadress" type="email"> <b class="tooltip tip-left-bottom"><em>Emailen kommer <strong>endast</strong> användas för att få fram bättre
                 julklappar.</em></b><label class="field-icon"><i class=
                 "fa fa-envelope"></i></label></label>
-              </div><!-- end section -->
-              <div class="section colm colm4 breakline">
+              </div> -->
+            <div class="frm-row">
+              <div class="section colm colm12 breakline">
                 <label class="field prepend-icon" for="zip"><input class="gui-input" id="zip" name="zip" placeholder=
-                "Postnr" type="text" pattern="[0-9]*" inputmode="numeric"> <b class="tooltip tip-right-bottom"><em>Postnummeret används för att få fram
+                "Personens postnummer" type="text" pattern="[0-9]*" inputmode="numeric"> <b class="tooltip tip-right-bottom"><em>Postnummeret används för att få fram
                 olika demografiska data.</em></b> <label class="field-icon" for="zip"><i class=
                 "fa fa-building-o"></i></label></label>
               </div><!-- end section -->
@@ -481,9 +476,10 @@ var klappar_list = {
                 <label class="field"><!--<input type="text" name="age" id="stepper1" value="30" class="gui-input">-->
                  <input class="gui-input" max="100" min="0" name="age" step="1" type="number" value="30" pattern="[0-9]*" inputmode="numeric"></label>
               </div><!-- end section -->
-            </div> 
+            </div>
             </div><!-- PrefersSoftPresents -->
-<div class="spacer-b40"> <div class="tagline"></div><!-- .tagline -->
+<div class="tagline" style="margin-bottom: 10pt; padding-bottom:15pt">
+  <span style="font-size : 16pt; margin-bottom: 10pt; padding-bottom:15pt">Vad gillar personen?</span>
                     </div>
             <div class="frm-row">
               <div class="section colm colm6">
@@ -614,7 +610,7 @@ var klappar_list = {
                   Askungen
                 </option>
                 <option value="mussepigg">
-                  Musse Pigg på camping 
+                  Musse Pigg på camping
                 </option>
                 <option value="lady-lufsen">
                   Lady och Lufsen
@@ -645,56 +641,56 @@ var klappar_list = {
                   <label class="option option-red block spacer-b10" for="food1">
                     <input type="hidden" name="christmasFood[0]" value="0">
                     <input type="checkbox" name="christmasFood[0]" value="1" tabindex="16" id="food1">
-                    <span class="checkbox"></span> Köttbullar                  
+                    <span class="checkbox"></span> Köttbullar
                   </label>
 
                   <label class="option option-red block spacer-b10" for="food2">
                     <input type="hidden" name="christmasFood[1]" value="0">
                     <input type="checkbox" name="christmasFood[1]" value="1" id="food2">
-                    <span class="checkbox"></span> Prinskorv               
+                    <span class="checkbox"></span> Prinskorv
                   </label>
 
                   <label class="option option-red block spacer-b10" for="food3">
                     <input type="hidden" name="christmasFood[2]" value="0">
                     <input type="checkbox" name="christmasFood[2]" value="1" id="food3">
-                    <span class="checkbox"></span> Skinka                 
+                    <span class="checkbox"></span> Skinka
                   </label>
 
                   <label class="option option-red block spacer-b10" for="food4">
                     <input type="hidden" name="christmasFood[3]" value="0">
                     <input type="checkbox" name="christmasFood[3]" value="1" id="food4">
-                    <span class="checkbox"></span> Lutfisk                
+                    <span class="checkbox"></span> Lutfisk
                   </label>
-                  
+
                   <label class="option option-red block spacer-b10" for="food5">
                     <input type="hidden" name="christmasFood[4]" value="0">
                     <input type="checkbox" name="christmasFood[4]" value="1" id="food5">
-                    <span class="checkbox"></span> Ägg                
+                    <span class="checkbox"></span> Ägg
                   </label>
-                  
+
                   <label class="option option-red block" for="food6">
                     <input type="hidden" name="christmasFood[5]" value="0">
                     <input type="checkbox" name="christmasFood[5]" value="1" id="food6">
-                    <span class="checkbox"></span> Lax                  
+                    <span class="checkbox"></span> Lax
                   </label>
                 </div><!-- end section -->
                 <div class="section colm colm6" id="rightCheckboxes">
                   <label class="option option-red block spacer-b10" for="food7">
                     <input type="hidden" name="christmasFood[6]" value="0">
                     <input type="checkbox" name="christmasFood[6]" value="1" id="food7">
-                    <span class="checkbox"></span> Sill                  
+                    <span class="checkbox"></span> Sill
                   </label>
 
                   <label class="option option-red block spacer-b10" for="food8">
                     <input type="hidden" name="christmasFood[7]" value="0">
                     <input type="checkbox" name="christmasFood[7]" value="1" id="food8">
-                    <span class="checkbox"></span> Brysselkål             
+                    <span class="checkbox"></span> Brysselkål
                   </label>
 
                   <label class="option option-red block spacer-b10" for="food9">
                     <input type="hidden" name="christmasFood[8]" value="0">
                     <input type="checkbox" name="christmasFood[8]" value="1" id="food9">
-                    <span class="checkbox"></span> Röd/brunkål                
+                    <span class="checkbox"></span> Röd/brunkål
                   </label>
 
                   <label class="option option-red block spacer-b10" for="food10">
@@ -702,13 +698,13 @@ var klappar_list = {
                     <input type="checkbox" name="christmasFood[9]" value="1" id="food10">
                     <span class="checkbox"></span> Janssons
                   </label>
-                  
+
                   <label class="option option-red block spacer-b10" for="food11">
                     <input type="hidden" name="christmasFood[10]" value="0">
                     <input type="checkbox" name="christmasFood[10]" value="1" id="food11">
-                    <span class="checkbox"></span> Sylta             
+                    <span class="checkbox"></span> Sylta
                   </label>
-                  
+
                   <label class="option option-red block" for="food12">
                     <input type="hidden" name="christmasFood[11]" value="0">
                     <input type="checkbox" name="christmasFood[11]" value="1" id="food12">
@@ -718,7 +714,7 @@ var klappar_list = {
               </div><!-- end option-group section -->
             </div><!-- end .frm-row section -->
           </div><!-- end .form-body section -->
-          
+
           <div class="form-body theme-red" id="section-2" style="display:none;">
 
             <div class="spacer-b10">
@@ -726,12 +722,12 @@ var klappar_list = {
                 <span style="font-size : 16pt">Julklappsutdelning!</span>
               </div><!-- .tagline -->
             <div class="price-box" style="margin-top:20px">
-            <p> Här är tre klappar som jag tror skulle vara bra. 
+            <p> Här är tre klappar som jag tror skulle vara bra.
 <br> Ge mig gärna poäng via stjärnorna så kommer jag göra det ännu bättre nästa gång.</br></p>
               <p class="small-text fine-grey"><strong>1 stjärna </strong>= Inte riktigt rätt. <br><strong>6 stjärnor </strong>= Spot on!</br></p>
-            </div>  
             </div>
-            
+            </div>
+
             <div id="itemSection"></div><!-- end itemSection -->
           </div>
           <div class="form-body theme-red" id="section-3" style="display:none;">
@@ -748,10 +744,10 @@ var klappar_list = {
               <!--<div class="section colm col2"></div>-->
             </div>
 <!-- Your like button code -->
-        <div class="fb-like" 
-            data-href="http://ffcg-analyticsanta.azurewebsites.net/" 
-            data-layout="standard" 
-            data-action="like" 
+        <div class="fb-like"
+            data-href="http://ffcg-analyticsanta.azurewebsites.net/"
+            data-layout="standard"
+            data-action="like"
             data-share="true"
             data-show-faces="false">
         </div>
@@ -760,26 +756,26 @@ var klappar_list = {
 	    <div class="section spacer-b30" style="text-align: center;width:100%; font-style:italic;">Vänta en stund medan jag kollar den globala önskelistan! <br>Det brukar ta lite mer än 30 sekunder att kolla igenom listan.</br></div>
             <div class="section spacer-b30" id="loadBox"></div>
           </div>
-            
+
           <div class="form-footer">
             <button class="button btn-red pushed btn-primary" id="continue" type="button">Hitta julklappar!</button>
             <button class="button btn-red pushed btn-primary" id="submit" type="button">Hjälp mig bli bättre på att gissa julklappar!</button>
         <!-- Your like button code -->
             <div class="frm-row">
               <div class="section colm colm5">
-                <div class="fb-like" 
-                  data-href="http://ffcg-analyticsanta.azurewebsites.net/" 
-                  data-layout="standard" 
-                  data-action="like" 
+                <div class="fb-like"
+                  data-href="http://ffcg-analyticsanta.azurewebsites.net/"
+                  data-layout="standard"
+                  data-action="like"
                   data-share="true"
                   data-show-faces="false">
-                </div>  
+                </div>
               </div>
             </div>
-            <!--<div class="fb-like" 
-              data-href="http://ffcg-analyticsanta.azurewebsites.net/" 
-              data-layout="standard" 
-              data-action="like" 
+            <!--<div class="fb-like"
+              data-href="http://ffcg-analyticsanta.azurewebsites.net/"
+              data-layout="standard"
+              data-action="like"
               data-share="true"
               data-show-faces="false">
             </div>-->
