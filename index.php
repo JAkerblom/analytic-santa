@@ -428,8 +428,8 @@ var klappar_list = {
         <form action="php/smartprocess.php" id="smart-form" method="post" name="smart-form">
           <div class="form-body theme-red" id="section-1">
             <div class="spacer-b10">
-              <div class="tagline" style="margin-bottom: 10pt; padding-bottom:15pt">
-                <span style="font-size : 16pt; margin-bottom: 10pt; padding-bottom:15pt">Vem är julklappen till?</span>
+              <div class="tagline" style="margin-bottom: 10pt; padding-bottom:10pt">
+                <span style="font-size : 16pt; margin-bottom: 10pt; padding-bottom:10pt">Dina uppgifter</span>
               </div><!-- .tagline -->
 <!--
             <div class="spacer-b30">
@@ -466,6 +466,10 @@ var klappar_list = {
                 "fa fa-building-o"></i></label></label>
               </div><!-- end section -->
             </div>
+
+              <div class="tagline" style="margin-top: 10pt; margin-bottom: 10pt; padding-bottom:15pt">
+                <span style="font-size : 16pt; margin-bottom: 10pt; padding-bottom:15pt">Vem är julklappen till?</span>
+              </div><!-- .tagline -->
             <div class="frm-row">
               <div class="section colm colm8 breakline" style="margin-top: 5px;">
                 <label class="option option-red"><input checked name="sexType" type="radio" value="female" tabindex="5"><span class=
@@ -483,8 +487,7 @@ var klappar_list = {
               </div><!-- end section -->
             </div> 
             </div><!-- PrefersSoftPresents -->
-<div class="spacer-b40"> <div class="tagline"></div><!-- .tagline -->
-                    </div>
+
             <div class="frm-row">
               <div class="section colm colm6">
                 <p style="margin:0;margin-top:6px;">Julklappar föredrar personen:</p>
