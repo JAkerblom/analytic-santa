@@ -3,7 +3,7 @@
 <head>
   <!-- You can use Open Graph tags to customize link previews.
   Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
-  <meta property="og:url"           content="http://ffcg-analyticsanta.azurewebsites.net/" />
+  <meta property="og:url"           content="http://analyticsanta.ffcg.se/" />
   <meta property="og:type"          content="Vill du hitta den perfekta presenten till någon?" />
   <meta property="og:title"         content="Analytic Santa - Forefront Consulting Group" />
   <meta property="og:description"   content="En maskininlärningsmodel som lär sig att hitta rätt julklapp för din vän." />
