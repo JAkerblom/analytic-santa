@@ -757,7 +757,7 @@ var klappar_list = {
         </div>
           </div>
           <div class="form-body theme-red" id="section-load" style="display:none;">
-	    <div class="section spacer-b30" style="text-align: center;width:100%; font-style:italic;">Vänta en stund medan jag kollar den globala önskelistan! <br>Det brukar ta lite mer än 30 sekunder att kolla igenom listan.</br></div>
+	    <div class="section spacer-b30" style="text-align: center;width:100%; font-style:italic;">Vänta en stund medan jag kollar den globala önskelistan! <br>Det brukar ta lite mer än 30 sekunder.</br></div>
             <div class="section spacer-b30" id="loadBox"></div>
           </div>
             
