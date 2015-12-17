@@ -3,11 +3,11 @@
 <head>
   <!-- You can use Open Graph tags to customize link previews.
   Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
-  <meta property="og:url"           content="http://ffcg-analyticsanta.azurewebsites.net/" />
+  <meta property="og:url"           content="http://analyticsanta.ffcg.se/" />
   <meta property="og:type"          content="Vill du hitta den perfekta presenten till någon?" />
   <meta property="og:title"         content="Analytic Santa - Forefront Consulting Group" />
   <meta property="og:description"   content="En maskininlärningsmodel som lär sig att hitta rätt julklapp för din vän." />
-  <meta property="og:image"         content="http://ffcg-analyticsanta.azurewebsites.net/images/predictiveSanta.jpeg" />
+  <meta property="og:image"         content="http://ffcg-analyticsanta.azurewebsites.net/images/predictiveSantaTrans.png" />
   <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
   <title>Analytic Santa - Forefront Consulting Group</title>
   <meta charset="utf-8">
@@ -427,7 +427,7 @@ var klappar_list = {
           </div>
         </div>
         <div class="form-header header-red header-primary" id="header">
-	  <img src="images/predictiveSantaRed.jpg" alt="logo" style="max-width:50%; display:block; margin-left:auto; margin-right:auto;margin-top:10px;margin-bottom:15px;"/>
+	  <img src="images/predictiveSantaTrans.png" alt="logo" style="max-width:50%; display:block; margin-left:auto; margin-right:auto;margin-top:10px;margin-bottom:15px;"/>
           <h4 style="text-align:center !important;" id="h4_header"><i class="fa fa-gift"></i>Jag hjälper dig <br>hitta julklapp!</br></h4>
         </div><!-- end .form-header section -->
         <form action="php/smartprocess.php" id="smart-form" method="post" name="smart-form">
@@ -476,6 +476,7 @@ var klappar_list = {
                 "fa fa-building-o"></i></label></label>
               </div><!-- end section -->
             </div>
+
             <div class="frm-row">
               <div class="section colm colm8 breakline" style="margin-top: 5px;">
                 <label class="option option-red"><input checked name="sexType" type="radio" value="female" tabindex="5"><span class=
@@ -493,9 +494,6 @@ var klappar_list = {
               </div><!-- end section -->
             </div>
             </div><!-- PrefersSoftPresents -->
-<div class="tagline" style="margin-bottom: 10pt; padding-bottom:15pt">
-  <span style="font-size : 16pt; margin-bottom: 10pt; padding-bottom:15pt">Vad gillar personen?</span>
-                    </div>
             <div class="frm-row">
               <div class="section colm colm6">
                 <p style="margin:0;margin-top:6px;">Julklappar föredrar personen:</p>
@@ -755,7 +753,7 @@ var klappar_list = {
               <!--<div class="tagline">-->
             <div class="frm-row">
               <!--<div class="section colm col2"></div>-->
-              <div class="section"><img src="images/predictiveSanta.jpeg" alt="Mountain View" style="max-width: 110%;margin-left: auto;margin-right: auto;display: block;margin-top: 10px;margin-left: -5%;padding-left: 1px;margin-top:30px;"><!--width:304px;height:228px;--></div>
+              <div class="section"><img src="images/predictiveSantaWhite.jpg" alt="Mountain View" style="max-width: 110%;margin-left: auto;margin-right: auto;display: block;margin-top: 10px;margin-left: -5%;padding-left: 1px;margin-top:30px;"><!--width:304px;height:228px;--></div>
               <!--<div class="section colm col2"></div>-->
             </div>
 <!-- Your like button code -->
@@ -768,7 +766,7 @@ var klappar_list = {
         </div>
           </div>
           <div class="form-body theme-red" id="section-load" style="display:none;">
-	    <div class="section spacer-b30" style="text-align: center;width:100%; font-style:italic;">Vänta en stund medan jag kollar den globala önskelistan! <br>Det brukar ta lite mer än 30 sekunder att kolla igenom listan.</br></div>
+	    <div class="section spacer-b30" style="text-align: center;width:100%; font-style:italic;">Vänta en stund medan jag kollar den globala önskelistan! <br>Det brukar ta lite mer än 30 sekunder.</br></div>
             <div class="section spacer-b30" id="loadBox"></div>
           </div>
 
@@ -787,13 +785,6 @@ var klappar_list = {
                 </div>
               </div>
             </div>
-            <!--<div class="fb-like"
-              data-href="http://ffcg-analyticsanta.azurewebsites.net/"
-              data-layout="standard"
-              data-action="like"
-              data-share="true"
-              data-show-faces="false">
-            </div>-->
           </div><!-- end .form-footer section -->
         </form>
       </div><!-- end .smart-forms section -->
