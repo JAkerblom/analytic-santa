@@ -48,8 +48,8 @@ function doMLexec() {
   json = JSON.parse(json);
   console.log(json);
   $.ajax({
-    //url: "/analytic-santa/php/mlexec.php",
-    url: "/php/mlexec.php",
+    url: "/analytic-santa/php/mlexec.php",
+    //url: "/php/mlexec.php",
     type: "post",
     data: json,
     beforeSend: function() {
@@ -175,8 +175,8 @@ function buildJSONtoAzure() {
   $valArr = Array();
   
   $textFields = $('.gui-input');
-  $zip = $textFields[3].value;
-  $age = $textFields[4].value;
+  $zip = $textFields[0].value;
+  $age = $textFields[1].value;
   $sexType = $('input[name="sexType"]:checked').val();
   $prefersSoftPresents = $('input[name="prefersSoftPresents"]:checked').val();
   $prefersSuntrip = $('input[name="prefersSuntrip"]:checked').val();
