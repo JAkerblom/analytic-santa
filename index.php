@@ -28,8 +28,11 @@
     #u_0_8 {
       display:none;
     }
-    #u_0_0 {
-      width: 0px !important;
+    #u_0_0 * {
+      width: 20% !important;
+    }
+    #fbDiv {
+      width: 20% !important;
     }
   </style>
 
@@ -381,6 +384,8 @@ var klappar_list = {
       });
     });
   </script>
+  <script>$(document).ready(function() {$('#fbDiv').find('table').css('width','30%')});</script>
+
   <!--[if lte IE 9]>
     <script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
   <![endif]--><!--[if lte IE 8]>
@@ -454,9 +459,19 @@ var klappar_list = {
                 "fa fa-envelope"></i></label></label>
               </div> -->
             <div class="frm-row">
-              <div class="section colm colm12 breakline">
+	      <div class="section colm colm1" style="padding-left:0px;margin-left:2%;">
+                <p>Ålder:</p>
+              </div>
+              <div class="section colm colm1-5" id="agediv">
+                <label class="field"><!--<input type="text" name="age" id="stepper1" value="30" class="gui-input">-->
+                <input class="gui-input" max="100" min="0" name="age" step="1" type="number" value="30" pattern="[0-9]*" inputmode="numeric"></label>
+              </div><!-- end section -->
+	      <div class="section colm colm3" style="padding-left:0px;width:20%;">
+                <p>Postnummer:</p>
+              </div>
+              <div class="section colm colm4 breakline">
                 <label class="field prepend-icon" for="zip"><input class="gui-input" id="zip" name="zip" placeholder=
-                "Personens postnummer" type="text" pattern="[0-9]*" inputmode="numeric"> <b class="tooltip tip-right-bottom"><em>Postnummeret används för att få fram
+                "Postnr" type="text" pattern="[0-9]*" inputmode="numeric"> <b class="tooltip tip-right-bottom"><em>Postnummeret används för att få fram
                 olika demografiska data.</em></b> <label class="field-icon" for="zip"><i class=
                 "fa fa-building-o"></i></label></label>
               </div><!-- end section -->
@@ -470,12 +485,12 @@ var klappar_list = {
                 "margin-left:10px;"><input name="sexType" type="radio" value="otherGender"><span class="radio"></span>
                 ------</label>
               </div><!-- end section -->
-              <div class="section colm colm1" style="padding-left:0px;">
+              <!--<div class="section colm colm1" style="padding-left:0px;">
                 <p>Ålder:</p>
               </div>
               <div class="section colm colm1-5" id="agediv">
                 <label class="field"><!--<input type="text" name="age" id="stepper1" value="30" class="gui-input">-->
-                 <input class="gui-input" max="100" min="0" name="age" step="1" type="number" value="30" pattern="[0-9]*" inputmode="numeric"></label>
+                 <!--<input class="gui-input" max="100" min="0" name="age" step="1" type="number" value="30" pattern="[0-9]*" inputmode="numeric"></label>
               </div><!-- end section -->
             </div>
             </div><!-- PrefersSoftPresents -->
@@ -560,7 +575,7 @@ var klappar_list = {
                 <option value="none">
                   Inget av dem
                 </option>
-              </select> <i class="arrow double"></i></label>
+              </select> <i class="arrow"></i></label>
             </div><!-- end section -->
             <div class="section">
               <label class="field select"><select id="candyPref" name="candyPref">
@@ -591,7 +606,7 @@ var klappar_list = {
                 <option value="polkagris">
                   Polkagris
                 </option>
-              </select> <i class="arrow double"></i></label>
+              </select> <i class="arrow"></i></label>
             </div><!-- end section -->
             <div class="section">
               <label class="field select"><select id="kallePref" name="kallePref">
@@ -628,7 +643,7 @@ var klappar_list = {
                 <option value="pluto">
                   Plutos julgran
                 </option>
-              </select> <i class="arrow double"></i></label>
+              </select> <i class="arrow"></i></label>
             </div><!-- end section -->
             <div class="spacer-b20">
               <label class="field-label">Vilka av följande ingredienser tycker personen är gott att äta på julbordet?</label>
@@ -761,7 +776,10 @@ var klappar_list = {
         <!-- Your like button code -->
            <!-- <div class="frm-row">
               <div class="section colm colm5">
-                <div class="fb-like"
+                <div class="fb-like">-->
+            <div class="frm-row">
+              <div class="section colm colm5" style="margin-bottom:0px;">
+                <div id="fbDiv" class="fb-like"
                   data-href="http://ffcg-analyticsanta.azurewebsites.net/"
                   data-layout="standard"
                   data-action="like"
