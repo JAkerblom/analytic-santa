@@ -432,7 +432,7 @@ var klappar_list = {
                 <span style="font-size : 16pt; margin-bottom: 10pt; padding-bottom:15pt">Vem är julklappen till?</span>
               </div><!-- .tagline -->
 
-            <div class="spacer-b30"></div>
+            <!--<div class="spacer-b30"></div>-->
             <!--
             <div class="frm-row">
               <div class="section colm colm6 breakline">

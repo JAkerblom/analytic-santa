@@ -216,29 +216,29 @@ $(document).ready(function() {
 										email: 'Var god ange en giltig email-adress'
 								},
 								zip: {
-										required: 'Var god ange ditt postnummer',
-										number: 'Ditt postnummer ska endast innehålla siffror',
-										minlength: 'Ditt postnummer är givetvis 5 siffror',
-										maxlength: 'Ditt postnummer är givetvis 5 siffror'			
+										required: 'Var god ange ett postnummer',
+										number: 'Postnumret ska endast innehålla siffror',
+										minlength: 'Postnumret är givetvis 5 siffror',
+										maxlength: 'Postnumret är givetvis 5 siffror'			
 								},								
 								santaBelief: {
-										required: 'Var god säg om du tror på tomten eller inte'
+										required: 'Var god ange om personen tror på tomten eller inte'
 								},
                                 chocolatePref: {
-										required: 'Var god välj ditt favorit-choklad'
+										required: 'Var god välj personens favorit-choklad'
 								},
                                 candyPref: {
-										required: 'Var god välj ditt favorit-julegodis'
+										required: 'Var god välj personens favorit-julegodis'
 								},
                                 kallePref: {
-                                        required: 'Var god välj den del du gillar mest'
+                                        required: 'Var god välj den del personen gillar mest'
                                 },
 								/*comment: {
 										required: 'Oops you forgot to comment',
 										minlength: 'Comment must be at least 10 characters'
 								},*/
 								'christmasFood[]':{
-										required: 'Var god markera minst ett förslag av mat som du gillar.'
+										required: 'Var god markera minst ett förslag av mat som personen gillar.'
 								}								
 						},
 
