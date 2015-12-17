@@ -175,16 +175,16 @@ function buildJSONtoAzure() {
   $valArr = Array();
   
   $textFields = $('.gui-input');
-  $zip = $textFields[0].value;
-  $age = $textFields[1].value;
+  $age = $textFields[0].value;
+  $zip = $textFields[1].value;
   $sexType = $('input[name="sexType"]:checked').val();
   $prefersSoftPresents = $('input[name="prefersSoftPresents"]:checked').val();
   $prefersSuntrip = $('input[name="prefersSuntrip"]:checked').val();
   $prefersDog = $('input[name="prefersDog"]:checked').val();
   $santaBelief = $('input[name="santaBelief"]').val();
   $chocolatePref = $('select[name="chocolatePref"]').val();
-  $candyPref = $('select[name="chocolatePref"]').val();
-  $kallePref = $('select[name="chocolatePref"]').val();
+  $candyPref = $('select[name="candyPref"]').val();
+  $kallePref = $('select[name="kallePref"]').val();
   $christmasFood = $('input[name^="christmasFood"]').filter('input[id^="food"]');
   $foodVals = Array();
   $.each($christmasFood, function(index, value) {
