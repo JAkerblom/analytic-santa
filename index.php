@@ -459,7 +459,7 @@ var klappar_list = {
                 "fa fa-envelope"></i></label></label>
               </div> -->
             <div class="frm-row">
-	      <div class="section colm colm1" style="padding-left:0px;margin-left:2%;">
+	      <div class="section colm colm1" style="padding-left:0px;margin-left:3%;">
                 <p>Ålder:</p>
               </div>
               <div class="section colm colm1-5" id="agediv">
@@ -496,7 +496,7 @@ var klappar_list = {
             </div><!-- PrefersSoftPresents -->
             <div class="frm-row">
               <div class="section colm colm6">
-                <p style="margin:0;margin-top:6px;">Julklappar föredrar personen:</p>
+                <p style="margin:0;margin-top:6px;">Personen föredrar klappar:</p>
               </div>
               <div class="section colm colm3">
                 <label class="option option-red"><input checked name="prefersSoftPresents" type="radio" value=
@@ -509,7 +509,7 @@ var klappar_list = {
             </div><!-- PrefersSuntrip -->
             <div class="frm-row">
               <div class="section colm colm6">
-                <p style="margin:0;margin-top:6px;">På semester åker personen:</p>
+                <p style="margin:0;margin-top:6px;">På semester åker personen helst till:</p>
               </div>
               <div class="section colm colm3">
                 <label class="option option-red"><input checked name="prefersSuntrip" type="radio" value=
@@ -522,7 +522,7 @@ var klappar_list = {
             </div><!-- PrefersDog -->
             <div class="frm-row">
               <div class="section colm colm6">
-                <p style="margin:0;margin-top:6px;">Husdjur föredrar personen:</p>
+                <p style="margin:0;margin-top:6px;">Som husdjur föredrar personen:</p>
               </div>
               <div class="section colm colm3">
                 <label class="option option-red"><input checked name="prefersDog" type="radio" value="1" tabindex="9"><span class=
@@ -561,7 +561,7 @@ var klappar_list = {
             <div class="section">
               <label class="field select"><select id="chocolatePref" name="chocolatePref">
                 <option value="">
-                  Personens chokladtyp..
+                  Personens favorit-chokladtyp..
                 </option>
                 <option value="milk">
                   Mjölkchoklad
@@ -580,7 +580,7 @@ var klappar_list = {
             <div class="section">
               <label class="field select"><select id="candyPref" name="candyPref">
                 <option value="">
-                  Personens julegodis..
+                  Personens favorit-julegodis..
                 </option>
                 <option value="kola">
                   Knäckkola
@@ -787,14 +787,14 @@ var klappar_list = {
                   data-show-faces="false">
                 </div>
               </div>
-            </div> -->
-            <div class="fb-like" 
+            </div>
+           <!-- <div class="fb-like" 
               data-href="http://ffcg-analyticsanta.azurewebsites.net/" 
               data-layout="standard" 
               data-action="like" 
               data-share="true"
               data-show-faces="false">
-            </div>
+            </div>-->
           </div><!-- end .form-footer section -->
         </form>
       </div><!-- end .smart-forms section -->
