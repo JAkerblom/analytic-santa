@@ -43,7 +43,6 @@
    }
   </style>
 
- <!-- <script type="text/javascript" src="data/items/klappar.json"></script>-->
   <script>
 var klappar_list = {
   "klappar":[
