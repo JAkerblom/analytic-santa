@@ -44,308 +44,322 @@
   </style>
 
   <script>
-	var klappar_list = 
-	{
-	  "klappar":
-	  [
-		{
-		"itemURL": "https://www.liveit.se/upplevelser/upplevelsepresenter-massage",
-		"itemPicture": "fjeiaoabeu.jpg",
-		"itemID": 3,
-		"itemName": "Massage",
-		"description": "Unna dig själv eller en vän en klassisk massage. En massagebehandling kan vara enbart en stund för avslappning och återhämtning eller innehålla behandlande moment som tryck och stretching. Man väljer själv inriktning i samråd med massören.",
-		"price": 445
-		},
-		{
-		"itemURL": "https://www.kjell.com/se/sortiment/ljud-bild/mediaspelare/google-chromecast-p96600",
-		"itemPicture": "3341551.jpg",
-		"itemID": 40,
-		"itemName": "Google Chromecast - Trådlös mediaströmning för TV:n",
-		"description": "Chromecast är en mediaströmningsenhet som ansluts till TV:n via HDMI-porten. Använd din mobila enhet och en TV som du redan äger och casta TV-program, filmer, sport, spel och mycket annat. Chromecast fungerar med iPhone, iPad, Android-mobiler eller -surfplattor, Mac- och Windows-datorer och Chromebook. Med Chromecast blir mobilen en fjärrkontroll.",
-		"price": 390
-		},
-		{
-		"itemURL": "https://www.kjell.com/se/sortiment/el-verktyg/batterier/laddningsbara-batterier/powerbank/linocell-3x-dual-powerbank-7800-mah-bla-p96870",
-		"itemPicture": "linocell-3x-dual-powerbank-7800-mah.jpg",
-		"itemID": 41,
-		"itemName": "Linocell 3X Dual Powerbank",
-		"description": "Kraftfullt extrabatteri som laddar både mobil och surfplatta. Kapacitet på 7800 mAh som räcker för att ladda upp en mobil ca 3 gånger. Utrustat med två USB-portar (totalt 2,1 A) och laddningsindikator. Automatisk avstängning när mobilen är fulladdad. Laddningstid: ca 10 h.",
-		"price": 199
-		},
-		{
-		"itemURL": "https://www.kjell.com/se/sortiment/mobilt/gadgets/vr-glasogon/linocell-pro-vr-glasogon-for-mobilen-p96980",
-		"itemPicture": "linocell-pro-vr-glasogon-for-mobilen.jpg",
-		"itemID": 42,
-		"itemName": "Linocell Pro VR-glasögon för mobilen",
-		"description": "Bekväma VR-glasögon med huvudband och mjukt huvudstöd utformat för att sluta in ögonen. Vred för att ställa in fokus och för att ställa in linserna ger en uppslukande upplevelse. Har öppning för mobilens kamera. Ladda ner spel- och underhållningsappar eller se t.ex. Youtube-klipp på nya sätt. Mobilen hålls på plats i ett fack i glasögonen och fungerar som en bildskärm. Användaren styr därefter upplevelsen genom att vrida på huvudet.",
-		"price": 199
-		},
-		{
-		"itemURL": "https://www.kjell.com/se/sortiment/mobilt/gadgets/programmerbar-knapp/flic-bluetooth-knapp-for-mobil-svart-p50084",
-		"itemPicture": "flic-bluetooth-knapp-for-mobil.jpg",
-		"itemID": 43,
-		"itemName": "Flic Bluetooth-knapp för mobil Svart",
-		"description": "Bluetooth-fjärrkontroll för mobil. Kan programmeras för att låta mobilen t.ex. fota en bild, kontrollera musik eller starta en timer. Knappen har stöd för tre kortkommandon (tryck, långt tryck och dubbelklick). Inställningar görs enkelt via appen Flic (finns till både Android och iOS). Kan även styra olika tjänster via IFTTT.",
-		"price": 349
-		},
-		{
-		"itemURL": "https://www.kjell.com/se/sortiment/ljud-bild/foto-video/fototillbehor/dia/plexgear-pixaver-lux-negativ-och-diaskanner-p99000",
-		"itemPicture": "plexgear-pixaver-lux-negativ-och-diaskanner.jpg",
-		"itemID": 44,
-		"itemName": "Plexgear Pixaver Lux Negativ- och Diaskanner",
-		"description": "Fotofilmskanner med inbyggd 2,4-tumsskärm för digitalisering av diabilder och negativ. Bilderna sparas på SD-kort (max 32 GB, medföljer ej) via en knapptryckning. Kopplas till en dator via USB för överföring. Kan kopplas direkt till en TV för att se sparade bilder.",
-		"price": 899
-		},
-		{
-		"itemURL": "https://www.kjell.com/se/sortiment/dator-natverk/hogtalare-headset/tradlosa-hogtalare/roxcore-stream-4-hogtalare-med-wifi-p23487",
-		"itemPicture": "roxcore-stream-4-hogtalare-med-wifi.jpg",
-		"itemID": 45,
-		"itemName": "Roxcore Stream 4 Högtalare med wifi",
-		"description": "Kraftfull och smart högtalare med Multiroom-stöd. Ansluts till hemmets wifi och gör det enkelt att spela upp musik i flera rum samtidigt. Via den medföljande appen är det enkelt att spela upp musik, antingen direkt från mobilen eller från musikappar som t.ex. Spotify (Premium). Möjligt att spela samma låt i alla högtalare, eller olika i olika högtalare. Högtalaren har även Bluetooth och en 3,5 mm-ingång. Högtalaren har knappar för styrning av musiken samt ett uppladdningsbart batteri, vilket gör den enkel att ta med på utflykten.",
-		"price": 799
-		},
-		{
-		"itemURL": "https://www.kjell.com/se/sortiment/mobilt/headset/mobiltelefon-headset/roxcore-oronmuffar-med-inbyggt-headset-p93374",
-		"itemPicture": "roxcore-oronmuffar-med-inbyggt-headset.jpg",
-		"itemID": 46,
-		"itemName": "Roxcore Öronmuffar med inbyggt headset",
-		"description": "Öronmuffar med inbyggt headset. Hörlurarna ligger i insydda fickor och kopplas till den medföljande 3,5 mm-kabeln med mikrofon, svarsknapp och analogt volymreglage. Lurar och kabel kan tas ur när öronmuffarna behöver tvättas. Passar mobiler och andra enheter med vanlig hörlurskontakt (3,5 mm).",
-		"price": 199
-		},
-		{
-		"itemURL": "https://www.kjell.com/se/sortiment/mobilt/bluetooth/handsfree/linocell-vante-med-bluetooth-headset-p94577",
-		"itemPicture": "linocell-vante-med-bluetooth-headset.jpg",
-		"itemID": 47,
-		"itemName": "Linocell Vante med Bluetooth-headset",
-		"description": "Stickad vante med inbyggt Bluetooth-headset. Forma handen som en lur, med lillfingret som mikrofon och tummen som en högtalare. Insydd knapp i vanten gör det möjligt att besvara samt avsluta samtal utan att behöva ta upp mobilen. Vanten går även att använda på mobilens skärm.",
-		"price": 299
-		},
-		{
-		"itemURL": "https://www.kjell.com/se/sortiment/hem-kontor-fritid/dronare/denver-dch-330-dronare-med-hd-kamera-p50866",
-		"itemPicture": "denver-dch-330-dronare-med-hd-kamera.jpg",
-		"itemID": 48,
-		"itemName": "Denver DCH-330 Drönare med HD-kamera",
-		"description": "Drönare med inbyggd HD-kamera och LED-belysning. Har två hastigheter och tack vare gyro-funktionen blir drönaren stabil och lättflugen. Filmar i HD (720p, 30 FPS). Filmerna sparas på ett Micro-SD-kort (max. 32 GB, medföljer ej). Upp till 30 meters räckvidd.",
-		"price": 699
-		},
-		{
-		"itemURL": "https://www.thegreatgiftcompany.co.uk/occasions/special_occasions/christmas/christmas-for-men/henry_desk_vacumn.htm",
-		"itemPicture": "550x550.fit.Henry-Desk-Vacumn-80971_2.jpg",
-		"itemID": 49,
-		"itemName": "Henry - Skrivbordsdammsugaren",
-		"description": "This little sucker will keep your desktop neat and tidy, crumb and dust free...",
-		"price": 149
-		},
-		{
-		"itemURL": "https://www.thegreatgiftcompany.co.uk/occasions/special_occasions/christmas/christmas-for-men/case_of_award_winning_british_beer.htm",
-		"itemPicture": "550x550.fit.Case-of-Award-Winning-Beer-12126_40.jpg",
-		"itemID": 50,
-		"itemName": "Prenumeration på en låda brittiskt prisbelönat öl",
-		"description": "Without question, the greatest invention in the history of mankind is beer. Oh, I grant you that the wheel was also a fine invention, but the wheel does not go nearly as well with pizza - Dave Barry. Give him a case of Award Winning Ales from UK micro breweries - the perfect gift for lovers of beer. This Case of Award Winning British Beer includes 12 beers from small, independent breweries - so this is not the run-of-the-mill beers that he'll find in a supermarket. All the beers have won regional, national and/or international awards and have been tested by a dedicated (and very enthusiastic) tasting panel. No beer is included unless it has won award/s and been given the stamp of approval by the group of experienced beer drinkers",
-		"price": 500
-		},
-		{
-		"itemURL": "https://www.thegreatgiftcompany.co.uk/occasions/special_occasions/christmas/christmas-for-men/smart_healthy_wireless_scales_and_app.htm",
-		"itemPicture": "550x550.fit.Smart-Healthy-Wireless-Scales-and-App-80834_4.jpg",
-		"itemID": 51,
-		"itemName": "Smart vågskål med tillhörande app",
-		"description": "Food prep just got smarter! We can’t all be star bakers but we can certainly be smart bakers! The Smart Healthy Wireless Scales + App is an intelligent solution to flat Victoria sponges and soggy biscuits. Extremely easy to use and dishwasher safe, the Smart Wireless Scales enable the accurate measurement of ingredients placed into the included 2 litre smart mixing bowl",
-		"price": 450
-		},
-		{
-		"itemURL": "https://www.coolstuff.se/Airboard-Denver-6-5",
-		"itemPicture": "2cf641134fb2cb4128298276634a7314.jpg",
-		"itemID": 52,
-		"itemName": "Airboard Denver 6,5\" Hoverboard",
-		"description": "Det är som att stå på en svävande bräda, fast på två hjul! Airboarden står stabilt under fötterna och kräver varken stång eller fart för att hålla dig uppe. Maximal hastighet på 12 Km/h!",
-		"price": 1650
-		},
-		{
-		"itemURL": "https://www.coolstuff.se/Shiatsu-Fotmassage",
-		"itemPicture": "2456f09bf7fb466722dcb4e3535d259b.jpg",
-		"itemID": 53,
-		"itemName": "Shiatsu Fotmassage",
-		"description": "Skäm bort dina fötter och låt maskinen massera, krama och värma! De tre förinställda programmen ökar blodcirkulationen i fötterna och hjälper dig att bli piggare, friskare och gladare!",
-		"price": 1495
-		},
-		{
-		"itemURL": "https://www.thegreatgiftcompany.co.uk/occasions/special_occasions/christmas/christmas-for-men/ted_baker_backgammon.htm",
-		"itemPicture": "550x550.fit.Ted-Baker-Backgammon-80864.jpg",
-		"itemID": 54,
-		"itemName": "Ted Baker Backgammon För Resan",
-		"description": "The Ted Baker Back Gammon Roll-up Set is everything you need to play a game of Backgammon when travelling. The classic game is rolled up in a gorgeous faux leather travel set which doubles as the board with its supple felt lining and rose gold detailing. Written inside is the words ‘Let the Good Times Roll’. Also included are 2 x gold and black die, 15 x black counters and 15 x gold counters and finally a faux leather black case to store the game counters in which sits neatly inside the roll. This Ted Baker travel accessory is held together using a leather strap with rose gold button detailing and is a perfect present for hard-to-buy-for men this Christmas",
-		"price": 370
-		},
-		{
-		"itemURL": "https://www.thegreatgiftcompany.co.uk/occasions/special_occasions/christmas/christmas-for-men/smart_water_cup.htm",
-		"itemPicture": "550x550.fit.Smart-Cup-80753_3.jpg",
-		"itemID": 55,
-		"itemName": "Smart Vattentermos",
-		"description": "Do you drink enough water each day? This very clever flask measures your daily intake of water and reminds you when you need to drink more. You download the free Smart Water Cup App (compatible with ios and android devices), sync the app with the cup and measure how much water you've consumes. Made from fine quality stainless steel and gift boxed, the Smart Water Cup holds 370ml of water and has a built-in buzzer. Fill, drink, re-fill and keep drinking until you've had enough for the day",
-		"price": 420
-		},
-		{
-		"itemURL": "https://www.thegreatgiftcompany.co.uk/occasions/special_occasions/christmas/christmas-for-men/weekend_travel_bag.htm",
-		"itemPicture": "550x550.fit.Weekend-Travel-Bag-17509_2.jpg",
-		"itemID": 56,
-		"itemName": "Weekend Travel Bag",
-		"description": "These Weekend Travel Bags look great and age well plus they are exceptionally good value. The Weekend Travel Bag is perfectly sized for weekends trips away. Made of faux brown leather, the Travel Bag has a zip pocket on one side and a zip closer, handles as well as a removable shoulder strap. Inside the bag has a zipped pocket and is lined in cotton",
-		"price": 400
-		},
-		{
-		"itemURL": "http://www.designtorget.se/cykelhjalm-hovding-2-0-small",
-		"itemPicture": "hovding-modell2_2.jpg",
-		"itemID": 57,
-		"itemName": "Cykelhjälm Hövding 2.0",
-		"description": "Hövding är en cykelhjälm olik allt som finns på marknaden idag. Hövding är en krage som cyklisten bär kring halsen. Kragen innehåller en hopvikt airbag som blir synlig först när man hamnar i en olycka. Airbagen är utformad som en huva som omsluter och skyddar cyklistens huvud. Utlösningsmekanismen styrs med hjälp av sensorer som registrerar den onormala rörelsen hos cyklisten vid en olycka. Själva kragen är den synliga delen av uppfinningen. Hövding är en praktisk accessoar som är enkel att ta med, som är snygg och diskret i sin utformning, samtidigt som den räddar ditt liv.",
-		"price": 2695
-		},
-		{
-		"itemURL": "http://www.designtorget.se/stringhylla-pocket-valnot-vit",
-		"itemPicture": "1000363.jpg",
-		"itemID": 58,
-		"itemName": "Stringhylla Pocket",
-		"description": "Arkitekten Nisse Strinnings klassiska hyllsystem introducerades redan 1949, men är minst lika populära idag. Här kommer den i ett nytt, mindre format, nu med hyllplan av ask och med vita gavlar! Hyllan är perfekt att ha CD-skivor, DVD-filmer eller pocketböcker i, men passar minst lika bra som en mindre hylla i kök, barnrum eller hall.",
-		"price": 1000
-		},
-		{
-		"itemURL": "https://www.thegreatgiftcompany.co.uk/occasions/special_occasions/christmas/christmas-for-men/smartphone_magnifier.htm",
-		"itemPicture": "550x550.fit.Smartphone-Magnifier-80963.jpg",
-		"itemID": 59,
-		"itemName": "TV Magnifier - Förstoringsglas till mobilen",
-		"description": "Share your phone content without arm ache in a fast, low-tech way by slotting your smartphone into the Smartphone Magnifier. The Smartphone Magnifier magnifies and effectively doubles the screen size to 8\", making it much easier to share silly videos and funny photos ... or perhaps you just want to watch something yourself (for example in the bath) on something a bit larger than the screen on your phone",
-		"price": 200
-		},
-		{
-		"itemURL": "https://www.thegreatgiftcompany.co.uk/occasions/special_occasions/christmas/christmas-for-her/ted_baker_lifestyle_organiser.htm",
-		"itemPicture": "550x550.fit.Ted-Baker-Travel-Lifestyle-Organiser-80865_2.jpg",
-		"itemID": 60,
-		"itemName": "Ted Baker Livsorganiserare",
-		"description": "Unzipping the rose gold zip reveals the minimal and contemporary interior of the lifestyle organiser; featuring a rose patterned lining and dedicated compartments for your phone, money, stationary, credit cards and separate diary/notebook. Finished with beautiful rose gold fasteners and elegant stitching, this stunning accessory will look every bit the part on important meetings, work trips away and travels to exotic locations.",
-		"price": 500
-		},
-		{
-		"itemURL": "http://www.clasohlson.com/se/Pr442416000/Pr442416000#moreinfo",
-		"itemPicture": "9488655056926.jpg",
-		"itemID": 61,
-		"itemName": "Kaffekvarn Melitta Molino",
-		"description": "Gör ditt eget kaffe av de kaffebönor du har malt i kaffekvarnen. Molino har en professionell skivkvarn som malverk. Kvarnen maler allt från traditionellt kaffe till Espresso. Bönbehållaren har kapacitet för 200 g kaffebönor och kvarnen maler 2-14 koppar åt gången. När den har malt färdigt, stängs den av automatiskt.",
-		"price": 500
-		},
-		{
-		"itemURL": "http://www.clasohlson.com/se/Platt%C3%A5ng-Remington-Sleek-&-Curl-S6500/Pr342269000#moreinfo",
-		"itemPicture": "9175328129054.jpg",
-		"itemID": 62,
-		"itemName": "Plattång Remington Sleek & Curl S6500",
-		"description": "Variera frisyren med lockar, vågor eller rakt hår. Värmeboostfunktion för att snabbt komma upp i högsta temperatur. Avancerad keramisk beläggning med 4 gånger bättre skydd för håret.",
-		"price": 300
-		},
-		{
-		"itemURL": "http://www.bluebox.se/Vetevarmare-Sjal",
-		"itemPicture": "heat-in-micro.png",
-		"itemID": 63,
-		"itemName": "Vetevärmare som halsduk",
-		"description": "Känner du dig lite krasslig, är du stel i nacke, rygg eller axlar, har ont i halsen eller är bara lite frusen? En uppvärmningsbar halsduk gör susen! Denna gosiga vetevärmarhalsduk är fylld med korn och väldoftande örter och fungerar som en vanlig vetevärmare som värms i mikrovågsugnen.",
-		"price": 300
-		},
-		{
-		"itemURL": "http://www.bluebox.se/Reflextofs-Deluxe",
-		"itemPicture": "m01803_2x.jpg",
-		"itemID": 64,
-		"itemName": "Reflextofs Deluxe",
-		"description": "Det är viktigt att synas, både i mörkret och ute bland folk. Denna reflextofs blir en fin accessoar samtidigt som den är en livräddare när mörkret faller på. Den smidiga karbinhaken gör reflexen lätt att haka fast på t.ex väskan, jackan eller barnvagnen och du kan känna dig säker när du är ute och rör dig.",
-		"price": 75
-		},
-		{
-		"itemURL": "http://www.bluebox.se/Forvaring-For-Accessoarer-Vanity",
-		"itemPicture": "m01731_2x.jpg",
-		"itemID": 65,
-		"itemName": "Förvaring för accessoarer - Vanity",
-		"description": "Organisera smink och accessoarer med stil! Vanity är en rymlig smink- och smyckeväska med plats för allt det nödvändigaste. Necessären är fylld med flera olika stora fack och fickor som passar bra för alla olika sorters produkter. Dess handtag låter dig bära med necessären som en en liten väska, praktiskt när den ska med till träningen, resan eller övernattningen. Väskans underdel går att fälla ut för maximal förvaring, eller ihop för minimal plats. Perfekt när du vill ha sminket välorganiserat och lättillgängligt på en och samma gång!",
-		"price": 200
-		},
-		{
-		"itemURL": "http://www.bluebox.se/Pillerpaminnare",
-		"itemPicture": "a12406_52x.jpg",
-		"itemID": 66,
-		"itemName": "Pillerpåminnare",
-		"description": "Pillerpåminnare och tandborstställ i ett! Allergimedicin, p-piller eller andra tabletter... Med denna smarta pillerpåminnare kommer du aldrig mer glömma att ta din dagliga tablett, den är nämligen ihopkopplad med något som de allra flesta kommer ihåg att göra – nämligen att borsta tänderna! Pillerpåminnaren har plats för en tandborste och i samma sekund som du tar loss tandborsten från stället hoppar pillerkartan upp och blir synlig. Fiffigt värre! Borsta tänderna, ta ditt piller och sätt tillbaka pillerkartan och tandborsten igen.",
-		"price": 69
-		},
-		{
-		"itemURL": "http://www.adlibris.com/se/bok/marcus-martinus-var-historia-9789176631720?campaignId=837e1164-31f6-4490-9d0d-47b0b1afd782",
-		"itemPicture": "marcus-martinus-var-historia.jpg",
-		"itemID": 67,
-		"itemName": "Marcus & Martinus: Vår historia av Marcus Gunnarsen och Martinus Gunnarsen",
-		"description": "År 2012 vann de den norska versionen av Lilla Melodifestivalen och deras hitsingel \"Elektrisk\" har sålt tre gånger platina och visats över tio miljoner gånger på Youtube. De är Norges mest populära tonåringar. Och nu också Sveriges. Här kommer Marcus & Martinus otroliga framgångssaga deras egen historia i en rikt illustrerad bok fylld med bilder ur killarnas privata album, fun facts och fansens egna berättelser och foton.",
-		"price": 139
-		},
-		{
-		"itemURL": "http://www.adlibris.com/se/bok/clean-code-9780132350884",
-		"itemPicture": "clean-code.jpg",
-		"itemID": 68,
-		"itemName": "Clean Code av Robert C. Martin",
-		"description": "Even bad code can function. But if code isn't clean, it can bring a development organization to its knees. Every year, countless hours and significant resources are lost because of poorly written code. But it doesn't have to be that way. Noted software expert Robert C. Martin presents a revolutionary paradigm with Clean Code: A Handbook of Agile Software Craftsmanship. Martin has teamed up with his colleagues from Object Mentor to distill their best agile practice of cleaning code \"on the fly\" into a book that will instill within you the values of a software craftsman and make you a better programmer-but only if you work at it.",
-		"price": 329
-		},
-		{
-		"itemURL": "http://www.adlibris.com/se/bok/kaninjagaren-9789100136772?campaignId=5121beb3-8a93-4781-8c69-de1237a4af53",
-		"itemPicture": "kaninjagaren.jpg",
-		"itemID": 69,
-		"itemName": "Kaninjägaren av Lars Kepler",
-		"description": "Thrillermästaren Lars Kepler är tillbaka med en ny bladvändare om kriminalkommissarie Joona Linna. Kaninjägaren tar vid där den enorma succén Stalker slutade.",
-		"price": 195
-		},
-		{
-		"itemURL": "http://www.bluebox.se/Sagaform-Tesil-Med-Skopa",
-		"itemPicture": "a13365_22x.jpg",
-		"itemID": 70,
-		"itemName": "Sagaform - Tesil med skopa",
-		"description": "En smartare tesil med skopa och sil i ett! Med denna praktiska teskopa från Sagaform kan du skopa upp ditt favoritlöste och sedan låta det åka ner i handtaget. Handtaget fungerar även som en tesil, stoppa tesilen med handtaget neråt i koppen och låt ditt te dra sig.",
-		"price": 149
-		},
-		{
-		"itemURL": "https://www.coolstuff.se/Hot-Dog-Maker",
-		"itemPicture": "67fd47580dfe0a413ddc5901d9658345.jpg",
-		"itemID": 71,
-		"itemName": "Hot Dog Maker",
-		"description": "Det finns inget som slår en välgrillad korv med bröd. Fantastiska korvgrillen Hot Dog Maker grillar fyra korvar till perfektion samtidigt. Dags för korvfest!",
-		"price": 500
-		},
-		{
-		"itemURL": "https://www.coolstuff.se/Sansaire-Sous-Vide-Maskin",
-		"itemPicture": "58da7addad4f15ce5aad1067bead40a5.jpg",
-		"itemID": 72,
-		"itemName": "Sansaire Sous Vide-Maskin",
-		"description": "Att tillaga mat sous vide ger ett osannolikt smakrikt resultat - tyvärr har det länge varit exklusivt för dyra restaurangkök. Med Sansaire blir sous vide lika enkelt som att kolsyra vatten.",
-		"price": 1979
-		},
-		{
-		"itemURL": "https://www.coolstuff.se/Rokfri-Kolgrill",
-		"itemPicture": "05655a1ff7504a903341749f15205d5a.jpg",
-		"itemID": 73,
-		"itemName": "Rökfri Kolgrill",
-		"description": "Med vår rökfria kolgrill blir du grillkvällens stjärna! Grillen är redo på fyra minuter, och har ett unikt system med kolbehållare och inbyggd fläkt som minimerar rökutvecklingen!",
-		"price": 399
-		},
-		{
-		"itemURL": "https://www.coolstuff.se/Fitbit-Flex-2",
-		"itemPicture": "bbf86c52a9809c53754cc7e39eb4bdfb.jpg",
-		"itemID": 74,
-		"itemName": "Fitbit Flex 2",
-		"description": "Fitbit Flex 2 är ett maxat träningsarmband i minimal förpackning! Håll koll på träning, vardagsmotion och sömn med detta stilrena och vattentäta armband. Anpassa Flex 2 till din stil med snygga accessoarer!",
-		"price": 1000
-		},
-		{
-		"itemURL": "https://www.coolstuff.se/Withings-Body-Vag",
-		"itemPicture": "e8b93521722460543b98a09ff6837098.jpg",
-		"itemID": 75,
-		"itemName": "Withings Body Våg",
-		"description": "Vikten är bara en siffra! Med Withings Body Våg får du reda på mycket mer, som hur stor andel fett, muskler, vatten och benmassa din kropp har. Alltihop ger en tydligare bild av din kropp, hälsa och vikt!",
-		"price": 1399
-		}
-	  ]
-	}
+var klappar_list = {
+  "klappar":[
+  {
+    "itemURL":"http://www.coolstuff.se/Popcornmaskin-Cinema-Style",
+    "itemPicture":"5d1cc1bec6dacd27535fdce4b59f9627.jpg",
+    "itemID":1,
+    "itemName":"Popcornmaskin Cinema Style ",
+    "description":"Med vår biografstylade popcornmaskin finns alltid en näve färska popcorn hemma, liksom en snygg köksapparat som får - nej, ska! - stå mitt i bild.",
+    "price":599
+  },
+  {
+    "itemURL":"http://www.coolstuff.se/Kitchen-Safe",
+    "itemPicture":"c101f47a67552b9f39f055497ad59321.jpg",
+    "itemID":2,
+    "itemName":"Kitchen Safe ",
+    "description":"Som ett kassaskåp med timerfunktion, perfekt för kakor, fjärrkontroller och annat som lätt distraherar dig. Lås in och koppla av, för ingen annan kommer åt grejerna medan de ligger i Kitchen Safe.",
+    "price":499
+  },
+  {
+    "itemURL":"https://www.liveit.se/upplevelser/upplevelsepresenter-massage",
+    "itemPicture":"fjeiaoabeu.jpg",
+    "itemID":3,
+    "itemName":"Massage",
+    "description":"Unna dig själv eller en vän en klassisk massage. En massagebehandling kan vara enbart en stund för avslappning och återhämtning eller innehålla behandlande moment som tryck och stretching. Man väljer själv inriktning i samråd med massören.",
+    "price":445
+  },
+  {
+    "itemURL":"https://hittajulklappar.nu/p/sko-lampa/",
+    "itemPicture":"fewngndvghdksfjewmkldwg.png",
+    "itemID":4,
+    "itemName":"Sko-lampa",
+    "description":"Sko-lampan är en lysande uppfinning för alla som vill synas tydligt ute i mörkret under ambitiösa joggingturer.",
+    "price":195
+  },
+  {
+    "itemURL":"http://www.bokus.com/bok/9789187441851/tid-livet-ar-inte-kronologiskt/",
+    "itemPicture":"9789187441851_200_tid-livet-ar-inte-kronologiskt.jpeg",
+    "itemID":5,
+    "itemName":"Tid : livet är inte kronologiskt",
+    "description":"Tiden är ett tema som Alex Schulman och Sigge Eklund ständigt återkommer till i krönikor, på middagar med vänner och i sin podcast som är Sveriges mest populära med mer än en halv miljon lyssnare.",
+    "price":188
+  },
+  {
+    "itemURL":"http://www.bokus.com/bok/9780133564242/core-html5-2d-game-programming/",
+    "itemPicture":"9780133564242_200_core-html5-2d-game-programming_haftad.jpeg",
+    "itemID":6,
+    "itemName":"Core HTML5 2D Game Programming",
+    "description":"Game programming offers a wealth of creative and business opportunities, and its never been more accessible. In Core HTML5 2D Game Programming, best-selling author David Geary shows you how to use freely available browser tools and open source resources to create video games that run in desktop browsers and on mobile devices.",
+    "price":295
+  },
+  {
+    "itemURL":"http://www.coolstuff.se/Portabel-Hangmatta",
+    "itemPicture":"4fa35e3a0db2af8c2113a254dc7a117b.jpg",
+    "itemID":7,
+    "itemName":"Portabel Hängmatta ",
+    "description":"Hängmatta med stativ för lata dagar! Tar mindre än 1 minut att fälla upp eller ner. Packa ner det i medföljande bärväska och ta med dig vart du vill!",
+    "price":695
+  },
+  {
+    "itemURL":"http://www.coolstuff.se/SleepPhones",
+    "itemPicture":"b3f3ae9f29b015c38e296c777d967eec.jpg",
+    "itemID":8,
+    "itemName":"SleepPhones ",
+    "description":"Stäng ute snarkningar och annat störande. Lyssna på musik utan att irritera sängpartnern. SleepPhones – bekväma hörlurar för sängen.",
+    "price":349
+  },
+  {
+    "itemURL":"http://www.prisjakt.nu/produkt.php?p=3099186",
+    "itemPicture":"3099186.jpg",
+    "itemID":9,
+    "itemName":"Star Wars: Battlefront",
+    "description":"Star Wars: Battlefront ett riktigt vackert, och förvånansvärt lättdrivet, spel som fångar Star Wars-atmosfären på ett imponerande vis. Med Europalanseringen alldeles runt hörnet kan vi nu bara sätta oss ner och vänta på anstormningen av spelare och deras intryck av DICE senaste skapelse.",
+    "price":429
+  },
+  {
+    "itemURL":"http://www.coolstuff.se/Herb-Savor-Ortforvaring",
+    "itemPicture":"2bcbc30dadd10e7ae78bd28478034222.jpg",
+    "itemID":10,
+    "itemName":"Herb Savor ",
+    "description":"Örtförvaring Klipp dina örter ur krukan, ställ dem i Herb Savor, vattna lite, placera i kylskåp och du kryddar din mat med de fräschaste av örter i flera veckor.",
+    "price":295
+  },
+  {
+    "itemURL":"http://www.coolstuff.se/Razorpit-Rakbladsrengorare",
+    "itemPicture":"c96b6a3d745dc1fb0dd6f52b898d886b.jpg",
+    "itemID":11,
+    "itemName":"Razorpit Rakbladsrengörare",
+    "description":"Dina rakblad är inte slöa – de är smutsiga! Med hjälp av Razorpit får du bort smutset så att rakbladen blir vassare och håller mycket längre. Vad sägs om att raka dig upp till 150 gånger med samma blad? ",
+    "price":199
+  },
+  {
+    "itemURL":"http://www.stadium.se/sport/traning/traningsutrustning/221630102/c",
+    "itemPicture":"221630_102_CASALL_YOGAM BALANCE 3 FR.jpg",
+    "itemID":12,
+    "itemName":"Yogamatta TPE 4 mm",
+    "description":"Ett måste för alla yogautövare. Mattan är perfekt att använda hemma, på gymmet eller när du reser. En vadderad matta som gör utmanande träning bekväm och behaglig. Består av två lager TPE-material för maximal komfort.",
+    "price":399
+  },
+  {
+    "itemURL":"http://www.coolstuff.se/Mighty-Mug-Solo",
+    "itemPicture":"4f63a95404a19f4c038590fbcda8f114.jpg",
+    "itemID":13,
+    "itemName":"Mighty Mug Solo ",
+    "description":"Muggen som inte välter – nu i mindre version! Perfekt för den som behöver exakt en kopp ovältbar kaffe.",
+    "price":279
+  },
+  {
+    "itemURL":"https://www.ahlens.se/inredning/hall-smamobler/smamobler/handduksstege.html",
+    "itemPicture":"aaooaweorioqqqqqwqwe.jpg",
+    "itemID":14,
+    "itemName":"Handduksstege",
+    "description":"Vit trästege för badrummet eller sovrummet. Höjd 150 cm, 29,5/38 cm.",
+    "price":299
+  },
+  {
+    "itemURL":"http://www.coolstuff.se/Super-Retro-Trio-Multikonsol",
+    "itemPicture":"b4fb5fd0e1ae4110c8b0dfde101a5112.jpg",
+    "itemID":15,
+    "itemName":"Super Retro Trio Multikonsol",
+    "description":"Saknar du tiden när tv-spelen var enklare, svårare och roligare? Nu kan du spela alla spel till Nintendo 8-bitar, Super Nintendo och Sega Mega Drive - på en och samma konsol.",
+    "price":995
+  },
+  {
+    "itemURL":"http://www.coolstuff.se/4D-Stadspussel",
+    "itemPicture":"1d05a692fc5843a7f4e8b5617a5fe9a9.jpg",
+    "itemID":16,
+    "itemName":"4D Stadspussel ",
+    "description":"Pussel av de coolaste storstäderna i tre lager: landskap, gator och alla byggnader! Byggnaderna placeras ut i kronologisk ordning vilket gör att du får dig en rejäl dos arkitekturhistoria på köpet!",
+    "price":395
+  },
+  {
+    "itemURL":"http://www.coolstuff.se/Kladvikaren",
+    "itemPicture":"7d5f9ae74e8435c4ff78cf48b2f74d40.jpg",
+    "itemID":17,
+    "itemName":"Klädvikaren ",
+    "description":"Vik dina skjortor och tröjor enkelt och snabbt med Klädvikaren. Ett vik till höger, ett vik till vänster och ett vik underifrån - sen är det klart!",
+    "price":99
+  },
+  {
+    "itemURL":"http://www.coolstuff.se/Polaroid-ZIP-Instant-Fotoskrivare",
+    "itemPicture":"b7cf8d1965fbf10db692740876dd2b2b.jpg",
+    "itemID":18,
+    "itemName":"Polaroid ZIP Instant Fotoskrivare ",
+    "description":"Skriv ut dina foton på ett kick direkt från din smartphone eller surfplatta med Polaroids portabla fotoskrivare. Inget bläck behövs.",
+    "price":1590
+  },
+  {
+    "itemURL":"http://www.lagerhaus.se/inredning/badrum/kroppsvard-valdoft/spakit-signatur",
+    "itemPicture":"81842063.jpg",
+    "itemID":19,
+    "itemName":"Spakit SIGNATUR",
+    "description":"Spakit med doft av verbena i exklusiv presentförpackning. Boxen innehåller handkräm 75 ml, kroppslotion 300 ml och doftljus med en brinntid på cirka 25 timmar.",
+    "price":299
+  },
+  {
+    "itemURL":"http://www.bokus.com/bok/9789176610114/valkommen-till-vegoriket/",
+    "itemPicture":"9789176610114_200_valkommen-till-vegoriket.jpeg",
+    "itemID":20,
+    "itemName":"Välkommen till Vegoriket",
+    "description":"Välkommen till Vegoriket! Här härskar Mattias Kristiansson, som med humor, smidighet och utan pekpinnar guidar dig bort från animaliska produkter mot en mer vegansk livsstil. Hösten 2014 gav han ut boken Vego där han delade med sig av favoriträtter från sin egen första, lite trevande (men övertygade) tid som vegan.",
+    "price":214
+  },
+  {
+    "itemURL":"http://www.coolstuff.se/SpaceRail-SpaceWarp",
+    "itemPicture":"6305517763ac93f87c1e5babc5d657c7.jpg",
+    "itemID":21,
+    "itemName":"SpaceRail ",
+    "description":"Det närmaste du kommer en bergochdalbana i ditt hem. Timmar av lattjolajbans för hela familjen. För byggandet av banan är i detta fallet lika viktigt som själva kulrullandet.",
+    "price":199
+  },
+  {
+    "itemURL":"http://eu.suitsupply.com/sv/product-custom?tid=shirtconfigurator",
+    "itemPicture":"dkwopqfkpdgkffgkjoprwfkp.jpg",
+    "itemID":22,
+    "itemName":"Designa din egna skjorta",
+    "description":"Välj bland ett urval av de finaste egyptiska bomullstygerna från Tessitura Monti & välj sedan alla de avslutande detaljerna.",
+    "price":949
+  },
+  {
+    "itemURL":"http://www.coolstuff.se/Tryckkokare-For-Mikron",
+    "itemPicture":"e265e1a1d84438b50ab7e40eb5be7d29.jpg",
+    "itemID":23,
+    "itemName":"Tryckkokare För Mikron ",
+    "description":"Smaskiga långkok tar inte längre hela dagen att tillaga med den här tryckkokaren för mikron! Du kan dessutom på kort tid ångkoka grönsaker, koka pasta, ris och mycket annat i den!",
+    "price":249
+  },
+  {
+    "itemURL":"http://www.coolstuff.se/Hickies-Elastiska-Skosnoren",
+    "itemPicture":"0ab62473d92dad6d1b828aa096e8b5a3.jpg",
+    "itemID":24,
+    "itemName":"Hickies Elastiska Skosnören ",
+    "description":"Släng dina vanliga skosnören och sätt på våra elastiska istället. Matcha färgerna med skon och få ett par riktigt snygga och sköna slip-on-skor av dina vanliga dojjor. Knyt aldrig skorna igen!",
+    "price":149
+  },
+  {
+    "itemURL":"http://www.coolstuff.se/KitchPro-Sous-Vide-Slow-Cooker",
+    "itemPicture":"03c033ae2dacefde3667feef77562082.jpg",
+    "itemID":25,
+    "itemName":"KitchPro Sous Vide Slow Cooker",
+    "description":"Sous vide har länge varit proffskockarnas väg till perfekt mat, men nu behöver du inte ha ett restaurangkök för att få ett lika bra resultat hemma!",
+    "price":999
+  },
+  {
+    "itemURL":"http://www.coolstuff.se/iFetch-apportkanon",
+    "itemPicture":"5760ad3e9daa767009356918a169517c.jpg",
+    "itemID":26,
+    "itemName":"iFetch apportkanon ",
+    "description":"Skaffa din alldeles egna automatiska apportkanon och gör din hund överlycklig. Lägg i en boll och låt iFetch skjuta iväg den tre, sex eller nio meter.",
+    "price":1195
+  },
+  {
+    "itemURL":"http://www.lagerhaus.se/inredning/sojaljus-home-gront-te",
+    "itemPicture":"81841894.jpg",
+    "itemID":27,
+    "itemName":"Sojaljus HOME grönt te",
+    "description":"Svensktillverkade sojaljus i vacker presentförpackning med doft av grönt te. Ljusen är tillverkade av en naturlig sojavaxblandning och innehåller premiumdofter, vilket ger en bra doftspridning vid tänd låga.",
+    "price":129
+  },
+  {
+    "itemURL":"http://www.coolstuff.se/Autoloader-Skruvmejsel",
+    "itemPicture":"0493d93f62cf38473108c07e2e9fb9c0.jpg",
+    "itemID":28,
+    "itemName":"Autoloader Skruvmejsel ",
+    "description":"Slipp din ilska över fel mejsel med världens smartaste skruvmejsel. Den har sex olika bits inuti sig som du med ett enkelt grepp byter mellan på under 2 sekunder!",
+    "price":249
+  },
+  {
+    "itemURL":"http://www.prisjakt.nu/produkt.php?p=2994386",
+    "itemPicture":"2994386.jpg",
+    "itemID":29,
+    "itemName":"Raspberry Pi 2 Model B",
+    "description":"Raspberry Pi 2 is more nerdy - or technical - than most other media boxes we have tested, but it can also be much more than simply a media box. It is a do-it-yourself solution that you can turn into many different things. Still, it is very easy to set up and after a few minutes it will act as a complete dedicated media box, in our case with Kodi (XMBC) as the media player software.",
+    "price":385
+  },
+  {
+    "itemURL":"http://cdon.se/sport/titan-treadmill-st595xforce-p33601938",
+    "itemPicture":"titan_treadmill_st595xforce_polar_compatible-33601938-1.jpg",
+    "itemID":30,
+    "itemName":"Titan Treadmill ST595Xforce",
+    "description":"Med en hastighet på upp till 20 km/t blir även den tränade löparen utmanad på löpbandet. Perfekt löpband till bl.a. intervall- och uthållighetsträning. Stor och kraftig motor som ger 2,0 hk vid pågående belastning.",
+    "price":6499
+  },
+  {
+    "itemURL":"http://www.coolstuff.se/Skarsaker-Kokshandske",
+    "itemPicture":"5e26fa99fe67ed5b17d0ef1ec0b735bb.jpg",
+    "itemID":31,
+    "itemName":"Skärsäker Kökshandske ",
+    "description":"Med den skärsäkra handsken slipper du att putsa till fingrarna när du arbetar i köket eller scrapbookar.",
+    "price":139
+  },
+  {
+    "itemURL":"http://www.urbanoutfitters.com/urban/catalog/productdetail.jsp?id=36425429&category=GIFT_MUSIC",
+    "itemPicture":"fejowpfkeopwfkopewgjq.jpeg",
+    "itemID":32,
+    "itemName":"Crosley X UO Cruiser Briefcase Vinyl Record Player",
+    "description":"En riktig trendsetterskivspelare. Portabel som på det glada 60- och 70 talet. Högtalare i locket gör den till en riktig partyhöjare. ",
+    "price":800
+  },
+  {
+    "itemURL":"http://www.coolstuff.se/Stadtofflor",
+    "itemPicture":"5f9692433aaaf409a7302b18d6561aef.jpg",
+    "itemID":33,
+    "itemName":"Städtofflor ",
+    "description":"Tråkigt att städa? Med dessa sweeping slippers ”slipper” du plocka fram golvmoppen. På med tofflorna och glid omkring så blir det skinande rent!",
+    "price":79
+  },
+  {
+    "itemURL":"http://www.coolstuff.se/KitchPro-Hamburgerpress",
+    "itemPicture":"53bd228ba66b63c012d05a68042a76d7.jpg",
+    "itemID":34,
+    "itemName":"KitchPro Hamburgerpress",
+    "description":"Gör som jänkarna och kötta till det med stuffed burgers. Denna hamburgerpress hjälper dig att enkelt skapa supergoda hamburgare med olika fyllningar!",
+    "price":99
+  },
+  {
+    "itemURL":"http://www.coolstuff.se/Helautomatisk-Vinpump",
+    "itemPicture":"ff32349daf21d192c21996ff5ae07c1a.jpg",
+    "itemID":35,
+    "itemName":"KitchPro Helautomatisk Vinpump ",
+    "description":"Sätt på vinpumpen på flaskan och den suger automatiskt ut rätt mängd luft. Pumpen aktiveras igen om det kommer in ny luft.",
+    "price":295
+  },
+  {
+    "itemURL":"http://www.coolstuff.se/Mini-Donut-Maker",
+    "itemPicture":"c4b826df2f8cf613ecda63a92273e9c8.jpg",
+    "itemID":36,
+    "itemName":"KitchPro Mini Donut Maker",
+    "description":"Som ett våffeljärn fast för mini donuts! Värm upp maskinen, häll i smet, vänta några minuter och plocka sen ut perfekta minimunkar!",
+    "price":249
+  },
+  {
+    "itemURL":"http://www.coolstuff.se/Moov-Now",
+    "itemPicture":"db6f5ded6c279c09906d50b9cbec03a7.jpg",
+    "itemID":37,
+    "itemName":"Moov Now Träningsarmband",
+    "description":"Moov Now är träningsarmbandet som coachar dig under träningspasset, samtidigt som du får tillgång till statistik efteråt. Som att ha en personlig tränare på handleden!",
+    "price":799
+  },
+  {
+    "itemURL":"http://www.prisjakt.nu/produkt.php?p=2964478",
+    "itemPicture":"2964478.jpg",
+    "itemID":38,
+    "itemName":"Sennheiser Momentum Wireless",
+    "description":"The Sennheiser Momentum Wireless are a fantastic choice. They have a more straightforward function than the Parrot Zik (read: they don’t need an app to work), better sound than the Samsung Level On, and are built to last you a good long time. Yes, $500 is a lot of money, but for someone who needs an all-in-one headphone, and has the means, the Sennheiser Momentum Wireless may just be the best option currently available.",
+    "price":4290
+  },
+  {
+    "itemURL":"http://store.sensoriafitness.com/sensoria-fitness-smart-socks",
+    "itemPicture":"fweofjeowijfoewfkfopekf.png",
+    "itemID":39,
+    "itemName":"Sensoria Smarta Fitness-strumpor",
+    "description":"Det finns en uppsjö av olika plagg och armband som mäter hälsostatus. Nu kommer Sensoria Fitness Socks ett par smarta strumpor, utrustade med sensorer, som kommunicerar med ett armband.",
+    "price":1800
+  }
+  ]
+}
   </script>
   <script src="js/load-image.all.min.js"></script>
   <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
