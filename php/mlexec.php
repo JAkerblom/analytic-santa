@@ -10,8 +10,8 @@
   // Insert API credentials from Azure here. 
   // The URL to POST to and the related API key for 
   //  your deployed web service is needed 
-  $url = URLAPI_v2.2;
-  $api_key = KEYAPI_v2.2;
+  $url = URLAPI_v22;
+  $api_key = KEYAPI_v22;
   $headers = array('Content-Type: application/json', 'Authorization:Bearer ' . $api_key, 'Content-Length: ' . strlen($body));
 
   // This is the CURL call to your Azure deployed web service. 
