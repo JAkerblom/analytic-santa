@@ -1,5 +1,12 @@
 <?php 
 
+	include("secretInfo.php");
+	$server = SERVER;
+	$db = DB;
+	$user = USERNAME;	
+	$pwd = PASSWORD;
+	$receiver_email = RECEMAIL;
+	
 	if (!isset($_SESSION)) session_start(); 
 	if(!$_POST) exit;
 	
@@ -8,7 +15,7 @@
 	
 	// Enter email address below for receiving the form
 	// All order messages will be sent there
-	$receiver_email = "jonathan.akerblom@ffcg.se";
+	// See receiver_email
 	
 	// Enter email subject below
 	// This will be your message subject
@@ -155,7 +162,7 @@
 			$mail->isSendmail();
 			$mail->IsHTML(true);
 			$mail->From = $email;
-            //$mail->From = 'jonathan.akerblom@ffcg.se';
+            
 			$mail->CharSet = "UTF-8";
 			$mail->FromName = $firstname;
 			$mail->Encoding = "base64";
@@ -173,7 +180,7 @@
 			$recipients = false;
 			if($recipients == true){
 				$recipients = array(
-					"jonathan.akerblom@ffcg.se" => "Jonte"
+					"no-reply@blabla.se" => "JohnDoe"
 				);
 				
 				foreach($recipients as $email => $name){
@@ -239,11 +246,7 @@
 				fclose($csvFileData);
 	}
 
-/*    // DB connection info
-    $host = "eu-cdbr-azure-west-c.cloudapp.net";
-    $user = "ba2ce77d80289a";
-    $pwd = "3a9e383e";
-    $db = "ffcgamd-db";
+/*
     // Connect to database.
     try {
         // Using PHP Data Objects (PDO) for DB access
@@ -282,10 +285,7 @@ $headerRowFields = array(
   "itemID",
   "rating"
 );
-$server = "f5bv9w5661.database.windows.net,1433";
-$db = "ffcgamd-db";
-$user = "ffcgdb_web";
-$pwd = "OMG!3v1lb4n4as!";
+
 $table = "userInput";
 $colstr = implode(",", $headerRowFields);
 $colstr = "(". $colstr .")";
@@ -300,7 +300,7 @@ for ($i = 0; $i < count($userInput); $i++) {
 
 //PHP Data Objects(PDO) Sample Code:
   try {
-    $conn = new PDO ( "sqlsrv:server = tcp:f5bv9w5661.database.windows.net,1433; Database = ffcgamd-db", "ffcgdb_web", "OMG!3v1lb4n4as!");
+    $conn = new PDO ( "sqlsrv:server = tcp:" . $server . "; Database = " . $db, $user, $pwd);
     $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
     
     // Insert data
@@ -314,15 +314,6 @@ for ($i = 0; $i < count($userInput); $i++) {
     die(print_r($e));
   }
 
-
-
-
-//SQL Server Extension Sample Code:
-/*
-$connectionInfo = array( "UID" => "ffcgdb_web@f5bv9w5661", "pwd" => "your_password_here", "Database" => "ffcgamd-db", "LoginTimeout" => 30, "Encrypt" => 1);
-$serverName = "tcp:f5bv9w5661.database.windows.net,1433";
-$conn = sqlsrv_connect($serverName, $connectionInfo);
-*/
 	
 	// ultimate email validation function
 	function validEmail($email) {
