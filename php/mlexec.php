@@ -1,4 +1,7 @@
 <?php  
+
+  include("secretInfo.php");
+	
   // The 'body' is sent via POST from the ajax script
   // It is built with javascript depending on what was 
   //  entered in the user form 
@@ -7,11 +10,8 @@
   // Insert API credentials from Azure here. 
   // The URL to POST to and the related API key for 
   //  your deployed web service is needed 
-  $url = 'https://europewest.services.azureml.net/workspaces/0c8371e1485946f48a61b4bdd4f07c2c/services/ba7aa564a17e4dde841b5e7710332fdf/execute?api-version=2.0&details=true'; // 2016 (v2.1)
-  //$url = 'https://europewest.services.azureml.net/workspaces/0c8371e1485946f48a61b4bdd4f07c2c/services/cff0e9af2b8e44b0b57af48ffa8c9e5f/execute?api-version=2.0&details=true'; // Pre 2016 (v1.0)
-  $api_key = 'lxhUiukWCaGeAUWgbpPzvujiMop4pbY+EDQJINjorRL+Y76XHJcRbqfo/I08cW0yvw/WcCCGGqrH5x2en7jjDg=='; // 2016 (v2.1)
-  //$api_key = 'JUgZsn+BJImk6tSKqPuiaIH1WaVo+J9n+px6qNb4qnLP2K0C9d3Oubkaurhmg+k9SVxA3qXQ3Q4haBoFp6D6BA=='; // Pre 2016 (v1.0)
-  //$headers = array('Content-Type: application/json', 'Authorization:Bearer ' . $api_key, 'Content-Length: ' . strlen($body));
+  $url = URLAPI_v2.2;
+  $api_key = KEYAPI_v2.2;
   $headers = array('Content-Type: application/json', 'Authorization:Bearer ' . $api_key, 'Content-Length: ' . strlen($body));
 
   // This is the CURL call to your Azure deployed web service. 

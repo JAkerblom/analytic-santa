@@ -49,300 +49,276 @@
 	  "klappar":
 	  [
 		{
-		"itemURL": "https://www.liveit.se/upplevelser/upplevelsepresenter-massage",
-		"itemPicture": "fjeiaoabeu.jpg",
-		"itemID": 3,
-		"itemName": "Massage",
-		"description": "Unna dig själv eller en vän en klassisk massage. En massagebehandling kan vara enbart en stund för avslappning och återhämtning eller innehålla behandlande moment som tryck och stretching. Man väljer själv inriktning i samråd med massören.",
-		"price": 445
+		"itemURL": "https://www.kitchenlab.se/produkt/skarmaskin-fac/",
+		"itemPicture": "2017_02_Skarmaskin.jpg",
+		"itemID": 77,
+		"itemName": "Skärmaskin",
+		"description": "En skärmaskin för livsmedel",
+		"Price": 5625
 		},
 		{
-		"itemURL": "https://www.kjell.com/se/sortiment/ljud-bild/mediaspelare/google-chromecast-p96600",
-		"itemPicture": "3341551.jpg",
-		"itemID": 40,
-		"itemName": "Google Chromecast - Trådlös mediaströmning för TV:n",
-		"description": "Chromecast är en mediaströmningsenhet som ansluts till TV:n via HDMI-porten. Använd din mobila enhet och en TV som du redan äger och casta TV-program, filmer, sport, spel och mycket annat. Chromecast fungerar med iPhone, iPad, Android-mobiler eller -surfplattor, Mac- och Windows-datorer och Chromebook. Med Chromecast blir mobilen en fjärrkontroll.",
-		"price": 390
+		"itemURL": "https://www.systembolaget.se/sok-dryck/?subcategory=Rött%20vin&grapes=%5EZinfandel%24&fullassortment=0",
+		"itemPicture": "2017_03_Vin.jpg",
+		"itemID": 78,
+		"itemName": "Vin",
+		"description": "Rött, dyrt och riktigt gott",
+		"Price": 500
 		},
 		{
-		"itemURL": "https://www.kjell.com/se/sortiment/el-verktyg/batterier/laddningsbara-batterier/powerbank/linocell-3x-dual-powerbank-7800-mah-bla-p96870",
-		"itemPicture": "linocell-3x-dual-powerbank-7800-mah.jpg",
-		"itemID": 41,
-		"itemName": "Linocell 3X Dual Powerbank",
-		"description": "Kraftfullt extrabatteri som laddar både mobil och surfplatta. Kapacitet på 7800 mAh som räcker för att ladda upp en mobil ca 3 gånger. Utrustat med två USB-portar (totalt 2,1 A) och laddningsindikator. Automatisk avstängning när mobilen är fulladdad. Laddningstid: ca 10 h.",
-		"price": 199
+		"itemURL": "https://www.xxl.se/fitbit-activity-fitbit-charge-2-plum-small-traningsarmband/p/1129526_1_style",
+		"itemPicture": "2017_04_Pulsklocka.jpg",
+		"itemID": 79,
+		"itemName": "Fitbit",
+		"description": "Ett aktivitetsarmband med pulsmätare",
+		"Price": 1390
 		},
 		{
-		"itemURL": "https://www.kjell.com/se/sortiment/mobilt/gadgets/vr-glasogon/linocell-pro-vr-glasogon-for-mobilen-p96980",
-		"itemPicture": "linocell-pro-vr-glasogon-for-mobilen.jpg",
-		"itemID": 42,
-		"itemName": "Linocell Pro VR-glasögon för mobilen",
-		"description": "Bekväma VR-glasögon med huvudband och mjukt huvudstöd utformat för att sluta in ögonen. Vred för att ställa in fokus och för att ställa in linserna ger en uppslukande upplevelse. Har öppning för mobilens kamera. Ladda ner spel- och underhållningsappar eller se t.ex. Youtube-klipp på nya sätt. Mobilen hålls på plats i ett fack i glasögonen och fungerar som en bildskärm. Användaren styr därefter upplevelsen genom att vrida på huvudet.",
-		"price": 199
+		"itemURL": "http://www.gant.se/dam-tröja/multi-lyocell-polotröja/18366",
+		"itemPicture": "2017_05_Troja.jpg",
+		"itemID": 80,
+		"itemName": "Tröja",
+		"description": "En skön tröja att ha på fritiden",
+		"Price": 799
 		},
 		{
-		"itemURL": "https://www.kjell.com/se/sortiment/mobilt/gadgets/programmerbar-knapp/flic-bluetooth-knapp-for-mobil-svart-p50084",
-		"itemPicture": "flic-bluetooth-knapp-for-mobil.jpg",
-		"itemID": 43,
-		"itemName": "Flic Bluetooth-knapp för mobil Svart",
-		"description": "Bluetooth-fjärrkontroll för mobil. Kan programmeras för att låta mobilen t.ex. fota en bild, kontrollera musik eller starta en timer. Knappen har stöd för tre kortkommandon (tryck, långt tryck och dubbelklick). Inställningar görs enkelt via appen Flic (finns till både Android och iOS). Kan även styra olika tjänster via IFTTT.",
-		"price": 349
+		"itemURL": "http://www.gant.se/herr-halsduk/grå-solid-lambswool-halsduk/14595",
+		"itemPicture": "2017_06_Halsduk.jpg",
+		"itemID": 81,
+		"itemName": "Halsduk",
+		"description": "En halsduk i fint material är alltid stiligt och håller en varm.",
+		"Price": 599
 		},
 		{
-		"itemURL": "https://www.kjell.com/se/sortiment/ljud-bild/foto-video/fototillbehor/dia/plexgear-pixaver-lux-negativ-och-diaskanner-p99000",
-		"itemPicture": "plexgear-pixaver-lux-negativ-och-diaskanner.jpg",
-		"itemID": 44,
-		"itemName": "Plexgear Pixaver Lux Negativ- och Diaskanner",
-		"description": "Fotofilmskanner med inbyggd 2,4-tumsskärm för digitalisering av diabilder och negativ. Bilderna sparas på SD-kort (max 32 GB, medföljer ej) via en knapptryckning. Kopplas till en dator via USB för överföring. Kan kopplas direkt till en TV för att se sparade bilder.",
-		"price": 899
+		"itemURL": "https://www.ahlens.se/Inredning/kok/kastruller-pannor-15030/le-creuset-omelettpanna-toughened-non-stick-20-cm-44432813/",
+		"itemPicture": "2017_07_Stekpanna.jpg",
+		"itemID": 82,
+		"itemName": "Stekpanna",
+		"description": "Med hjälp av denna panna, kan alla din mat-drömmar bli sanna",
+		"Price": 999
 		},
 		{
-		"itemURL": "https://www.kjell.com/se/sortiment/dator-natverk/hogtalare-headset/tradlosa-hogtalare/roxcore-stream-4-hogtalare-med-wifi-p23487",
-		"itemPicture": "roxcore-stream-4-hogtalare-med-wifi.jpg",
-		"itemID": 45,
-		"itemName": "Roxcore Stream 4 Högtalare med wifi",
-		"description": "Kraftfull och smart högtalare med Multiroom-stöd. Ansluts till hemmets wifi och gör det enkelt att spela upp musik i flera rum samtidigt. Via den medföljande appen är det enkelt att spela upp musik, antingen direkt från mobilen eller från musikappar som t.ex. Spotify (Premium). Möjligt att spela samma låt i alla högtalare, eller olika i olika högtalare. Högtalaren har även Bluetooth och en 3,5 mm-ingång. Högtalaren har knappar för styrning av musiken samt ett uppladdningsbart batteri, vilket gör den enkel att ta med på utflykten.",
-		"price": 799
+		"itemURL": "https://www.presenter.se/varmekudde-rav.html",
+		"itemPicture": ".2017_08_Varmekudde.jpg",
+		"itemID": 83,
+		"itemName": "Värmekudde",
+		"description": "En vetekudde som värmer nacken och kan värmas upp i mikron",
+		"Price": 235
 		},
 		{
-		"itemURL": "https://www.kjell.com/se/sortiment/mobilt/headset/mobiltelefon-headset/roxcore-oronmuffar-med-inbyggt-headset-p93374",
-		"itemPicture": "roxcore-oronmuffar-med-inbyggt-headset.jpg",
-		"itemID": 46,
-		"itemName": "Roxcore Öronmuffar med inbyggt headset",
-		"description": "Öronmuffar med inbyggt headset. Hörlurarna ligger i insydda fickor och kopplas till den medföljande 3,5 mm-kabeln med mikrofon, svarsknapp och analogt volymreglage. Lurar och kabel kan tas ur när öronmuffarna behöver tvättas. Passar mobiler och andra enheter med vanlig hörlurskontakt (3,5 mm).",
-		"price": 199
+		"itemURL": "https://www.upplevelsepresent.se",
+		"itemPicture": "2017_09_Presenkort.jpg",
+		"itemID": 84,
+		"itemName": "En upplevelse för två",
+		"description": "Ett presentkort med fritt val av upplevelse",
+		"Price": 500
 		},
 		{
-		"itemURL": "https://www.kjell.com/se/sortiment/mobilt/bluetooth/handsfree/linocell-vante-med-bluetooth-headset-p94577",
-		"itemPicture": "linocell-vante-med-bluetooth-headset.jpg",
-		"itemID": 47,
-		"itemName": "Linocell Vante med Bluetooth-headset",
-		"description": "Stickad vante med inbyggt Bluetooth-headset. Forma handen som en lur, med lillfingret som mikrofon och tummen som en högtalare. Insydd knapp i vanten gör det möjligt att besvara samt avsluta samtal utan att behöva ta upp mobilen. Vanten går även att använda på mobilens skärm.",
-		"price": 299
+		"itemURL": "https://se.anovaculinary.com/",
+		"itemPicture": "2017_11_Sous vide.jpg",
+		"itemID": 85,
+		"itemName": "Sous-vide cirkulator",
+		"description": "Håller vatten i rätt temperatur så att maten blir perfekt tillagad",
+		"Price": 1599
 		},
 		{
-		"itemURL": "https://www.kjell.com/se/sortiment/hem-kontor-fritid/dronare/denver-dch-330-dronare-med-hd-kamera-p50866",
-		"itemPicture": "denver-dch-330-dronare-med-hd-kamera.jpg",
-		"itemID": 48,
-		"itemName": "Denver DCH-330 Drönare med HD-kamera",
-		"description": "Drönare med inbyggd HD-kamera och LED-belysning. Har två hastigheter och tack vare gyro-funktionen blir drönaren stabil och lättflugen. Filmar i HD (720p, 30 FPS). Filmerna sparas på ett Micro-SD-kort (max. 32 GB, medföljer ej). Upp till 30 meters räckvidd.",
-		"price": 699
+		"itemURL": "https://www.ahlens.se/Skonhet/professionell-harvard/stylingverktyg-274883/ghd-gold-classic-styler-89210522/?gclid=EAIaIQobChMIvf-L7orn1wIVS8-yCh3W2gzrEAQYCyABEgIjd_D_BwE",
+		"itemPicture": "2017_12_Hartang.jpg",
+		"itemID": 86,
+		"itemName": "Plattång",
+		"description": "Verktyg för att platta håret.",
+		"Price": 1799
 		},
 		{
-		"itemURL": "https://www.thegreatgiftcompany.co.uk/occasions/special_occasions/christmas/christmas-for-men/henry_desk_vacumn.htm",
-		"itemPicture": "550x550.fit.Henry-Desk-Vacumn-80971_2.jpg",
-		"itemID": 49,
-		"itemName": "Henry - Skrivbordsdammsugaren",
-		"description": "This little sucker will keep your desktop neat and tidy, crumb and dust free...",
-		"price": 149
+		"itemURL": "https://www.dustin.se/product/5011035956/thinkcentre-m710q-tiny",
+		"itemPicture": "2017_13_Media server.jpg",
+		"itemID": 87,
+		"itemName": "Mediaserver",
+		"description": "Liten smidig dator att ha till mediaserver",
+		"Price": 4599
 		},
 		{
-		"itemURL": "https://www.thegreatgiftcompany.co.uk/occasions/special_occasions/christmas/christmas-for-men/case_of_award_winning_british_beer.htm",
-		"itemPicture": "550x550.fit.Case-of-Award-Winning-Beer-12126_40.jpg",
-		"itemID": 50,
-		"itemName": "Prenumeration på en låda brittiskt prisbelönat öl",
-		"description": "Without question, the greatest invention in the history of mankind is beer. Oh, I grant you that the wheel was also a fine invention, but the wheel does not go nearly as well with pizza - Dave Barry. Give him a case of Award Winning Ales from UK micro breweries - the perfect gift for lovers of beer. This Case of Award Winning British Beer includes 12 beers from small, independent breweries - so this is not the run-of-the-mill beers that he'll find in a supermarket. All the beers have won regional, national and/or international awards and have been tested by a dedicated (and very enthusiastic) tasting panel. No beer is included unless it has won award/s and been given the stamp of approval by the group of experienced beer drinkers",
-		"price": 500
+		"itemURL": "https://www.gucci.com/se/en_gb/pr/women/handbags/womens-shoulder-bags/padlock-small-gucci-signature-shoulder-bag-p-409487CWC1G6433?position=7&listName=undefined&categoryPath=Women/Handbags/Womens-Shoulder-Bags",
+		"itemPicture": "2017_14_Vaska.jpg",
+		"itemID": 88,
+		"itemName": "Väska",
+		"description": "En riktigt dyr och snygg väska som riktigt snälla personer förtjänar ",
+		"Price": 15000
 		},
 		{
-		"itemURL": "https://www.thegreatgiftcompany.co.uk/occasions/special_occasions/christmas/christmas-for-men/smart_healthy_wireless_scales_and_app.htm",
-		"itemPicture": "550x550.fit.Smart-Healthy-Wireless-Scales-and-App-80834_4.jpg",
-		"itemID": 51,
-		"itemName": "Smart vågskål med tillhörande app",
-		"description": "Food prep just got smarter! We can’t all be star bakers but we can certainly be smart bakers! The Smart Healthy Wireless Scales + App is an intelligent solution to flat Victoria sponges and soggy biscuits. Extremely easy to use and dishwasher safe, the Smart Wireless Scales enable the accurate measurement of ingredients placed into the included 2 litre smart mixing bowl",
-		"price": 450
+		"itemURL": "https://www.ahlens.se/Herr/byxor-jeans-103489",
+		"itemPicture": "2017_16_Byxor.jpg",
+		"itemID": 89,
+		"itemName": "Kostymbyxor",
+		"description": "Kostymbyxor till en kavaj",
+		"Price": 1000
 		},
 		{
-		"itemURL": "https://www.coolstuff.se/Airboard-Denver-6-5",
-		"itemPicture": "2cf641134fb2cb4128298276634a7314.jpg",
-		"itemID": 52,
-		"itemName": "Airboard Denver 6,5\" Hoverboard",
-		"description": "Det är som att stå på en svävande bräda, fast på två hjul! Airboarden står stabilt under fötterna och kräver varken stång eller fart för att hålla dig uppe. Maximal hastighet på 12 Km/h!",
-		"price": 1650
+		"itemURL": "https://www.proshop.se/Rakapparat/Braun-Series-5-5050cc-CCR2/2517654?utm_source=prisjakt&utm_medium=cpc&utm_campaign=pricesite",
+		"itemPicture": "2017_17_Rakapparat.jpg",
+		"itemID": 90,
+		"itemName": "En rakapparat",
+		"description": "För att trimma sitt skägg",
+		"Price": 500
 		},
 		{
-		"itemURL": "https://www.coolstuff.se/Shiatsu-Fotmassage",
-		"itemPicture": "2456f09bf7fb466722dcb4e3535d259b.jpg",
-		"itemID": 53,
-		"itemName": "Shiatsu Fotmassage",
-		"description": "Skäm bort dina fötter och låt maskinen massera, krama och värma! De tre förinställda programmen ökar blodcirkulationen i fötterna och hjälper dig att bli piggare, friskare och gladare!",
-		"price": 1495
+		"itemURL": "https://www.snowinn.com/skidor/lenz-set-lithium-pack-700---heat-sock-3.0/662066/p?utm_source=google_products&utm_medium=merchant&id_producte=1028636&country=se&gclid=CjwKCAiA9f7QBRBpEiwApLGUiuJ4PqiJw_vHPioZ01m-4LEXl5pDEot7GQHRs4dh3IjB11si0wF4pRoC18IQAvD_BwE&gclsrc=aw.ds",
+		"itemPicture": "2017_18_Strumpor.jpg",
+		"itemID": 91,
+		"itemName": "Värmestrumpor",
+		"description": "Sportstrumpor med batteridriven eluppvärmning för frusna fötter på cykel eller skidor",
+		"Price": 1645
 		},
 		{
-		"itemURL": "https://www.thegreatgiftcompany.co.uk/occasions/special_occasions/christmas/christmas-for-men/ted_baker_backgammon.htm",
-		"itemPicture": "550x550.fit.Ted-Baker-Backgammon-80864.jpg",
-		"itemID": 54,
-		"itemName": "Ted Baker Backgammon För Resan",
-		"description": "The Ted Baker Back Gammon Roll-up Set is everything you need to play a game of Backgammon when travelling. The classic game is rolled up in a gorgeous faux leather travel set which doubles as the board with its supple felt lining and rose gold detailing. Written inside is the words ‘Let the Good Times Roll’. Also included are 2 x gold and black die, 15 x black counters and 15 x gold counters and finally a faux leather black case to store the game counters in which sits neatly inside the roll. This Ted Baker travel accessory is held together using a leather strap with rose gold button detailing and is a perfect present for hard-to-buy-for men this Christmas",
-		"price": 370
+		"itemURL": "https://www.dustin.se/product/5011014836/chromecast-ultra",
+		"itemPicture": "2017_19_Chromecast.jpg",
+		"itemID": 92,
+		"itemName": "Google Chromecast ultra",
+		"description": "Puck för att streama 4k-film på TV, styrs av Android/Iphone/laptop.",
+		"Price": 635
 		},
 		{
-		"itemURL": "https://www.thegreatgiftcompany.co.uk/occasions/special_occasions/christmas/christmas-for-men/smart_water_cup.htm",
-		"itemPicture": "550x550.fit.Smart-Cup-80753_3.jpg",
-		"itemID": 55,
-		"itemName": "Smart Vattentermos",
-		"description": "Do you drink enough water each day? This very clever flask measures your daily intake of water and reminds you when you need to drink more. You download the free Smart Water Cup App (compatible with ios and android devices), sync the app with the cup and measure how much water you've consumes. Made from fine quality stainless steel and gift boxed, the Smart Water Cup holds 370ml of water and has a built-in buzzer. Fill, drink, re-fill and keep drinking until you've had enough for the day",
-		"price": 420
+		"itemURL": "https://www.netonnet.se/art/hem-hushall/smarta-hem/hemautomatisering/philipshue/philips-hue-kit-e27-farg-10w/247471.14004/?utm_source=philip.se&utm_medium=leads&utm_content=where-to-buy&utm_campaign=philips-where-to-buy&_ref=ca-wtb&_refv=955c933d-b4b0-4618-8be2-ff3f4293628b",
+		"itemPicture": "2017_20_Belysning.jpg",
+		"itemID": 93,
+		"itemName": "Smart belysning",
+		"description": "Smart belysning",
+		"Price": 1899
 		},
 		{
-		"itemURL": "https://www.thegreatgiftcompany.co.uk/occasions/special_occasions/christmas/christmas-for-men/weekend_travel_bag.htm",
-		"itemPicture": "550x550.fit.Weekend-Travel-Bag-17509_2.jpg",
-		"itemID": 56,
-		"itemName": "Weekend Travel Bag",
-		"description": "These Weekend Travel Bags look great and age well plus they are exceptionally good value. The Weekend Travel Bag is perfectly sized for weekends trips away. Made of faux brown leather, the Travel Bag has a zip pocket on one side and a zip closer, handles as well as a removable shoulder strap. Inside the bag has a zipped pocket and is lined in cotton",
-		"price": 400
+		"itemURL": "https://www.bose.se/sv_se/products/headphones/over_ear_headphones/quietcomfort-25-acoustic-noise-cancelling-headphones-apple-devices.html#v=qc25_black",
+		"itemPicture": "2017_21_Horlurar.png",
+		"itemID": 94,
+		"itemName": "Brusreducerande hörlurar",
+		"description": "Hörlurar för att lyssna på musik som också tar bort ljudet från omgivningen. Slipp störa dig på snubben bredvid som pumpar dubstep på högsta volym!",
+		"Price": 2199
 		},
 		{
-		"itemURL": "http://www.designtorget.se/cykelhjalm-hovding-2-0-small",
-		"itemPicture": "hovding-modell2_2.jpg",
-		"itemID": 57,
-		"itemName": "Cykelhjälm Hövding 2.0",
-		"description": "Hövding är en cykelhjälm olik allt som finns på marknaden idag. Hövding är en krage som cyklisten bär kring halsen. Kragen innehåller en hopvikt airbag som blir synlig först när man hamnar i en olycka. Airbagen är utformad som en huva som omsluter och skyddar cyklistens huvud. Utlösningsmekanismen styrs med hjälp av sensorer som registrerar den onormala rörelsen hos cyklisten vid en olycka. Själva kragen är den synliga delen av uppfinningen. Hövding är en praktisk accessoar som är enkel att ta med, som är snygg och diskret i sin utformning, samtidigt som den räddar ditt liv.",
-		"price": 2695
+		"itemURL": "https://www.gear4music.se/sv/Inspelning-and-datorer/Tascam-DR-44WL-handhallen-inspelare-med-WiFi/141H",
+		"itemPicture": "2017_22_Ljudinspelare.jpg",
+		"itemID": 95,
+		"itemName": "En ljudinspelare",
+		"description": "En handhållen ljudinspelare för musik",
+		"Price": 2800
 		},
 		{
-		"itemURL": "http://www.designtorget.se/stringhylla-pocket-valnot-vit",
-		"itemPicture": "1000363.jpg",
-		"itemID": 58,
-		"itemName": "Stringhylla Pocket",
-		"description": "Arkitekten Nisse Strinnings klassiska hyllsystem introducerades redan 1949, men är minst lika populära idag. Här kommer den i ett nytt, mindre format, nu med hyllplan av ask och med vita gavlar! Hyllan är perfekt att ha CD-skivor, DVD-filmer eller pocketböcker i, men passar minst lika bra som en mindre hylla i kök, barnrum eller hall.",
-		"price": 1000
+		"itemURL": "https://www.raddabarnen.se",
+		"itemPicture": "2017_23_RaddaBarnen.png",
+		"itemID": 96,
+		"itemName": "En gåva till välgörenhet",
+		"description": "Exempelvis rädda barnen",
+		"Price": 500
 		},
 		{
-		"itemURL": "https://www.thegreatgiftcompany.co.uk/occasions/special_occasions/christmas/christmas-for-men/smartphone_magnifier.htm",
-		"itemPicture": "550x550.fit.Smartphone-Magnifier-80963.jpg",
-		"itemID": 59,
-		"itemName": "TV Magnifier - Förstoringsglas till mobilen",
-		"description": "Share your phone content without arm ache in a fast, low-tech way by slotting your smartphone into the Smartphone Magnifier. The Smartphone Magnifier magnifies and effectively doubles the screen size to 8\", making it much easier to share silly videos and funny photos ... or perhaps you just want to watch something yourself (for example in the bath) on something a bit larger than the screen on your phone",
-		"price": 200
+		"itemURL": "https://yasuragi.se/badet/badkort/",
+		"itemPicture": "2017_24_Badkort.jpg",
+		"itemID": 97,
+		"itemName": "Ett badkort på Yasuragi",
+		"description": "Ett klippkort på Yasuragi med tio klipp där man får ta med en gäst (för ett extra klipp).",
+		"Price": 3000
+		}
+		{
+		"itemURL": "https://www.apple.com/se/watch/",
+		"itemPicture": "2017_26_AppleWatch.png",
+		"itemID": 98,
+		"itemName": "En Apple Watch",
+		"description": "En smartklocka för alla som inte orkar ta upp telefonen för att läsa sms",
+		"Price": 3695
 		},
 		{
-		"itemURL": "https://www.thegreatgiftcompany.co.uk/occasions/special_occasions/christmas/christmas-for-her/ted_baker_lifestyle_organiser.htm",
-		"itemPicture": "550x550.fit.Ted-Baker-Travel-Lifestyle-Organiser-80865_2.jpg",
-		"itemID": 60,
-		"itemName": "Ted Baker Livsorganiserare",
-		"description": "Unzipping the rose gold zip reveals the minimal and contemporary interior of the lifestyle organiser; featuring a rose patterned lining and dedicated compartments for your phone, money, stationary, credit cards and separate diary/notebook. Finished with beautiful rose gold fasteners and elegant stitching, this stunning accessory will look every bit the part on important meetings, work trips away and travels to exotic locations.",
-		"price": 500
+		"itemURL": "https://www.sonos.com/sv-se/shop/one.html",
+		"itemPicture": "2017_27_SonosOne.png",
+		"itemID": 99,
+		"itemName": "En Sonos One",
+		"description": "Liten och snygg högtalare för hemmet med trådlös styrning. ",
+		"Price": 2500
 		},
 		{
-		"itemURL": "http://www.clasohlson.com/se/Pr442416000/Pr442416000#moreinfo",
-		"itemPicture": "9488655056926.jpg",
-		"itemID": 61,
-		"itemName": "Kaffekvarn Melitta Molino",
-		"description": "Gör ditt eget kaffe av de kaffebönor du har malt i kaffekvarnen. Molino har en professionell skivkvarn som malverk. Kvarnen maler allt från traditionellt kaffe till Espresso. Bönbehållaren har kapacitet för 200 g kaffebönor och kvarnen maler 2-14 koppar åt gången. När den har malt färdigt, stängs den av automatiskt.",
-		"price": 500
+		"itemURL": "https://www.apple.com/se/iphone-x/",
+		"itemPicture": "2017_28_IphoneX.jpg",
+		"itemID": 100,
+		"itemName": "En iPhone x",
+		"description": "En telefon av senaste modell. Must have!",
+		"Price": 11495
 		},
 		{
-		"itemURL": "http://www.clasohlson.com/se/Platt%C3%A5ng-Remington-Sleek-&-Curl-S6500/Pr342269000#moreinfo",
-		"itemPicture": "9175328129054.jpg",
-		"itemID": 62,
-		"itemName": "Plattång Remington Sleek & Curl S6500",
-		"description": "Variera frisyren med lockar, vågor eller rakt hår. Värmeboostfunktion för att snabbt komma upp i högsta temperatur. Avancerad keramisk beläggning med 4 gånger bättre skydd för håret.",
-		"price": 300
+		"itemURL": "https://www.rum21.se/sv/artiklar/nattlampan-fotogenlampa-blanc.html?gclid=Cj0KCQiAgZTRBRDmARIsAJvVWAuFMC_2JrzB3zPb422u_wwkmUnHodfC57hwCB6Q_minuRwJZZEJamgaAkxKEALw_wcB",
+		"itemPicture": "2017_29_Oljelampa.jpg",
+		"itemID": 101,
+		"itemName": "En oljelampa",
+		"description": "En oljelampa i mässing",
+		"Price": 928
 		},
 		{
-		"itemURL": "http://www.bluebox.se/Vetevarmare-Sjal",
-		"itemPicture": "heat-in-micro.png",
-		"itemID": 63,
-		"itemName": "Vetevärmare som halsduk",
-		"description": "Känner du dig lite krasslig, är du stel i nacke, rygg eller axlar, har ont i halsen eller är bara lite frusen? En uppvärmningsbar halsduk gör susen! Denna gosiga vetevärmarhalsduk är fylld med korn och väldoftande örter och fungerar som en vanlig vetevärmare som värms i mikrovågsugnen.",
-		"price": 300
+		"itemURL": "https://www.akademibokhandeln.se/bok/river-cottage-much-more-veg/9781408869000/",
+		"itemPicture": "2017_30_kokbok.jpg",
+		"itemID": 102,
+		"itemName": "En kokbok",
+		"description": "Ny vegetarisk kokbok av min favoritkock",
+		"Price": 300
 		},
 		{
-		"itemURL": "http://www.bluebox.se/Reflextofs-Deluxe",
-		"itemPicture": "m01803_2x.jpg",
-		"itemID": 64,
-		"itemName": "Reflextofs Deluxe",
-		"description": "Det är viktigt att synas, både i mörkret och ute bland folk. Denna reflextofs blir en fin accessoar samtidigt som den är en livräddare när mörkret faller på. Den smidiga karbinhaken gör reflexen lätt att haka fast på t.ex väskan, jackan eller barnvagnen och du kan känna dig säker när du är ute och rör dig.",
-		"price": 75
+		"itemURL": "https://www.grandpastore.com/en/product/4786/indigo-oxford-dark-indigo",
+		"itemPicture": "2017_32_Skjorta.jpg",
+		"itemID": 103,
+		"itemName": "En skjorta",
+		"description": "Skjorta med button down så du kan vara stilig både på jobbet och på galej",
+		"Price": 1000
 		},
 		{
-		"itemURL": "http://www.bluebox.se/Forvaring-For-Accessoarer-Vanity",
-		"itemPicture": "m01731_2x.jpg",
-		"itemID": 65,
-		"itemName": "Förvaring för accessoarer - Vanity",
-		"description": "Organisera smink och accessoarer med stil! Vanity är en rymlig smink- och smyckeväska med plats för allt det nödvändigaste. Necessären är fylld med flera olika stora fack och fickor som passar bra för alla olika sorters produkter. Dess handtag låter dig bära med necessären som en en liten väska, praktiskt när den ska med till träningen, resan eller övernattningen. Väskans underdel går att fälla ut för maximal förvaring, eller ihop för minimal plats. Perfekt när du vill ha sminket välorganiserat och lättillgängligt på en och samma gång!",
-		"price": 200
+		"itemURL": "https://shop.lego.com/en-SE/Creative-Box-10704",
+		"itemPicture": "2017_33_Lego.png",
+		"itemID": 104,
+		"itemName": "Lego",
+		"description": "Klossar man sätter ihop till något magnifikt",
+		"Price": 399
 		},
 		{
-		"itemURL": "http://www.bluebox.se/Pillerpaminnare",
-		"itemPicture": "a12406_52x.jpg",
-		"itemID": 66,
-		"itemName": "Pillerpåminnare",
-		"description": "Pillerpåminnare och tandborstställ i ett! Allergimedicin, p-piller eller andra tabletter... Med denna smarta pillerpåminnare kommer du aldrig mer glömma att ta din dagliga tablett, den är nämligen ihopkopplad med något som de allra flesta kommer ihåg att göra – nämligen att borsta tänderna! Pillerpåminnaren har plats för en tandborste och i samma sekund som du tar loss tandborsten från stället hoppar pillerkartan upp och blir synlig. Fiffigt värre! Borsta tänderna, ta ditt piller och sätt tillbaka pillerkartan och tandborsten igen.",
-		"price": 69
+		"itemURL": "https://www.ahlens.se/Skonhet/ansikte/presentaskar-set-15245/elizabeth-arden-eight-hour-cream-original-set-89792343/",
+		"itemPicture": "2017_34_Skonhetsprodukter.jpg",
+		"itemID": 105,
+		"itemName": "Lyxiga skönhetsprodukter",
+		"description": "Extra kärlek för min hud",
+		"Price": 410
 		},
 		{
-		"itemURL": "http://www.adlibris.com/se/bok/marcus-martinus-var-historia-9789176631720?campaignId=837e1164-31f6-4490-9d0d-47b0b1afd782",
-		"itemPicture": "marcus-martinus-var-historia.jpg",
-		"itemID": 67,
-		"itemName": "Marcus & Martinus: Vår historia av Marcus Gunnarsen och Martinus Gunnarsen",
-		"description": "År 2012 vann de den norska versionen av Lilla Melodifestivalen och deras hitsingel \"Elektrisk\" har sålt tre gånger platina och visats över tio miljoner gånger på Youtube. De är Norges mest populära tonåringar. Och nu också Sveriges. Här kommer Marcus & Martinus otroliga framgångssaga deras egen historia i en rikt illustrerad bok fylld med bilder ur killarnas privata album, fun facts och fansens egna berättelser och foton.",
-		"price": 139
+		"itemURL": "https://new.webhallen.com/se/product/270730-Nintendo-Basenhet-SNES-Classic-Mini-Edition",
+		"itemPicture": "2017_35_SNES.jpg",
+		"itemID": 106,
+		"itemName": "SNES Classic",
+		"description": "Retro gaming konsoll, för Supernintendo",
+		"Price": 1590
 		},
 		{
-		"itemURL": "http://www.adlibris.com/se/bok/clean-code-9780132350884",
-		"itemPicture": "clean-code.jpg",
-		"itemID": 68,
-		"itemName": "Clean Code av Robert C. Martin",
-		"description": "Even bad code can function. But if code isn't clean, it can bring a development organization to its knees. Every year, countless hours and significant resources are lost because of poorly written code. But it doesn't have to be that way. Noted software expert Robert C. Martin presents a revolutionary paradigm with Clean Code: A Handbook of Agile Software Craftsmanship. Martin has teamed up with his colleagues from Object Mentor to distill their best agile practice of cleaning code \"on the fly\" into a book that will instill within you the values of a software craftsman and make you a better programmer-but only if you work at it.",
-		"price": 329
+		"itemURL": "https://www.kitchenlab.se/produkt/ankarsrum-assistent-original-creme-light-akm6230-cl-ankarsrum-original/",
+		"itemPicture": "2017_36_KitchenAssistant.jpg",
+		"itemID": 107,
+		"itemName": "Matberedare",
+		"description": "En maskin för att underlätta bakning och matlagning.",
+		"Price": 6000
 		},
 		{
-		"itemURL": "http://www.adlibris.com/se/bok/kaninjagaren-9789100136772?campaignId=5121beb3-8a93-4781-8c69-de1237a4af53",
-		"itemPicture": "kaninjagaren.jpg",
-		"itemID": 69,
-		"itemName": "Kaninjägaren av Lars Kepler",
-		"description": "Thrillermästaren Lars Kepler är tillbaka med en ny bladvändare om kriminalkommissarie Joona Linna. Kaninjägaren tar vid där den enorma succén Stalker slutade.",
-		"price": 195
+		"itemURL": "https://steamery.se/produkter/147/vackrare-klader-med-anga-cirrus-no-2-steamer-steamery",
+		"itemPicture": "2017_37_TravelSteamer.jpg",
+		"itemID": 108,
+		"itemName": "En travel steamer",
+		"description": "Steamer för skrynkelfria kläder. ångan jämnt över tyget så att alla skrynklor försvinner.",
+		"Price": 1100
 		},
 		{
-		"itemURL": "http://www.bluebox.se/Sagaform-Tesil-Med-Skopa",
-		"itemPicture": "a13365_22x.jpg",
-		"itemID": 70,
-		"itemName": "Sagaform - Tesil med skopa",
-		"description": "En smartare tesil med skopa och sil i ett! Med denna praktiska teskopa från Sagaform kan du skopa upp ditt favoritlöste och sedan låta det åka ner i handtaget. Handtaget fungerar även som en tesil, stoppa tesilen med handtaget neråt i koppen och låt ditt te dra sig.",
-		"price": 149
-		},
+		"itemURL": "https://www.bauhaus.se/sticksag-18v-ryobi-r18js-0-one.html?gclid=EAIaIQobChMIza6yyeXy1wIVx5AYCh17MQEcEAQYASABEgJMofD_BwE",
+		"itemPicture": "2017_39_Sticksag.jpg",
+		"itemID": 109,
+		"itemName": "En sticksåg",
+		"description": "Eldriven sticksåg Ryobi R18JS-0",
+		"Price": 849
+		}
 		{
-		"itemURL": "https://www.coolstuff.se/Hot-Dog-Maker",
-		"itemPicture": "67fd47580dfe0a413ddc5901d9658345.jpg",
-		"itemID": 71,
-		"itemName": "Hot Dog Maker",
-		"description": "Det finns inget som slår en välgrillad korv med bröd. Fantastiska korvgrillen Hot Dog Maker grillar fyra korvar till perfektion samtidigt. Dags för korvfest!",
-		"price": 500
-		},
-		{
-		"itemURL": "https://www.coolstuff.se/Sansaire-Sous-Vide-Maskin",
-		"itemPicture": "58da7addad4f15ce5aad1067bead40a5.jpg",
-		"itemID": 72,
-		"itemName": "Sansaire Sous Vide-Maskin",
-		"description": "Att tillaga mat sous vide ger ett osannolikt smakrikt resultat - tyvärr har det länge varit exklusivt för dyra restaurangkök. Med Sansaire blir sous vide lika enkelt som att kolsyra vatten.",
-		"price": 1979
-		},
-		{
-		"itemURL": "https://www.coolstuff.se/Rokfri-Kolgrill",
-		"itemPicture": "05655a1ff7504a903341749f15205d5a.jpg",
-		"itemID": 73,
-		"itemName": "Rökfri Kolgrill",
-		"description": "Med vår rökfria kolgrill blir du grillkvällens stjärna! Grillen är redo på fyra minuter, och har ett unikt system med kolbehållare och inbyggd fläkt som minimerar rökutvecklingen!",
-		"price": 399
-		},
-		{
-		"itemURL": "https://www.coolstuff.se/Fitbit-Flex-2",
-		"itemPicture": "bbf86c52a9809c53754cc7e39eb4bdfb.jpg",
-		"itemID": 74,
-		"itemName": "Fitbit Flex 2",
-		"description": "Fitbit Flex 2 är ett maxat träningsarmband i minimal förpackning! Håll koll på träning, vardagsmotion och sömn med detta stilrena och vattentäta armband. Anpassa Flex 2 till din stil med snygga accessoarer!",
-		"price": 1000
-		},
-		{
-		"itemURL": "https://www.coolstuff.se/Withings-Body-Vag",
-		"itemPicture": "e8b93521722460543b98a09ff6837098.jpg",
-		"itemID": 75,
-		"itemName": "Withings Body Våg",
-		"description": "Vikten är bara en siffra! Med Withings Body Våg får du reda på mycket mer, som hur stor andel fett, muskler, vatten och benmassa din kropp har. Alltihop ger en tydligare bild av din kropp, hälsa och vikt!",
-		"price": 1399
+		"itemURL": "https://www.happysocks.com/eu/mix-gift-box.html",
+		"itemPicture": "2017_40_happysocks.jpg",
+		"itemID": 110,
+		"itemName": "Strumpor",
+		"description": "En giftbox med olika Happy Socks. När ett par strumpor inte är nog!",
+		"Price": 849
 		}
 	  ]
 	}
