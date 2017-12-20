@@ -215,7 +215,7 @@
 		"itemName": "Ett badkort på Yasuragi",
 		"description": "Ett klippkort på Yasuragi med tio klipp där man får ta med en gäst (för ett extra klipp).",
 		"price": 3000
-		}
+		},
 		{
 		"itemURL": "https://www.apple.com/se/watch/",
 		"itemPicture": "2017_26_AppleWatch.png",
