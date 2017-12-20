@@ -10,11 +10,11 @@
   // Insert API credentials from Azure here. 
   // The URL to POST to and the related API key for 
   //  your deployed web service is needed 
-  $url = URLAPIv22;
-  $api_key = KEYAPIv22;
+  //$url = URLAPIv22;
+  //$api_key = KEYAPIv22;
   
-  //$url = 'https://europewest.services.azureml.net/workspaces/0c8371e1485946f48a61b4bdd4f07c2c/services/afc9fd77afc44f3392c67aed897f5ade/execute?api-version=2.0&details=true';
-  //$api_key = '9H6uURyW5YOFn/ToZ4X7EG3KiJHQ94HBzLekWpz0cUfQR62uIyiMCyDRltWgoR4/sjSeAaJqvqBLAJpe54rqQg==';
+  $url = 'https://europewest.services.azureml.net/workspaces/0c8371e1485946f48a61b4bdd4f07c2c/services/afc9fd77afc44f3392c67aed897f5ade/execute?api-version=2.0&details=true';
+  $api_key = '9H6uURyW5YOFn/ToZ4X7EG3KiJHQ94HBzLekWpz0cUfQR62uIyiMCyDRltWgoR4/sjSeAaJqvqBLAJpe54rqQg==';
   $headers = array('Content-Type: application/json', 'Authorization:Bearer ' . $api_key, 'Content-Length: ' . strlen($body));
 
   // This is the CURL call to your Azure deployed web service. 
