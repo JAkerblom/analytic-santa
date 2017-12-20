@@ -1,6 +1,6 @@
 <?php 
 
-	include("secretInfo.php");
+	include 'secretInfo.php';
 	$server = SERVER;
 	$db = DB;
 	$user = USERNAME;	
