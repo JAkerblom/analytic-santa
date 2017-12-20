@@ -4,3 +4,5 @@ php/smartcsv kopia.csv
 php/smartcsv.csv
 php/smartcsv2.csv
 php/user_input.csv
+php/smartprocess.php
+php/mlexec.php

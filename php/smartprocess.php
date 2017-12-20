@@ -1,12 +1,18 @@
 <?php 
 
 	include 'secretInfo.php';
-	$server = SERVER;
-	$db = DB;
-	$user = USERNAME;	
-	$pwd = PASSWORD;
-	$receiver_email = RECEMAIL;
+	//$server = SERVER;
+	//$db = DB;
+	//$user = USERNAME;	
+	//$pwd = PASSWORD;
+	//$receiver_email = RECEMAIL;
 	
+	$server = 'f5bv9w5661.database.windows.net,1433';
+	$db = 'ffcgamd-db';
+	$user = 'ffcgdb_web';	
+	$pwd = 'OMG!3v1lb4n4as!';
+	$receiver_email = '';
+
 	if (!isset($_SESSION)) session_start(); 
 	if(!$_POST) exit;
 	
