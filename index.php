@@ -54,7 +54,7 @@
 		"itemID": 77,
 		"itemName": "Skärmaskin",
 		"description": "En skärmaskin för livsmedel",
-		"Price": 5625
+		"price": 5625
 		},
 		{
 		"itemURL": "https://www.systembolaget.se/sok-dryck/?subcategory=Rött%20vin&grapes=%5EZinfandel%24&fullassortment=0",
@@ -62,7 +62,7 @@
 		"itemID": 78,
 		"itemName": "Vin",
 		"description": "Rött, dyrt och riktigt gott",
-		"Price": 500
+		"price": 500
 		},
 		{
 		"itemURL": "https://www.xxl.se/fitbit-activity-fitbit-charge-2-plum-small-traningsarmband/p/1129526_1_style",
@@ -70,7 +70,7 @@
 		"itemID": 79,
 		"itemName": "Fitbit",
 		"description": "Ett aktivitetsarmband med pulsmätare",
-		"Price": 1390
+		"price": 1390
 		},
 		{
 		"itemURL": "http://www.gant.se/dam-tröja/multi-lyocell-polotröja/18366",
@@ -78,7 +78,7 @@
 		"itemID": 80,
 		"itemName": "Tröja",
 		"description": "En skön tröja att ha på fritiden",
-		"Price": 799
+		"price": 799
 		},
 		{
 		"itemURL": "http://www.gant.se/herr-halsduk/grå-solid-lambswool-halsduk/14595",
@@ -86,7 +86,7 @@
 		"itemID": 81,
 		"itemName": "Halsduk",
 		"description": "En halsduk i fint material är alltid stiligt och håller en varm.",
-		"Price": 599
+		"price": 599
 		},
 		{
 		"itemURL": "https://www.ahlens.se/Inredning/kok/kastruller-pannor-15030/le-creuset-omelettpanna-toughened-non-stick-20-cm-44432813/",
@@ -94,7 +94,7 @@
 		"itemID": 82,
 		"itemName": "Stekpanna",
 		"description": "Med hjälp av denna panna, kan alla din mat-drömmar bli sanna",
-		"Price": 999
+		"price": 999
 		},
 		{
 		"itemURL": "https://www.presenter.se/varmekudde-rav.html",
@@ -102,7 +102,7 @@
 		"itemID": 83,
 		"itemName": "Värmekudde",
 		"description": "En vetekudde som värmer nacken och kan värmas upp i mikron",
-		"Price": 235
+		"price": 235
 		},
 		{
 		"itemURL": "https://www.upplevelsepresent.se",
@@ -110,7 +110,7 @@
 		"itemID": 84,
 		"itemName": "En upplevelse för två",
 		"description": "Ett presentkort med fritt val av upplevelse",
-		"Price": 500
+		"price": 500
 		},
 		{
 		"itemURL": "https://se.anovaculinary.com/",
@@ -118,7 +118,7 @@
 		"itemID": 85,
 		"itemName": "Sous-vide cirkulator",
 		"description": "Håller vatten i rätt temperatur så att maten blir perfekt tillagad",
-		"Price": 1599
+		"price": 1599
 		},
 		{
 		"itemURL": "https://www.ahlens.se/Skonhet/professionell-harvard/stylingverktyg-274883/ghd-gold-classic-styler-89210522/?gclid=EAIaIQobChMIvf-L7orn1wIVS8-yCh3W2gzrEAQYCyABEgIjd_D_BwE",
@@ -126,7 +126,7 @@
 		"itemID": 86,
 		"itemName": "Plattång",
 		"description": "Verktyg för att platta håret.",
-		"Price": 1799
+		"price": 1799
 		},
 		{
 		"itemURL": "https://www.dustin.se/product/5011035956/thinkcentre-m710q-tiny",
@@ -134,7 +134,7 @@
 		"itemID": 87,
 		"itemName": "Mediaserver",
 		"description": "Liten smidig dator att ha till mediaserver",
-		"Price": 4599
+		"price": 4599
 		},
 		{
 		"itemURL": "https://www.gucci.com/se/en_gb/pr/women/handbags/womens-shoulder-bags/padlock-small-gucci-signature-shoulder-bag-p-409487CWC1G6433?position=7&listName=undefined&categoryPath=Women/Handbags/Womens-Shoulder-Bags",
@@ -142,7 +142,7 @@
 		"itemID": 88,
 		"itemName": "Väska",
 		"description": "En riktigt dyr och snygg väska som riktigt snälla personer förtjänar ",
-		"Price": 15000
+		"price": 15000
 		},
 		{
 		"itemURL": "https://www.ahlens.se/Herr/byxor-jeans-103489",
@@ -150,7 +150,7 @@
 		"itemID": 89,
 		"itemName": "Kostymbyxor",
 		"description": "Kostymbyxor till en kavaj",
-		"Price": 1000
+		"price": 1000
 		},
 		{
 		"itemURL": "https://www.proshop.se/Rakapparat/Braun-Series-5-5050cc-CCR2/2517654?utm_source=prisjakt&utm_medium=cpc&utm_campaign=pricesite",
@@ -158,7 +158,7 @@
 		"itemID": 90,
 		"itemName": "En rakapparat",
 		"description": "För att trimma sitt skägg",
-		"Price": 500
+		"price": 500
 		},
 		{
 		"itemURL": "https://www.snowinn.com/skidor/lenz-set-lithium-pack-700---heat-sock-3.0/662066/p?utm_source=google_products&utm_medium=merchant&id_producte=1028636&country=se&gclid=CjwKCAiA9f7QBRBpEiwApLGUiuJ4PqiJw_vHPioZ01m-4LEXl5pDEot7GQHRs4dh3IjB11si0wF4pRoC18IQAvD_BwE&gclsrc=aw.ds",
@@ -166,7 +166,7 @@
 		"itemID": 91,
 		"itemName": "Värmestrumpor",
 		"description": "Sportstrumpor med batteridriven eluppvärmning för frusna fötter på cykel eller skidor",
-		"Price": 1645
+		"price": 1645
 		},
 		{
 		"itemURL": "https://www.dustin.se/product/5011014836/chromecast-ultra",
@@ -174,7 +174,7 @@
 		"itemID": 92,
 		"itemName": "Google Chromecast ultra",
 		"description": "Puck för att streama 4k-film på TV, styrs av Android/Iphone/laptop.",
-		"Price": 635
+		"price": 635
 		},
 		{
 		"itemURL": "https://www.netonnet.se/art/hem-hushall/smarta-hem/hemautomatisering/philipshue/philips-hue-kit-e27-farg-10w/247471.14004/?utm_source=philip.se&utm_medium=leads&utm_content=where-to-buy&utm_campaign=philips-where-to-buy&_ref=ca-wtb&_refv=955c933d-b4b0-4618-8be2-ff3f4293628b",
@@ -182,7 +182,7 @@
 		"itemID": 93,
 		"itemName": "Smart belysning",
 		"description": "Smart belysning",
-		"Price": 1899
+		"price": 1899
 		},
 		{
 		"itemURL": "https://www.bose.se/sv_se/products/headphones/over_ear_headphones/quietcomfort-25-acoustic-noise-cancelling-headphones-apple-devices.html#v=qc25_black",
@@ -190,7 +190,7 @@
 		"itemID": 94,
 		"itemName": "Brusreducerande hörlurar",
 		"description": "Hörlurar för att lyssna på musik som också tar bort ljudet från omgivningen. Slipp störa dig på snubben bredvid som pumpar dubstep på högsta volym!",
-		"Price": 2199
+		"price": 2199
 		},
 		{
 		"itemURL": "https://www.gear4music.se/sv/Inspelning-and-datorer/Tascam-DR-44WL-handhallen-inspelare-med-WiFi/141H",
@@ -198,7 +198,7 @@
 		"itemID": 95,
 		"itemName": "En ljudinspelare",
 		"description": "En handhållen ljudinspelare för musik",
-		"Price": 2800
+		"price": 2800
 		},
 		{
 		"itemURL": "https://www.raddabarnen.se",
@@ -206,7 +206,7 @@
 		"itemID": 96,
 		"itemName": "En gåva till välgörenhet",
 		"description": "Exempelvis rädda barnen",
-		"Price": 500
+		"price": 500
 		},
 		{
 		"itemURL": "https://yasuragi.se/badet/badkort/",
@@ -214,7 +214,7 @@
 		"itemID": 97,
 		"itemName": "Ett badkort på Yasuragi",
 		"description": "Ett klippkort på Yasuragi med tio klipp där man får ta med en gäst (för ett extra klipp).",
-		"Price": 3000
+		"price": 3000
 		}
 		{
 		"itemURL": "https://www.apple.com/se/watch/",
@@ -222,7 +222,7 @@
 		"itemID": 98,
 		"itemName": "En Apple Watch",
 		"description": "En smartklocka för alla som inte orkar ta upp telefonen för att läsa sms",
-		"Price": 3695
+		"price": 3695
 		},
 		{
 		"itemURL": "https://www.sonos.com/sv-se/shop/one.html",
@@ -230,7 +230,7 @@
 		"itemID": 99,
 		"itemName": "En Sonos One",
 		"description": "Liten och snygg högtalare för hemmet med trådlös styrning. ",
-		"Price": 2500
+		"price": 2500
 		},
 		{
 		"itemURL": "https://www.apple.com/se/iphone-x/",
@@ -238,7 +238,7 @@
 		"itemID": 100,
 		"itemName": "En iPhone x",
 		"description": "En telefon av senaste modell. Must have!",
-		"Price": 11495
+		"price": 11495
 		},
 		{
 		"itemURL": "https://www.rum21.se/sv/artiklar/nattlampan-fotogenlampa-blanc.html?gclid=Cj0KCQiAgZTRBRDmARIsAJvVWAuFMC_2JrzB3zPb422u_wwkmUnHodfC57hwCB6Q_minuRwJZZEJamgaAkxKEALw_wcB",
@@ -246,7 +246,7 @@
 		"itemID": 101,
 		"itemName": "En oljelampa",
 		"description": "En oljelampa i mässing",
-		"Price": 928
+		"price": 928
 		},
 		{
 		"itemURL": "https://www.akademibokhandeln.se/bok/river-cottage-much-more-veg/9781408869000/",
@@ -254,7 +254,7 @@
 		"itemID": 102,
 		"itemName": "En kokbok",
 		"description": "Ny vegetarisk kokbok av min favoritkock",
-		"Price": 300
+		"price": 300
 		},
 		{
 		"itemURL": "https://www.grandpastore.com/en/product/4786/indigo-oxford-dark-indigo",
@@ -262,7 +262,7 @@
 		"itemID": 103,
 		"itemName": "En skjorta",
 		"description": "Skjorta med button down så du kan vara stilig både på jobbet och på galej",
-		"Price": 1000
+		"price": 1000
 		},
 		{
 		"itemURL": "https://shop.lego.com/en-SE/Creative-Box-10704",
@@ -270,7 +270,7 @@
 		"itemID": 104,
 		"itemName": "Lego",
 		"description": "Klossar man sätter ihop till något magnifikt",
-		"Price": 399
+		"price": 399
 		},
 		{
 		"itemURL": "https://www.ahlens.se/Skonhet/ansikte/presentaskar-set-15245/elizabeth-arden-eight-hour-cream-original-set-89792343/",
@@ -278,7 +278,7 @@
 		"itemID": 105,
 		"itemName": "Lyxiga skönhetsprodukter",
 		"description": "Extra kärlek för min hud",
-		"Price": 410
+		"price": 410
 		},
 		{
 		"itemURL": "https://new.webhallen.com/se/product/270730-Nintendo-Basenhet-SNES-Classic-Mini-Edition",
@@ -286,7 +286,7 @@
 		"itemID": 106,
 		"itemName": "SNES Classic",
 		"description": "Retro gaming konsoll, för Supernintendo",
-		"Price": 1590
+		"price": 1590
 		},
 		{
 		"itemURL": "https://www.kitchenlab.se/produkt/ankarsrum-assistent-original-creme-light-akm6230-cl-ankarsrum-original/",
@@ -294,7 +294,7 @@
 		"itemID": 107,
 		"itemName": "Matberedare",
 		"description": "En maskin för att underlätta bakning och matlagning.",
-		"Price": 6000
+		"price": 6000
 		},
 		{
 		"itemURL": "https://steamery.se/produkter/147/vackrare-klader-med-anga-cirrus-no-2-steamer-steamery",
@@ -302,7 +302,7 @@
 		"itemID": 108,
 		"itemName": "En travel steamer",
 		"description": "Steamer för skrynkelfria kläder. ångan jämnt över tyget så att alla skrynklor försvinner.",
-		"Price": 1100
+		"price": 1100
 		},
 		{
 		"itemURL": "https://www.bauhaus.se/sticksag-18v-ryobi-r18js-0-one.html?gclid=EAIaIQobChMIza6yyeXy1wIVx5AYCh17MQEcEAQYASABEgJMofD_BwE",
@@ -310,15 +310,15 @@
 		"itemID": 109,
 		"itemName": "En sticksåg",
 		"description": "Eldriven sticksåg Ryobi R18JS-0",
-		"Price": 849
-		}
+		"price": 849
+		},
 		{
 		"itemURL": "https://www.happysocks.com/eu/mix-gift-box.html",
 		"itemPicture": "2017_40_happysocks.jpg",
 		"itemID": 110,
 		"itemName": "Strumpor",
 		"description": "En giftbox med olika Happy Socks. När ett par strumpor inte är nog!",
-		"Price": 849
+		"price": 849
 		}
 	  ]
 	}
