@@ -697,6 +697,7 @@
               </div><!-- .tagline -->
             <div class="price-box" style="margin-top:20px">
             <p> Här är tre klappar som jag tror skulle vara bra.
+			<br>Tryck på bilderna för att komma till mina verkstäder för mer information om dem.</br>
 <br> Ge mig gärna poäng via stjärnorna så kommer jag göra det ännu bättre nästa gång.</br></p>
               <p class="small-text fine-grey"><strong>1 stjärna </strong>= Inte riktigt rätt. <br><strong>6 stjärnor </strong>= Spot on!</br></p>
             </div>
